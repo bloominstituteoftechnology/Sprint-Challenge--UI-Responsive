@@ -242,7 +242,7 @@ footer nav a {
   }
 
   .middle-content .boxes .box:nth-of-type(7) {
-    background: #coral;
+    background: coral;
   }
 
   .middle-content .boxes .box:nth-of-type(9) {
@@ -252,5 +252,78 @@ footer nav a {
 
 /* ——— Phone ——— */
 @media (max-width: 400px) {
+  header {
+    margin-top: 25px;
+  }
 
+  header nav {
+    margin-top: 136px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    border-top: 1px solid gray;
+    width: 100%;
+    padding-top: 15px;
+    margin: 5px 0 10px 0;
+    text-align: center;
+  }
+  
+  .jumbotron img {
+    width: 100%;
+    margin-top: 216px;
+  }
+
+  .top-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .top-content .text-container {
+    width: 90%;
+  }
+
+  .middle-content {
+    margin-top: 20px;
+  }
+
+  .middle-content h2 {
+    letter-spacing: 0.001rem;
+  }
+
+  .middle-content .boxes {
+    flex-direction: row-reverse;
+  }
+
+  .middle-content .boxes .box {
+    width: 100px;
+  }
+
+
+  .middle-content .boxes .box:nth-of-type(10) {
+    display: none;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bottom-content .text-container {
+    width: 90%;
+  }
+
+  .bottom-content .text-container {
+    margin: 0 0 20px 5px;
+  }
+
+  footer nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
