@@ -79,6 +79,10 @@ header {
     justify-content: space-between;
 }
 
+header nav{
+    display: flex;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
