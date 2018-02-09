@@ -28,8 +28,44 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+    font-size: 62.5%;
+}
 body {
 	line-height: 1;
+}
+head {
+    display: flex;
+}
+head .lamb{
+    display: inline;
+    justify-content: center;
+}
+head .logo{
+    align-self: center;
+}
+ .main {
+    display: flex; 
+    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.main nav{ 
+    display: flex;
+    align-items: baseline;
+}
+.main nav a{
+    display: flex;
+    color: black;
+   align-self: center;
+    text-decoration: none;
+    margin: 10px;
+
+}
+head div{
+    display: flex;
+    justify-content: center;
 }
 ol, ul {
 	list-style: none;
@@ -57,7 +93,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +103,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -123,7 +159,7 @@ p {
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+    padding-right: 10;
 }
 
 footer {
@@ -137,10 +173,106 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/* Phone */
+@media (max-width: 400px) { 
+    .container {
+    width: 100%;
+}
+  header {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  header nav {
+      width: 100%;
+  }
+
+  header nav ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+  }
+
+  header nav ul li {
+      width: 100%;
+      margin: 0;
+  }
+
+  header nav ul li a {
+      align-items: center;
+      justify-content: center;
+      display: block;
+      text-align: center;
+      padding: 5% 0; 
+      font-size: 1.25rem;
+      border-bottom: 1px solid black;
+  }
+
+  header nav ul li:first-child {
+      border-top: 1px solid black;
+  }
+
+  header nav ul li a:hover {
+      background: blue;
+  }
+
+  header .lamb {
+      order: -1;
+      max-width: 100%;
+      margin: 4.5% 0;
+
+}
+
+.main {
+    width: 100%;
+}
+
+.main ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+}
+head .main ul li a {
+    display: block;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 1.25rem;
+    border-bottom: 10px solid black;
+}
+.top-content{
+    width: 100%;
+display: flex;
+flex-direction: column;
+margin: 0;
+flex-grow: 1;
+}
+.bottom-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/*Tablet*/
+@media (max-width:768px) {
+
+}
+/* Desktop */
+@media (max-width: 1000px) {
+    .boxes .box .box2{
+        background: lawngreen;
+    }
+
 }
