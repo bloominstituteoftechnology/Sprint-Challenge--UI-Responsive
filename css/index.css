@@ -188,23 +188,23 @@ footer nav a {
 /* ——— Desktop ——— */
 @media (max-width: 1000px) {
   .middle-content .boxes .box:nth-of-type(2) {
-    background: #227f2a;
+    background: forestgreen;
   }
   
   .middle-content .boxes .box:nth-of-type(4) {
-    background: #8d2ec1;
+    background: darkorchid;
   }
   
   .middle-content .boxes .box:nth-of-type(6) {
-    background: #fe5fa9;
+    background: hotpink;
   }
   
   .middle-content .boxes .box:nth-of-type(8) {
-    background: #410473;
+    background: indigo;
   }
   
   .middle-content .boxes .box:nth-of-type(10) {
-    background: #74fb37;
+    background: lawngreen;
   }
 }
 
@@ -303,7 +303,6 @@ footer nav a {
   .middle-content .boxes .box {
     width: 100px;
   }
-
 
   .middle-content .boxes .box:nth-of-type(10) {
     display: none;
