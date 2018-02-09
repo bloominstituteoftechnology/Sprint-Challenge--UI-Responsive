@@ -280,23 +280,23 @@ footer nav a {
 }
 
 @media (max-width: 1000px){
-    .middle-content .boxes .box2{
+    .middle-content .boxes .box:nth-of-type(2){
         background: forestgreen;
     }
 
-    .middle-content .boxes .box4{
+    .middle-content .boxes .box:nth-of-type(4){
         background: darkorchid;
     }
 
-    .middle-content .boxes .box6{
+    .middle-content .boxes .box:nth-of-type(6){
         background: hotpink;
     }
 
-    .middle-content .boxes .box8{
+    .middle-content .boxes .box:nth-of-type(8){
         background: indigo;
     }
 
-    .middle-content .boxes .box10{
+    .middle-content .boxes .box:nth-of-type(10){
         background: lawngreen;
     }
 }
