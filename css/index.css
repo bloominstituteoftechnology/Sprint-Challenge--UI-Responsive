@@ -192,9 +192,32 @@ footer nav a {
 }
 
 @media (max-width: 768px){
+    .middle-content .boxes .box {
+        background: black;
+    }
+    .middle-content .boxes .box1{
+        background: teal;
+    }
 
+    .middle-content .boxes .box3{
+        background: gold;
+    }
+
+    .middle-content .boxes .box5{
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7{
+        background: coral;
+    }
+
+    .middle-content .boxes .box9{
+        background: crimson;
+    }
 }
 
 @media (max-width: 400px){
-
+    .middle-content .boxes .box10{
+        display: none;
+    }
 }
