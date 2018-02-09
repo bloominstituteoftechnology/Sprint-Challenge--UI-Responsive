@@ -270,16 +270,17 @@ footer nav a {
     }
 
     .header .nav li{
-        width: 99%;
+        width: 100%;
         text-align: center;
         border-top: solid 1px black;
-        padding-top: 17px;
-        padding-bottom: 16px;
+        padding-top: 12px;
+        padding-bottom: 17px;
     }
 
-    .jumbo img{
-        margin-top: 3%;
-    }
+     .jumbo img{
+        /* margin-top: 3%; */
+        margin: 0 0 3% 0;
+    } 
 
     .top-content{
         flex-direction: column;
@@ -287,12 +288,13 @@ footer nav a {
     }
 
     .top-content .text-container{
-        width: 100%;
-        padding: 0 9% 20px 9%;
+        width: 103%;
+        padding: 11px 9% 8px 6%;
     }
 
     .middle-content .boxes .box{
-        width: 26.5%
+        width: 25.5%;
+        margin: 37px 2.5%;
     }
 
     .middle-content .boxes .box10{
