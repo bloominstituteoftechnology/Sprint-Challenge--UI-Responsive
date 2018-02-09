@@ -161,7 +161,7 @@ header nav a{
 @media (max-width: 415px){
     .top-content{
         flex-direction: column;
-        margin-bottom: 3%;
+        padding-bottom: 3%;
     }
 }
 .top-content .text-container {
