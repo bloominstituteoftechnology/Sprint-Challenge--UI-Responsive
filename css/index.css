@@ -161,10 +161,10 @@ footer nav a {
 		flex-direction:column;
 		justify-content:space-evenly;
 		align-content:flex-end;
+		height:180px;
 	}
 	
 	.header img{
-		margin-top:8%;
 		object-fit:contain;
 		margin-left:10%;
 	} .headerText{ 
@@ -172,12 +172,12 @@ footer nav a {
 		display:flex;	
 		flex-direction:column;	
 		justify-content:space-evenly;
-		margin-top:10%;
 		border:none;
+		margin-top:5%;
 	}
 
 	.header .headerText a{
-		padding: 4% 0;
+		padding: 10% 0;
 		text-align:center;
 		border-bottom:1px solid black;
 		border-top:1px solid black;
@@ -197,55 +197,67 @@ footer nav a {
 		margin-bottom:2%;
 	}
 
+
 	#box2{
+		margin-top:5%;
 		background-color:forestgreen;
 		order:1;
 	}
 
 	#box4{
+		margin-top:5%;
 		background-color:darkorchid;
 		order:5;
 	}
 
 	#box6{
+		margin-top:5%;
 		background-color:hotpink;
 		order:3;
 	}
 
 	#box8{
+		margin-top:5%;
 		background-color:indigo;
 		order:7;
 	}
 
 	#box10{
+		margin-top:5%;
 		background:lawngreen;
 	}
 	#box1{
+		margin-top:5%;
 		background-color:teal;
 		order:2;
 	}
 
 	#box3{
+		margin-top:5%;
 		order:0;
 		background-color:gold;
 	}
 
 	#box5{
+		margin-top:5%;
 		background-color:cadetblue;
 		order:4;
 	}
 
 	#box7{
+		margin-top:5%;
 		background-color:coral;
 		order:8;
 	}
 
 	#box9{
+		margin-top:5%;
 		background-color:crimson;
 		order:6;
 	}
 
 	#box10{
+		margin-top:5%;
 		display:none;
 	}
 	
@@ -276,12 +288,13 @@ footer nav a {
 
 	
 	.boxes{
+		height:400px;
 		display:flex;
 		flex-flow:row wrap;
 		font-size:1.8rem;
 		border-bottom:1px dotted black;
 	}
-	
+
 	.middle-content .boxes .box{
 		margin:3%;
 		width:26%;
