@@ -5,4 +5,13 @@
    `display: inline` places the element next to other elements on the same line as an inline element.
    `display: block` places the element on a new line as a block element that takes up the whole width.
 
-3. 
+3. While using flexbox, what axis are you using when you use the property: align-items: center?
+  `align-items: center` centers items on the cross axis.
+
+4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
+   * Fixed layout: The size of the website is fixed and doesn't change. Very rigid.
+   * Adaptive layout: The size of the website changes according to breakpoints. Better but still rigid.
+   * Fluid layout: The website tries to adjust to any viewport size no matter how small or big--
+     this can lead to some very strange results.
+   * Responsive layout: A truly responsive website is a combination is adaptive when it needs to be and
+     fluid when it needs to be; it is the best of both worlds.
