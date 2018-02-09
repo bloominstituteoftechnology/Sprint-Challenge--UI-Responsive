@@ -205,11 +205,11 @@ div nav ul {
 .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .middle-content .boxes .box {
-  width: 12.5%;
+  width: 100px;
   height: 100px;
   background: black;
   margin: 20px 2.5%;
@@ -274,8 +274,8 @@ footer nav a {
 
 @media (max-width: 768px) {
   .container {
-    width: 100vw;
-    margin: 0;
+    width: 90vw;
+    padding: 0;
   }
   .middle-content .boxes .box1 {
     background: teal;
@@ -298,5 +298,34 @@ footer nav a {
   }
   .header img {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header nav .nav-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header nav .nav-items li {
+    border: solid thin;
+    width: 100%;
+    background: grey;
+    text-align: center;
+    padding: 10px 0 10px 0;
+  }
+  .header nav .nav-items li:hover {
+    background: black;
+    color: white;
+  }
+  .middle-content .boxes .box10 {
+    display: none;
+  }
+  .middle-content .boxes {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  footer nav {
+    width: 100%;
   }
 }
