@@ -177,7 +177,7 @@ footer nav a {
     text-decoration: none;
 }
 
-@media (max-width:769px){
+@media (max-width:1000px){
     .middle-content .boxes .box2{background-color:forestgreen;}
     .middle-content .boxes .box4{background-color: darkorchid;}
     .middle-content .boxes .box6{background-color: hotpink;}
