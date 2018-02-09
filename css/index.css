@@ -49,7 +49,7 @@ margin-top:20px;
 
 }
 .logo2{
-width:700px;
+ width:700px;
 	height:150px;
 	margin:0 auto;
 	margin-top:40px;
@@ -194,4 +194,38 @@ background-color:lawngreen;
 	.container{
 		width : 100%;
 	}
+	.logo{
+	justify-content :center;
+	}
+	 header nav ul li {
+	 width :100%;
+       margin-top: 50px;
+
+	   margin-left : 20px;
+
+}#box1{
+
+background-color: teal;
 }
+#box3{
+background-color: gold;
+
+}
+#box5{
+background-color:cadetblue;
+
+}
+#box7{
+background-color:coral;
+
+}
+#box9{
+background-color:crimson;
+
+.section footer nav a{
+width :100%;
+display : flex;
+flex-content : spac-between;
+}
+
+
