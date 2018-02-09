@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -77,13 +77,10 @@ header navbar {
     width: 100%;
     justify-content: space-between;
     align-self: stretch;
-    padding-right: 43px;
+    padding-right: 4.88%;
  } 
 
-/* header navbar .logo {
-    padding-right: 20px;
 
-} */
 header navbar a {
     align-self: flex-end;
     justify-content: space-between;
@@ -92,24 +89,24 @@ header navbar a {
     
 }
 header .headerimg {
-    padding: 40px 0 20px;
+    padding: 5.3% 0 2.7%;
 }
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2.7%;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2.5%;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2.5%;
     border-bottom: 1px dashed black;
 }
 
@@ -128,7 +125,7 @@ header .headerimg {
     width: 12.5%;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2.5% 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -151,7 +148,7 @@ header .headerimg {
 }
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2.5%;
     justify-content: space-around;
 }
 
@@ -180,4 +177,23 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media (max-width: 768px) {
+.container {
+    width: 100%;
+}
+header navbar {
+    width: 100%;
+    margin-left:2.5%;
+} 
+/* header navbar .logo {
+    
+}
+header navbar a {
+
+} */
+header .headerimg {
+    width: 100%;
+    height: 2auto;
+}
 }
