@@ -157,10 +157,25 @@ header nav a{
         margin-top: 2.7%;
     }
 }
+
+@media (max-width: 415px){
+    .top-content{
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+@media (max-width: 415px){
+    .top-content .text-container{
+        font-size: 1.8rem;
+        width: 100%;
+        padding: 3% 6% 2%;
+    }
 }
 
 .middle-content {
