@@ -82,6 +82,17 @@ header {
     align-items: flex-end;
 }
 
+@media (max-width: 783px){
+    header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    header img {
+        margin: 0 0 4%  0;
+    }
+}
+
 header nav{
     width: 100%;
     display: flex;
