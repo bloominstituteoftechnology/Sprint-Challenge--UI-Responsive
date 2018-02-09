@@ -1,6 +1,6 @@
 1. class box3 has the most specificity weight as it is the last class designated to div
 
-2. an item set to display: block with try and take up all space availabe on the x-axis, whereas an item set to inline-block will allow items to sit "in line" with the item.
+2. an item set to display: block will try and take up all space availabe on the x-axis, whereas an item set to inline-block will allow items to sit "in line" with the item.
 
 3. The cross axis
 
