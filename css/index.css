@@ -166,3 +166,6 @@ footer nav a {
     align-items: flex-end;
 }
 
+.middle-content .boxes .box:nth-of-type(2) {
+    background-color: forestgreen;
+}
