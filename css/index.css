@@ -75,10 +75,10 @@ p {
 }
 
 header {
-    margin: 2.6% 0 0 0;
+    margin: 2.6% 0 5% 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 header nav{
