@@ -70,6 +70,7 @@ p {
 }
 
 .container {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -79,22 +80,36 @@ header {
     display: flex;
 }
 
+header img {
+    height: 50px;
+    margin-top: 20px;
+}
+
 header nav {
+    display: flex;
     width: 100%;
     font-size: 1.6rem;
     align-content: center;
+    margin-top: 10px;
 }
 
 header nav ul {
-    margin-top: 40px 5% 0; 
+    margin: 0 2px;
     width: 100%;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #b0b0b0;
+    color: black;
 }
 
 header nav ul li a:hover {
@@ -223,9 +238,14 @@ footer nav a {
     .middle-content .boxes .box10{
         background: limegreen;
     }
+
 }
 
 @media (max-width: 400px) {
+    .middle-content .boxes{
+        flex-direction: row-reverse;
+    }
+
     .middle-content .boxes .box10 {
         display: none;
     }
