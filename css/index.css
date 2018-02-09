@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +70,7 @@ p {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 header{
@@ -265,5 +267,46 @@ footer nav a {
     text-decoration: none;
 }
 
+@media(max-width:768px){
+    .container {
+        max-width: 100%;
+    }
+    
+    header nav {
+        width: 100%;
+        margin-top: 69px;
+        margin-left: -161px;
+        margin-right: 20px;
+        justify-content: space-around;
+    }
 
-   
+    header img {
+        margin: 20px 0 0 10px;  
+        border: 1px solid rebeccapurple; 
+    
+    }
+
+    .middle-content .boxes .box1 {
+        background:teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background:gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background:turquoise;
+    }
+
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+
+    .middle-content .boxes .box7 {
+        background: orange;
+    }
+
+    .middle-content .boxes .box9 {
+        background:red;
+    }
+}
