@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   line-height: 1.4;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -70,12 +71,12 @@ p {
 .container .head {
 	display: flex;
 	width: 100%;
-  /* display: flex;
-    align-items: baseline;
-    justify-content: space-between; */
+  align-items: baseline;
+  justify-content: space-between;
 }
 .head .nav {
-
+  display: flex;
+  justify-content: flex-end;
 }
 .head .nav .top {
 }
