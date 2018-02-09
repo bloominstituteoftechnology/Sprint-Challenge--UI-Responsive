@@ -155,11 +155,14 @@ html {
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1000px) and (max-width : 1880px) {
     /* Styles */
+   
+
    nav {
        display: flex;
        justify-content: space-between;
@@ -171,7 +174,7 @@ a{
    }
 
    .middle-content .boxes {
-       width: 945px;
+       width: 920px;
    }
 
    li {
