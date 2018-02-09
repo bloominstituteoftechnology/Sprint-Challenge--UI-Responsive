@@ -153,23 +153,23 @@ header nav a {
     justify-content: center;
 }
 
-.middle-content .boxes .box + .box2 {
+.middle-content .boxes .box2 {
     background: forestgreen;
 }
 
-.middle-content .boxes .box + .box4 {
+.middle-content .boxes .box4 {
     background: darkorchid; 
 }
 
-.middle-content .boxes .box + .box6 {
+.middle-content .boxes .box6 {
     background: hotpink; 
 }
 
-.middle-content .boxes .box + .box8 {
+.middle-content .boxes .box8 {
     background: indigo; 
 }
 
-.middle-content .boxes .box + .box10 {
+.middle-content .boxes .box10 {
     background: lawngreen; 
 }
 
@@ -253,23 +253,23 @@ footer nav a {
         width: 13% 
     }
    
-    .middle-content .boxes .box + .box1 {
-        background: teal; /* Why is this not working? */
+    .middle-content .boxes .box1 {
+        background: teal;
     }
 
-    .middle-content .boxes .box + .box3 {
+    .middle-content .boxes .box3 {
         background: gold;
     }
 
-    .middle-content .boxes .box + .box5 {
+    .middle-content .boxes .box5 {
         background: cadetblue; 
     }
 
-    .middle-content .boxes .box + .box7 {
+    .middle-content .boxes .box7 {
         background: coral; 
     }
 
-    .middle-content .boxes .box + .box9 {
+    .middle-content .boxes .box9 {
         background: crimson; 
     }
 
@@ -302,8 +302,8 @@ footer nav a {
         width: 100%; 
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 1.2rem;
+        padding: 16px 0;
+        font-size: 1.1rem;
         border-top: 1px solid gray;
     }
 
@@ -322,15 +322,45 @@ footer nav a {
     .top-content  .text-container {
         width: 100%; 
         flex-wrap: wrap; 
-        padding: 3% 5%; 
+        padding: 2% 5% 3%;  
     }
 
-    .middle-content .boxes .box + .box10 {
+    .middle-content .boxes .box10 {
         display: none;  
     }
 
+    .middle-content .boxes {    
+        flex-direction: row-reverse;
+}
+
     .middle-content .boxes .box {
         width: 25%; 
+        }
+
+    .bottom-content {
+        flex-direction: column;
+
+    }
+
+    .bottom-content  .text-container {
+        width: 100%; 
+        flex-wrap: wrap; 
+        padding: 1.5% 4% 2%  
+        }
+
+    .bottom-content  .text-container p { 
+}
+
+    footer {
+        display: flex; 
+        justify-content: center; 
+    }
+
+    footer nav {
+        width: 100%; 
+        justify-content : space-between;
+        justify-content: space-around; 
+        margin: 0 3%; 
     }
 }   
 
