@@ -93,6 +93,10 @@ header nav a{
     font-size: 1.4rem;
 }
 
+.middle-img {
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -192,9 +196,6 @@ footer nav a {
 }
 
 @media (max-width: 768px){
-    .middle-content .boxes .box {
-        background: black;
-    }
     .middle-content .boxes .box1{
         background: teal;
     }
