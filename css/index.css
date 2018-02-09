@@ -144,3 +144,51 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* sprint challenge
+
+html {
+    font-size:62.5%;
+}
+*/
+
+div ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1000px) {
+    /* Styles */
+ .container {
+    background-color: red;
+    }
+ div .box:nth-child(2) {
+    color: forestgreen;
+    
+ }
+}
+
+/* Tablets ----------- */
+@media only screen  and (min-width : 768px) and (max-width : 1000px) {
+    /* Styles */
+ .container {
+    background-color: goldenrod;
+    }
+    .boxes:nth-child(2) {
+        color: forestgreen;
+        
+     }
+}
+
+/* SmartPhones ----------- */
+@media only screen  and (min-width : 320px) and (max-width : 768px) {
+    /* Styles */
+ .container {
+    background-color: purple;
+    }
+}
