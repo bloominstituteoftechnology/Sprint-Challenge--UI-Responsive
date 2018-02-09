@@ -145,3 +145,12 @@ footer nav a {
     text-decoration: none;
 }
 
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+}
