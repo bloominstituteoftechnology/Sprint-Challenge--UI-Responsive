@@ -125,31 +125,40 @@ p {
     width:100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0% 0% 0% 0%;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
+    width: 40%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    margin-top: 2%; 
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    
+    width:100%;
+    margin: 2% 0% 0% 0%;
     border-bottom: 1px dashed black;
+    
 }
 
 .middle-content h2 {
+    
     padding: 0 2%;
-    margin-bottom: 0;
+    margin: 0% 0% 0% 10%;
 }
 
 .middle-content .boxes {
+    width:80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-left: 10%;
+    
 }
 
 .middle-content .boxes .box {
@@ -161,6 +170,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:1.7rem;
 }
 
 .middle-content .boxes .box2 {
@@ -181,13 +191,16 @@ p {
 }
 
 .bottom-content {
+    width: 100%;
     display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    margin: 2% 0% 2% 0%;
+    justify-content: center;
 }
 
 .bottom-content .text-container {
+    width: 26.6666%;
     padding-right: 4%;
+    margin: 0% -1% 0% 1%;
 }
 
 .bottom-content .text-container:last-child {
@@ -196,16 +209,21 @@ p {
 
 footer {
     width: 100%;
-    background: black;
+    
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 footer nav {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
     font-size: 1.4rem;
+    background: black;
 }
 
 footer nav a {
