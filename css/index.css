@@ -81,12 +81,14 @@ p {
     margin: auto;
     font-size: 1.6rem;
 }
-
-/* NEED TO ADD HEADER BELOW */
+.logos {
+    display:none;
+}
+/* HEADER */
 
 header {
     width: 90%;
-    margin-left: 20px;
+    margin-left: 3.4%; /*30/880 = .034*/
 }
 
 header nav {
@@ -119,7 +121,7 @@ header nav a {
 }
 
 
-/* */
+/*Top Paragraphs */
 .top-content {
     width: 90%;
     display: flex;
@@ -186,18 +188,20 @@ header nav a {
     background: lawngreen;
 }
 
-/* below boxes */
+/* Bottom Paragraphs  */
 
 .bottom-content {
     width: 90;
     display: flex;
     /* margin: 0 2% 20px; */
-    margin: 0 20px 20px 4.5%; 40/880=.045
+    margin: 0 20px 20px 4.5%; /*40/880=.045*/
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    margin-right: 4.5%;
+    margin-left: 1%;
 }
 
 .bottom-content .text-container:last-child {
@@ -209,6 +213,8 @@ header nav a {
 footer {
     width: 90%;
     background: black;
+    margin: 0 20px 20px 4.5%; /*40/880=.045*/
+
 }
 
 footer nav {
@@ -223,4 +229,78 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+   
+    
+    .logos {
+        margin: 0 0 50px 280px;
+        display: flex;
+        justify-content: center;
+        /* border-top: 30px;
+        padding-top: 20px; */
+    }
+
+    .logo{
+        display:none;
+    }
+    
+    header nav {
+        margin-left: 30px;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .logo2 {
+       width: 100%;
+       padding: 0;
+       margin: 0;
+    }
+
+    .top-content{
+       width: 100%;
+       margin: 10px 0 0 0;
+    } 
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box10 {
+        background: crimson;
+    }
+
+    .middle-content {
+        width: 96.5%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .bottom-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    footer {
+       margin: auto;
+       width: 100%;
+    }
 }
