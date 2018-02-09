@@ -130,7 +130,9 @@ header nav ul li a {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height:auto;
+    min-width:100px;
+    min-height: 100px;
     background: black;
     margin: 2.5%;
     color: white;
