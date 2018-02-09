@@ -67,10 +67,33 @@ p {
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin: 1.4% auto;
 }
 
+header navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-self: stretch;
+    padding-right: 43px;
+ } 
+
+/* header navbar .logo {
+    padding-right: 20px;
+
+} */
+header navbar a {
+    align-self: flex-end;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    
+}
+header .headerimg {
+    padding: 40px 0 20px;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +133,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.middle-content .boxes .box .box2 {
+    background: forestgreen;
 }
 
 .bottom-content {
