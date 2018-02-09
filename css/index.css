@@ -205,16 +205,12 @@ footer nav a {
 		background-color:teal;
 	}
 
-	#box2{
+	#box3{
 		background-color:gold;
 	}
 
-	#box3{
-		background-color:cadetblue;
-	}
-
 	#box5{
-		background-color:coral;
+		background-color:cadetblue;
 	}
 
 	#box7{
@@ -225,25 +221,6 @@ footer nav a {
 		background-color:crimson;
 	}
 	
-	#box2{
-		background-color:forestgreen;
-	}
-
-	#box4{
-		background-color:darkorchid;
-	}
-
-	#box6{
-		background-color:hotpink;
-	}
-
-	#box8{
-		background-color:indigo;
-	}
-
-	#box10{
-		background:lawngreen;
-	}
 
 	.top-content{
 		width:100%;
@@ -342,6 +319,10 @@ footer nav a {
 		justify-content:center;
 		margin-top:3%;
 		margin-bottom:2%;
+	}
+
+	#box1,#box3,#box5,#box7,#box9{
+		background-color:black;
 	}
 	
 	
