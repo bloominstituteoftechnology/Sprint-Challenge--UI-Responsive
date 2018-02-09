@@ -218,4 +218,7 @@ footer nav a {
     .middle-content .boxes .box{width: 25%}
     .middle-content .boxes .box10{display: none;}
     .top-content .text-container{width: 90%}
-    .bottom-content .text-container {}
+    .bottom-content {display: flex;
+        flex-direction: column
+    }
+    .bottom-content .text-container {padding-bottom: 10px}
