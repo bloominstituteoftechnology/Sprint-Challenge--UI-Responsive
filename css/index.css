@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +68,44 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px; 
+    width: 100%;
     margin: 0 auto;
 }
+
+header {
+    display: flex; 
+    align-items: center; 
+    flex-direction: row-reverse;
+    margin-top: 6.4px;
+}
+
+header nav {
+    width: 100%; 
+    margin: 40px; 
+    display: flex;
+    justify-content: center; 
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+header img {
+    margin-bottom: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;  
+ }
+
+ h2 {
+     font-size: 1.5rem; 
+ }
+
+ p {
+     font-size: 1.3rem; 
+ }
 
 .top-content {
     display: flex;
@@ -83,6 +119,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content img {
+    margin-bottom: 20px; 
 }
 
 .middle-content {
@@ -106,10 +146,31 @@ p {
     height: 100px;
     background: black;
     margin: 20px 2.5%;
+    font-size: 1.2rem; 
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid; 
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink; 
+}
+
+.middle-content .boxes .box8 {
+    background: indigo; 
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen; 
 }
 
 .bottom-content {
@@ -137,10 +198,170 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.1rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center; 
+        
+    }
+
+    header img {
+        order: -1; 
+        margin-top: 15px; 
+        margin-bottom: 0px;  
+    }
+
+    header nav {
+        margin-top: 28px; 
+        display: flex; 
+        justify-content: space-between; 
+        margin-right: 7%;
+        margin-left: 7%; 
+    }
+
+    header nav a {
+        font-size: 1.1rem; 
+    }
+
+    .top-content {
+        margin-top: 0px; 
+    }
+
+    .top-content img {
+        margin-top: 0px; 
+        height: 149px; 
+    }
+
+    .middle-content .boxes .box {
+        font-size: 1.3rem;
+        width: 13% 
+    }
+   
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue; 
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral; 
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson; 
+    }
+
+/* Phone */
+
+@media (max-width: 400px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header img {
+        margin: 25px 0; 
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%; 
+        display: block;
+        text-align: center;
+        padding: 16px 0;
+        font-size: 1.1rem;
+        border-top: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    .top-content img  {
+        height: 78px; 
+    }
+
+     .top-content {
+        flex-direction: column;
+    }
+
+    .top-content  .text-container {
+        width: 100%; 
+        flex-wrap: wrap; 
+        padding: 2% 5% 3%;  
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;  
+    }
+
+    .middle-content .boxes {    
+        flex-direction: row-reverse;
+}
+
+    .middle-content .boxes .box {
+        width: 25%; 
+        }
+
+    .bottom-content {
+        flex-direction: column;
+
+    }
+
+    .bottom-content  .text-container {
+        width: 100%; 
+        flex-wrap: wrap; 
+        padding: 1.5% 4% 2%  
+        }
+
+    .bottom-content  .text-container p { 
+}
+
+    footer {
+        display: flex; 
+        justify-content: center; 
+    }
+
+    footer nav {
+        width: 100%; 
+        justify-content : space-between;
+        justify-content: space-around; 
+        margin: 0 3%; 
+    }
+}   
+
 }
