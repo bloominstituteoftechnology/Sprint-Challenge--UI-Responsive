@@ -330,6 +330,18 @@ footer nav a {
   .middle-content .boxes .box {
     width: 100px;
   }
+  .top-content {
+    flex-direction: column;
+  }
+  .top-content .text-container {
+    width: 100%;
+  }
+  .bottom-content {
+    flex-direction: column;
+  }
+  .bottom-content .text-container {
+    width: 100%;
+  }
   footer nav {
     width: 100%;
   }
