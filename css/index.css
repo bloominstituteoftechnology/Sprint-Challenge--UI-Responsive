@@ -47,27 +47,51 @@ table {
 	border-spacing: 0;
 }
 
+/***********************************************WEBSITE**********************************************************/
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
+    font-size: 62.5%; /*changed font size to 62.5% in html element*/
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem; /*changed font px to rem*/
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
+.hContainer {
+}
+
+.headerContainer {
+    display: flex;
+    align-items: baseline;
+    margin: 2% 4% 4% 4%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 p {
     line-height: 1.4;
+    font-size: 1.3rem;
+}
+
+.jumbo {
+    margin: 0 0 3% 4%;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 880px; /*changed to responsive class*/
     margin: 0 auto;
 }
 
@@ -83,6 +107,14 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.text-container h2 {
+    font-size: 1.7rem;
+}
+
+.text-container p {
+    font-size: 1.5rem;
 }
 
 .middle-content {
@@ -137,10 +169,63 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.275rem; /*changed font px to rem*/
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/****************************************************QUERIES*****************************************************/
+
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+
+@media (max-width: 768px) {
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+    .jumbo {
+        width: 100%;
+        margin: 0 0 3% 0%;
+    }
+}
+
+@media (max-width: 400px) {
+    .middle-content .boxes {
+        flex-flow: row-reverse wrap-reverse;
+        align-items: flex-end;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
 }
