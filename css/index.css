@@ -109,7 +109,7 @@ header .logo {
 
 .jumbotron-img {
     width: 100%;
-    margin: 38px 0 0 0%;
+    margin: 38px 0 0 0;
     max-width: 800px;
 }
 
@@ -247,7 +247,7 @@ footer nav a {
 
     .jumbotron-img {
         width: 100%;
-        margin: 38px auto 0 auto;
+        margin: 0px 0;
     }
 
     footer {
