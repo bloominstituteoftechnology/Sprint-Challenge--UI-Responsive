@@ -15,3 +15,5 @@
      this can lead to some very strange results.
    * Responsive layout: A truly responsive website is a combination is adaptive when it needs to be and
      fluid when it needs to be; it is the best of both worlds.
+
+5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
