@@ -93,6 +93,11 @@ header nav ul {
   font-size: 1.4rem;
 }
 
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
 header img {
   width: 20%;
 }
@@ -116,20 +121,6 @@ header img {
   border-bottom: 1px dashed black;
 }
 
-.middle-content .boxes .box .box2 {
-  background: forestgreen;
-}
-
-.box4 {
-  background:  !important;
-}
-
-.box6 {}
-
-.box8 {}
-
-.box10 {}
-
 .middle-content h2 {
   padding: 0 2%;
   margin-bottom: 0;
@@ -150,6 +141,26 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+  background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+  background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+  background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+  background: indigo;
+}
+
+.middle-content .boxes .box10 {
+  background: lawngreen;
 }
 
 .bottom-content {
@@ -197,22 +208,79 @@ footer nav a {
     width: 20%;
     align-self: center;
   }
+  .middle-content .boxes .box1 {
+    background: teal;
+  }
+  .middle-content .boxes .box3 {
+    background: gold;
+  }
+  .middle-content .boxes .box5 {
+    background: cadetblue;
+  }
+  .middle-content .boxes .box7 {
+    background: coral;
+  }
+  .middle-content .boxes .box9 {
+    background: crimson;
+  }
 }
 
 @media (max-width: 400px) {
   header {
     flex-flow: column-reverse;
+    margin: 8% 0 0 0;
   }
   header img {
     width: 40%;
+    margin-bottom: 3%;
   }
   header nav ul {
     width: 100%;
     flex-flow: column;
     align-items: center;
+    padding-bottom: 0;
   }
   header nav ul li {
-    border: gray solid 1px;
-    padding: 2%;
+    border-top: gray solid 1px;
+    width: 100%;
+    text-align: center;
+    padding: 4%;
   }
+  header nav ul li a {
+    margin-left: 3%;
+  }
+  .top-content {
+    flex-flow: column wrap;
+    margin: 6% 3% 4% 4%;
+  }
+  .top-content .text-container {
+    width: 100%;
+  }
+  .middle-content {
+    height: 450px;
+    margin: 6% 3% 4% 1%;
+  }
+  .middle-content .boxes .box {
+    width: 25%;
+  }
+  .middle-content .boxes {
+    flex-flow: row-reverse wrap;
+  }
+  .boxes .box10 {
+    visibility: hidden;
+  }
+  .bottom-content {
+    flex-flow: wrap;
+    margin: 2% 3%;
+  }
+  .bottom-content .text.container p {
+    margin: 3% 1%;
+  }
+  footer nav {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
 }
