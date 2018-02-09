@@ -164,9 +164,9 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
@@ -200,3 +200,22 @@ footer nav a {
         background-color:crimson;}
 }
 
+@media (max-width: 400px){
+    .container{margin-top: 7.5%;}
+    header .logo{margin-bottom: 5%;}
+    header nav ul{flex-direction: column;}
+    header nav ul li a{font-size: 1.5rem;
+        display: block;
+        text-align: center;
+        padding: 14px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;}
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;}
+    .middle-content .boxes .box{width: 25%}
+    .middle-content .boxes .box10{display: none;}
+    .top-content .text-container{width: 90%}
+    .bottom-content .text-container {}
