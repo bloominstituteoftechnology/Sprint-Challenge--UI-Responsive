@@ -204,7 +204,7 @@ header {
 
 
 header nav {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     width: 100%;
     /*height: 80px;
     /*was commented before new nav div*/
@@ -216,7 +216,7 @@ header nav {
 }
 
 .navbar {
-    /*border: 3px solid pink;*/
+    border: 3px solid pink;
     width: 100%;
     height: 4.3rem;
     display: flex;
@@ -227,14 +227,14 @@ header nav {
 
 .header nav img {
     
-    /*border: 1px solid blue;*/
+    border: 1px solid blue;
     margin-right: 0px;
     margin-bottom: 1rem;
     
 }
 
 .container header nav a {
-    /*border:1px solid green;*/
+    border:1px solid green;
     font-size: 1.4rem;
     color: black;
     text-decoration: none;
@@ -245,7 +245,7 @@ header nav {
     align-self: flex-end;
 }
 
-*/
+
 
 /*@media (max-width:1010px) {
     .container {
@@ -255,3 +255,64 @@ header nav {
         margin-left: 20.5rem;
     }
 }*/
+
+@media (max-width:778px) {
+    /*.container {
+        display: block;
+        /* flex-direction: column; 
+        margin-top: 2.5rem;
+        margin-left: 20.5rem;
+    }*/
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        /* MY CODE: */
+        font-size: 1.6rem;
+    }
+
+
+    header nav {
+        border: 1px solid red;
+        width: 100%;
+        /*height: 80px;
+        /*was commented before new nav div*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 2.7rem;
+    }
+
+    .header nav img {
+        order: -1;
+        border: 1px solid blue;
+        /*margin-right: 0px;*/
+        
+        margin-bottom: 1rem;
+        
+    }
+
+    /*.header nav {
+        order: -1;
+        /*border: 1px solid blue;*/
+        /*margin-right: 0px;
+        margin-bottom: 1rem;
+        
+    }
+
+    .container header nav a {
+        order: -1;
+        border:1px solid green;
+        font-size: 1.4rem;
+        color: black;
+        text-decoration: none;
+        /*might delete 60px below
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-self: flex-end;
+    }*/
+
+}
+}
