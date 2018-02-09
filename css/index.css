@@ -239,6 +239,7 @@ footer nav a {
         width: 100%;
         margin: 19px 0 0 0;
         justify-content:center;
+  
     }
 
     header nav {
@@ -247,7 +248,7 @@ footer nav a {
 
     .jumbotron-img {
         width: 100%;
-        margin: 0px 0;
+        margin: 38px 0 0 0;
     }
 
     footer {
@@ -312,6 +313,11 @@ footer nav a {
         width: 100%;
         padding-left: 5%;
         padding-bottom: 20px;
+    }
+
+    .jumbotron-img {
+        width: 100%;
+        margin: 0;
     }
 
     footer nav {
