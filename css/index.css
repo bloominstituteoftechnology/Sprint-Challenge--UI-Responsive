@@ -251,7 +251,6 @@ footer nav a {
     .middle-content .boxes .box {
         font-size: 1.3rem;
         width: 13% 
-    
     }
    
     .middle-content .boxes .box + .box1 {
@@ -316,9 +315,22 @@ footer nav a {
         height: 78px; 
     }
 
-    .top-content .text-container {
-        justify-content: space-around;
+     .top-content {
         flex-direction: column;
+    }
+
+    .top-content  .text-container {
+        width: 100%; 
+        flex-wrap: wrap; 
+        padding: 3% 5%; 
+    }
+
+    .middle-content .boxes .box + .box10 {
+        display: none;  
+    }
+
+    .middle-content .boxes .box {
+        width: 25%; 
     }
 }   
 
