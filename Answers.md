@@ -1,7 +1,7 @@
 
 1. "If you saw this HTML: ```<div class="box box1 box2 box3"></div>``` which class has the most specificity weight?"
 
-A: I believe it's impossible to know from the HTML itself. I could guess that either box1, box2, or box3 are more specific by inference, but without looking at their order in the css file, I can't know which one will actually be the highest priority.
+A: The furthest to the right has the highest specificity.
 
 2. "Describe the difference between ```display: block;``` and ```display: inline;```."
 
