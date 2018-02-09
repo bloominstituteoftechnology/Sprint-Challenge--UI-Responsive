@@ -160,14 +160,15 @@ a{
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1000px) and (max-width : 1880px) {
     /* Styles */
-    .container img {
-        display: flex;
-        margin: 0 auto;
-    }
+   nav {
+       display: flex;
+       justify-content: space-between;
+       padding: 10px 10px;
+   }
     .container ul {
      display: flex;
-     margin-top: -30px;
-     justify-content: center;
+     
+     
      margin: 0 auto;
  }
     .middle-content .boxes .box:nth-of-type(2) {
