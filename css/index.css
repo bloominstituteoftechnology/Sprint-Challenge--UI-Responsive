@@ -58,13 +58,14 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
@@ -74,13 +75,29 @@ p {
 
 /*Header Styles*/
 
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    
 
+header nav ul {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+    font-size: 1.6rem;
+    
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header .main-image {
+    display: block;
 }
 
 
@@ -112,6 +129,7 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -150,7 +168,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
 }
 
 footer nav a {
