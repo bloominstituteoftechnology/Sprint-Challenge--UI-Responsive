@@ -157,6 +157,12 @@ header nav a{
     justify-content: center;
 }
 
+@media (max-width: 783px){
+    .middle-content .boxes .box {
+        width: 13%;
+    }
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
