@@ -163,8 +163,27 @@ a{
    nav {
        display: flex;
        justify-content: space-between;
-       padding: 10px 10px;
+       padding: 20px 10px;
    }
+
+   ul {
+       display: flex;       
+   }
+
+   .middle-content .boxes {
+       width: 945px;
+   }
+
+   li {
+       margin: 0 40px 0 40px;
+       padding-top: 20px;
+       
+   }
+
+   .top-content {
+       padding-top: 20px;
+   }
+   
     .container ul {
      display: flex;
      
