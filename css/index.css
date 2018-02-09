@@ -249,26 +249,27 @@ footer nav a {
 		margin: 2.5% 0 0 1%;
 	}
 
+	/* Box Colors */
+
+	.middle-content .boxes .box1 {
+		background: teal;
+	}
+
+	.middle-content .boxes .box3 {
+		background: gold;
+	}
+
+	.middle-content .boxes .box5 {
+		background: cadetblue;
+	}
+
+	.middle-content .boxes .box7 {
+		background: coral;
+	}
+
+	.middle-content .boxes .box9 {
+		background: crimson;
+	}
 }
 
-/* Box Colors */
-
-.middle-content .boxes .box1 {
-	background: teal;
-}
-
-.middle-content .boxes .box3 {
-	background: gold;
-}
-
-.middle-content .boxes .box5 {
-	background: cadetblue;
-}
-
-.middle-content .boxes .box7 {
-	background: coral;
-}
-
-.middle-content .boxes .box9 {
-	background: crimson;
-}
+/* @ 768px Break */
