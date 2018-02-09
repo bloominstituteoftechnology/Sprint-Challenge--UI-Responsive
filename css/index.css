@@ -99,6 +99,9 @@ header {
     header{
         margin-top: 7.5%;
     }
+    header img{
+        margin-bottom: 7.5%;
+    }
 }
 
 header nav{
@@ -109,6 +112,7 @@ header nav{
 
 @media (max-width: 415px){
     header nav{
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
@@ -117,6 +121,17 @@ header nav{
 header nav a{
     display: block;
     font-size: 1.4rem;
+}
+
+@media (max-width: 415px){
+    header nav a {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        padding: 3%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 }
 
 .middle-img {
