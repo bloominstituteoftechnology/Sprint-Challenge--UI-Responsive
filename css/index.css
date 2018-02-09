@@ -185,6 +185,8 @@ nav a:hover {
     background-color: lawngreen;
 }
 
+/* Bottom Content Styles */
+
 .bottom-content {
     display: flex;
     margin: 0 12.4% 20px 12.4%;
@@ -197,6 +199,7 @@ nav a:hover {
     padding-right: 4%;
 }
 
+/* Footer Content Styles */
 footer {
     width: 80%;
     background: black;
@@ -340,6 +343,7 @@ footer nav a {
         background-color: lawngreen;
     }
     
+    /* Bottom Content Styles */
     .bottom-content {
         display: flex;
         margin: 0 0% 20px 2%;
@@ -358,6 +362,7 @@ footer nav a {
         margin-left: 0;
     }
     
+    /* Footer Content Styles */
     footer nav {
         width: 61%;
         display: flex;
@@ -510,6 +515,7 @@ footer nav a {
         display: none;
     }
     
+    /* Bottom Content Styles */    
     .bottom-content {
         display: flex;
         flex-direction: column;
@@ -529,6 +535,7 @@ footer nav a {
         margin-left: 0;
     }
     
+    /* Footer Content Styles */
     footer nav {
         width: 100%;
         display: flex;
@@ -542,14 +549,4 @@ footer nav a {
         color: white;
         text-decoration: none;
     }
-    
-    
 }
-
-
-/*  QUESTIONS I HAVE FOR TA */
-
-/*  1. My font-size designations are smaller 
-    than expected I couldn't just turn a 
-    14px into 1.4rem. Why?
-*/
