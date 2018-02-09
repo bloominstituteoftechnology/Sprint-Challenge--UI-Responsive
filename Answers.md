@@ -1,0 +1,5 @@
+ The first "box" in the class has the most specificity weight. //Even though I thought and ID has more value in specificity.
+Display: block --> the display we see, is under the other elements in a block form. Then we have Display:inline --> which is all in one straight line with the other elements not right under, it is side by side. 
+When using the property align-items: center, we are using the cross-axis. 
+Fixed layout: will always stay in the same place, even if the page is being scolled up or down. Adaptive layout: will adapt to a specific width. Fluid layout: use percentages in their widths so it will have more of a flow layout. Responsive layout: will respond to the size of browser at any point doesn't need a specific point. So it doesn't matter what the width may be it will adjust to its layout.
+We need to use the max-width on the outer most container in a responsive website because it will help with small windows. So it will layout will improve when seen on a small device.  
