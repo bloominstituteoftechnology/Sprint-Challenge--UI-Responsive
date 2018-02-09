@@ -79,7 +79,7 @@ p {
 header {
     display: flex;
     width: 100%;
-    margin: 19px 0 0 1%;
+    margin: 19px 0 0 0;
     align-items: baseline;
 }
 
@@ -97,13 +97,20 @@ header nav a {
 
 }
 
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
 header .logo {
-    width: 20%;
+
 }
 
 .jumbotron-img {
     width: 100%;
-    margin: 38px 0 0 1%;
+    margin: 38px 0 0 0%;
+    max-width: 800px;
 }
 
 
@@ -113,7 +120,7 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 22px 0 20px 1%;
+    margin: 22px 0 20px 0;
     border-bottom: 1px dashed black;
 }
 
@@ -125,7 +132,7 @@ header .logo {
 
 .middle-content {
     width: 100%;
-    margin: 0 0 20px 1%;
+    margin: 0 0 20px 0;
     border-bottom: 1px dashed black;
 }
 
@@ -150,6 +157,7 @@ header .logo {
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
+
 }
 
 /* Original-ish 
@@ -167,9 +175,9 @@ header .logo {
 
 .bottom-content {
     display: flex;
-    width: 100%;
-    margin: 0 2% 20px 3%;
-    justify-content: space-between;
+    margin: 0 2% 20px 0;
+    justify-content: space-around;
+    padding-left: 3%;
 }
 
 .bottom-content .text-container {
@@ -183,7 +191,6 @@ header .logo {
 
 footer {
     width: 100%;
-    margin-left: 1%;
     background: black;
 }
 
@@ -230,7 +237,7 @@ footer nav a {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin: 19px 0 0 1%;
+        margin: 19px 0 0 0;
         justify-content:center;
     }
 
@@ -245,6 +252,11 @@ footer nav a {
 
     footer {
         margin-left: 0;
+    }
+
+    .middle-content .boxes .box {
+        
+        
     }
     
 
@@ -267,6 +279,59 @@ footer nav a {
         max-width: 400px;
         width: 100%;
     }
+
+    header nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        transition: .3s background-color;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+        text-decoration: none;
+    }
+
+    .top-content, .bottom-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-container, .bottom-content .text-container {
+        width: 100%;
+        padding-left: 5%;
+        padding-bottom: 20px;
+    }
+
+    footer nav {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+        
+        justify-content: space-evenly;
+    }
+    
+    .middle-content .boxes .box {
+        width: 25%;
+        
+    }
+
 
     .middle-content .boxes .box10 {display: none;}
 
