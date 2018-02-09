@@ -200,3 +200,25 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (min-width: 768px) {
+	.middle-content .boxes .box.box1 {
+		background: teal;
+	}
+
+	.middle-content .boxes .box.box3 {
+		background-color: gold;
+	}
+
+	.middle-content .boxes .box.box5 {
+		background-color: cadetblue;
+	}
+
+	.middle-content .boxes .box.box7 {
+		background-color: coral;
+	}
+
+	.middle-content .boxes .box.box9 {
+		background-color: crimson;
+	}
+}
