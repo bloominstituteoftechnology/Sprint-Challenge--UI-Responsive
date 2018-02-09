@@ -28,7 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
+    font-size:62.5%;
 	line-height: 1;
 }
 ol, ul {
@@ -57,42 +59,67 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.125rem;
+    margin-bottom: 4%;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size:1rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-start;
+    margin:2.5% 0 5% 0;
+}
+
+header nav {
+    order:1;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    text-align:center;
+    justify-content:space-evenly;
+}
+
+header nav ul {
+    flex-grow:1;
+}
+
+header nav ul li a {
+    text-decoration:none;
+    color:black;
+    font-size:0.875rem;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 2.9% 1% 2.5% 1%; 
 }
 
 .middle-content {
-    margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+    padding: 2.5% 2% 0 0;
+    margin-bottom:0;
+    margin-left:2%;
 }
 
 .middle-content .boxes {
@@ -103,23 +130,55 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height:auto;
+    min-width:100px;
+    min-height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:1rem;
 }
+
+/* Custom box content */
+
+.middle-content .boxes .box2 {
+    background:forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background:darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background:hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background:indigo;
+}
+
+.middle-content .boxes .box10 {
+    background:lawngreen;
+}
+
+/* end custom box content  */
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2.5%;
     justify-content: space-around;
+}
+
+.bottom-content h2 {
+    margin-bottom:6.5%;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    padding-top:2.6%;
 }
 
 .bottom-content .text-container:last-child {
@@ -131,16 +190,110 @@ footer {
     background: black;
 }
 
+/* footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:54px;
+    font-size: 1.4rem;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-size:0.875rem;
+    flex-grow:1;
+} */
+
 footer nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    font-size:0.875rem;
+}
+
+@media screen and (max-width:768px) {
+
+header {
+    flex-wrap:wrap;
+    margin: 2.5% 0 4% 0;
+}
+
+header .logo {
+    margin:0.1% auto 3.9%;
+}
+
+.top-content .jumbotron {
+    width:100%;
+    height:90%;
+
+}
+
+.middle-content .boxes .box1 {
+    background:teal;
+}
+
+.middle-content .boxes .box3 {
+    background:gold;
+}
+
+.middle-content .boxes .box5 {
+    background:cadetblue;
+}
+
+.middle-content .boxes .box7 {
+    background:coral;
+}
+
+.middle-content .boxes .box9 {
+    background:crimson;
+}
+}
+
+@media screen and (max-width:400px) {
+
+header {
+    margin-top:7.5%;
+    margin-bottom:0;
+}
+
+header .logo {
+    margin-bottom:3.5%;
+}
+header nav {
+    flex-direction:column;
+    margin-top:4%;
+    border-top:1px solid darkgray;
+}
+
+header nav ul {
+    border-bottom:1px solid darkgray;
+    line-height:3.2;
+}
+
+.top-content .text-container, .bottom-content .text-container {
+    width:100%;
+}
+
+.middle-content .boxes {
+    flex-direction:row-reverse;
+}
+
+.middle-content .boxes .box10 {
+    display:none;
+}
+
+.bottom-content {
+    flex-wrap:wrap;
+}
+
 }
