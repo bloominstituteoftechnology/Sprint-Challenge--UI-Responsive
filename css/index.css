@@ -82,6 +82,11 @@ header {
     align-items: flex-end;
 }
 
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width: 768px){
     header{
         flex-direction: column;
@@ -98,6 +103,7 @@ header {
 @media (max-width: 415px){
     header{
         margin-top: 7.5%;
+        margin-bottom: 0;
     }
     header img{
         margin-bottom: 7.5%;
