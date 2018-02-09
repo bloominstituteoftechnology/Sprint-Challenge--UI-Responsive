@@ -178,6 +178,10 @@ footer nav a {
 }
 
 @media (max-width: 1000px){
-    .middle-content .boxes .box .box2{
+    .box2{
+    color:forestgreen;}
+
+@media (max-width: 1000px){
+    .box2{
     color:forestgreen;}
 }
