@@ -128,7 +128,7 @@ header .lambdaLogo {
 }
 
 .middle-content h2 {
-    padding: 0 2%;
+    padding: 0 2.3%;
     margin-bottom: 0;
 }
 
@@ -147,6 +147,27 @@ header .lambdaLogo {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Box Colors */
+.middle-content .boxes .box2 {
+	background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+	background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+	background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+	background: indigo;
+}
+
+.middle-content .boxes .box10 {
+	background: lawngreen;
 }
 
 .bottom-content {
