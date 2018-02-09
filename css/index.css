@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,22 +57,26 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 a {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
 .container {
     max-width: 800px;
-    width-100%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -82,7 +86,7 @@ a {
     
     height: 96px;
     width: 100%;
-    padding: 0 3% 0 0;
+    padding: 0 3%;
     border: 1px black;
 }
 
@@ -94,7 +98,7 @@ header nav {
     display:flex;
     justify-content: space-evenly;
     margin: 0 0 0 6%;
-    width: 100%;
+    width: 93%;
 
 }
 
@@ -103,7 +107,7 @@ header nav a {
     text-decoration: none;
     color: black;
     margin: 12px 0 0 0;
-    font-size: .8rem;
+    font-size: 1.6rem;
     width: 20%;
 }
 
@@ -112,11 +116,18 @@ header nav a:hover {
     color: black;
 }
 
-.container .middle-img {
-    width: 93%;
-    margin: 5px 0% 24px 0.5%
+.container .middle-img-box {
+    display: flex;
+    justify-items: center;
+    width: 97%;
+    margin: 0 3%;
+}
+
+.middle-img-box .middle-img {
+    width:100%;
+    margin: 5px 0 24px 0;
     
-    align-self: center;
+    
 
 }
 .top-content {
@@ -125,11 +136,12 @@ header nav a:hover {
     justify-content: space-evenly;
     
     border-bottom: 1px dashed black;
-    margin: 35px 4% 0px 1%;
+    margin: 35px 4% 10px 1%;
+    width:95;
 }
 
 .top-content .text-container {
-    width: 48%;
+    width: 47%;
     padding: 0 1%;
    /* padding-bottom: 20px; */ 
 }
@@ -138,6 +150,7 @@ header nav a:hover {
     margin-bottom: 20px;
     margin-top: 2%;
     border-bottom: 1px dashed black;
+    width: 100%;
 }
 
 .middle-content h2 {
@@ -164,8 +177,9 @@ header nav a:hover {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 20px 4%;
     justify-content: space-around;
+    width: 94%;
 }
 
 .bottom-content .text-container {
@@ -177,8 +191,9 @@ header nav a:hover {
 }
 
 footer {
-    width: 100%;
+    width: 92%%;
     background: black;
+    margin: 0 4%;
 }
 
 footer nav {
@@ -187,7 +202,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
@@ -213,4 +228,81 @@ footer nav a {
 
 .middle-content .boxes .box10 {
     background: lawngreen;
+}
+
+@media (max-width:768px) {
+    .container {
+
+    }
+    
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background:crimson
+    }
+}
+
+@media (max-width:400px){
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .container header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height:337px;
+    
+    
+}
+
+.container .logo {
+    margin: 10px 0 0 0;
+
+}
+.container header nav{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 300px;
+    justify-items: center;
+    align-items: center;
+
+}
+.container header nav a: first-child{
+    border-top: 1px solid black;
+}
+.container header nav a {
+    display:block;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container header nav a:hover {
+    background: black;
+}
+.middle-img-box .middle-img {
+    display:none;
+}
+
 }
