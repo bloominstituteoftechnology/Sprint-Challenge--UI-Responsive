@@ -157,6 +157,26 @@ header .jumbotron {
     justify-content: center;
 }
 
+body > div > section.middle-content > div > div.box.box2 {
+    background-color: forestgreen;
+}
+
+body > div > section.middle-content > div > div.box.box4 {
+    background-color: darkorchid;
+}
+
+body > div > section.middle-content > div > div.box.box6 {
+    background-color: hotpink;
+}
+
+body > div > section.middle-content > div > div.box.box8 {
+    background-color: indigo;
+}
+
+body > div > section.middle-content > div > div.box.box10 {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -188,4 +208,55 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .nav-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .middle-content .boxes {
+        
+    }
+
+    body > div > section.middle-content > div > div.box.box1 {
+        background-color: teal;
+    }
+
+    body > div > section.middle-content > div > div.box.box3 {
+        background-color: gold;
+    }
+
+    body > div > section.middle-content > div > div.box.box5 {
+        background-color: cadetblue;
+    }
+
+    body > div > section.middle-content > div > div.box.box7 {
+        background-color: coral;
+    }
+
+    body > div > section.middle-content > div > div.box.box9 {
+        background-color: crimson;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 400px) {
+
 }
