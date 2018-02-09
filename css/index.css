@@ -57,6 +57,23 @@ html, body {
     font-size: 62.5%;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+header nav a{
+    font-size: 1.3rem;
+    padding: 25px;
+}
+
+header .logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 h1, h2, h3, h4, h5 {
     font-size: 1.9rem;
     margin-bottom: 0.9375rem;
@@ -70,7 +87,7 @@ p {
 
 .container {
     max-width: 800px;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
