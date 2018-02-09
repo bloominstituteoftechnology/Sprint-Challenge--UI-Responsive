@@ -95,7 +95,6 @@ header nav a {
     font-size: 1.3499em;
 }
 
-
 .street-img {
     width:100%;
     margin: 39px 0 12px 0;
@@ -150,6 +149,7 @@ header nav a {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 1.6em;
 }
 
 .bottom-content .text-container {
@@ -177,4 +177,44 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    }
+    .box2 {
+        background: forestgreen;
+    }
+    .box4 {
+        background: darkorchid;
+    }
+    .box6 {
+        background: hotpink;
+    }
+    .box8 {
+        background: indigo;
+    }
+}
+
+@media (max-width:768px) {
+    .box1 {
+        background: teal;
+    }
+    .box3 {
+        background: gold;
+    }
+    .box5 {
+        background: cadetBlue;
+    }
+    .box7 {
+        background: coral;
+    }
+    .box9 {
+        background: crimson;
+    }
+}
+
+@media (max-width:400px) {
+    .box10 {
+        display:none;
+    }
 }
