@@ -50,6 +50,9 @@ table {
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 
 html, body {
     height: 100%;
@@ -57,7 +60,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +70,41 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    width: 100%;
+    font-size: 1.6rem;
+    align-content: center;
+}
+
+header nav ul {
+    margin-top: 40px 5% 0; 
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    align-self: flex-start;
+    margin: 28px 2% 0 10%;
 }
 
 .top-content {
@@ -137,10 +173,61 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+}
+
+@media (max-width: 768px) {
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+    .middle-content .boxes .box10{
+        background: limegreen;
+    }
+}
+
+@media (max-width: 400px) {
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+}
+
