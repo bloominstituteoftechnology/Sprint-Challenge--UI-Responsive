@@ -82,7 +82,7 @@ header {
     align-items: flex-end;
 }
 
-@media (max-width: 783px){
+@media (max-width: 768px){
     header{
         flex-direction: column;
         flex-wrap: wrap;
@@ -93,6 +93,12 @@ header {
         margin: 0 0 4%  0;
     }
 
+}
+
+@media (max-width: 415px){
+    header{
+        margin-top: 7.5%;
+    }
 }
 
 header nav{
@@ -118,7 +124,7 @@ header nav a{
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-@media (max-width: 783px){
+@media (max-width: 768px){
     .top-content{
         margin-top: 2.7%;
     }
@@ -157,7 +163,7 @@ header nav a{
     justify-content: center;
 }
 
-@media (max-width: 783px){
+@media (max-width: 768px){
     .middle-content .boxes .box {
         width: 13%;
     }
@@ -218,7 +224,7 @@ footer nav a {
     }
 }
 
-@media (max-width: 783px){
+@media (max-width: 768px){
     .middle-content .boxes .box1{
         background: teal;
     }
