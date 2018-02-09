@@ -195,6 +195,12 @@ header nav a{
     justify-content: space-evenly;
 }
 
+@media (max-width: 415px){
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+}
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -224,8 +230,21 @@ header nav a{
     justify-content: space-around;
 }
 
+@media (max-width: 415px){
+    .bottom-content{
+        flex-direction: column;
+        margin: 0 6% 2% 3%;
+    }
+}
+
 .bottom-content .text-container {
     padding-right: 4%;
+}
+
+@media (max-width: 415px){
+    .bottom-content .text-container {
+        padding: 0 0 5.5%;
+    }
 }
 
 .bottom-content .text-container:last-child {
@@ -295,7 +314,7 @@ footer nav a {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 415px){
     .middle-content .boxes .box10{
         display: none;
     }
