@@ -170,6 +170,9 @@ footer nav a {
 }
 
 @media (max-width: 1000px){
+    .boxes:nth-child(1){
+        background: pink;
+    }
 
 }
 
@@ -178,5 +181,5 @@ footer nav a {
 }
 
 @media (max-width: 400px){
-    
+
 }
