@@ -67,15 +67,37 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
+header{
+    display: flex;
+    background:white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+
+header img{ 
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+header nav a{
+    text-decoration:none;
+    color: black;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    margin-top: 20px;
     border-bottom: 1px dashed black;
 }
 
@@ -110,6 +132,18 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    background:green;
+}
+
+.middle-content .boxes .box3{
+    background: black;
+}
+
+.middle-content .boxes .box4{
+    background: purple !important;
 }
 
 .bottom-content {
