@@ -85,12 +85,12 @@ p {
     
 }
 
-.headerLogo {
-    
+.logoDiv {
+    width:20%;
 }
 
 .nav {
-  width: 80%;
+  width: 60%;
   display: flex; 
 }
 
@@ -102,7 +102,7 @@ p {
     text-decoration: none;
     font-size: 1.35rem;
     color: black;
-    padding: 3% 1% 0% 0%;
+    padding: 4% 1% 0% 0%;
     
 }
 
@@ -156,7 +156,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 1px solid black;
+    
     margin-left: 10%;
     
 }
@@ -229,4 +229,101 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 768px;
+        width:100%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .nav {
+        width: 100%;
+        display: flex;
+        
+        margin: 0;
+        align-items: center;
+    }
+    .nav a {
+        flex-wrap:nowrap;
+    }
+
+    .jumboImg {
+        width:100%;
+        margin: 3% 0% 0% 0%;
+    }
+
+    .top-content .text-container {
+        width: 45%;
+        padding: 0 1%;
+        padding-bottom: 20px;
+        margin-top: 2%; 
+    }
+    .middle-content {
+        width: 100%;
+    }
+
+    .middle-content h2 {
+    
+        padding: 0 2%;
+        margin: 0% 0% 0% 0%;
+    }
+    .middle-content .boxes {
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 1px solid black;
+        margin-left: 0%;
+        
+    }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+
+    .bottom-content .text-container {
+        width: 32%;
+        padding-right: 4%;
+        margin: 1% -1% 0% 1%;
+    }
+
+    footer {
+        width:100%;
+        background:black;
+        margin: 0 0 0 0;
+        justify-content: flex-start;
+        
+    }
+
+    footer nav {
+        
+        justify-content: center;
+        
+    }
+    footer nav a {
+      flex:1;  
+    }
+
+}
+
+@media (max-width: 400px){
+    
 }
