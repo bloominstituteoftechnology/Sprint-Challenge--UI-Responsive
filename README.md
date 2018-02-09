@@ -49,7 +49,6 @@
 ## Complete the following tasks for phone at a screen size of 400px
 * Remove box 10 and reverse the order of the boxes.
 * Please reference the design file ```phone-design.png``` and make sure your layout matches this design as close as you can.
-
 * Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
 
 **Stretch Goal**
