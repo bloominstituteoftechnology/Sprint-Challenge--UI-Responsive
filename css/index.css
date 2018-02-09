@@ -161,6 +161,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 25px;
 }
 
 div nav {
@@ -170,6 +171,11 @@ div nav {
 div nav ul {
   display: flex;
   justify-content: space-around;
+}
+
+.jumbotron {
+  width: 100%;
+  margin: 50px 0 50px 0;
 }
 
 .top-content {
