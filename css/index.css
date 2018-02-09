@@ -268,12 +268,14 @@ footer nav a {
     flex-flow: column;
     align-items: center;
     height:337px;
+    margin: 0;
+    padding:0;
     
     
 }
 
 .container .logo {
-    margin: 10px 0 0 0;
+    margin: 10px 0;
 
 }
 .container header nav{
@@ -283,11 +285,10 @@ footer nav a {
     height: 300px;
     justify-items: center;
     align-items: center;
+    margin: 0;
 
 }
-.container header nav a: first-child{
-    border-top: 1px solid black;
-}
+
 .container header nav a {
     display:block;
     width: 100%;
@@ -300,9 +301,61 @@ footer nav a {
 
 .container header nav a:hover {
     background: black;
-}
-.middle-img-box .middle-img {
-    display:none;
+    color: white;
 }
 
+.container header nav a:first-child{
+    border-top: 1px solid black;
+}
+
+.middle-img-box .middle-img {
+    width:100%;
+    margin-top: 30px;
+    padding: 0;
+}
+.container .middle-img-box {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container .top-content{
+    flex-flow: column;
+}
+
+.top-content .text-container{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.middle-content .boxes {
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+.middle-content .boxes .box{
+    width: 100%;
+    max-width: 100px;
+}
+.middle-content .boxes .box10 {
+    display: none;
+}
+
+.container .bottom-content{
+    flex-flow: column;
+}
+
+.bottom-content .text-container {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.container footer {
+    width: 100%;
+    margin: 0;
+}
+
+footer nav {
+    width: 100%;
+}
 }
