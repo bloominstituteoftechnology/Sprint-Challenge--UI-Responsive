@@ -148,6 +148,7 @@ header .jumbotron {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -230,10 +231,6 @@ footer nav a {
         justify-content: center;
     }
 
-    .middle-content .boxes {
-        
-    }
-
     body > div > section.middle-content > div > div.box.box1 {
         background-color: teal;
     }
@@ -258,5 +255,62 @@ footer nav a {
 /* Phone */
 
 @media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    header .nav-bar {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 0;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 1px solid black;
+    }
+
+    header .jumbotron {
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 7%;
+    }
+
+    .container .top-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    body > div > section.middle-content > div > div.box.box10 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .container .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        width: 100%;
+
+        padding-bottom: 20px;
+    }
 
 }
