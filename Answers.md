@@ -9,7 +9,7 @@ Content within blocks take up the full width available. Inline content only take
 
 3. While using flexbox, what axis are you using when you use the property: ```align-items: center```?
 
-⋅⋅⋅This centers items in the cross-axis.
+This centers items in the cross-axis.
 
 
 4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
