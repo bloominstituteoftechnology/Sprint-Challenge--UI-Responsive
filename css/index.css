@@ -54,12 +54,19 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+
+    /**my changes **/
+    /*font-size: 62.5%; TBD*/
 }
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+
+    /** my changes **/
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 p {
@@ -69,7 +76,38 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+
+    /** My changes **/
+    width: 100%;
+    max-width: 1000px;
 }
+/** my block changes **/
+header{
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem 0;
+}
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.jumbotron img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+/** end block changes **/
 
 .top-content {
     display: flex;
@@ -77,6 +115,9 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+
+    /** my changes **/
+    margin-bottom: 2rem;
 }
 
 .top-content .text-container {
@@ -88,6 +129,9 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+
+    /** my changes **/
+    margin-bottom: 2rem;
 }
 
 .middle-content h2 {
@@ -110,12 +154,39 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /** my changes **/
+    margin: 2rem 2.5%;
+}
+
+/** my block changes **/
+.middle-content .boxes .box:nth-child(2){
+    background: green;
+}
+
+.middle-content .boxes .box:nth-child(4){
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6){
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8){
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10){
+    background: limegreen;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+
+    /**my changes **/
+    margin: 0 2% 2rem;
 }
 
 .bottom-content .text-container {
@@ -143,4 +214,119 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/** The rest of my block changes **/
+@media (max-width: 760px){
+    header{
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    header .logo{
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .middle-content .boxes .box:nth-child(1){
+        background: DarkCyan ;
+    }
+    
+    .middle-content .boxes .box:nth-child(3){
+        background: yellow;
+    }
+    
+    .middle-content .boxes .box:nth-child(5){
+        background: CadetBlue ;
+    }
+    
+    .middle-content .boxes .box:nth-child(7){
+        background: orange;
+    }
+    
+    .middle-content .boxes .box:nth-child(9){
+        background: red;
+    }
+}
+
+@media (max-width: 400px){
+    header nav{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav a {
+        display: block;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+    header nav a:nth-child(1) {
+        border-top: 1px solid gray;
+    }
+
+   header{
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .top-content .text-container {
+        flex-direction: column;
+        width: 98%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .middle-content .boxes {
+        flex-wrap: wrap;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .middle-content .boxes .box:nth-child(3){
+        order: -1;
+    }
+
+    .middle-content .boxes .box:nth-child(1){
+        order: 1;
+    }
+    .middle-content .boxes .box:nth-child(6){
+        order: 1;
+    }
+    .middle-content .boxes .box:nth-child(5){
+        order: 2;
+    }
+    .middle-content .boxes .box:nth-child(4){
+        order: 3;
+    }
+    .middle-content .boxes .box:nth-child(9){
+        order: 4;
+    }
+    .middle-content .boxes .box:nth-child(8){
+        order: 5;
+    }
+    .middle-content .boxes .box:nth-child(7){
+        order: 6;
+    }
+    .middle-content .boxes .box:nth-child(10){
+        display: none;
+    }
+
+    .bottom-content .text-container {
+        margin-bottom: 1.5rem;
+    }
+
+
+    footer nav {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
