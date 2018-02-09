@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -52,12 +52,13 @@ table {
 }
 
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +68,46 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.6%;
+  }
+  header .logo1 {
+      width: 19.4%;
+      height: 40px;
+  }
+  header nav {
+    font-size: 1.2rem;
+    /* Does not seem to work...??? */
+    font-weight: normal;
+    
+    width: 80%;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+  }
+  header nav li {
+      list-style-type: none;
+  }
+  header nav li a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav li a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  header .logo2 {
+   margin: 4.8% 0px 3% 0px;
+  }
 
 .top-content {
     display: flex;
@@ -85,6 +123,13 @@ p {
     padding-bottom: 20px;  
 }
 
+h2 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -110,6 +155,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.3rem;
 }
 
 .bottom-content {
@@ -137,10 +183,125 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Since the max-width is 800px, you only needed to go up to that point */
+/* Also remember that here there was some specificity issue with include .box, so that is why it was left out */
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    .middle-content .boxes .box10 {
+        background: lime;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo1 {
+        width: 20.65%;
+        margin-bottom: 30px;
+    }
+    header nav {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    header .logo2 {
+        width: 100%;
+        height: 148px;
+    }
+    .middle-content .boxes .box  {
+        width: 13%;
+        /* min-width: 100px; Josh used this to fix the squashed boxes -- NEED TO FIX THIS -- NOT FULLY RESPONSIVE */
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+@media (max-width: 400px) {
+    header .logo1 {
+        width: 39%;
+        margin-top: 20px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        /* Why doesn't align-items work here???*/
+        /* align-items: center; */
+        width: 400px;
+    }
+    header nav li {
+        text-align: center;
+        border-top: 2px solid grey;
+        width: 100%;
+        padding: 15px;
+    }
+    header nav li a {
+        width: 100%;
+    }
+    header .logo2 {
+        margin: 0% 0px 3% 0px;
+        height: 20%;
+       }
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top-content .text-container {
+        width: 400px;
+        padding: 15px 18px 15px 24px;
+    }
+    .top-content .text-container p {
+        width: 100%;
+        
+    }
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box  {
+        width: 25%;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+    .bottom-content .text-container {
+        margin-bottom: 20px;
+
+    }
+    footer nav {
+        width: 100%;
+        justify-content: space-around;
+        padding: 20px 50px 8% 8%;
+    }
 }
