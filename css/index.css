@@ -154,3 +154,10 @@ footer nav a {
     display: flex;
     flex-direction: row;
 }
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
