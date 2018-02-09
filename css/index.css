@@ -29,19 +29,31 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-header nav ul {
- margin: 40px 5% 0; 
+ header nav ul li {
+ 
     width: 100%;
     justify-content: space-between;
-    display: flex;
-
+    display: inline;
+	padding: 10px 40px;
+	text-align:center;
 
 
 }
+
 body {
 	line-height: 1;
 }
 .logo{
+margin-left:210px;
+margin-top:20px;
+
+}
+.logo2{
+width:700px;
+	height:150px;
+	margin:0 auto;
+	margin-top:40px;
+		margin-bottom:40px;
 
 }
 ol, ul {
@@ -176,4 +188,10 @@ background-color:indigo;
 #box10{
 background-color:lawngreen;
 
+}
+/*tablet*/
+@media(max-width : 768px){
+	.container{
+		width : 100%;
+	}
 }
