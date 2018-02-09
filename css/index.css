@@ -255,9 +255,6 @@ header nav ul li a:hover {
     padding-right: 0;
 }
 @media(max-width:400px){
-    .top-content img{
-        height:80px;
-    }
     .bottom-content{
         width:100%;
         flex-direction: column;
