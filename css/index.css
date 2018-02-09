@@ -74,6 +74,11 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
