@@ -53,6 +53,7 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -69,6 +70,8 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    /* MY CODE: */
+    font-size: 1.6rem;
 }
 
 .top-content {
@@ -83,6 +86,9 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    
+    
+
 }
 
 .middle-content {
@@ -199,7 +205,7 @@ header {
 nav {
     height: 80px;
     /*display: flex;*/
-    align-content: flex-end;
+    
     justify-content: space-between;
     align-content: flex-start;
 }
@@ -209,9 +215,10 @@ nav {
 }
 
 .container .header nav a {
-    font-size: 0.7 rem;
+    font-size: 1.5rem;
     color: black;
     text-decoration: none;
+    margin-right: 80px;
 }
 
 
