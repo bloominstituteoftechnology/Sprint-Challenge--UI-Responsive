@@ -210,3 +210,107 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    header .lambdalogo {
+        align-self: flex-start;
+        margin-top: 1.8rem;
+        margin-right: 3rem;
+    }
+
+    header nav ul {
+        font-size: 1.5rem;
+        margin: 40px 10% 0;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    .abstractImg {
+        width: 100%;
+        margin-top: 0.5rem;
+    
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-between;
+}
+
+.bottom-content .text-container p {
+    line-height: 1.4;
+    margin-bottom: 11px;
+}
+
+.top-content .text-container p {
+    line-height: 1.4;
+    margin-bottom: 11px;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+.bottom-content .text-container {
+    width: 100%
+    padding-right: 4%;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+header nav ul {
+    font-size: 1.5rem;
+    margin: 40px 10% 0;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+
