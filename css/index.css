@@ -185,14 +185,25 @@ header .jumbotron {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    padding-bottom: 10px;
 }
 
+
+
 .bottom-content .text-container {
+    width: 33.33%;
     padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.container .sports-content {
+    
+    padding-top: 20px;
+    border-top: 1px dashed black;
+    margin-top: 0;
 }
 
 footer {
