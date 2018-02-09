@@ -28,20 +28,25 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -61,7 +66,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
 p {
     line-height: 1.4;
 }
@@ -71,20 +75,15 @@ p {
    width: 100%;
     margin: 0 auto;
 }
+
 header {
     width: 100%;
-    
-    display: flex;
-    
-    
+    margin-top: 1.9%;
+    display: flex;     
 }
-.lambda-logo {
 
-    
-}
 nav {
-    width: 650px;
-    
+    width: 81.3%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -95,7 +94,6 @@ color: black;
 text-decoration: none;
 
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -142,9 +140,11 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: center;
 }
+
 .middle-content .boxes .box2 {
     background: forestgreen;
 }
+
 .middle-content .boxes .box4 {
     background: darkorchid;
     }
@@ -158,16 +158,11 @@ margin-bottom: 20px;
     background: lawngreen;
     }
 
-
-
-
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
@@ -187,7 +182,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 1.4rem;
+    font-size: .8rem;
 }
 
 footer nav a {
@@ -202,12 +197,12 @@ footer nav a {
         display: block;
     }
     nav {
-        margin-left: 9px;
+        margin-left: 6.4%;
         margin-top: 20px;
     }
 
     .lambda-logo {
-        margin-left: 254px;
+        margin-left: 38.5%;
         margin-top: 22px;
     }
     .text-container h2 {
@@ -258,8 +253,18 @@ footer nav a {
 /* Iphone */
 
 @media (max-width: 400px) {
-   
-
+  
+    
+    .top-content {
+        display: block;
+    }
+    .top-content .text-container {
+        width: 98%;
+        margin-left: 10px;
+    }
+    .top-content .text-container p {
+        font-size: 13px;
+    }
     .middle-content .boxes .box10 {
         display: none;
     }
