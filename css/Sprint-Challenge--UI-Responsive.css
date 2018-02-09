@@ -106,6 +106,7 @@ header ul li a {
 
 header .navLogo {
     margin: 2px 0 0 0;
+    
 }
 
 .top-content {
@@ -117,7 +118,7 @@ header .navLogo {
 }
 
 .top-content .jumboImg{
-    max-width: 100%;
+    
     margin: 0 0 0 2%;
 }
 
@@ -200,4 +201,30 @@ footer nav a {
     }
 
 
+
+    header {
+      
+        flex-direction: column;
+        
+    }
+    
+    header ul {
+  
+        
+    }
+    
+    header ul li {
+       
+        
+    }
+    
+    header ul li a {
+       
+    }
+    
+    header .navLogo {
+        width: 20%;
+        align-self: center;
+    }
+    
 }
