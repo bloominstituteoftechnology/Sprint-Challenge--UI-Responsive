@@ -280,4 +280,11 @@ footer nav a {
     .bottom-content {
         flex-direction: column;
     }
+    .bottom-content .text-container {
+        margin-bottom: 3%;
+    }
+    footer nav {
+        font-size: 0.4rem;
+        margin-left: 78px;
+    }
 }
