@@ -158,23 +158,23 @@ header .jumbotron {
     justify-content: center;
 }
 
-body > div > section.middle-content > div > div.box.box2 {
+.middle-content .boxes .box2 {
     background-color: forestgreen;
 }
 
-body > div > section.middle-content > div > div.box.box4 {
+.middle-content .boxes .box4 {
     background-color: darkorchid;
 }
 
-body > div > section.middle-content > div > div.box.box6 {
+.middle-content .boxes .box6 {
     background-color: hotpink;
 }
 
-body > div > section.middle-content > div > div.box.box8 {
+.middle-content .boxes .box8 {
     background-color: indigo;
 }
 
-body > div > section.middle-content > div > div.box.box10 {
+.middle-content .boxes .box10 {
     background-color: lawngreen;
 }
 
@@ -231,23 +231,23 @@ footer nav a {
         justify-content: center;
     }
 
-    body > div > section.middle-content > div > div.box.box1 {
+    .middle-content .boxes .box1 {
         background-color: teal;
     }
 
-    body > div > section.middle-content > div > div.box.box3 {
+    .middle-content .boxes .box3 {
         background-color: gold;
     }
 
-    body > div > section.middle-content > div > div.box.box5 {
+    .middle-content .boxes .box5 {
         background-color: cadetblue;
     }
 
-    body > div > section.middle-content > div > div.box.box7 {
+    .middle-content .boxes .box7 {
         background-color: coral;
     }
 
-    body > div > section.middle-content > div > div.box.box9 {
+    .middle-content .boxes .box9 {
         background-color: crimson;
     }
 }
@@ -295,7 +295,7 @@ footer nav a {
         width: 100%;
     }
 
-    body > div > section.middle-content > div > div.box.box10 {
+    .middle-content .boxes .box10 {
         display: none;
     }
 
