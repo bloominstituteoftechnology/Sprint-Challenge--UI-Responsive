@@ -137,6 +137,7 @@ header nav ul li a:hover
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
+    min-width: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -219,6 +220,6 @@ footer nav a {
     .middle-content .boxes .box10{display: none;}
     .top-content .text-container{width: 90%}
     .bottom-content {display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
     .bottom-content .text-container {padding-bottom: 10px}
