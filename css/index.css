@@ -87,10 +87,12 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        margin-bottom: 4.5%;
     }
     header img {
         margin: 0 0 4%  0;
     }
+
 }
 
 header nav{
@@ -116,7 +118,11 @@ header nav a{
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
+@media (max-width: 783px){
+    .top-content{
+        margin-top: 2.7%;
+    }
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -206,7 +212,7 @@ footer nav a {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 783px){
     .middle-content .boxes .box1{
         background: teal;
     }
