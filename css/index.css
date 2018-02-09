@@ -63,7 +63,7 @@ a{
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -85,14 +85,17 @@ p {
 .header{
     display: flex;
     justify-content: flex-start;
-    margin: 15px 2% 0 0;
+    margin: 19px 0% 0 0;
     width: 100%;
     align-items: center;
+    font-weight: 600;
 }
 
 .navit{
     width: 100%;
-    padding: 25px 5% 0 5%;
+    padding: 27px 5% 0 5.6%;
+    font-size: 1.4rem;
+    font-weight: 400;
 } 
 
 /* .header .nav .navit{
@@ -110,7 +113,7 @@ p {
     margin: 5% 0 3% 0;
 }
 
-
+/* Top Content */
 
 .top-content {
     display: flex;
@@ -125,6 +128,8 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/* Middle Content / Boxes */
 
 .middle-content {
     margin-bottom: 20px;
@@ -153,6 +158,27 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2{
+    background-color: green;
+}
+
+.middle-content .boxes .box4{
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6{
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8{
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10{
+    background-color: lawngreen;
+}
+/* Bottom Content */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -167,6 +193,8 @@ p {
     padding-right: 0;
 }
 
+/* Footer */
+
 footer {
     width: 100%;
     background: black;
@@ -178,7 +206,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 0.875rem;
+    font-size: 1.3rem;
 }
 
 footer nav a {
