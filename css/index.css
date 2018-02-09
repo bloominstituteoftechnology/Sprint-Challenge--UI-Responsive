@@ -205,11 +205,11 @@ div nav ul {
 .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .middle-content .boxes .box {
-  width: 100px;
+  width: 12.5%;
   height: 100px;
   background: black;
   margin: 20px 2.5%;
@@ -324,6 +324,9 @@ footer nav a {
   .middle-content .boxes {
     flex-direction: row-reverse;
     justify-content: space-around;
+  }
+  .middle-content .boxes .box {
+    width: 100px;
   }
   footer nav {
     width: 100%;
