@@ -84,19 +84,33 @@ p {
 
 .header{
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     margin: 19px 0% 0 0;
     width: 100%;
-    align-items: center;
+    align-items: center; 
     font-weight: 600;
 }
 
-.navit{
+.header .nav{
+    display: flex;
     width: 100%;
+    
+}
+
+.header .nav li{
+    width: 100%; 
     padding: 27px 5% 0 5.6%;
     font-size: 1.4rem;
     font-weight: 400;
-} 
+}
+
+
+/* .navit{
+    width: 100%; 
+    padding: 27px 5% 0 5.6%;
+    font-size: 1.4rem;
+    font-weight: 400;
+}  */
 
 /* .header .nav .navit{
     padding: 0 5% 0 5%;
@@ -158,6 +172,8 @@ p {
     justify-content: center;
 }
 
+
+
 .middle-content .boxes .box2{
     background-color: green;
 }
@@ -212,4 +228,49 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px){
+
+    .header{
+        flex-flow: column wrap;
+
+    }
+
+    .middle-content .boxes .box1{
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box3{
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5{
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7{
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9{
+        background-color: crimson;
+    }
+}
+
+@media (max-width: 400px){
+
+    .header .nav{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .header .nav li{
+        width: 24%;
+        text-align: center;
+    }
+
+    .middle-content .boxes .box10{
+        display: none;
+    }
 }
