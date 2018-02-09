@@ -98,18 +98,15 @@ header nav a {
 }
 
 header .logo {
-
+    width: 20%;
 }
 
-.jumbotron {
+.jumbotron-img {
     width: 100%;
     margin: 38px 0 0 1%;
-
 }
 
-.jumbotron img {
-    width: 100%;
-}
+
 
 .top-content {
     width: 100%;
@@ -163,8 +160,7 @@ header .logo {
     justify-content: space-around;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+
 }
 
 */
@@ -180,10 +176,14 @@ header .logo {
     padding-right: 4%;
 }
 
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
 
 
 footer {
     width: 100%;
+    margin-left: 1%;
     background: black;
 }
 
@@ -226,13 +226,37 @@ footer nav a {
         width: 100%;
     }
 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 19px 0 0 1%;
+        justify-content:center;
+    }
 
-        /* Box color changes */
-        .middle-content .boxes .box1 {background: teal;}
-        .middle-content .boxes .box3 {background: gold;}
-        .middle-content .boxes .box5 {background: cadetblue;}
-        .middle-content .boxes .box7 {background: coral;}
-        .middle-content .boxes .box9 {background: crimson;}
+    header nav {
+        margin-top: 30px;
+    }
+
+    .jumbotron-img {
+        width: 100%;
+        margin: 38px auto 0 auto;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+    
+
+
+
+
+    /* Box color changes */
+    .middle-content .boxes .box1 {background: teal;}
+    .middle-content .boxes .box3 {background: gold;}
+    .middle-content .boxes .box5 {background: cadetblue;}
+    .middle-content .boxes .box7 {background: coral;}
+    .middle-content .boxes .box9 {background: crimson;}
     
 
 }
@@ -240,7 +264,7 @@ footer nav a {
 /* Breakout for phones, 400px */
 @media (max-width:400px){
     .container {
-        max-width: 370px;
+        max-width: 400px;
         width: 100%;
     }
 
