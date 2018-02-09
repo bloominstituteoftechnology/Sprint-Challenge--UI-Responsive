@@ -34,6 +34,7 @@
   - box4: darkorchid
   - box6: hotpink
   - box8: indigo
+  - box10: lawngreen
 * Please reference the design file ```desktop-design.png``` and make sure your layout matches this design as close as you can.
 
 ## Complete the following tasks for tablet at a screen size of 768px

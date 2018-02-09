@@ -51,13 +51,18 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +72,46 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+    
 }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 21px 0;
+
+}
+
+header .logo {
+    margin: 0;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    margin:  25px 0 0 0;
+    align-items: bottom;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    
+}
+
+.jumbo {
+    height: 152px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
 
 .top-content {
     display: flex;
@@ -83,6 +125,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container p {
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -99,6 +145,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -112,6 +159,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +187,10 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+}
+
+.bottom-content .text-container p {
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,10 +208,136 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+@media (max-width: 778px){
+    header {
+        flex-wrap: wrap;
+    }
+
+    header .logo {
+        display: block;
+        align-self: center;
+        margin-left: 22px;
+    }
+
+    header nav {
+        justify-content: space-between;
+        width: 88%;
+        margin: 30px 0 10px 0;
+        font-weight: bold;
+    }
+
+    .jumbo {
+        margin: 0 0 20px 0;
+        
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+    @media (max-width: 410px){
+        header {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        header nav {
+            flex-direction: column;
+            height: 220px;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        header nav a {
+            border-bottom: 1px gray solid;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+
+        header nav .BorderClass {
+            border-top: 1px solid gray;
+        }
+
+        .jumbo {
+            margin-top: 0;
+            height: 75px;
+        }
+
+        .top-content {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 0;
+            font-weight: bold;
+        }
+
+        .top-content .text-container {
+            width: 90%;
+            margin: 5px 5% 5px 5%;
+            
+        }
+
+        .middle-content .boxes {
+            flex-direction: row-reverse;
+        }
+        .middle-content .boxes .box {
+            flex-basis: 25%;
+        }
+
+        .middle-content .boxes .box10 {
+            display: none;
+        }
+
+        .bottom-content {
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .bottom-content .text-container {
+            font-weight: bold;
+        }
+
+        .bottom-content .text-container h2 {
+            margin-top: 20px;
+        }
+
+        footer nav {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+
 }
