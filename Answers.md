@@ -11,3 +11,6 @@ Adaptive layout: This is essentially a collection of fixed layouts that change d
 Fluid: A fluid layout uses percentages to try to adjust content for smaller screens. As the screen width decreases, the element widths in the page decrease, but the layout remains the same. This often results in very small elements and columns. 
 
 Responsive Layout: A responsive layout is one that combines the best parts of adaptive and fluid layouts. There is a collection of layouts for various breakpoints, but those layouts are coded using percentages. As the screen size decreases, the content shrinks to fit until it hits a breakpoint, then the layout rearranges and the content continues shrinking to fit until the next breakpoint. There should never be a horizontal scroll bar on a responsive site. 
+
+
+5. [I forgot to answer number 5 before the zoom call, sorry! Here's the answer in my own words] Max-width is necessary on the container element in a responsize layout because a responsive layout uses percentages to denote widths. In the event that the viewing screen is very large or widescreen, %100 of the screen would be too wide to be easily readable, so we add an upper constraint to prevent the layout from blowing up too wide for reading/viewing comfort. 
