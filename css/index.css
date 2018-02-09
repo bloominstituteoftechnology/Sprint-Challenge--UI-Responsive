@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -111,6 +111,27 @@ p {
     align-items: center;
     justify-content: center;
 }
+/* MY NUMBERED BOX DEFINITION: */
+.middle-content .boxes .box2 {
+    background: green;
+}
+
+.middle-content .boxes .box4 {
+    background: rgb(185, 71, 252);
+}
+
+.middle-content .boxes .box6 {
+    background: rgb(221, 145, 236);
+}
+
+.middle-content .boxes .box8 {
+    background: rgb(124, 14, 214);
+}
+
+.middle-content .boxes .box10 {
+    background: rgb(97, 231, 43);
+}
+
 
 .bottom-content {
     display: flex;
@@ -127,11 +148,16 @@ p {
 }
 
 footer {
+    
     width: 100%;
     background: black;
 }
 
 footer nav {
+    /*MY CODE*/
+    height: 60px; 
+
+
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -144,3 +170,57 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* MY CODE STARTED 
+ MY CODE STARTED
+  MY CODE STARTED*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-left: 6rem;
+}
+
+.top-content {
+    display: flex;
+}
+
+header {
+    margin-bottom: 1.19rem;
+}
+
+ /*   disp lay: flex;
+    ali gn-content: flex-start;
+    jus tify-content: flex-start;*/
+
+
+nav {
+    height: 80px;
+    /*display: flex;*/
+    align-content: flex-end;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.header nav img {
+    margin-right: 30px;
+}
+
+.container .header nav a {
+    font-size: 0.7 rem;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/*@media (max-width:1010px) {
+    .container {
+        display: block;
+        /* flex-direction: column; 
+        margin-top: 2.5rem;
+        margin-left: 20.5rem;
+    }
+}*/
