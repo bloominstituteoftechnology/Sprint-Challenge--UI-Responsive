@@ -176,6 +176,7 @@ footer nav a {
 
 header {
 	font-size: 1.4rem;
+	text-shadow: 1px 1px lightgrey;
 }
 
 header .nav-bar {
@@ -192,7 +193,148 @@ header .nav-bar a {
 header .jumbotron {
 	padding: 20px 0;
 }
+
+header .jumbotron img {
+	width: 100%
+}
+
 header a {
 	text-decoration: none;
 	color: black;
+}
+
+/* Tablet view 768px */
+@media (max-width: 768px) {
+
+	header .nav-bar {
+		flex-flow: wrap;
+		justify-content: space-around;
+		padding-bottom: 16px;
+	}
+	header .nav-bar a {
+		padding: 0 2%;
+	}
+
+	header .nav-bar img {
+		padding: 0 40% 4% 40%;
+		flex: 0 1 100%;
+	}
+
+	.middle-content .boxes :nth-child(1) {
+		background: teal;
+	}
+
+	.middle-content .boxes :nth-child(3) {
+		background: gold;
+	}
+
+	.middle-content .boxes :nth-child(5) {
+		background: cadetblue;
+	}
+
+	.middle-content .boxes :nth-child(7) {
+		background: coral;
+	}
+
+	.middle-content .boxes :nth-child(9) {
+		background: crimson;
+	}
+}
+
+/* Phone 400px */
+@media (max-width: 400px) {
+
+	header .nav-bar {
+		padding-top: 29px;
+		padding-bottom: 0;
+	}
+
+	header .nav-bar img {
+		padding-bottom: 8%;
+	}
+
+	header .nav-bar a {
+		border-top: 1px solid grey;
+		text-align: center;
+		padding: 3.5% 0 3.9% 0;
+		flex: 1 1 100%;
+	}
+
+	header .jumbotron {
+		padding-top: 0px;
+	}
+
+	.top-content .text-container {
+		width: 100%;
+	}
+
+ .top-content .text-container {
+		flex: 0 0 100%;
+		padding: 1.2% 6.8% 3.2% 5.6%;
+	}
+
+	.top-content {
+		padding-bottom: 8px;
+	}
+
+	.middle-content .boxes :nth-child(1) {
+		order: 3;
+	}
+
+	.middle-content .boxes :nth-child(2) {
+		order: 2;
+	}
+
+	.middle-content .boxes :nth-child(3) {
+		order: 1;
+	}
+
+	.middle-content .boxes :nth-child(4) {
+		order: 6;
+	}
+
+	.middle-content .boxes :nth-child(5) {
+		order: 5;
+	}
+	.middle-content .boxes :nth-child(6) {
+		order: 4;
+	}
+
+	.middle-content .boxes :nth-child(7) {
+		order: 9;
+	}
+
+	.middle-content .boxes :nth-child(8) {
+		order: 8;
+	}
+
+	.middle-content .boxes :nth-child(9) {
+		order: 7;
+	}
+
+	.middle-content .boxes .box {
+	    width: 25%;
+	}
+
+	.middle-content .boxes :nth-child(10) {
+		display: none;
+	}
+
+	.bottom-content .text-container {
+			padding-bottom: 5%;
+	}
+
+	.bottom-content {
+	    flex-flow: wrap;
+			padding: 0.4% 1%;
+	}
+
+	footer {
+		padding: 0 11% 0 5%;
+	}
+
+	footer nav {
+		justify-content: space-around;
+		width: 100%
+	}
 }
