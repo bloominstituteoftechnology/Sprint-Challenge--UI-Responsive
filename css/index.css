@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +68,54 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    align-content: flex-end;
+    margin: 20px auto;
+    flex-wrap: wrap;
+
+}
+header .logo {
+    width: 20%;
+    
+}
+
+header nav {
+    display: flex;
+    width: 80%;
+    align-content: flex-end;
+    justify-content: space-around;
+    
+}
+
+header  a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+header a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+header .jumbotron {
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto 3px auto;
 }
 
 .top-content {
@@ -78,17 +125,22 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
+.text-container {
+    font-size: 1.6rem;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+
+
 
 .middle-content h2 {
     padding: 0 2%;
@@ -98,6 +150,7 @@ p {
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.6rem;
     justify-content: space-evenly;
 }
 
@@ -110,6 +163,22 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container .middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.container .middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.container .middle-content .boxes .box6 {
+    background: hotpink;
+}
+.container .middle-content .boxes .box8 {
+    background: indigo;
+}
+.container .middle-content .boxes .box10 {
+    background: lawngreen;
 }
 
 .bottom-content {
@@ -137,10 +206,136 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width:786px) {
+
+    header .logo {
+        width: 20%;
+        margin: auto 40%;;
+        
+    }
+    header nav {
+        width: 100%;
+        margin: 30px 0;
+    }
+    header .jumbotron {
+        margin: 2px auto 0px auto;
+    }
+
+    .container .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .container .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .container .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .container .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .container .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+@media(max-width: 400px) {
+    header {
+        
+    }
+    header .logo {
+        
+        width: auto;
+        margin: 10px auto;
+    }
+    header nav {
+        flex-direction: column;
+        margin: 20px 0 0 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        padding: 15px;
+        border-top: 1px solid darkgrey;
+        /* border-bottom: 1px solid darkgrey; */
+        text-align: center;
+    }
+
+    header .jumbotron {
+        margin:0;
+        height: 79px;
+    }
+    .container .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .container .top-content {
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .container .top-content .text-container {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .middle-content {
+        margin-bottom: 0;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+        
+        /* height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    .container .bottom-content {
+        flex-direction: column;
+        justify-content: space-around;
+       margin: 10px 2%;
+    }
+
+    .container .bottom-content .text-container {
+        margin: 10px 1%;
+        width: 98%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    footer nav {
+        display: flex;
+        width: 95%;
+        margin-left: 30px;
+        align-content: center;
+        justify-content: flex-start;
+    }
+    footer nav a {
+       display: inline-block;
+       margin-right: 22px;
+
+       
+        text-align: center;
+        justify-content: space-between;
+    }
 }
