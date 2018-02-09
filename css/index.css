@@ -162,10 +162,11 @@ a{
 }
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1000px) {
+@media only screen  and (min-width : 1000px) and (max-width : 1880px) {
     /* Styles */
  .container {
-    background-color: red;
+    
+    
     }
  div .box:nth-child(2) {
     color: forestgreen;
@@ -178,9 +179,11 @@ a{
     /* Styles */
  .container {
     background-color: goldenrod;
+   
     }
     .boxes:nth-child(2) {
         color: forestgreen;
+        
         
      }
 }
@@ -190,5 +193,9 @@ a{
     /* Styles */
  .container {
     background-color: purple;
+    width: 90%;
     }
+ .container img {
+     display: none;
+ }
 }
