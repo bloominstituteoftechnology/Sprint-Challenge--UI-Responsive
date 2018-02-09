@@ -119,6 +119,7 @@ header nav a{
 }
 
 .middle-content .boxes {
+    font-size: 1.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -166,4 +167,16 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1000px){
+
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 400px){
+    
 }
