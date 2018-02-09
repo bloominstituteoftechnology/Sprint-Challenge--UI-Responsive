@@ -54,20 +54,23 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -81,12 +84,13 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 20px 1%;
     padding-bottom: 20px;  
 }
 
 .middle-content {
     margin-bottom: 20px;
+    padding-bottom: .3rem;
     border-bottom: 1px dashed black;
 }
 
@@ -110,11 +114,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 4.2rem;
     justify-content: space-around;
 }
 
@@ -143,4 +148,59 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+
+@media (max-width: 768px) {
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+@media (max-width: 400px) {
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
 }
