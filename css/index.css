@@ -144,12 +144,24 @@ header nav ul a {
     justify-content: center;
 }
 
-.middle-content .boxes .box .box2 {
+.middle-content .boxes .box + .box2 {
     background: forestgreen;
 }
 
-.middle-content .boxes .box .box1 {
-    background-color: teal;
+.middle-content .boxes .box + .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box + .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box + .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box + .box10 {
+    background: lawngreen;
 }
 
 .bottom-content {
@@ -167,7 +179,7 @@ header nav ul a {
 }
 
 footer {
-    width: 100%;
+    max-width: 100%;
     margin-left: 2%;
     background: black;
 }
@@ -191,6 +203,36 @@ footer nav a {
         max-width: 768px;
     }
 
-    flex-wrap: wrap;
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .middle-content .boxes .box + .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box + .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box + .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box + .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box + .box9 {
+        background: crimson;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    
 }
