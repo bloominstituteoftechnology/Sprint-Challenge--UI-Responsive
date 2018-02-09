@@ -119,19 +119,19 @@ p {
 }
 /* MY NUMBERED BOX DEFINITION: */
 .middle-content .boxes .box2 {
-    background: green;
+    background: forestgreen;
 }
 
 .middle-content .boxes .box4 {
-    background: rgb(185, 71, 252);
+    background: darkorchid;
 }
 
 .middle-content .boxes .box6 {
-    background: rgb(221, 145, 236);
+    background: hotpink;
 }
 
 .middle-content .boxes .box8 {
-    background: rgb(124, 14, 214);
+    background: indigo;
 }
 
 .middle-content .boxes .box10 {
@@ -291,6 +291,25 @@ header nav {
         
         margin-bottom: 1rem;
         
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background: crimson;
     }
 
     /*.header nav {
