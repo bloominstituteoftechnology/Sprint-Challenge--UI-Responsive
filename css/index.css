@@ -339,6 +339,7 @@ footer nav a {
 		flex-direction:column;
 		justify-content:space-evenly;
 		align-content:flex-end;
+		height:150px;
 	}
 	
 	.header img{
@@ -472,6 +473,7 @@ footer nav a {
 	}
 
 	.headerText a{
+		margin-top:50%;
 		width:11%;
 	}
 
