@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .container {
@@ -78,18 +78,38 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
-    padding: 20px 1%;
+    padding: 2rem 1%;
     padding-bottom: 20px;  
 }
 
+.top-content .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 4rem;
+}
+
+.navbar img {
+    align-self: baseline;
+}
+
+.top-content .navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding-right: 4.4rem;
+}
+
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     padding-bottom: .3rem;
     border-bottom: 1px dashed black;
 }
@@ -103,13 +123,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-left: 2rem;
 }
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -121,6 +142,7 @@ p {
     display: flex;
     margin: 0 2% 4.2rem;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 .bottom-content .text-container {
@@ -141,8 +163,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.5rem;
 }
 
 footer nav a {
@@ -173,6 +195,21 @@ footer nav a {
 }
 
 @media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .top-content .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2em;
+    }
+
+    .navbar img {
+        display: none;
+
+    }
+
     .middle-content .boxes .box1 {
         background: teal;
     }
@@ -198,6 +235,7 @@ footer nav a {
     .middle-content .boxes {
         display: flex;
         flex-direction: row-reverse;
+        align-content: center;
     }
 
     .middle-content .boxes .box10 {
