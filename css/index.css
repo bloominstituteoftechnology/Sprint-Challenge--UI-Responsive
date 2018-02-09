@@ -107,6 +107,13 @@ header nav{
     justify-content: space-around;
 }
 
+@media (max-width: 415px){
+    header nav{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 header nav a{
     display: block;
     font-size: 1.4rem;
