@@ -145,6 +145,18 @@ margin-bottom: 20px;
 .middle-content .boxes .box2 {
     background: forestgreen;
 }
+.middle-content .boxes .box4 {
+    background: darkorchid;
+    }
+    .middle-content .boxes .box6 {
+    background: hotpink;
+    }
+    .middle-content .boxes .box8 {
+    background: indigo;
+    }
+    .middle-content .boxes .box10 {
+    background: lawngreen;
+    }
 
 
 
@@ -185,7 +197,38 @@ footer nav a {
 
 /* Ipad */
 @media (max-width: 768px) {
-    .middle-content .boxes .box2 {
+   
+    header {
+        display: block;
+    }
+    nav {
+        margin-left: 9px;
+        margin-top: 20px;
+    }
+
+    .lambda-logo {
+        margin-left: 254px;
+        margin-top: 22px;
+    }
+    .text-container h2 {
+        font-size: 1rem;
+    }
+
+    .text-container h2 p {
+        font-size: 1.4rem;
+    }
+    .middle-content h2{
+        font-size: 1rem;
+    }
+
+    .top-content .text-container p {
+        font-size: 14px;
+    }
+    .middle-content .boxes .box {
+        height: 84px;
+    }
+
+    .middle-content .boxes .box1 {
         background: teal;
     }
     .middle-content .boxes .box3 {
@@ -199,5 +242,25 @@ footer nav a {
     }
     .middle-content .boxes .box9 {
         background: crimson;
+    }
+
+    .bottom-content .text-container{
+        font-size: 14px;
+    }
+    footer nav {
+        padding: 18px 0%;
+        font-size: 12px;
+        height: 43px;
+    }
+}
+
+
+/* Iphone */
+
+@media (max-width: 400px) {
+   
+
+    .middle-content .boxes .box10 {
+        display: none;
     }
 }
