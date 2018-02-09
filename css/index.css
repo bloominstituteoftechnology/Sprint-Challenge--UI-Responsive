@@ -217,7 +217,7 @@ footer nav a {
 }
 
 
-@media (max-width: 778px){
+@media (max-width: 768px){
     header {
         flex-wrap: wrap;
     }
@@ -260,7 +260,7 @@ footer nav a {
         background: crimson;
     }
 
-    @media (max-width: 410px){
+    @media (max-width: 400px){
         header {
             flex-direction: column;
             justify-content: center;
