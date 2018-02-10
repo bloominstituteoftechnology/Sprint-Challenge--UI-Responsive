@@ -402,7 +402,7 @@ footer nav {
     }
     .middle-content .boxes {
      display: flex;
-     flex-wrap: wrap-reverse;
+     flex-direction: row-reverse;
     }
     .bottom-content {
         width: 48%;
