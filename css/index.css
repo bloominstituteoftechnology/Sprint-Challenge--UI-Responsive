@@ -272,10 +272,6 @@ footer nav a {
         justify-content: center;
     }
 
-    header img {
-        display: none;
-    }
-
     header nav {
         width: 100%;
         display: flex;
@@ -287,10 +283,14 @@ footer nav a {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
         align-items: center;
     }
 
+    header img {
+        width: 48%;
+    }
 
     header nav ul li {
         width: 100%;
@@ -298,12 +298,16 @@ footer nav a {
         padding: 4%;
         text-align: center;
         border-top: 1px solid black;
-        border-bottom: 1px solid black;
     }
 
     .top-content {
         flex-direction: column;
         padding-bottom: 3%;
+    }
+
+    .top-content .jumbo {
+        width: 100%;
+        margin: 0;
     }
 
     .top-content .text-container {
