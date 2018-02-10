@@ -214,22 +214,20 @@ a{
 }
 
 /* Tablets ----------- */
-@media only screen  and (min-width : 768px) and (max-width : 1000px) {
+@media only screen  and (min-width : 768px) and (max-width : 999px) {
     /* Styles */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 10px;
-    }
+    nav img {
+        margin-left: 350px;
+        padding: 15px;       
+    }    
  
     ul {
         display: flex;       
     }
     
-    li {
-        margin: 0 40px 0 40px;
-        padding-top: 20px;
-        
+    li {        
+        margin: 0 40px 0 70px;
+        padding: 10px 0 15px 0;        
     }
  
     .top-content {
@@ -288,7 +286,7 @@ a{
 }
 
 /* SmartPhones ----------- */
-@media only screen  and (min-width : 320px) and (max-width : 768px) {
+@media only screen  and (min-width : 120px) and (max-width : 799px) {
     /* Styles */
    .container {
     background-color: purple;
