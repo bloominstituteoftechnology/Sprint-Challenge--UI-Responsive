@@ -3,12 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+html,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -18,8 +13,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
+    border: 0;
+    font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -50,25 +45,56 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html{
+    font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.8rem;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header{
+    font-size: 1.4rem;
+}
+
+header .nav{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+header .jumbotron{
+    padding: 20px 0;
+}
+
+header .jumbotron img{
+    width:100%;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+header .nav a{
+    padding:0 5%;
 }
 
 .top-content {
@@ -112,6 +138,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background:forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background:darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background:hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background:indigo;
+}
+
+.middle-content .boxes .box10 {
+    background:lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -144,3 +190,100 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media(max-width:768px){
+    header{
+        width:100%;
+        margin:20px 0 15px;
+        justify-content:center;
+    }
+    header .nav{
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+    }
+    header .nav img{
+        padding:0 40% 4% 40%;
+        flex : 0 1 100%; 
+    }
+
+    .middle-content .boxes .box1 {
+        background:teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background:gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background:cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background:coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background:crimson;
+    }
+}
+@media (max-width: 400px) {
+    
+    	header .nav {
+    		padding-top: 10px;
+    		padding-bottom: 0;
+    	}
+    
+    	header .nav img {
+    		padding-bottom: 8%;
+    	}
+    
+    	header .nav a {
+    		border-top: 1px solid grey;
+    		text-align: center;
+    		padding: 3.5% 0 3.9% 0;
+    		flex: 1 1 100%;
+        }
+    
+    	header .jumbotron {
+    		padding-top: 0px;
+    	}
+    
+    	.top-content .text-container {
+    		width: 100%;
+    	}
+    
+     .top-content .text-container {
+    		flex: 0 0 100%;
+    		padding: 1.2% 6.8% 3.2% 5.6%;
+    	}
+    
+    	.top-content {
+    		padding-bottom: 8px;
+    	}
+    
+        .middle-content .boxes {
+            flex-direction: row-reverse;
+    	}
+
+    	.middle-content .boxes .box {
+    	    width: 25%;
+    	}
+    
+    	.middle-content .boxes .box10 {
+    		display: none;
+    	}
+    
+    	.bottom-content {
+    	    flex-flow: wrap;
+    		padding: 0.4% 1%;
+    	}
+    
+    	footer {
+    		padding: 0 11% 0 5%;
+    	}
+    
+    	footer nav {
+    		justify-content: space-around;
+    		width: 100%
+    	}
+    }
