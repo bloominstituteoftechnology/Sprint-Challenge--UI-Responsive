@@ -217,6 +217,13 @@ footer nav a {
 }
 
 @media (max-width: 768px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .middle-content .boxes .box1 {
         background: teal;
     }
