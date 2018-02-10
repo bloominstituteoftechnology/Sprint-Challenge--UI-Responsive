@@ -51,13 +51,22 @@ table {
     box-sizing: border-box;
 }
 
+html {
+     font-size: 62.5%; 
+}
+    
+body {
+    font-size: 1.6rem;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;/*8px*/
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,10 +76,42 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 21px 0 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: flex-end;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.jumbotron {
+    width: 100%;
+    margin: 38px 0 22px 0;
+}
+.jumbotron .jumbo {
+    width: 100%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +144,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -137,10 +179,131 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;/*14px*/
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        width: 100%;
+    }
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+    header {
+        margin: 21px auto 10px;
+        text-align: center;
+        display: inline-block;
+    }
+    header nav {
+        width: 100%;
+        margin: 25px 0 0 0; 
+    }
+    .jumbotron {
+        margin: 24px 0 16px 0;
+    }
+    .jumbrotron .jumbo {
+        width: 100%;
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+    footer {
+    margin: -8px 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+    header {
+        margin: 22px auto 0px;
+    }
+    header .logo {
+        margin: 9px 0 2px 0;
+    }
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        border-top:  1px solid grey;
+        justify-content: center;
+    }
+    header nav a {
+        width: 100%;
+        border-bottom: 1px solid grey; 
+        padding: 14px 0;
+    }
+    .jumbotron {
+        margin: 0px;
+    }
+    .jumbotron .jumbo {
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+    .top-content {
+        flex-direction: column;
+        margin: 0px 0px 30px 0px;
+    }
+    .top-content .text-container {
+        width:  100%;
+        padding: 9px 6%;
+    }
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    .bottom-content {
+        flex-direction: column;
+        margin: 0 3% 20px;
+    }
+    .bottom-content .text-container {
+        margin: 7px 0;
+    }
+    footer nav {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+     }
+    }
 }
