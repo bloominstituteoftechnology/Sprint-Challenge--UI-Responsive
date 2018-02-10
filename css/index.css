@@ -28,6 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+    font-size: 62.5%;
+}
 body {
 	line-height: 1;
 }
@@ -57,35 +60,80 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+header {
+    margin: 2% 0 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    margin: 18px 5% 0; 
+    width: 90.6%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+header .logo {
+    align-self: flex-end;
+    margin: 5px 1.5% 0 2%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin: 10px 0 20px 2.3%;
+}
+
+.top-content img {
+    width: 100%
 }
 
 .top-content .text-container {
+    margin-top: 23px;
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
+.text-container p {
+    font-size: 1.57rem;
+}
+
 .middle-content {
+    margin-left: 2%;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -96,26 +144,30 @@ p {
 }
 
 .middle-content .boxes {
+    font-size: 1.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 10px;
 }
 
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 20px 2.4% 20px 2.8%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: -4px 1% 25px 4.3%;
     justify-content: space-around;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container {
@@ -129,6 +181,8 @@ p {
 footer {
     width: 100%;
     background: black;
+    margin-left: 2%;
+    margin-bottom: 0;
 }
 
 footer nav {
@@ -137,10 +191,152 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 4.5%;
+    }
+
+    header .logo {
+        align-self: center;
+    }
+
+    .top-content {
+        margin-top: 2.7%;
+    }
+
+    .middle-content .boxes .box {
+        width: 13%;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+    header {
+        width: 100%
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+
+    header nav ul li {
+        width: 100%;
+        height: 45px;
+        padding: 4%;
+        text-align: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .top-content {
+        flex-direction: column;
+        padding-bottom: 3%;
+    }
+
+    .top-content .text-container {
+        font-size: 1.8rem;
+        width: 100%;
+        padding: 3% 6% 2%;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        margin: 0 6% 0 3%;
+    }
+
+    .bottom-content .text-container {
+        padding: 0 0 5.3%;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-around;
+        padding-left: 7%;
+        padding-right: 13%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
 }
