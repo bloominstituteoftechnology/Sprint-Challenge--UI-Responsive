@@ -84,7 +84,7 @@ header nav {
 }
 
 header nav ul li a {
-    margin: 23px -2% 0;
+    margin: 23px -2% 0;    
     text-decoration: none;
     color: black;
 }
@@ -125,7 +125,12 @@ p {
     margin-bottom: 11px;
 }
 
+.abstractImg {
+    margin-bottom: 7px;
+}
+
 .middle-content {
+    margin-top: 1px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -228,8 +233,8 @@ footer nav a {
 
     header .lambdalogo {
         align-self: flex-start;
-        margin-top: 1.8rem;
-        margin-right: 3rem;
+        margin-top: 2.3rem;
+        margin-left: 2rem;
     }
 
     header nav ul {
@@ -241,10 +246,23 @@ footer nav a {
         margin-bottom: 2rem;
     }
 
+    .middle-content .boxes .box {
+        min-width: 100px;
+    }
+
     .abstractImg {
         width: 100%;
         margin-top: 0.5rem;
     
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+    margin-top: 1px;
+    border-bottom: 1px dashed black;
 }
 
 .bottom-content {
@@ -283,13 +301,19 @@ footer nav a {
     background: lawngreen;
 }
 
+.middle-content {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
 footer {
     width: 100%;
     background: black;
 }
 
 .bottom-content .text-container {
-    width: 100%
+    width: 100%;
     padding-right: 4%;
 }
 
@@ -309,8 +333,96 @@ header nav ul {
     justify-content: space-between;
     align-content: center;
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
+.middle-content .boxes .box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box3 {
+    background: gold;
+}
+
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box7 {
+    background: coral;
+}
+
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    header nav ul {
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
 
 
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    header nav ul li a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        line-height: 27px;
+        margin: 20px 0 0;
+        text-decoration: none;
+        color: black;
+        border-top: 1px solid black;
+    }
+
+    header nav ul li a p {
+        display: flex;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header .lambdalogo {
+        align-self: flex-start;
+        margin-top: 2.3rem;
+        margin-bottom: 1.8rem;
+        margin-left: 2rem;
+    }
+
+    .abstractImg {
+        width: 100%;
+    }
+
+    .top-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        line-height: 10px;
+        flex-flow: column;
+        margin-bottom: 12px;
+        margin-top: 1px;
+        border-bottom: 1px dashed black;
+    }
+
+
+}
