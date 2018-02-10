@@ -71,24 +71,30 @@ p {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    /*spoiler*/
+    width: 100%;
 }
 
 /*Header Styles*/
 
+header {
+    display: flex;
+    
+}
+
+header .logo {
+    display: block;/*can there be a block within a flex container?*/
+    margin: 10px;
+}
 
 header nav ul {
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-between;*/
     font-size: 1.6rem;
-    
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
+    flex-direction: row;
     display: flex;
-    align-items: center;
+    margin: 25px;
+    justify-content: center;
     
-    
+      
 }
 
 header nav ul li a {
@@ -96,7 +102,7 @@ header nav ul li a {
     color: black;
 }
 
-header .main-image {
+.main-image {
     display: block;
 }
 
