@@ -357,12 +357,14 @@ header nav ul {
 }
 
 @media (max-width: 400px) {
+
     .container {
         width: 100%;
         margin: 0 auto;
     }
 
     header {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -387,7 +389,7 @@ header nav ul {
         width: 100%;
         display: flex;
         justify-content: center;
-        line-height: 27px;
+        line-height: 25px;
         margin: 20px 0 0;
         text-decoration: none;
         color: black;
@@ -411,6 +413,7 @@ header nav ul {
 
     .abstractImg {
         width: 100%;
+        margin-bottom: 25px;
     }
 
     .top-content {
@@ -419,10 +422,47 @@ header nav ul {
         justify-content: space-around;
         line-height: 10px;
         flex-flow: column;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
         margin-top: 1px;
         border-bottom: 1px dashed black;
     }
 
+    .top-content .text-container {
+        width: 90%;
+        margin-left: 20px;
+    }
 
-}
+    .bottom-content {
+        width: 99%;
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+        flex-flow: column;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        background: black;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    footer nav a {
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+    }
