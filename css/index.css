@@ -217,11 +217,21 @@ footer nav a {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
     header {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    img.jumbotron {
+        width: 99%;
+        padding-left: 1%;
     }
 
     .middle-content .boxes .box1 {
