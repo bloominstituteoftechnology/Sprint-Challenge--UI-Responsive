@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,26 +68,69 @@ p {
 }
 
 .container {
-    width: 800px;
+    font-size: 1.4rem;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+/* header styles bby */
+
+header {
+    display: flex;
+    width: 100%;
+    margin: 3% 0% 4% 2%;
+}
+
+header .logo {
+    margin: 0 0 0 0;
+    width: 24%;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: flex-end;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* top content styles aye */
+
+.jumbo .bodyimg {
+    width: 100%;
+    margin: 0 2%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.top-content .text-container .text1 {
+    font-size: 1.6rem;
 }
 
+.top-content .text-container {
+    width: 47%;
+    padding: 24px 0%;
+    padding-bottom: 20px;
+    margin: 0 0 0 3%;
+     
+}
+
+/* middle content styles guurl*/
+
 .middle-content {
-    margin-bottom: 20px;
+    margin: 0 0 20px 2%;
     border-bottom: 1px dashed black;
 }
 
@@ -99,11 +143,13 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
+    min-width: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -112,9 +158,11 @@ p {
     justify-content: center;
 }
 
+/* bottom content styles */
+
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 0 3% 4%;
     justify-content: space-around;
 }
 
@@ -126,9 +174,14 @@ p {
     padding-right: 0;
 }
 
+.bottom-content .text-container .text2 {
+    font-size: 1.55rem;
+}
+
 footer {
     width: 100%;
     background: black;
+    margin: 0 0 0 2%;
 }
 
 footer nav {
@@ -137,10 +190,141 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* desktop 1000px*/
+
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+
+/* tablet 768px */
+
+@media (max-width: 768px) {
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+        
+     .middle-content .boxes .box3 {
+        background: gold;
+    }
+        
+     .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+        
+     .middle-content .boxes .box7 {
+        background: coral;
+    }
+     .middle-content .boxes .box9 {
+        background: crimson;
+    }
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 98%;
+        margin: 3% 0% 4% 2%;
+    }
+    header .logo {
+        width: 21%;
+        margin: 0px 14px 29px 22px;
+    }
+    .jumbo .bodyimg {
+        margin: 4px 0 0 0;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        background: black;
+        margin: 0 0 0 0;
+    }
+}
+
+/* phone 400px */
+
+@media (max-width: 400px) {
+    .middle-content .boxes {
+        flex-flow: row-reverse wrap;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    header {
+        margin: 13px auto;
+    }
+    header .logo {
+        width: 40%;
+        margin: 17px 14px 29px 10px;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center; 
+    }
+    header nav li {
+        padding: 15px;
+        border-bottom: 1px solid darkgray;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav li:first-child {
+        border-top: 1px solid darkgray;
+    }
+    .jumbo .bodyimg {
+        margin: -13px 0 0 0;
+        width: 100%;
+    }
+    .top-content {
+        margin-bottom: 34px;
+    }
+    .top-content .text-container {
+        width: 100%;
+        padding-bottom: 19px;
+    }
+    .middle-content {
+        margin: 0 0 20px 0%;
+    }
+    .middle-content .boxes {
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+    .bottom-content {
+        display: inline-block;
+        margin: 0 0 -8% 4%;
+        justify-content: space-around;
+    }
+    footer nav {
+        width: 87%;
+        margin: 4%;
+        justify-content: space-around;
+    }
+    .bottom-content .text-container {
+        padding-right: 4%;
+        padding-bottom: 46px;
+    }
 }
