@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
@@ -170,28 +171,26 @@ footer nav a {
     font-size: 14px;
 }
 
-
-@media (max-width: 1000px) {
-    .middle-content .boxes .box:nth-child(2) {
-        background: forestgreen;
-    }
-
-    .middle-content .boxes .box:nth-child(4) {
-        background: darkorchid;
-    }
-
-    .middle-content .boxes .box:nth-child(6) {
-        background: hotpink;
-    }
-
-    .middle-content .boxes .box:nth-child(8) {
-        background: indigo;
-    }
-
-    .middle-content .boxes .box:nth-child(10) {
-        background: lawngreen;
-    }
+.middle-content .boxes .box:nth-child(2) {
+    background: forestgreen;
 }
+
+.middle-content .boxes .box:nth-child(4) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background: lawngreen;
+}
+
 
 
 @media (max-width: 768px) {
@@ -244,6 +243,8 @@ footer nav a {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-content: center;
+        margin: 20px;
     }
 
     .middle-content .boxes .box {
@@ -253,7 +254,6 @@ footer nav a {
 
     footer nav {
         width: 100%;
-
     }
 
     div .boxes {
@@ -264,5 +264,18 @@ footer nav a {
         display: flex;
         margin-right: 30px;
         margin-left: 10px;
+    }
+
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    
+    .bottom-content {
+        flex: wrap;
+        flex-direction: row;
     }
 }
