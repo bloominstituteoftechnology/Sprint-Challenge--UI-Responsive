@@ -54,28 +54,73 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
+    font-size: 1.6rem;
     line-height: 1.4;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
+
+/* Header Nav */
+header {
+    display: flex;
+    width: 100%;
+    margin: 19px 0 0 0;
+    align-items: baseline;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    font-size: 1.4rem;
+    align-content: center;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
+header .logo {
+
+}
+
+.jumbotron-img {
+    width: 100%;
+    margin: 38px 0 0 0;
+    max-width: 800px;
+}
+
+
+
 .top-content {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 22px 0 20px 0;
     border-bottom: 1px dashed black;
 }
 
@@ -86,7 +131,8 @@ p {
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 0 20px 0;
     border-bottom: 1px dashed black;
 }
 
@@ -110,12 +156,28 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
+
 }
+
+/* Original-ish 
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 20px 1%;
     justify-content: space-around;
+}
+
+
+}
+
+*/
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px 0;
+    justify-content: space-around;
+    padding-left: 3%;
 }
 
 .bottom-content .text-container {
@@ -125,6 +187,7 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
 
 footer {
     width: 100%;
@@ -137,10 +200,147 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Breakout for 1000px */
+@media (max-width:1000px){
+    .container {
+        width: 100%;
+    }
+
+
+    /* Box color changes */
+    .middle-content .boxes .box2 {background: forestgreen;}
+    .middle-content .boxes .box4 {background: darkorchid;}
+    .middle-content .boxes .box6 {background: hotpink;}
+    .middle-content .boxes .box8 {background: indigo;}
+    .middle-content .boxes .box10 {background: lawngreen;}
+
+}
+
+
+/* Breakout for tablets, 768px */
+@media (max-width:768px){
+    .container {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 19px 0 0 0;
+        justify-content:center;
+  
+    }
+
+    header nav {
+        margin-top: 30px;
+    }
+
+    .jumbotron-img {
+        width: 100%;
+        margin: 38px 0 0 0;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    .middle-content .boxes .box {
+        
+        
+    }
+    
+
+
+
+
+    /* Box color changes */
+    .middle-content .boxes .box1 {background: teal;}
+    .middle-content .boxes .box3 {background: gold;}
+    .middle-content .boxes .box5 {background: cadetblue;}
+    .middle-content .boxes .box7 {background: coral;}
+    .middle-content .boxes .box9 {background: crimson;}
+    
+
+}
+
+/* Breakout for phones, 400px */
+@media (max-width:400px){
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    header nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        transition: .3s background-color;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+        text-decoration: none;
+    }
+
+    .top-content, .bottom-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-container, .bottom-content .text-container {
+        width: 100%;
+        padding-left: 5%;
+        padding-bottom: 20px;
+    }
+
+    .jumbotron-img {
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    footer nav {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+        
+        justify-content: space-evenly;
+    }
+    
+    .middle-content .boxes .box {
+        width: 25%;
+        
+    }
+
+
+    .middle-content .boxes .box10 {display: none;}
+
+
 }
