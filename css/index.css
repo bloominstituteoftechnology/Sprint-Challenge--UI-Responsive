@@ -318,3 +318,72 @@ footer nav a {
     background-color: crimson;
   }
 }
+
+@media (max-width: 400px) {
+  .header {
+    align-content: flex-start;
+  }
+
+  .header .nav {
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
+  header .nav h1 {
+    flex-direction: column;
+    border-bottom: 1px inset black;
+  }
+
+  .header .jumbo {
+    width: 100%;
+  }
+
+  header .nav h1 a {
+    width: 100%;
+    text-align: center;
+    border-top: 1px inset black;
+    padding: 1rem;
+  }
+
+  header .nav h1 a:hover {
+    background-color: lightgray;
+  }
+
+  .top-content {
+    flex-direction: column;
+  }
+
+  h2 {
+    margin-bottom: 0.8em;
+  }
+
+  .top-content .text-container {
+    width: 100%;
+    padding: 2%;
+  }
+
+  .middle-content .boxes {
+    flex-direction: row-reverse;
+  }
+
+  .middle-content .boxes .box {
+    width: 100px;
+  }
+
+  .middle-content .boxes .box10 {
+    display: none;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-content .text-container {
+    padding: 2%;
+  }
+
+  footer nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
