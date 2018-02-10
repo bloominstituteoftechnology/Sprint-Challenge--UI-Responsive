@@ -334,4 +334,18 @@ header nav {
     }*/
 
 }
-}
+    @media (max-width:410px) {
+
+    .boxes {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .middle-content .boxes .box10 {
+            display: none;
+    }
+        
+
+    }
+
