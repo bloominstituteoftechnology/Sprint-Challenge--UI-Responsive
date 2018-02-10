@@ -75,11 +75,9 @@ header a {
     font-size: 1.6rem;
 }
 
-header .logo {
-    width: 157px;
-    height: 40px;
-    background: black;
-    padding-left: 15px;
+.jumbotron {
+    width: 100%;
+    justify-content: center;
 }
 
 
