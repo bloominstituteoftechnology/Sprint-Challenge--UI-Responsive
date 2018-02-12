@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem; 
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +68,52 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
+    font-size: 1.6rem; /* !! should be here or with p selector */
     margin: 0 auto;
 }
+
+/* Header Style */
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2.1%;
+}
+
+header .nav-bar {
+    display: flex;
+    width: 100%;
+}
+
+header .logo {
+    margin-right: 1.6%;
+    padding-top: 0.4%;
+    padding-bottom: 1%;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3.8% 5.2% 0 4%;
+    font-size: 1.5rem; /* !! fix font */
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header .jumbotron {
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+/* Content Style */
 
 .top-content {
     display: flex;
@@ -103,6 +147,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -110,6 +155,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
 }
 
 .bottom-content {
@@ -137,10 +202,127 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem; /* !! 14 px */
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .logo {
+        margin-right: 0;
+    }
+
+    header .nav-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    header {
+        margin-top: 29px;
+    }
+
+    header .nav-bar {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 23px 0 0;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        border-top: 1px solid black;
+    }
+
+    header .jumbotron {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 6%;
+    }
+
+    .container .top-content {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content {
+        margin-top: 20px;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .container .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        width: 100%;
+
+        padding-bottom: 20px;
+    }
+
 }
