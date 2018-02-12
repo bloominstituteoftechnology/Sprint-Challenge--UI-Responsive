@@ -150,7 +150,7 @@ footer nav a {
     background: forestgreen; 
 }
 
-.middle-content: .boxes .box4 {
+.middle-content .boxes .box4 {
     background: darkorchid; 
 }
 
@@ -161,9 +161,11 @@ footer nav a {
 .middle-content .boxes .box8 {
     background: indigo; 
 }
-
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
 /* tablet */
-@media query (max-width: 768px) tablet 
+@media query (max-width: 768px) 
 .middle-content .boxes .box1 {
     background: teal; 
 }
@@ -184,11 +186,17 @@ footer nav a {
     background: crimson; 
 }
 
-/* tablet */
+/* phone-design */
 @media query (max-width: 400px) tablet 
-
-
-* Remove box 10 and reverse the order of the boxes.
-* Please reference the design file ```phone-design.png``` 
-and make sure your layout matches this design as close as you can.
-
+.middle-content .boxes .box8 {
+    background: indigo; 
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box4 {
+    background: darkorchid; 
+}
+.middle-content .boxes .box2 {
+    background: forestgreen; 
+}
