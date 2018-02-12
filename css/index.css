@@ -76,15 +76,16 @@ p {
 }
 
 header{
-    display:flex;
-    margin: 2rem auto;
-    align-items: space-around;
-    justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
     
 }
 header nav{
-    margin: 2rem;
-    justify-content: center;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
     
 }
 header nav a{
@@ -97,13 +98,15 @@ header nav a{
 }
 
 .lambda-img{
-    margin-bottom: 2rem;
-    height: 40px;
     width: 157px;
+    height: 40px;
 }
 
 .jumbo-img{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+    height: auto;
+   
 }
 
 
@@ -113,6 +116,7 @@ header nav a{
     justify-content: space-evenly;
     margin-bottom: 2.0rem;
     border-bottom: 1px dashed black;
+    margin-top: 2rem;
 }
 
 .top-content .text-container {
@@ -202,10 +206,18 @@ footer nav a {
 
 }
 @media (max-width: 768px){
-    header{
-        flex-flow: column wrap;
-        justify-content: center;
-        
+    header {
+       width: 100%;
+       display:flex;
+       margin: 20px 0 15px;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: center;
     }
-   
+   header nav{
+        margin-top: 30px;
+   }
+   .jumbo-img{
+       
+   }
 }
