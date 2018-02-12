@@ -103,6 +103,7 @@ p {
 
 .middle-content .boxes {
     display: flex;
+    
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -114,6 +115,8 @@ p {
     margin: 20px 2.5%;
     color: white;
     display: flex;
+    /*unnecessary flex-grow: 
+    flex-grow: 1;*/
     align-items: center;
     justify-content: center;
 }
@@ -336,26 +339,194 @@ header nav {
 }
     @media (max-width:410px) {
 
-    .navbar {
-        border: 3px solid pink;
-        width: 100%;
-        height: 200px;
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            /* MY CODE: */
+            font-size: 1.6rem;
+        }
+
+        .container .logo {
+            /*border: 5px solid red;*/
+            margin-bottom: 30px;
+        }
+
+        header nav {
+            border: 1px solid red;
+            width: 100%;
+            padding: 15px;
+            height: 300px;
+            /*height: 80px;
+            /*was commented before new nav div*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            margin-bottom: 2.4rem;
+        }
+    
+        .navbar {
+            border: 3px solid pink;
+            width: 60%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-around;
+        }    
+    
+        .container header nav a {
+            border:1px solid blue;
+        }
+        /*.container header nav a {
+            border:1px solid green;
+            font-size: 1.4rem;
+            color: black;
+            text-decoration: none;
+            /*might delete 60px below*/
+            /*restore: 
+            margin-left: 0px;*/
+            /*display: flex;
+            flex-direction: column;*/
+            /*restore: 
+            align-self: center;
+            justify-content: center;
+            align-self: flex-end;
+        }*/
+    
+        .header_image {
+            width: 100%;
+        }
+
+        .middle-content {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed black;
+            /* may remove: */
+            margin-left: 0px;
+            height: 440px;
+            /* maybe unnecessary : */
+            
+        }
+    /*.header {
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
-        justify-content: space-around;
-    }    
+        align-content: center;
+        justify-content: center;
+
+    }*/
+
+
+
+    /*.navbar a {
+        /*border: 3px solid pink;
+        width: 100%;
+        /*height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }    */
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        /*color: red;*/
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 5%;
+        margin-left: 0rem;
+        margin-right: 50px;
+        padding-bottom: 20px;  
+        
+        
+    }
 
     .boxes {
+        border: 1px solid red;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        height: 80%;
+        width: 100%;
+        
+        
+        
+    }
+
+    .boxes .box {
+        border: 1px solid blue;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-basis: 25%;
+        flex-grow: 1;
     }
     
     .middle-content .boxes .box10 {
             display: none;
     }
         
+    .bottom-content {
+        flex-direction: column;
+        
+    }
+    
+    .bottom-content .text-container {
+        margin-bottom: 17px;
+    }
+
+    footer {
+        
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        background: red;
+        align-content: flex-end;
+
+    }
+
+    footer nav {
+        
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: flex-start;
+
+    }
+
+    footer nav a {
+        
+        border: 1px solid white;
+        display: flex;
+        align-self: flex-start;
+        
+    }
+
+    .bottomtrial {
+        border: 1px solid green;
+        /*height: 100px;*/
+        width: 100%;
+        height: 100px;
+        background: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .bottomtrial div{
+        border: 1px solid white;
+        /*height: 100px;*/
+        width: 100%;
+        height: 20px;
+        background: gray;
+        display: flex;
+        /*align-self: center;*/
+    }
 
     }
 
