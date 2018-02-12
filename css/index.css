@@ -145,29 +145,50 @@ footer nav a {
     text-decoration: none;
 }
 /* desktop */
-@media query (min-width: 1000px)
+@media query (max-width: 1000px)
+.middle-content .boxes .box2 {
+    background: forestgreen; 
+}
 
-box2: forestgreen 
+.middle-content: .boxes .box4 {
+    background: darkorchid; 
+}
 
-box4: darkorchid
- 
-box6: hotpink
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
 
-box8: indigo
+.middle-content .boxes .box8 {
+    background: indigo; 
+}
 
-box10: lawngreen : `desktop-design.png
+/* tablet */
+@media query (max-width: 768px) tablet 
+.middle-content .boxes .box1 {
+    background: teal; 
+}
 
-media query 768px: tablet 
-box1: teal
-box3: gold
-box5: cadetblue
-box7: coral
-box9: crimson
-* Please reference the design file ```tablet-design.png``` 
-and make sure your layout matches this design as close as you can. 
- **Make sure you look at the header**
+.middle-content .boxes .box3 {
+    background: gold; 
+}
 
- ## Complete the following tasks for phone at a screen size of 400px
+.middle-content .boxes .box5 {
+    background: cadetblue; 
+}
+
+.middle-content .boxes .box7 {
+    background: coral; 
+}
+
+.middle-content .boxes .box9 {
+    background: crimson; 
+}
+
+/* tablet */
+@media query (max-width: 400px) tablet 
+
+
 * Remove box 10 and reverse the order of the boxes.
-* Please reference the design file ```phone-design.png``` and make sure your layout matches this design as close as you can.
+* Please reference the design file ```phone-design.png``` 
+and make sure your layout matches this design as close as you can.
 
