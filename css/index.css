@@ -58,17 +58,19 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -170,6 +172,7 @@ footer nav a {
 .link {
     text-decoration: none;
     color: black;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box-2 {
