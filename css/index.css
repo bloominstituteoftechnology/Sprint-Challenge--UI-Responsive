@@ -200,6 +200,10 @@ footer nav a {
         width: 100%;
     }
 
+    .nav-buttons {
+        flex-direction: column;
+    }
+
     .middle-content .boxes .box-1 {
         background: teal;
     }
