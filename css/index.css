@@ -166,6 +166,23 @@ footer nav a {
     align-items: flex-end;
 }
 
-.middle-content .boxes .box:nth-of-type(2) {
+.middle-content .boxes .box-2 {
     background-color: forestgreen;
 }
+
+.middle-content .boxes .box-4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box-6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box-8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box-10 {
+    background-color: lawngreen;
+}
+
