@@ -204,6 +204,16 @@ footer nav a {
         flex-direction: column;
     }
 
+    .logo-box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .button-box {
+        justify-content: space-evenly;
+    }
+
     .middle-content .boxes .box-1 {
         background: teal;
     }
