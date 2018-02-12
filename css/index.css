@@ -195,3 +195,28 @@ footer nav a {
     background-color: lawngreen;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box-1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box-3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box-5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box-7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box-9 {
+        background: crimson;
+    }
+}
