@@ -166,6 +166,11 @@ footer nav a {
     align-items: flex-end;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 .middle-content .boxes .box-2 {
     background-color: forestgreen;
 }
