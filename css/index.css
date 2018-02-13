@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -28,8 +28,33 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+ header nav ul li {
+ 
+    width: 100%;
+    justify-content: space-between;
+    display: inline;
+	padding: 10px 40px;
+	text-align:center;
+
+
+}
+
 body {
 	line-height: 1;
+}
+.logo{
+margin-left:210px;
+margin-top:20px;
+
+}
+.logo2{
+ width:700px;
+	height:150px;
+	margin:0 auto;
+	margin-top:40px;
+		margin-bottom:40px;
+
 }
 ol, ul {
 	list-style: none;
@@ -57,7 +82,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +92,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -137,10 +162,70 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+#box2{
+
+background-color:forestgreen;
+}
+#box4{
+background-color:darkorchid;
+
+}
+#box6{
+background-color:hotpink;
+
+}
+#box8{
+background-color:indigo;
+
+}
+#box10{
+background-color:lawngreen;
+
+}
+/*tablet*/
+@media(max-width : 768px){
+	.container{
+		width : 100%;
+	}
+	.logo{
+	justify-content :center;
+	}
+	 header nav ul li {
+	 width :100%;
+       margin-top: 50px;
+
+	   margin-left : 20px;
+
+}#box1{
+
+background-color: teal;
+}
+#box3{
+background-color: gold;
+
+}
+#box5{
+background-color:cadetblue;
+
+}
+#box7{
+background-color:coral;
+
+}
+#box9{
+background-color:crimson;
+
+.section footer nav a{
+width :100%;
+display : flex;
+flex-content : spac-between;
+}
+
+
