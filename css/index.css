@@ -66,13 +66,33 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
-    font: 1.6 rem; 
+    font: 1.6 rem;
 }
 
 .container {
+/* solution */
     width: 100%
     max-width: 800rem;
     margin: 0 auto;
+}
+
+header { 
+    width: 100%; 
+    display: flex; 
+    margin: 20px 0; 
+}
+
+header .logo {
+    width: 157px; 
+    height: 40px;
+    background: black;
+}
+
+header nav {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-end; 
 }
 
 .top-content {
@@ -112,6 +132,7 @@ p {
     margin: 20rem 2.5%;
     color: white;
     display: flex;
+    font-size: 1.6 rem; 
     align-items: center;
     justify-content: center;
 }
