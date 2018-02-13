@@ -54,40 +54,64 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; /* 10px */
 }
 
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8 rem;
+    margin-bottom: 1rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font: 1.6 rem;
 }
 
 .container {
-    width: 800px;
+/* solution */
+    width: 100%
+    max-width: 800rem;
     margin: 0 auto;
+}
+
+header { 
+    width: 100%; 
+    display: flex; 
+    margin: 20px 0; 
+}
+
+header .logo {
+    width: 157px; 
+    height: 40px;
+    background: black;
+}
+
+header nav {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-end; 
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 20rem;
+    border-bottom: 1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 20rem;
+    border-bottom: 1rem dashed black;
 }
 
 .middle-content h2 {
@@ -103,18 +127,19 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 100rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 20rem 2.5%;
     color: white;
     display: flex;
+    font-size: 1.6 rem; 
     align-items: center;
     justify-content: center;
 }
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 20rem;
     justify-content: space-around;
 }
 
@@ -136,11 +161,112 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 20rem 2%;
+    font-size: 14rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+/* desktop */
+@media query (max-width: 1000px)
+.middle-content .boxes .box2 {
+    background: forestgreen; 
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid; 
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo; 
+}
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+/* tablet */
+@media query (max-width: 768px) 
+
+   header {
+     width: 100%;
+     display: flex;
+     margin: 20 0 15px;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-content: center; 
+}
+    header nav { 
+      margin-top: 30px;
+    }
+
+.middle-content .boxes .box1 {
+    background: teal; 
+}
+
+.middle-content .boxes .box3 {
+    background: gold; 
+}
+
+.middle-content .boxes .box5 {
+    background: cadetblue; 
+}
+
+.middle-content .boxes .box7 {
+    background: coral; 
+}
+
+.middle-content .boxes .box9 {
+    background: crimson; 
+}
+
+/* phone-design */
+@media query (max-width: 400px) tablet 
+
+   header { 
+       margin: 30px 0 0;
+   }
+
+   .jumbotron {
+       margin: 0 0 20px;
+   }
+
+   header nav {
+       display: flex; 
+       flex-direction: column; 
+       align-items: center; 
+       justify-content: center; 
+   }
+
+    header nav a:first-child {
+        border-top: 1px solid darkgray;
+    }
+
+    header nav a {
+        font-size: 1.4 rem;
+        text-decoration: none; 
+        color: black;
+        background: white;
+        display: block; 
+        width: 100%; 
+        text-align: center; 
+        padding: 15px; 
+        border-bottom: 1px solid darkgrey;
+    }
+.middle-content .boxes .box8 {
+    background: indigo; 
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box4 {
+    background: darkorchid; 
+}
+.middle-content .boxes .box2 {
+    background: forestgreen; 
+}
+<section class="bottom-content">
