@@ -276,7 +276,6 @@ footer nav a {
 	header nav {
 		margin: 2% 0;
 		height: 200px;
-		/*border: thin solid red;*/
 		flex-direction: column;
 		align-items: center;
 	}
@@ -289,6 +288,10 @@ footer nav a {
 		align-items: center;
 		border-top: 1px solid gray;
 
+	}
+
+	.jumbotron {
+	  height: 80px;
 	}
 
 	.top-content {
