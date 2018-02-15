@@ -310,7 +310,6 @@ footer nav a {
 	}
 
 	.bottom-content {
-		border: thin solid red;
 		flex-direction: column;
 	}
 
@@ -321,13 +320,12 @@ footer nav a {
 	footer {
 		display: flex;
 		justify-content: center;
-		border: thin solid red;
+		margin-bottom: 30px;
 	}
 
 	footer nav {
-		width: 80%;
+		width: 100%;
 		justify-content: space-between;
-		border: thin solid red;
-
+		margin: 0 8%;
 	}
 }
