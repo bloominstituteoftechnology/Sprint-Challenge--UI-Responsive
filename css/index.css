@@ -149,8 +149,15 @@ footer nav a {
 }
 @media(max-width: 1000px){
     .container {
-        max-width: 1000px;
+        max-width: 1000px; 
+}
+    .header {
+        display: flex;
+}
+    .middle-content .boxes .box #box2 {
+        background: forestgreen;
     }
+    
 }
 @media(max-width: 768px){
     .container {
