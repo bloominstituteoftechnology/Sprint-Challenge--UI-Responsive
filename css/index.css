@@ -226,14 +226,15 @@ footer nav a {
 @media(max-width: 400px) {
     .middle-content .boxes .box10 {
         display: none;
-    }
+    
+        
+}
+ .middle-content .boxes {
+     flex-direction: row-reverse;
+ }
 }
 
 /* 
-* The header and jumbotron are missing from the code.  Use the image named ```desktop-design.png``` to create a pixel perfect replacement. Please note, the ```desktop-design.png``` file is 1000px wide.
-
-## Complete the following tasks for desktop at a screen size of 1000px
-
 
 ## Complete the following tasks for phone at a screen size of 400px
 * Remove box 10 and reverse the order of the boxes.
