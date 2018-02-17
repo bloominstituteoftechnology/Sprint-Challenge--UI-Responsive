@@ -123,6 +123,7 @@ header nav ul li a {
 }
 
 .middle-content .boxes {
+    font-size: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
