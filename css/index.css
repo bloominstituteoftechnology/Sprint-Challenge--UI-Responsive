@@ -277,6 +277,12 @@ footer nav a {
         width: 100%;
         max-width: 1000px;
     }
+    .middle-content .boxes {
+        font-size: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     .middle-content .boxes .box2 {
         background: forestgreen;
     }
@@ -306,6 +312,12 @@ footer nav a {
     .jumboLogo {
         width: 100%;
         max-width: 768px;
+    }
+    .middle-content .boxes {
+        font-size: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     .middle-content .boxes .box1 {
         background: teal;
@@ -337,12 +349,26 @@ footer nav a {
     .top-content .text-container {
         width: 100%;
     }
+    .middle-content .boxes {
+        min-width: 100px;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
     .bottom-content {
         flex-direction: column;
         flex-wrap: wrap;
     }
     .bottom-content .text-container {
         width: 100%;
+    }
+    footer {
+        width: 100%;
+        max-width: 400px;
+    }
+    footer nav {
+        width: 60%;
+        font-size: 1.1rem;
     }
     footer nav a {
         margin: 7px;
