@@ -58,7 +58,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 2.5rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -81,6 +81,7 @@ p {
 }
 
 .top-content .text-container {
+    font-size: 1.5rem;
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
@@ -120,6 +121,7 @@ p {
 }
 
 .bottom-content .text-container {
+    font-size: 1.5rem;
     padding-right: 4%;
 }
 
@@ -138,7 +140,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.5rem;
 }
 
 footer nav a {
