@@ -196,5 +196,38 @@ footer nav a {
     margin-right: 13%;
 }
 
-                
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        margin: 18px 0 0 0;
+        flex-direction: column-reverse;
+    }
+
+    header nav ul {
+        margin: 18px 0 0 0;
+        justify-content: space-around;
+    }
+
+    #box1 {
+        background: teal;
+    }
+
+    #box3 {
+        background: gold;
+    }
+    
+    #box5 {
+        background: cadetblue;
+    }
+    
+    #box7 {
+        background: coral;
+    }
+    
+    #box9 {
+        background: crimson;
+    }              
 }
