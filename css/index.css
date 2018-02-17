@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,10 +68,40 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
-
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav {
+    width: 100%;
+}
+header img {
+    margin: 3% 3% 3% 0;
+    justify-content: flex-start;
+}
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+header nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 3%;
+    font-size: 1.25rem;
+}
+.jumbo {
+    width: 100%;
+    max-width: 880px;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +112,7 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 0 3%;
     padding-bottom: 20px;  
 }
 
@@ -103,6 +134,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -119,7 +151,7 @@ p {
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding: 0 3%;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,10 +169,123 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 1000px) {
+    header {
+        align-items: baseline;
+    }
+    .jumbo {
+        margin-bottom: 3%;
+    }
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header img {
+        display: block;
+    }
+    header nav ul {
+        width: 100%;
+        justify-content: space-around;
+        padding: 4%;
+    }
+    .middle-content {
+        margin: 3% 2%;
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+@media (max-width: 400px) {
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        width: 100%;
+        display: block;
+        margin-top: 1%;
+    }
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 3%;
+        border-bottom: 1px solid darkgray;
+        font-weight: bold;
+    }
+    header nav ul li:first-child {
+        border-top: 1px solid darkgray;
+    }
+    header nav ul li:last-child {
+        border: none;
+        padding-bottom: 0;
+    }
+    .top-content .text-container {
+        padding-top: 3%;
+        flex-direction: column;
+        width: 100%;
+        margin: 6% 20px;
+    }
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    .bottom-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    .bottom-content p {
+        padding-bottom: 8%;
+    }
+    .bottom-content .text-container:last-child{
+        padding-right: 1%;
+    }
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 1%;
+        font-size: 1.25rem;
+    }
+}
+
+
