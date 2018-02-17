@@ -147,6 +147,7 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
 @media(max-width: 1000px){
     .container {
         max-width: 1000px; 
@@ -154,9 +155,21 @@ footer nav a {
     .header {
         display: flex;
 }
-    .middle-content .boxes .box #box2 {
+    .middle-content .boxes .box .box2 {
         background: forestgreen;
-    }
+}
+    .middle-content .boxes .box .box4 {
+        background: darkorchid;
+}
+     .middle-content .boxes .box .box6 {
+        background: hotpink;
+}
+     .middle-content .boxes .box .box8 {
+        background: indigo;
+}
+     .middle-content .boxes .box .box10 {
+        background: lawngreen;
+}
     
 }
 @media(max-width: 768px){
