@@ -167,6 +167,40 @@ footer nav a {
   text-decoration: none;
 }
 
+/* BOX COLORS */
+@media (min-width: 0px) {
+	.middle-content .boxes .box:nth-child(1) {
+		background: teal;
+	}
+	.middle-content .boxes .box:nth-child(2) {
+		background: forestgreen;
+	}
+	.middle-content .boxes .box:nth-child(3) {
+		background: gold;
+	}
+	.middle-content .boxes .box:nth-child(4) {
+		background: darkorchid;
+	}
+	.middle-content .boxes .box:nth-child(5) {
+		background: cadetblue;
+	}
+	.middle-content .boxes .box:nth-child(6) {
+		background: hotpink;
+	}
+	.middle-content .boxes .box:nth-child(7) {
+		background: coral;
+	}
+	.middle-content .boxes .box:nth-child(8) {
+		background: indigo;
+	}
+	.middle-content .boxes .box:nth-child(9) {
+		background: crimson;
+	}
+	.middle-content .boxes .box:nth-child(10) {
+		background: lawngreen;
+	}
+}
+
 /* DESKTOP DESIGN */
 @media (min-width: 769px) {
 	.middle-content .boxes .box:nth-child(odd) {
@@ -235,39 +269,5 @@ footer nav a {
 	}
 	.bottom-content .text-container {
 		margin-bottom: 20px;
-	}
-}
-
-/* BOX COLORS */
-@media (min-width: 0px) {
-	.middle-content .boxes .box:nth-child(1) {
-		background: teal;
-	}
-	.middle-content .boxes .box:nth-child(2) {
-		background: forestgreen;
-	}
-	.middle-content .boxes .box:nth-child(3) {
-		background: gold;
-	}
-	.middle-content .boxes .box:nth-child(4) {
-		background: darkorchid;
-	}
-	.middle-content .boxes .box:nth-child(5) {
-		background: cadetblue;
-	}
-	.middle-content .boxes .box:nth-child(6) {
-		background: hotpink;
-	}
-	.middle-content .boxes .box:nth-child(7) {
-		background: coral;
-	}
-	.middle-content .boxes .box:nth-child(8) {
-		background: indigo;
-	}
-	.middle-content .boxes .box:nth-child(9) {
-		background: crimson;
-	}
-	.middle-content .boxes .box:nth-child(10) {
-		background: lawngreen;
 	}
 }
