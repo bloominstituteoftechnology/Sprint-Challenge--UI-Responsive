@@ -294,12 +294,10 @@ footer nav a {
         flex-direction: column;
         align-items: center;
     }
-
     header .logo {
         align-self: center;
         margin-bottom: 5%;
     }
-
     header .nav {
         margin-bottom: 2%;
     }
@@ -318,4 +316,129 @@ footer nav a {
     .middle-content .boxes .box9 {
         background: crimson;
     }
+
+@media (max-width: 768px) {
+    .container {
+        margin: 3% 0 0 0;
+        padding: 0 0 0 0;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .logo {
+        align-self: center;
+        margin-bottom: 5%;
+    }
+    header .nav {
+        margin-bottom: 2%;
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 400px;
+        margin: 6% 0;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+    header .nav {
+        margin: 2% 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header .nav a {
+        width: 100%;
+        margin: 0 0;
+        border-top: 1px solid gray;
+        text-align: center;
+        line-height: 300%;
+    }
+    .jumbo {
+        padding: 0 0 3% 0;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+    .top-content .text-container {
+        width: 100%;
+        margin: 3% 6% 6%;
+        padding: 0 10% 0 0;
+    }
+    .bottom-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bottom-content .text-container {
+        margin: 2%;
+    }
+    footer nav {
+        width: 100%;
+        padding: 5% 12.5%;
+        font-size: .9rem;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .middle-content .boxes .box1 {
+        order: 1;
+        width: 25%;
+    }
+    .middle-content .boxes .box2 {
+        order: 1;
+        width: 25%;
+    }
+    .middle-content .boxes .box3 {
+        order: 1;
+        width: 25%;
+    }
+    .middle-content .boxes .box4 {
+        order: 2;
+        width: 25%;
+    }
+    .middle-content .boxes .box5 {
+        order: 2;
+        width: 25%;
+    }
+    .middle-content .boxes .box6 {
+        order: 2;
+        width: 25%;
+    }
+    .middle-content .boxes .box7 {
+        order: 3;
+        width: 25%;
+    }
+    .middle-content .boxes .box8 {
+        order: 3;
+        width: 25%;
+    }
+    .middle-content .boxes .box9 {
+        order: 3;
+        width: 25%;
+    }
+
 }
