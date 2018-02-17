@@ -283,6 +283,9 @@ footer nav a {
     .middle-content .boxes .box10 {
         background: lawngreen;
     }
+    footer nav {
+        font-size: .8rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -316,37 +319,8 @@ footer nav a {
     .middle-content .boxes .box9 {
         background: crimson;
     }
-
-@media (max-width: 768px) {
-    .container {
-        margin: 3% 0 0 0;
-        padding: 0 0 0 0;
-    }
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    header .logo {
-        align-self: center;
-        margin-bottom: 5%;
-    }
-    header .nav {
-        margin-bottom: 2%;
-    }
-    .middle-content .boxes .box1 {
-        background: teal;
-    }
-    .middle-content .boxes .box3 {
-        background: gold;
-    }
-    .middle-content .boxes .box5 {
-        background: cadetblue;
-    }
-    .middle-content .boxes .box7 {
-        background: coral;
-    }
-    .middle-content .boxes .box9 {
-        background: crimson;
+    footer nav {
+        font-size: 1rem;
     }
 
 @media (max-width: 400px) {
