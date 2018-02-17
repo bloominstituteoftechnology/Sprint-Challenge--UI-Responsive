@@ -97,6 +97,10 @@ header nav ul li a {
     padding-bottom: 3%;
     font-size: 1.25rem;
 }
+.jumbo {
+    width: 100%;
+    max-width: 880px;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -189,6 +193,17 @@ footer nav a {
     }
 }
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    header img {
+        display: block;
+    }
+    header nav ul {
+        width: 100%;
+        justify-content: space-around;
+        padding: 4%;
+    }
     .middle-content .boxes .box1 {
         background: teal;
     }
