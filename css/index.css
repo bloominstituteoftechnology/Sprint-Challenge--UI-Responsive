@@ -266,4 +266,61 @@ footer nav a {
 
 @media (max-width: 1000px) {
 
+    .container {
+        width: 100%;
+        max-width: 800px;
+    }
+    header nav ul {
+        width: 100%;
+    }
+    .jumboLogo {
+        width: 100%;
+        max-width: 1000px;
+    }
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 768px;
+    }
+    header {
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    .jumboLogo {
+        width: 100%;
+        max-width: 768px;
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+    
 }
