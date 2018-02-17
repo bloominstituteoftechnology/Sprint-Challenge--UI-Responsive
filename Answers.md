@@ -1,6 +1,6 @@
 #Assessing Your User Interface and Responsive Design Learning
 ---
-## If you saw this HTML: <div class="box box1 box2 box3"></div> which class has the most specificity weight?
+## If you saw this HTML: ```<div class="box box1 box2 box3"></div>``` which class has the most specificity weight?
 * I would say it depends on how you call it, if we are going by structural order, ```.box3``` would have more weight. For example
 ```
 .box {
