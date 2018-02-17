@@ -178,6 +178,9 @@ footer nav a {
 }
 
 @media (max-width: 1000px) {
+    header {
+        align-items: baseline;
+    }
     .jumbo {
         margin-bottom: 3%;
     }
