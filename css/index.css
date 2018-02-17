@@ -72,6 +72,13 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display:flex;
+}
+nav {
+    display:flex;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +120,7 @@ p {
     justify-content: center;
 }
 
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -151,6 +159,12 @@ footer nav a {
     max-width: 1000px;
     width:100%;
     }
+    header {
+        display:flex;
+    }
+    nav {
+        display:flex;
+    }
 }
 
 
@@ -158,6 +172,12 @@ footer nav a {
     .container{
         max-width:768px;
         width:100%;
+    }
+    header {
+        display:flex;
+    }
+    nav {
+        display:flex;
     }
 
 }
