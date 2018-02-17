@@ -92,6 +92,7 @@ header nav ul {
     padding: 2%;
 }
 header nav ul li a {
+    font-weight: bold;
     text-decoration: none;
     color: black;
     padding-bottom: 3%;
@@ -111,7 +112,7 @@ header nav ul li a {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 0 3%;
     padding-bottom: 20px;  
 }
 
@@ -150,7 +151,7 @@ header nav ul li a {
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding: 0 3%;
 }
 
 .bottom-content .text-container:last-child {
@@ -177,6 +178,9 @@ footer nav a {
 }
 
 @media (max-width: 1000px) {
+    .jumbo {
+        margin-bottom: 3%;
+    }
     .middle-content .boxes .box2 {
         background: forestgreen;
     }
@@ -205,6 +209,9 @@ footer nav a {
         justify-content: space-around;
         padding: 4%;
     }
+    .middle-content {
+        margin: 3% 2%;
+    }
     .middle-content .boxes .box1 {
         background: teal;
     }
@@ -228,21 +235,28 @@ footer nav a {
     header nav ul {
         width: 100%;
         display: block;
-        margin-top: 5%;
+        margin-top: 1%;
     }
     header nav ul li {
         width: 100%;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 3%;
         border-bottom: 1px solid darkgray;
+        font-weight: bold;
     }
     header nav ul li:first-child {
         border-top: 1px solid darkgray;
     }
+    header nav ul li:last-child {
+        border: none;
+        padding-bottom: 0;
+    }
     .top-content .text-container {
+        padding-top: 3%;
         flex-direction: column;
         width: 100%;
+        margin: 6% 20px;
     }
     .middle-content .boxes {
         flex-direction: row-reverse;
@@ -253,6 +267,20 @@ footer nav a {
     .bottom-content {
         width: 100%;
         flex-direction: column;
+    }
+    .bottom-content p {
+        padding-bottom: 8%;
+    }
+    .bottom-content .text-container:last-child{
+        padding-right: 1%;
+    }
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 1%;
+        font-size: 1.25rem;
     }
 }
 
