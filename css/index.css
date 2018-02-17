@@ -350,7 +350,8 @@ footer nav a {
         width: 100%;
     }
     .middle-content .boxes {
-        min-width: 100px;
+        flex-flow: row-reverse;
+        flex-wrap: wrap;
     }
     .middle-content .boxes .box10 {
         display: none;
