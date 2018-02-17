@@ -133,6 +133,7 @@ header nav ul li a {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -221,10 +222,38 @@ footer nav a {
     }
 }
 @media (max-width: 400px) {
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        width: 100%;
+        display: block;
+        margin-top: 5%;
+    }
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 3%;
+        border-bottom: 1px solid darkgray;
+    }
+    header nav ul li:first-child {
+        border-top: 1px solid darkgray;
+    }
+    .top-content .text-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
     .middle-content .boxes .box10 {
         display: none;
     }
-
+    .bottom-content {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 
