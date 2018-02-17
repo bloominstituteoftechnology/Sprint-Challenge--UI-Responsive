@@ -53,12 +53,13 @@ table {
 }
 
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -68,7 +69,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -85,8 +86,12 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+.top-content .text-container p {
+    font-size: 1.4rem;
+}
 
 .middle-content {
+    font-size: 1.4rem;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -122,6 +127,9 @@ p {
 .bottom-content .text-container {
     padding-right: 4%;
 }
+.bottom-content .text-container p {
+    font-size: 1.4rem
+}
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
@@ -138,7 +146,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
