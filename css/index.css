@@ -73,10 +73,17 @@ p {
 }
 
 header {
+    margin-top:1rem;
     display:flex;
+    align-items: center;
+    margin-bottom: 4rem;
 }
 nav {
+    margin: 0 auto;
+    width:70%;
     display:flex;
+    font-size: 2rem;
+    justify-content: space-between;
 }
 
 .top-content {
@@ -112,7 +119,7 @@ nav {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -159,11 +166,23 @@ footer nav a {
     max-width: 1000px;
     width:100%;
     }
-    header {
-        display:flex;
+    .box{
+        background: black;
     }
-    nav {
-        display:flex;
+    .box2 {
+        background-color:forestgreen;
+    }
+    .box4 {
+        background: darkorchid;
+    }
+    .box6 {
+        background: hotpink;
+    }
+    .box8 {
+        background: indigo;
+    }
+    .box10 {
+        background: lawngreen;
     }
 }
 
@@ -173,13 +192,24 @@ footer nav a {
         max-width:768px;
         width:100%;
     }
-    header {
-        display:flex;
-    }
-    nav {
-        display:flex;
-    }
-
+   .box {
+       background: black;
+   }
+   .box1 {
+       background: teal;
+   }
+   .box3 {
+       background: gold;
+   }
+   .box5 {
+       background: cadetblue;
+   }
+   .box7 {
+       background: coral;
+   }
+   .box9 {
+       background: crimson;
+   }
 }
 
 @media (max-width: 400px){
@@ -187,4 +217,5 @@ footer nav a {
         max-width: 768px;
         width: 100%;
     }
+
 }
