@@ -300,7 +300,7 @@ footer nav a {
         max-width: 768px;
     }
     header {
-        flex-flow: wrap;
+        flex-wrap: wrap;
         justify-content: center;
     }
     .jumboLogo {
@@ -323,4 +323,29 @@ footer nav a {
         background: crimson;
     }
     
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+    .top-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .top-content .text-container {
+        width: 100%;
+    }
+    .bottom-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .bottom-content .text-container {
+        width: 100%;
+    }
+    footer nav a {
+        margin: 7px;
+    }
+
 }
