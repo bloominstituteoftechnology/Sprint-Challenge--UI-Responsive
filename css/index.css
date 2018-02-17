@@ -210,6 +210,10 @@ footer nav a {
         width: 100%;
     }
 
+    header img {
+        margin-bottom: 25px;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
