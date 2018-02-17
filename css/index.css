@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +68,41 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+        width: 100%;
+        display: flex;
+        margin: 2rem 0 0 0;
+}
+
+header img {
+  width: 18rem;
+  height: 4rem;
+
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    margin-top: 2.5rem;
+
+}
+
+.jumbotron {
+    width: 100%;
+       height: auto;
+       margin: 3rem 0 2rem 0;
+}
+header nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+
 }
 
 .top-content {
@@ -110,7 +144,29 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+.middle-content .boxes .box2 {
+        background: forestgreen;
+       
+    }
+
+   .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+
+   .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+
+  .middle-content .boxes .box8 {
+        background: indigo;
+    }
+
+  .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+
 
 .bottom-content {
     display: flex;
@@ -137,10 +193,50 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 1000px) {
+    
+}
+
+@media (max-width: 768px) {
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+@media(max-width: 400px) {
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+}
+
+/* 
+* The header and jumbotron are missing from the code.  Use the image named ```desktop-design.png``` to create a pixel perfect replacement. Please note, the ```desktop-design.png``` file is 1000px wide.
+
+## Complete the following tasks for desktop at a screen size of 1000px
+
+
+## Complete the following tasks for phone at a screen size of 400px
+* Remove box 10 and reverse the order of the boxes.
+* Please reference the design file ```phone-design.png``` and make sure your layout matches this design as close as you can.
+
+* */ 
