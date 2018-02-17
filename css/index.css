@@ -34,6 +34,25 @@ body {
 ol, ul {
 	list-style: none;
 }
+.header {
+    width: 100%;
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 5%;
+}
+li {
+    align-self: flex-end;
+}
+#fastCars {
+    padding-bottom: 3%;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -57,7 +76,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +86,8 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -112,6 +132,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +177,53 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
 }
