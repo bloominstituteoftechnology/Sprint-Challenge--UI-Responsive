@@ -73,37 +73,7 @@ p {
     width: 100%;
     margin: 0 auto;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    max-width: 800px;
-    width: 100%;
-    margin: 15px auto;
-    flex-wrap: wrap;
-}
-header .logo { 
-    width: 10%;
-    height: 25px;
-}
-header nav  {
-    font-size: 1.5rem;
-    width: 80%;
- align-content: flex-end;
-    justify-content: space-around;
-}
 
-header a {
-    display: flex;
-    color: black;
-    text-decoration: none;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-header a:hover {
-    color: darkblue;
-    text-decoration: underline;
-}
 .top-content {
     display: flex;
     flex-wrap: wrap;
