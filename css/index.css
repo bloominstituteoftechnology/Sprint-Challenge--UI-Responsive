@@ -1,3 +1,4 @@
+/* trying to pull b4 changing anything */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,6 +51,9 @@ table {
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 
 html, body {
     height: 100%;
@@ -57,17 +61,19 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.8rem;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+   max-width: 800px;
     margin: 0 auto;
 }
 
@@ -110,6 +116,25 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.middle-content .boxes .box2 {
+    background:forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background:darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background:hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background:indigo;
+}
+
+.middle-content .boxes .box10 {
+    background:lawngreen;
 }
 
 .bottom-content {
