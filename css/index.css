@@ -75,30 +75,29 @@ p {
 }
 header {
     display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    max-width: 800px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     margin: 15px auto;
-    flex-wrap: wrap;
+
 }
 header .logo { 
-    width: 10%;
+    width: 100%;
     height: 25px;
 }
-header nav  {
+header nav ul li{
+    display: flex;
     font-size: 1.5rem;
-    width: 80%;
- align-content: flex-end;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
 }
 
 header a {
     display: flex;
     color: black;
     text-decoration: none;
-    align-items: flex-end;
-    justify-content: space-between;
+
 }
 header a:hover {
     color: darkblue;
@@ -109,7 +108,7 @@ header a:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid black;
 }
 
 .top-content .text-container {
@@ -120,7 +119,7 @@ header a:hover {
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px solid black;
 }
 
 .middle-content h2 {
@@ -134,7 +133,47 @@ header a:hover {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1  {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box2  {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box3  {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box4  {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box5  {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -145,6 +184,56 @@ header a:hover {
     justify-content: center;
 }
 
+.middle-content .boxes .box6  {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box7  {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box8  {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box9  {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box10  {
+    width: 12.5%;
+    height: 100px;
+    background: lawngreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -176,4 +265,51 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .middle-content .boxes .box1  {
+        background: teal;
+    }
+    .middle-content .boxes .box3  {
+        background: gold;
+    }
+    .middle-content .boxes .box5  {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7  {
+        background: coral;
+    }
+    .middle-content .boxes .box9  {
+        background: crimson;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+    }
+    .middle-content .boxes   {
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-evenly;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
 }
