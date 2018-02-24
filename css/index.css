@@ -73,7 +73,7 @@ p {
     width: 100%;
     margin: 0 auto;
 }
-<<<<<<< HEAD
+
 header {
     display: flex;
     justify-content: flex-start;
@@ -104,9 +104,7 @@ header a:hover {
     color: darkblue;
     text-decoration: underline;
 }
-=======
 
->>>>>>> 57e6d4125f0f6e9bef04552d969b6ccfb9004980
 .top-content {
     display: flex;
     flex-wrap: wrap;
