@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,38 +51,73 @@ table {
     box-sizing: border-box;
 }
 
+/* End of reset */
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+		font-size: 62.5%; // 10px = 16px * 0.625
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+		font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+		max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+	display: flex;
+	align-items: flex-end;
+	margin: 2% 0 4.5% 0;
+}
+
+header .logo {
+	order: -1;
+}
+
+nav {
+	width: 85%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a {
+	font-size:1.4rem;
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.jumbotron {
+	width: 100%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -102,6 +137,8 @@ p {
 }
 
 .middle-content .boxes .box {
+		font-weight: bold;
+		min-width: 100px;
     width: 12.5%;
     height: 100px;
     background: black;
@@ -110,6 +147,27 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+		font-size: 1.6rem;
+}
+
+.middle-content .boxes .box2 {
+	background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+	background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+	background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+	background: indigo;
+}
+
+.middle-content .boxes .box10 {
+	background: lawngreen;
 }
 
 .bottom-content {
@@ -132,15 +190,145 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
+		font-weight: bold;
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+
+	.middle-content .boxes .box2 {
+		background: forestgreen;
+	}
+
+	.middle-content .boxes .box4 {
+		background: darkorchid;
+	}
+
+	.middle-content .boxes .box6 {
+		background: hotpink;
+	}
+
+	.middle-content .boxes .box8 {
+		background: indigo;
+	}
+
+	.middle-content .boxes .box10 {
+		background: lawngreen;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	nav {
+		width: 100%;
+	}
+
+	header {
+		height: 80px;
+		margin: 2.5% 0 4.5% 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.middle-content .boxes .box1 {
+		background: teal;
+	}
+
+	.middle-content .boxes .box3 {
+		background: gold;
+	}
+
+	.middle-content .boxes .box5 {
+		background: cadetblue;
+	}
+
+	.middle-content .boxes .box7 {
+		background: coral;
+	}
+
+	.middle-content .boxes .box9 {
+		background: crimson;
+	}
+}
+
+@media (max-width: 400px) {
+
+	header {
+		height: 5%;
+	}
+
+	header .logo {
+		margin: 20px 0 40px 0;
+	}
+
+	header nav {
+		margin: 2% 0;
+		height: 200px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav a {
+		padding: 11%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid gray;
+
+	}
+
+	.jumbotron {
+	  height: 80px;
+	}
+
+	.top-content {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.top-content .text-container {
+			padding: 0 25px 20px 25px;
+	    width: 100%;
+	}
+
+	.middle-content .boxes .box10 {
+		display: none;
+	}
+
+	.middle-content .boxes {
+		flex-direction: row-reverse;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-content .text-container p {
+		margin-bottom: 5%;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	footer nav {
+		width: 100%;
+		justify-content: space-between;
+		margin: 0 8%;
+	}
 }
