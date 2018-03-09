@@ -317,5 +317,9 @@ footer nav a {
             justify-content: space-around;
             padding: 20px 5%;
         }
+
+        footer {
+            margin-bottom: 20px;
+        }
     }
 }
