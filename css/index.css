@@ -56,18 +56,25 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+     font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
+    font-size: 1.8rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font: 1.6rem;
 }
 
 .container {
     width: 800px;
+    max-width: 800rem;
     margin: 0 auto;
 }
 
@@ -82,12 +89,13 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+
 }
 
 .middle-content h2 {
@@ -110,6 +118,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem
 }
 
 .bottom-content {
@@ -138,9 +147,63 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+    font-size: 14rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* desktop */
+@media (max-width: 1000px)
+.middle-content .boxes .box2 {
+    background: forestgreen;
+
+.middlecontent .boxes .box4 {
+    background: darkorchid;
+}
+.middlecontent .boxes .box6 {
+    background: hotpink;
+}
+.middlecontent .boxes .box8 {
+    background: indigo;
+}
+.middlecontent .boxes .box10 {
+    background: lawngreen
+}
+
+/* tablet */
+@media (max-width: 768px) 
+    .container {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    header nav {
+        margin-top: 30px;
+    }
+    .jumbotron img {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+.middlecontent .boxes .box1 {
+    background: teal;
+}
+.middlecontent .boxes .box3 {
+    background: gold;
+}
+.middlecontent .boxes .box5 {
+    background: cadetblue;
+}
+.middlecontent .boxes .box7 {
+    background: coral;
+}
+.middlecontent .boxes .box9 {
+    background: crimson;
 }
