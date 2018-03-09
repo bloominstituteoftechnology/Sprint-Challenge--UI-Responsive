@@ -208,6 +208,7 @@ a {
 
 @media(max-width: 768px) {
 
+    /* Change Header Layout */
     header {
         flex-flow: column wrap;
         margin-top: 20px;
@@ -218,6 +219,7 @@ a {
         margin-bottom: 30px;
     }
 
+    /* Change Color of Boxes */
     .middle-content .boxes .box1 {
         background: teal;
     }
@@ -233,6 +235,31 @@ a {
     .middle-content .boxes .box9 {
         background: crimson;
     }
+
+    /* Change Text-Containers to Display Differently */
+
+    .top-content{
+        border: 1px red solid; 
+        justify-content: space-around;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+   .top-content .text-container {
+       border: 1px red solid;
+       padding: 0;
+       width: 35%;
+   }
+
+   .bottom-content {
+       justify-content: space-between;
+   }
+   .bottom-content .text-container {
+       width: 25%;
+   }
 }
 
 /* @media(max-width: 400px) {
