@@ -321,12 +321,17 @@ footer nav a {
     }
     
     .top-content .text-container {
-        width: 48%;
-        padding-bottom: 46px;
-        font-size: 1.5rem;
+        width: 85%;
+        padding-bottom: 93px;
+        font-size: 1.4rem;
         padding-top: 25px;
+        padding-left: 7%;
+        height: 184px;
     }
 
+    .middle-content .boxes {
+        height: 442px;
+    }
 
 
 
