@@ -92,9 +92,9 @@ header nav {
   justify-content: space-between;
 }
 
-nav a {
+header nav a {
   text-decoration: none;
-  color: grey;
+  color: black;
   font-size: 1.6rem;
 }
 
@@ -188,9 +188,9 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 2%;
     font-size: 1.4rem;
@@ -235,3 +235,43 @@ footer nav a {
   }
 }
 
+/* Phone */
+@media (max-width: 400px) {
+  .logo {
+    width: 40%;
+  }
+
+  header nav {
+    margin: 7% 0 0 0;
+    flex-flow: column;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid grey;
+    padding: 4%;
+  }
+
+  .top-content, .bottom-content {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .top-content .text-container, .bottom-content .text-container {
+    width: 90%;
+    padding: 0 0 20px;
+  }
+
+  .middle-content .boxes {
+    flex-flow: wrap row-reverse;
+  }
+
+  .middle-content .boxes .box {
+    width: 25%;
+  }
+
+  .middle-content .boxes .box10 {
+    display: none;
+  }
+}
