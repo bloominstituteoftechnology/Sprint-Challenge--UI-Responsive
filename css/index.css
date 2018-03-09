@@ -128,7 +128,6 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 1px solid black;
 }
 
 .middle-content .boxes .box {
@@ -242,9 +241,13 @@ footer nav {
 }
 
 @media (max-width: 400px) {
+   html{
+       height: 100%;
+   }
     .container {
         width: 100%;
-        margin: none;
+        max-width:390px;
+        margin: 0;
     }
 
     header {
@@ -252,8 +255,9 @@ footer nav {
         font-size: 1.5rem;
         display:flex;
         flex-wrap: wrap;
-        margin: 20px 0%;
-        
+        margin: 20px 0 -15px 0%;  
+        justify-content: center; 
+          
     }
     
     header nav {
@@ -261,30 +265,51 @@ footer nav {
         width: 100%;
         display:flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;   
-        border: 1px solid green;
+        justify-content: center;
+        align-items: center; 
+        padding  
     }
 
     header nav a {
-        border-width: 100%;
+        width: 100%;
         border-top: 1px solid grey;
         padding: 10px 0;
         display: flex;
-        align-items: center;
+        justify-content: center;
+
     }
 
-    header img .logo {
+    header img {
         display: flex;
         align-self: center;
+        padding-bottom: 20px;
+        margin-top: -10;
     }        
-
+    .top-content {
+        margin: 0 0% 20px 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;       
+    }
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 5%;
+        padding-bottom: 20px;  
+    }
+    .middle-content {
+        margin: 0 0% 20px 0%;
+        
+    }
+    .middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    }
 
     .middle-content .boxes .box {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
         width: 27%;
+        min-width: 100px;
     }
 
     .middle-content .boxes .box:nth-of-type(10) {
@@ -294,6 +319,7 @@ footer nav {
     .bottom-content {
         display: flex;
         flex-direction: column;
+        margin: 0 3% 20px 3%;
     }
     
     .bottom-content .text-container {
