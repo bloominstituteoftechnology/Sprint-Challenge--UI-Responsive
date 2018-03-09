@@ -223,6 +223,10 @@ footer nav a {
         width: 100%;
     }
 
+    .middle-content {
+        margin: 0 -5% 0 0%;
+    }
+
     .middle-content .boxes .box1 {
         background-color: teal;
     }
@@ -241,6 +245,10 @@ footer nav a {
 
     .middle-content .boxes .box9 {
         background-color: crimson;
+    }
+
+    .bottom-content {
+        margin: 20px 2% 20px;
     }
 
     @media (max-width: 400px) {
@@ -276,5 +284,7 @@ footer nav a {
             width: 100%;
             padding: 0 0 20px 5%;
         }
+
+
     }
 }
