@@ -66,9 +66,43 @@ p {
     line-height: 1.4;
 }
 
+/*start here*/
+body {
+    font-size: 62.5%;
+}
+
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 2% 0 3% 0;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: gray;
+}
+
+header nav ul li a:hover {
+    color: black;
 }
 
 .top-content {
@@ -101,7 +135,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.boxes .box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -110,6 +144,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.boxes .box:nth-of-type(2) {
+    background-color: green;
+}
+
+.boxes .box:nth-of-type(4) {
+    background-color: rgb(160, 57, 160);
+}
+
+.boxes .box:nth-of-type(6) {
+    background-color: rgb(231, 99, 187);
+}
+
+.boxes .box:nth-of-type(8) {
+    background-color: purple;
+}
+
+.boxes .box:nth-of-type(10) {
+    background-color: rgb(24, 250, 24);
 }
 
 .bottom-content {
@@ -144,3 +198,7 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 400px) {}
