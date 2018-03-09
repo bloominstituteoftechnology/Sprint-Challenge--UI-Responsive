@@ -154,6 +154,33 @@ nav img {
     padding-right: 0;
 }
 
+.lower-content {
+    border-top: 1px dashed black;
+    padding-top: 2%;
+}
+
+.lower-content h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+
+.lower-content_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.lower-content_text {
+    align-self: center;
+    order: -1
+}
+
+.lower-content_text p {
+    font-size: 2rem;
+}
+
+
+
 footer {
     width: 100%;
     background: black;
@@ -175,6 +202,24 @@ footer nav a {
 
 /*MEDIA QUERIES BELOW///////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*SPRINT CHALLENGE MEDIA QUERY///////////////////////////////////////*/
+
+@media(max-width: 1200px) {
+    .lower-content_container {
+        display: block;
+    }
+
+    .lower-content .lower-content_image img{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/*SPRINT CHALLENGE MEDIA QUERY///////////////////////////////////////*/
+
+
 
 @media(max-width: 1000px) {
 .middle-content .boxes .box2 {
