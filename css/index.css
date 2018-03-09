@@ -308,6 +308,10 @@ footer nav a {
         align-items: center;
     }
 
+    header .logo {
+        width: 15%;
+    }
+
     header ul {
         display: flex;
         width: 40%;
