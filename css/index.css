@@ -53,6 +53,7 @@ table {
 
 html, body {
     height: 100%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
 }
@@ -61,22 +62,18 @@ html, body {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    padding-top: 1%;
 }
 
 header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
 }
 
-/* baseline? */
 header nav {
     width: 75%;
     justify-content: space-between; 
-}
-
-header img {
-    width: 25%;
 }
 
 header nav a {
@@ -94,7 +91,7 @@ header nav a {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -118,7 +115,6 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -132,11 +128,11 @@ p {
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -204,10 +200,11 @@ footer nav a {
 @media (max-width: 768px) {
 
     /* Header, Nav Bar, Jumbotron */
+    
     .container header {
-        display: inline; 
+        display: block;
+        width: 100%;
     }
-
     .container header .logo-div {
         display: flex;
         margin: 3% 0;
@@ -216,7 +213,10 @@ footer nav a {
     }
 
     .container header nav {
-        width: 100%;
+        width: 95%;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
     }
 
     .container .jumbotron img {
@@ -248,40 +248,58 @@ footer nav a {
 
     /* Header, Nav Bar, Jumbotron */
     .container header {
-        display: inline; 
+        display: inline-block;
+    }
+    .jumbotron {
+        margin: 0;
     }
 
-    .container header .logo-div {
-        display: flex;
-        margin: 3% 0;
+    header nav {
         width: 100%;
-        justify-content: center;
     }
-
     .container header nav {
         width: 100%;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .container header nav a {
+        border-top: 1px solid grey;
+        margin: 0;
+        text-align: center;
+        padding: 3% 0;
     }
 
     .container .jumbotron img {
         width: 100%;
     }
 
-    /* Middle Content */
-    .middle-content .boxes {
+    /* Top Content */
+    .top-content {
         display: flex;
-        width: 100%;
-        border: 1px solid black;
-        justify-content: space-between;
         flex-direction: column;
+        justify-content: center;
     }
 
-    .middle-content .rows {
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
+    .top-content .text-container {
+        margin: 2% 0;
         width: 100%;
-        border: 1px solid black;
     }
+
+    /* Middle Content */
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
     .middle-content .boxes .box1 {
         background-color: teal;
     }
