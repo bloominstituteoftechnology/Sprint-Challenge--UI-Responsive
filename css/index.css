@@ -236,7 +236,7 @@ footer nav a {
 
 /*END 768px MEDIA QUERY, 400px BELOW/////////////////////////////////////////////////////////////////////*/
 
-@media(min-width: 400px) and (max-width: 450px) {
+@media(min-width: 400px) and (max-width: 500px) {
 
     h2 {
         font-size: 2.3rem
