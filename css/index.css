@@ -24,6 +24,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+html {
+    font-size: 62.5%;
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -57,7 +60,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +70,49 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 80%;
     margin: 0 auto;
+}
+header {
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+    flex-flow: wrap;
+}
+
+header .logo {
+    display: flex;
+    width: 20%;
+    height: 20%;
+}
+header ul{
+    width: 20%;
+    display: flex;
+    align-items: baseline;
+}
+
+header p {
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+
+header nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    justify-content: space-between;
+}
+
+header .top-img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .top-content {
@@ -77,12 +121,18 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-top: 10px;
 }
+
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container p {
+    font-size: 1.4rem;
 }
 
 .middle-content {
@@ -114,12 +164,13 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 20px;  
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.4rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,10 +188,133 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  
+    .container {
+       max-width: 100%;
+   }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header nav a {
+        font-size: 1.6rem;
+    }
+
+    .bottom-content .text-container {
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header ul {
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+    }
+
+    header ul p {
+        font-size: 3.5rem;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid gray;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.4rem;
+        border-bottom: 1px solid grey;
+    }
+
+    header .top-img {
+        height: 75px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .top-content .text-container p {
+        font-size: 1.7rem;
+    }
+
+    .middle-content .boxes {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .bottom-content .text-container p {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        border: 1px solid green;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
