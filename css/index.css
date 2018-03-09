@@ -146,6 +146,25 @@ header .lambdalogo {
     justify-content: center;
 }
 
+#box2 {
+	background-color: forestgreen;
+}
+
+#box4 {
+	background-color: darkorchid;
+}
+
+#box6 {
+	background-color: hotpink;
+}
+
+#box8 {
+	background-color: indigo;
+}
+
+#box10 {
+	background-color: lawngreen;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
