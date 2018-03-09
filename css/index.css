@@ -206,6 +206,25 @@ header .logo {
     padding-right: 0;
 }
 
+.bottom-image {
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+}
+
+.bottom-image img {
+    max-width: 100%;
+}
+
+.extra-content {
+    max-width: 100%;
+    display: flex;
+    margin: 0 2% 20px 2.2%;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    padding: 1%;
+}
+
 footer {
     width: 100%;
     background: black;
@@ -253,6 +272,10 @@ footer nav a {
                 margin-left: 0;
             }
 
+            .bottom-image {
+                margin-left: 0;
+            }
+
 
             .middle-content .boxes .box:first-child {
             background-color: teal;
@@ -287,7 +310,7 @@ footer nav a {
 
     }
 
-@media (min-width: 380px) and  (max-width: 767px) {
+@media (min-width: 360px) and  (max-width: 767px) {
 
     header {
         flex-wrap: wrap;
@@ -361,7 +384,8 @@ header nav a:first-child {
     margin: 20px 2.5%;
 }
 
-.bottom-content {
+.bottom-content,
+.extra-content {
     flex-direction: column;
     align-items: center;
 }
@@ -370,7 +394,8 @@ header nav a:first-child {
     width: 100%;
 }
 
-.bottom-content .text-container h2 {
+.bottom-content .text-container h2,
+.extra-content .text-container h2 {
     margin-top: 1%;
 }
 
