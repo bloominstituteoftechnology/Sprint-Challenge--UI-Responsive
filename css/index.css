@@ -102,14 +102,16 @@ header nav a {
 header .logo {
     margin-top: 3%;
     margin-left: 1%;
-    align-self: flex-start;
 }
 
 .jumbotron {
     margin-top: 4%;
     margin-left: 1%;
-    margin-bottom: 4%;
-    max-width: 90%
+    margin-bottom: 3%;
+}
+
+.jumbotron img {
+    max-width: 100%;
 }
 
 .top-content {
@@ -140,6 +142,8 @@ header .logo {
     margin-bottom: 0;
 }
 
+
+
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -157,10 +161,52 @@ header .logo {
     justify-content: center;
 }
 
+.middle-content .boxes .box:first-child {
+    background-color: teal;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background-color: gold;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+    background-color: coral;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+    background-color: crimson;
+}
+
+.middle-content .boxes .box:last-child {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 20px 2.2%;
     justify-content: space-around;
+    font-size: 1.6rem;
+    padding: 1%;
 }
 
 .bottom-content .text-container {
@@ -174,6 +220,8 @@ header .logo {
 footer {
     width: 100%;
     background: black;
+    margin-left: 1%;
+    padding-bottom: 4%;
 }
 
 footer nav {
@@ -189,3 +237,9 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+.boxes .box {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
