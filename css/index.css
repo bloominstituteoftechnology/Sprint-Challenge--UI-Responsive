@@ -51,10 +51,14 @@ table {
     box-sizing: border-box;
 }
 
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -107,7 +111,8 @@ header nav a:hover {
 }
 
 .jumbo {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -143,6 +148,7 @@ header nav a:hover {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -212,6 +218,7 @@ footer nav a {
     }
     
     .logo {
+        min-width: 160px;
         margin-bottom: 30px;
     }
     
@@ -304,5 +311,7 @@ footer nav a {
     footer nav {
         width: 100%;
         padding: 20px 10%;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
