@@ -21,13 +21,26 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+    html{
+       font-size:62.5%;
+}
+    * HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    justify-content: center
+}
+
 body {
 	line-height: 1;
 }
@@ -50,6 +63,36 @@ table {
 * {
     box-sizing: border-box;
 }
+header{
+    width: 100%;
+    display: flex;
+    
+  
+    
+    
+   
+}
+header nav{
+width: 90%;
+display: flex;
+justify-content: space-around;
+margin:3.7% 0 0 0;
+
+    
+
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.jumbo{
+ width: 1000px;
+ align-content: center;
+}
+
+
 
 html, body {
     height: 100%;
@@ -66,10 +109,7 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
+
 
 .top-content {
     display: flex;
@@ -101,16 +141,30 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.box.box2{
+    background-color: forestgreen;  
+}.box.box4{
+    background-color: darkorchid;  
+}.box.box6{
+    background-color: hotpink;  
+}.box.box8{
+    background-color: indigo;  
+}.box.box10{
+    background-color:lawngreen;  
+}
+
+.box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background:black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .bottom-content {
     display: flex;
@@ -144,3 +198,30 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media(max-width:768px){
+    .box.box1{
+        background-color: teal;  
+    }.box.box3{
+        background-color: gold ;  
+    }.box.box5{
+        background-color: cadetblue;  
+    }.box.box7{
+        background-color:coral ;  
+    }.box.box9{
+        background-color: crimson;  
+    }
+
+}
+@media(max-width:400x){
+    .box.box1{
+        background-color: teal;  
+    }.box.box3{
+        background-color: gold ;  
+    }.box.box5{
+        background-color: cadetblue;  
+    }.box.box7{
+        background-color:coral ;  
+    }.box.box9{
+        background-color: crimson;  
+    }
