@@ -63,11 +63,13 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+/* 62.5% font size so needed to adjust fonts*/
 p, a, .box {
     font-size: 1.6rem;
     line-height: 1.4;
-}
 
+}
+/* nav bar styling*/
 a {
     color: black;
     text-decoration: none;
@@ -79,12 +81,14 @@ a:hover {
     text-decoration-color: gray;
 }
 
+/* set-up for responsive*/
 .container {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* header styling*/
 header {
     display: flex;
     justify-content: space-between;
@@ -99,10 +103,12 @@ header nav {
     flex-grow: 5;
 }
 
+/* img isolation*/
 .jumbo {
     padding: 20px 0;
 }
 
+/* 1st text styling*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +123,8 @@ header nav {
     padding-bottom: 20px;  
 }
 
+
+/* box styling*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -136,6 +144,7 @@ header nav {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
+    min-width: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -144,6 +153,7 @@ header nav {
     justify-content: center;
 }
 
+/* box coloring*/
 .middle-content .boxes .box2 {
     background-color: forestgreen;
 }
@@ -164,6 +174,7 @@ header nav {
     background-color: lawngreen;
 }
 
+/* 2nd text styling*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -178,6 +189,7 @@ header nav {
     padding-right: 0;
 }
 
+/* footer styling*/
 footer {
     width: 100%;
     background: black;
@@ -197,6 +209,7 @@ footer nav a {
     text-decoration: none;
 }
 
+/* tablet view styling*/
 @media (max-width: 768px) {
     .container {
         max-width: 768px;
@@ -223,10 +236,7 @@ footer nav a {
         width: 100%;
     }
 
-    .middle-content .boxes .box {
-        width: 13%;
-    }
-
+    /* box styling*/
     .middle-content .boxes .box1 {
         background-color: teal;
     }
@@ -251,6 +261,7 @@ footer nav a {
         margin: 20px 2% 20px;
     }
 
+    /* mobile view styling*/
     @media (max-width: 400px) {
         .container {
             max-width: 400px;
@@ -286,6 +297,7 @@ footer nav a {
             padding: 0 0 20px 5%;
         }
 
+        /* direction reversing*/
         .middle-content .boxes {
             flex-direction: row-reverse;
         }
@@ -294,6 +306,7 @@ footer nav a {
             width: 25.5%;
         }
 
+        /* removing 10th box*/
         .middle-content .boxes .box10 {
             display: none;
         }
@@ -301,7 +314,7 @@ footer nav a {
         .bottom-content {
             flex-direction: column;
             margin-left: 3%;
-            width: 87%;
+            width: 87%;  /*only dont to match the png image*/
             letter-spacing: -.5px;
         }
 
@@ -309,6 +322,7 @@ footer nav a {
             padding: 10px 0;
         }
 
+        /* only done to match the png image*/
         .bottom-content .text-container.curveball {
             width: 110%;
         }
@@ -319,6 +333,7 @@ footer nav a {
             padding: 20px 5%;
         }
 
+        /* only dont to match the png img*/
         footer {
             margin-bottom: 20px;
         }
