@@ -221,7 +221,7 @@ footer nav a {
     header {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 37px;
+        margin-bottom: 26px;
     }
 
     header .logo {
@@ -235,6 +235,14 @@ footer nav a {
 
     .jumbotron img {
         padding: 0;
+    }
+
+    .top-content {
+        padding-bottom: 27px;
+    }
+
+    .top-container .text-container {
+        padding: 0 2%;
     }
 
     .top-container .text-container p {
@@ -275,7 +283,7 @@ footer nav a {
     }
 
     footer nav {
-        padding: 20px 1%;
+        padding: 24px 1%;
     }
 }
 
