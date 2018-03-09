@@ -150,6 +150,7 @@ footer nav a {
     text-decoration: none;
 }
 
+/* Change Box Colors for 1000px */
 .middle-content .boxes .box2 {
     background: forestgreen;
 }
@@ -164,4 +165,16 @@ footer nav a {
 }
 .middle-content .boxes .box10 {
     background: lawngreen;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header .logo {
+    order: -1;
+    width: 20%;
+    height:
 }
