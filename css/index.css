@@ -102,7 +102,7 @@ header .logo {
     margin: 20px 6% 40px 0;
 }
 
-header img {
+ img {
     margin-bottom: 20px;
 }
 
@@ -212,4 +212,61 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* TABLET 768PX */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        margin: 10px 8% 20px 5%;
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        margin-right: 18%;
+        margin-left: 3%;
+    }
+
+    img {
+        width: 99%;
+        margin: 20px 0 20px 0;
+    }
+
+    header .logo {
+        width: 20%;
+        display: block;
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    /* MIDDLE CONTENT */
+    .middle-content .boxes .box:nth-child(1) {
+        background: teal;
+    }
+
+    .middle-content .boxes .box:nth-child(3) {
+        background: gold;
+    }
+
+    .middle-content .boxes .box:nth-child(5) {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-chil(7) {
+        background:coral;
+    }
+
+    .middle-content .boxes .box:nth-child(9) {
+        background: crimson;
+    }
 }
