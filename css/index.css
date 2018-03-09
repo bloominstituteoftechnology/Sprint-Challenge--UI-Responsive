@@ -286,3 +286,105 @@ footer nav a {
 
 
     }
+
+@media (min-width: 380px) and  (max-width: 767px) {
+
+    header {
+        flex-wrap: wrap;
+        margin-top: 8%;
+    }
+
+    header .logo {
+        margin-bottom: 5%;
+    }
+
+
+header nav {
+    width: 98%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a {
+        color: #000;
+        font-size: 1.4rem;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        padding-bottom: 3%;
+        text-align: center;
+}
+
+header nav a:first-child {
+    padding-top: 4%;
+}
+
+header nav a:first-child {
+
+        border-top: 1px solid #000;
+    }
+
+    .jumbotron {
+        margin: 0 auto;
+    }
+
+.jumbotron img{
+                margin-left: 0 auto;
+                max-width: 100%;
+            }
+
+.top-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-content .text-container {
+    width: 96%;
+    margin-left: 1%;
+    margin-top: 4%;
+}
+
+.middle-content .boxes .box:last-child {
+                display: none;
+            }
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.middle-content .boxes .box {
+    width: 28%;
+    height: 100px;
+    margin: 20px 2.5%;
+}
+
+.bottom-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-content .text-container {
+    width: 100%;
+}
+
+.bottom-content .text-container h2 {
+    margin-top: 1%;
+}
+
+footer {
+    max-width: 100%;
+}
+
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+
+
+
+}
