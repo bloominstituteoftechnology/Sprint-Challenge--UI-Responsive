@@ -110,8 +110,9 @@ header{
   
 .img1{
     padding-top: 5%;
-    padding-bottom: 5%;
-    width: 100%;
+    padding-bottom: 3%;
+    width: 102%;
+    
 }
 
 
@@ -130,8 +131,9 @@ header{
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-bottom: 1px dashed black;
+    margin-top:2%;
 }
 
 .middle-content h2 {
@@ -207,7 +209,7 @@ background:lawngreen;
  
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 32px;
     justify-content: space-around;
     
 }
@@ -299,7 +301,7 @@ footer{
 
 @media(max-width:400px){
     .container{
-        height: 1740px;
+        height: 1750px;
     }
  header {
         flex-wrap: wrap;
