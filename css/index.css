@@ -52,7 +52,7 @@
 }
  header nav{
      display: flex;
-     width: 643px;
+     width: 99.5%;
      justify-content: space-around;
      align-items: flex-end;
 }
@@ -135,6 +135,11 @@
      font-size: 1.6rem;
 }
  @media (max-width: 1000px){
+		
+		
+		.jumbotron {
+    zoom:95%;
+}
      .middle-content .boxes .box2 {
          background: forestgreen;
     }
