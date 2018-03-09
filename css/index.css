@@ -144,6 +144,10 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box {
+    min-width: 100px;
+}
+
 .box2 {
     background: forestgreen;
 }
@@ -234,17 +238,65 @@ footer nav a {
 
 @media (max-width: 400px) {
 
+    .container header {
+        padding-bottom: 0;
+    }
+
     .container header nav {
         flex-direction: column;
         align-items: center;
     }
+
     header nav a{
         padding: 15px;
         text-align: center;
         width:100%;
         border-bottom: solid black 1px;
     }
+
     header nav a:first-child{
         border-top: solid black 1px;
+    }
+
+    .container .top-content {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container .bottom-content{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container .text-container{
+        padding: 0;
+        padding-bottom: 20px;
+        font-size: 1.7rem;
+        width: 95%;
+    }
+
+    .middle-content .boxes {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        height: 100%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    body .container .bottom-content {
+        padding: 0;
+        width: 95%;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-evenly;
     }
 }
