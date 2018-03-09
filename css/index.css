@@ -204,7 +204,7 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
-
+/* tablet view*/
 @media (max-width: 768px) {
 
     .container {
@@ -218,6 +218,8 @@ footer nav a {
     header nav {
         justify-content: space-around;
         height: 73px;
+        width: 100%;
+        padding-left: 5%;
     }
 
     header img {
@@ -227,8 +229,8 @@ footer nav a {
     }
 
     .jumbo {
-        height: 154px;
-        padding-top: 8px;
+        height: 152px;
+        padding-top: 6px;
     }
 
     .top-content {
@@ -238,8 +240,10 @@ footer nav a {
     .top-content .text-container {
         width: 48%;
         padding-bottom: 46px;
-        font-size: 1.5rem;
+        font-size: 1.61rem;
         padding-top: 25px;
+        height: 207px;
+        padding-left: 1%;
     }
 
 
