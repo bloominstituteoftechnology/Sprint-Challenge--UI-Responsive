@@ -1,0 +1,5 @@
+​1. .box has the most weight because it is the parent of the other boxes.
+2. Display: block; starts a new line and takes up the all the width available. Display: inline; does not start a new line and only takes the necessary width.
+3. Vertical
+4. Fixed layout- code does not change and the website does not adjust to different screen size or resolution. Adaptive- has code written for many different sizes or resolutions individually. Fluid- has the size code written in percentages instead of pixels and adjusts accordingly to sizes or resolutions. Responsive- takes the same concept of fluid but has breakpoints written in the code as well to adjust accordingly to different sizes or resolutions and even the layout can change.
+5. To calculate the percentage for the other widths, margins and padding.
