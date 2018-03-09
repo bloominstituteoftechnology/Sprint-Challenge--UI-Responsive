@@ -73,7 +73,7 @@ p {
     margin: 0 auto;
 }
 
-.logo{
+.lambda-black{
     height: 100%;
     width: 100%;
     display:flex;
@@ -81,7 +81,8 @@ p {
 }
 
 header {
-   display: flex;
+    display: flex;
+    margin-top: 20px;
    
 
 
