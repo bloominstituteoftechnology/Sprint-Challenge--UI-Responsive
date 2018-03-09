@@ -13,6 +13,6 @@
   
   III. a fluid layout uses percentage widths to adjust to the user viewport but can also have fixed elements within.
   
-  IV. a responsive layout is made of either a fluid layout or an adaptive layout or a mix of both.
+  IV. a responsive layout is made of both an adaptive layout and fluid techniques.
 
 5. we need to use a max-width constraint on the outer most container so the page wont keep expanding on viewports wider than the webpage design.
