@@ -92,6 +92,8 @@ header nav a {
     font-size: 2rem;
     align-self: center;
     width: 120px;
+    color: black;
+    text-decoration: none;
 }
 
 .jumbo {
@@ -267,7 +269,49 @@ footer nav a {
 }
 
 @media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
 
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        border-top: 1px solid black;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    header img {
+        
+        align-self: center;
+        width: 20%;
+    }
+
+    .jumbo {
+        height: 154px;
+        padding-top: 8px;
+    }
+
+    .top-content {
+        font-size: 1rem;
+    }
+    
+    .top-content .text-container {
+        width: 48%;
+        padding-bottom: 46px;
+        font-size: 1.5rem;
+        padding-top: 25px;
+    }
 
 
 
