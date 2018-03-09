@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -50,7 +50,10 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+  /* works on a base of 10px if the font-size is 16px, scales to the users settings */
+  font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -61,17 +64,60 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
-p {
-    line-height: 1.4;
-}
-
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
-.top-content {
+header {
+
+
+}
+
+header nav {
+	width: 100%;
+}
+
+header nav {
+	margin: 38px 1% 0;
+	width: 100%;
+	display: flex;
+
+}
+
+header nav a {
+	width: 100%;
+	margin:0;
+	padding: 10px 0;
+	color: black;
+	font-size: 1.6rem;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.top-img {
+	width: 100%;
+	margin: right: 1%;
+}
+
+.main-content {
+	margin: 20px 0 35px 0;
+	padding: 5px 0 0 0;
+	font-size:1.6rem;
+}
+
+.main-content p {
+    line-height: 1.4;
+}
+
+
+.main-content .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -79,29 +125,29 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
+.main-content .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
-.middle-content {
+.main-content .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
+.main-content .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
+.main-content .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.main-content .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -112,17 +158,72 @@ p {
     justify-content: center;
 }
 
-.bottom-content {
+.main-content .middle-content .boxes .box2 {
+	 width: 12.5%;
+	 height: 100px;
+	 background: forestgreen;
+	 margin: 20px 2.5%;
+	 color: white;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.main-content .middle-content .boxes .box4 {
+	width: 12.5%;
+	height: 100px;
+	background: darkorchid;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-content .middle-content .boxes .box6 {
+	width: 12.5%;
+	height: 100px;
+	background: hotpink;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-content .middle-content .boxes .box8 {
+	width: 12.5%;
+	height: 100px;
+	background: indigo;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-content .middle-content .boxes .box10 {
+	width: 12.5%;
+	height: 100px;
+	background: lawngreen;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-content .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
 
-.bottom-content .text-container {
+.main-content .bottom-content .text-container {
     padding-right: 4%;
 }
 
-.bottom-content .text-container:last-child {
+.main-content .bottom-content .text-container:last-child {
     padding-right: 0;
 }
 
@@ -143,4 +244,113 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header nav {
+        width: 59%;
+        margin-left: 3%;
+    }
+
+    header .lamLogo {
+        margin: 28px 0 0 8%;
+    }
+		.top-img {
+				max-width: 100%;
+				margin-right: 2%;
+		}
+
+    .main-content {
+        justify-content: flex-end;
+    }
+
+    .main-content .top-content {
+        margin: 0 5% 0 0;
+    }
+
+    .main-content p {
+        letter-spacing: 0;
+    }
+
+    .main-content .middle-content {
+        font-size: 1.4rem;
+       margin: 75px 2% 35px;
+    }
+
+    .contact {
+        margin: 20px 2%;
+    }
+}
+
+/* Phone */
+@media (max-width: 400px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid black;
+    }
+
+    header nav:first-child {
+        border-top: 1px solid black;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .lamLogo {
+        order: -1;
+        margin: 20px 0;
+    }
+
+    .main-content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .top-content {
+        margin: 0;
+    }
+
+    .main-content .top-img {
+        display: block;
+        max-width: 80%;
+        margin: 55px 0 0 0;
+    }
+
+    .main-content .middle-content .box {
+        flex-wrap: wrap;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
 }
