@@ -15,7 +15,7 @@
 2. Describe the difference between ```display: block;``` and ```display: inline;```.
 3. While using flexbox, what axis are you using when you use the property: ```align-items: center```?
 4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
-5. Why do we need to use the CSS property max-width on the outter most container in a responsive website?
+5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
 
 ## Lets get started on the project!
 * This project has many parts invovled in it. You will start with a half built website that isn't ready for responsiveness.  You will need to complete the tasks below to successfully finish the website. For this project you have been provided design files which you must successfully match at the viewport sizes of 1000px, 768px, and 400px.  
