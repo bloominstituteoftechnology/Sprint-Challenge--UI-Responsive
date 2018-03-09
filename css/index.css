@@ -220,6 +220,8 @@ footer nav a {
     }
 
     .jumbo {
+        height: auto;
+        padding: 0 0 20px;
         width: 100%;
     }
 
