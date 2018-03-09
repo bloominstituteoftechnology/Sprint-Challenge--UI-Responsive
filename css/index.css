@@ -72,15 +72,15 @@ p {
 }
 
 .container {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
 header {
-    border: 1px solid red;
-    margin: 30px 0 30px 0;
+    /*border: 1px solid red;*/
+    margin: 20px 0 30px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,7 @@ header {
 }
 
 header nav {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -101,9 +101,15 @@ header nav a {
 
 .jumbotron {
     display: block;
-    border: 1px solid red;
-    margin: 0 0 30px; 0;
+    /*border: 1px solid red;*/
+    padding: 10px 0 0 0;
+    margin: 0px 0 23px 0;
     width: 100%;
+}
+
+.jumbotron img {
+    width: 100%;
+    padding-left: 1%;
 }
 
 .top-content {
@@ -112,7 +118,8 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+    padding: 0 0 5px 1%;
     border-bottom: 1px dashed black;
 }
 
@@ -128,7 +135,7 @@ header nav a {
 }
 
 .middle-content h2 {
-    padding: 0 2%;
+    padding: 0 3%;
     margin-bottom: 0;
 }
 
@@ -142,8 +149,10 @@ header nav a {
     width: 12.5%;
     height: 100px;
     background: black;
+    padding: 0 0% 0 1%;
     margin: 20px 2.5%;
     color: white;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,13 +179,15 @@ header nav a {
 }
 
 .bottom-content {
+    font-weight: bold;
+    font-size: 1.5rem;
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 23px;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding-right: 7%;
 }
 
 .bottom-content .text-container:last-child {
@@ -185,6 +196,7 @@ header nav a {
 
 footer {
     width: 100%;
+    padding: 0 0 0 1%;
     background: black;
 }
 
