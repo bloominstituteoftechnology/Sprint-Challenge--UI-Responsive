@@ -266,9 +266,36 @@ footer nav a {
         padding: 5% 0;
         font-size: 2rem;
         border-bottom: 1px solid gray;
+        font-size: 1rem;
     }
 
     header nav a:first-child {
         border-top: 1px solid gray;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 5%;
+        margin-right: 12.5%;
+    }
+
+    .boxes {
+        border: 1px;
+        flex-direction: row-reverse;
+        /*flex-wrap: wrap;*/
+        justify-content: flex-start;
+        padding: 0 5%;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-direction: column;
     }
 }
