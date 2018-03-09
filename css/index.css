@@ -104,7 +104,7 @@ header .logo {
     justify-content: center;
     margin-left: 1.3%;
     margin-bottom: 25px;
-    width: 93%;
+    width: 100%;
     height: auto;
 }
 
@@ -214,11 +214,25 @@ footer nav a {
     header{
         flex-direction: column;
         align-items: center;
+        margin: 20px 0 35px 0;
+    }
+
+    header .logo {
+        margin-left: .6%;
     }
 
     header nav {
         display: flex;
         justify-content: space-between;
+    }
+
+    header nav a {
+        margin-left: 0%;
+    }
+
+    .jumbotron {
+        margin-left: 0;
+        width: 93%;
     }
 
     .middle-content .boxes .box1 {
@@ -235,5 +249,9 @@ footer nav a {
     }
     .middle-content .boxes .box9 {
         background: crimson;
+    }
+
+    footer {
+        margin-left: 0;
     }
 }
