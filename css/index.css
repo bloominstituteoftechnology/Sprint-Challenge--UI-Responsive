@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,37 +57,67 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
 }
-
+:root{
+	font-size: 62.5%;
+}
 .container {
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
+		max-width: 80rem;
+    margin: 2rem auto 0;
+}
+header{
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	width: 100%;
+}
+header nav{
+	width: 80%;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+}
+header nav a{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+a:hover {
+	font-size: 1.6rem;
+	text-decoration: underline;
 }
 
+.container .image-spacer{
+	margin: 3rem 0;
+	max-width: 100%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: .1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;
+		font-size: 1.6rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: .1rem dashed black;
 }
 
 .middle-content h2 {
@@ -99,27 +129,50 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+		font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
+		min-width: 10rem;
     width: 12.5%;
-    height: 100px;
+		height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.bottom-content {
+.container .middle-content .boxes .box:hover {
+	font-size: 2rem;
+	text-decoration: underline;
+}
+.middle-content .boxes .box-2 {
+	background-color: forestgreen;
+}
+.middle-content .boxes .box-4 {
+	background-color: darkorchid;
+}
+.middle-content .boxes .box-6 {
+	background-color: hotpink;
+}
+.middle-content .boxes .box-8 {
+	background-color: indigo;
+}
+.middle-content .boxes .box-10 {
+	background-color: lawngreen;
+}
+.bottom-content, .new-content{
     display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    margin: 0 2% 1rem;
+    justify-content: space-between;
+		flex-wrap: wrap;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
+.bottom-content .text-container, .new-content .text-container{
+		width: 30%;
+    padding-right: 3%;
+		font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -136,11 +189,72 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media (max-width: 78.5rem) {
+	header .logo {
+		margin-bottom: 3rem;
+	}
+	.middle-content .boxes .box-1 {
+		background-color: teal;
+	}
+	.middle-content .boxes .box-3 {
+		background-color: gold;
+	}
+	.middle-content .boxes .box-5 {
+		background-color: cadetblue;
+	}
+	.middle-content .boxes .box-7 {
+		background-color: coral;
+	}
+	.middle-content .boxes .box-9 {
+		background-color: crimson;
+	}
+}
+
+@media (max-width: 50rem) {
+
+	.top-content .text-container {
+		width: 90%;
+	}
+	.middle-content .boxes {
+		flex-direction: row-reverse;
+	}
+	.middle-content .boxes .box-10 {
+		display: none;
+	}
+	.bottom-content .text-container, .new-content .text-container{
+		width: 100%;
+		padding: 0 3%;
+		margin-bottom: 2rem;
+	}
+	footer nav{
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}
+@media (max-width: 40rem) {
+	header nav {
+		flex-direction: column;
+		flex-grow: 1;
+		align-items: center;
+	}
+	header nav a{
+		width: 100%;
+		padding: 1.2rem 0;
+		border-top: 0.2rem solid rgb(128, 128, 128);
+		text-align: center;
+	}
+	header nav a:last-child {
+		margin-bottom: 0;
+	}
+	.container .image-spacer{
+		margin-top: 0;
+	}
 }
