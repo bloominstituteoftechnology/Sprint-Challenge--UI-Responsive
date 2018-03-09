@@ -224,7 +224,7 @@ header .logo{
 
 .top-content {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -262,12 +262,12 @@ header .logo{
 
 
 
-@media(max-width: 400px){
+@media(max-width:400px){
 
 
 header {
  
-   ;
+   
     margin-top: 30px;
     width: 100%;   
 
@@ -285,17 +285,48 @@ header nav{
 }
 header nav a{
 
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid black; 
     width: 100%;
     display: flex;  
-        justify-content: center;
-       
-        
+    justify-content: center;
+    }
+
+.top-content {
+    flex-direction: column;
+
 }
+
+.top-content {
+
 }
-    
+
+.top-content .text-container {
+    width:100%;
 }
+
+.middle-content .boxes{
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+
+.bottom-content{
+    flex-direction: column;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+    width:100%;
+}
+
+
+
+}
+
+
+
+
 
