@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,8 +68,34 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;    
+    align-items: center;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.4rem;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header .logo {
+    align-self: flex-end;
+    align-items: center;    
 }
 
 .top-content {
@@ -81,8 +108,12 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 1% 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container p {
+    font-size: 1.5rem;
 }
 
 .middle-content {
@@ -110,6 +141,27 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.4rem;
+}
+
+.middle-content .Box2 {
+    background: green;
+}
+
+.middle-content .boxes .Box4 {
+    background: rgb(177, 77, 177);
+}
+
+.middle-content .boxes .box Box6 {
+    background: pink
+}
+
+.middle-content .boxes .box Box8 {
+    background: purple
+}
+
+.middle-content .boxes .box Box10 {
+    background: lime
 }
 
 .bottom-content {
@@ -120,6 +172,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.5rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,7 +190,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
