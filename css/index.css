@@ -52,12 +52,13 @@ table {
 }
 
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,15 +68,45 @@ p {
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
+  margin-top: 3%;
+}
+
+header nav {
+  width: 70%;
+  margin: 6% 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1.6rem;
+}
+
+.jumbo {
+  width: 100%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 20px auto;
     border-bottom: 1px dashed black;
 }
 
@@ -99,6 +130,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -110,6 +142,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+  background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+  background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+  background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+  background: indigo;
+}
+
+.middle-content .boxes .box10 {
+  background: lawngreen;
 }
 
 .bottom-content {
@@ -126,6 +178,10 @@ p {
     padding-right: 0;
 }
 
+.text-container {
+  font-size: 1.6rem;
+}
+
 footer {
     width: 100%;
     background: black;
@@ -137,10 +193,11 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
