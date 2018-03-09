@@ -99,6 +99,11 @@ header .lambdalogo {
 	margin-left: 10%;
 }
 
+.jumbotron {
+	margin: 2% 0% 2% 10%;
+	display: flex;
+	justify-content: center;
+}
 
 .top-content {
     display: flex;
