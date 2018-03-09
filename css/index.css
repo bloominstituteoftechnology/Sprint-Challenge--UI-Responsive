@@ -76,16 +76,21 @@ p {
 .logo{
     height: 100%;
     width: 100%;
+    display:flex;
+    justify-content: flex-start;
 }
 
 header {
+   display: flex;
    
 
 
 }
 
 header nav {
-       
+    width:100%;
+    display: flex;
+    justify-content: space-around;       
 }
 
 header nav a{
@@ -93,9 +98,8 @@ header nav a{
     color: black;
     font-weight: bold;
     text-decoration: none;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around; 
+    
+  
 }
 
 .top-content {
