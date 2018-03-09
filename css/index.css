@@ -77,6 +77,7 @@ p {
 header {
     display: flex;
     max-width: 800px;
+    margin-top: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -172,8 +173,6 @@ header nav a:hover {
     background: lawngreen;
 }
 
-
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -205,4 +204,22 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+    
+    .logo {
+        margin-bottom: 30px;
+    }
+    
+    header nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
 }
