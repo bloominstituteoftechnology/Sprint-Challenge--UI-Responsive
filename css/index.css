@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -108,7 +108,8 @@ header nav a:hover {
 
 .jumbotron {
     margin: 30px 0 20px;
-    width: 100%;
+    /*width: 100%;*/
+    display: flex;
 }
 .top-content {
     display: flex;
@@ -151,19 +152,19 @@ header nav a:hover {
     justify-content: center;
 }
 
-#box2 {
+.middle-content .boxes .box2 {
     background: forestgreen;
 }
-#box4 {
+.middle-content .boxes .box4{
     background: darkorchid;
 }
-#box6 {
+.middle-content .boxes .box6{
     background: hotpink;
 }
-#box8 {
+.middle-content .boxes .box8 {
     background: indigo;
 }
-#box10 {
+.middle-content .boxes .box10 {
     background: lawngreen;
 }
 .bottom-content {
@@ -197,4 +198,77 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header img {
+        display: block;
+    }
+    header nav a {
+        width: 100%;
+        justify-content: space-around;
+        padding: 4%;
+    }
+
+    .middle-content {
+        margin: 3% 2%;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+}
+
+@media (max-width: 400px)  {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header img {
+        margin: 5% 0;
+    }
+    header nav {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 5% 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
 }
