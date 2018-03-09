@@ -157,6 +157,12 @@ header nav a {
     font-weight: bold;
 }
 
+.middle-content .boxes .box1:hover {
+    border: 2px solid black;
+    background-color: lightgrey;
+    color: black;
+}
+
 .middle-content .boxes .box2 {
     background-color: forestgreen;
 }
@@ -165,6 +171,12 @@ header nav a {
     border: 2px solid forestgreen;
     background-color: lightgrey;
     color: forestgreen;
+}
+
+.middle-content .boxes .box3:hover {
+    border: 2px solid black;
+    background-color: lightgrey;
+    color: black;
 }
 
 .middle-content .boxes .box4 {
@@ -177,6 +189,12 @@ header nav a {
     color: darkorchid;
 }
 
+.middle-content .boxes .box5:hover {
+    border: 2px solid black;
+    background-color: lightgrey;
+    color: black;
+}
+
 .middle-content .boxes .box6 {
     background-color: hotpink;
 }
@@ -187,6 +205,12 @@ header nav a {
     color: hotpink;
 }
 
+.middle-content .boxes .box7:hover {
+    border: 2px solid black;
+    background-color: lightgrey;
+    color: black;
+}
+
 .middle-content .boxes .box8 {
     background-color: indigo;
 }
@@ -195,6 +219,12 @@ header nav a {
     border: 2px solid indigo;
     background-color: lightgrey;
     color: indigo;
+}
+
+.middle-content .boxes .box9:hover {
+    border: 2px solid black;
+    background-color: lightgrey;
+    color: black;
 }
 
 .middle-content .boxes .box10 {
