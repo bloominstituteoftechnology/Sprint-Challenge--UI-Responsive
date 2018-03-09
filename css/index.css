@@ -236,7 +236,7 @@ footer nav a {
         width: 100%;
     }
 
-    /* box styling*/
+    /* box coloring*/
     .middle-content .boxes .box1 {
         background-color: teal;
     }
@@ -265,7 +265,6 @@ footer nav a {
     @media (max-width: 400px) {
         .container {
             max-width: 400px;
-            width: 100%;
         }
 
         header {
