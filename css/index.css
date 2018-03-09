@@ -72,6 +72,32 @@ p {
     margin: 0 auto;
 }
 
+header {
+	width: 100%;
+	display: flex;
+}
+
+header nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: row wrap;
+
+	margin: 3%;
+}
+
+header nav a {
+	font-size: 1rem;
+	color: black;
+	text-decoration: none;
+}
+
+header .lambdalogo {
+	display: flex;
+	align-self: flex-start;
+}
+
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
