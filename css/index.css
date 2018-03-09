@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    /*font-size: 62.5%; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -71,6 +72,25 @@ p {
     width: 100%;
     margin: 0 auto;
 }
+
+header{ 
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+nav a {
+    text-decoration:none;
+    color: black;
+}
+
 
 .top-content {
     display: flex;
@@ -112,7 +132,25 @@ p {
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes .box:nth-child(2){
+    background: forestgreen;
+}
 
+.middle-content .boxes .box:nth-child(4){
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6){
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8){
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10){
+    background: lawngreen;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
