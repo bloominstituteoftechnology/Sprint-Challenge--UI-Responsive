@@ -76,7 +76,7 @@ p {
 
 header {
     display: flex;
-    max-width: 800px;
+    width: 100%;
     margin-top: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
