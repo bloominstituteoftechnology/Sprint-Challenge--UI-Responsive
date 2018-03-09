@@ -1,0 +1,5 @@
+1. box3 has the most specificity weight. It is the furthest right within its own class.
+2. Block starts a new line and tries to fill the entire line. Inline doesn't begin a new line and only fills the line as much as required.
+3. It moves items up and down on the vertical axis or "cross axis."
+4. A fixed layout stays the same and doesn't adapt at all. A fluid design is a fixed layout that uses percentages to scale elements down to the users needs. A adaptive website adapts to the users screen size but it isn't really possible to cover all sizes with it. A responsive website caters to all screen sizes and changes the layout accordingly to improve experience. Responsive is fluid and adaptive allowing for the most popular website design.
+5. In order to allow the best experience max width is used to limit the width of the website eliminating the need for a horizontal scroll bar by preventing the information from spilling out of the container. 
