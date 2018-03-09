@@ -310,7 +310,7 @@ footer nav a {
 
     }
 
-@media (min-width: 360px) and  (max-width: 767px) {
+@media (min-width: 360px) and  (max-width: 567px) {
 
     header {
         flex-wrap: wrap;
