@@ -305,4 +305,27 @@ footer nav a {
 		margin-bottom: 0px;
 	}
 
+	.jumbo {
+		width: 100%;
+	}
+
+	.middle-content .boxes .box1 {
+		background: teal;
+	}
+
+	.middle-content .boxes .box3 {
+		background: gold;
+	}
+
+	.middle-content .boxes .box5 {
+		background: cadetblue;
+	}
+
+	.middle-content .boxes .box7 {
+		background: coral;
+	}
+
+	.middle-content .boxes .box9 {
+		background: crimson;
+	}
 }
