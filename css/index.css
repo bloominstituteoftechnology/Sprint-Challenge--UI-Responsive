@@ -214,3 +214,53 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 37px;
+    }
+
+    header .logo {
+        margin-bottom: 30px;
+        padding-left: 2%;
+    }
+
+    .jumbotron {
+        margin-bottom: 23px;
+    }
+
+    .jumbotron img {
+        padding: 0;
+    }
+
+    .top-content .text-content p {
+        line-height: 1.5;
+    }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+}
+
+
+
