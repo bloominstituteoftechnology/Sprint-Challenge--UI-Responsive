@@ -149,3 +149,19 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
