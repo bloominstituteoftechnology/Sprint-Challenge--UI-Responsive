@@ -51,13 +51,17 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +71,12 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .top-content {
@@ -137,10 +145,146 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Change Box Colors for 1000px */
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+/* Organizes Header With Logo */
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+header .logo {
+    order: -1;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* Changes color of a tags */
+
+a {
+   text-decoration: none;
+   color: black; 
+   font-size: 1.2rem;
+}
+
+/* Adjusts Picture */
+
+.jumbotron {
+    width: 100%;
+    margin: 40px 0 20px 0;
+}
+
+/* Media Query for 768px */
+
+@media(max-width: 768px) {
+
+/* Change Header Layout */
+header {
+    flex-flow: column wrap;
+    margin-top: 20px;
+}
+header .logo {
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+/* Change Color of Boxes */
+.middle-content .boxes .box1 {
+    background: teal;
+}
+.middle-content .boxes .box3 {
+    background: gold;
+}
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+.middle-content .boxes .box7 {
+    background: coral;
+}
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+/* Change Text-Containers to Display Differently */
+
+.top-content{
+    justify-content: space-around;
+}
+h2 {
+    font-size: 1.6rem;
+}
+p {
+    font-size: 1.2rem;
+}
+.top-content .text-container {
+    padding: 0;
+    width: 35%;
+}
+
+.bottom-content {
+    justify-content: space-between;
+}
+.bottom-content .text-container {
+    width: 25%;
+}
+}
+
+/* Media Query for 400px */
+
+@media(max-width: 400px) {
+
+/* Changed Layout of Header */
+
+header {
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    width: 100%;
+    }
+header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+header nav a {
+    display: flex;
+    border-top: 1px grey solid;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header .logo {
+    padding-top: 20px;
+}
+.jumbotron {
+    margin: 0 auto;
+}
 }
