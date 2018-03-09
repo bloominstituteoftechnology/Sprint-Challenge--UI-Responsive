@@ -190,7 +190,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   border-bottom: 1px dashed black;
 }
 
@@ -198,6 +198,8 @@ p {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
+	font-size: 1.6rem;
+	font-weight: bold;
 }
 
 .middle-content {
