@@ -65,7 +65,7 @@ header{
 
 header .lambdalogo {
     align-self: flex-start;
-    margin-top: 1.4rem;
+    margin-top: 2%;
 }
 
 header nav ul {
@@ -233,13 +233,13 @@ footer nav a {
 
     header .lambdalogo {
         align-self: flex-start;
-        margin-top: 2.3rem;
-        margin-left: 2rem;
+        margin-top: 3%;
+        margin-left: 5%;
     }
 
     header nav ul {
         font-size: 1.5rem;
-        margin: 40px 10% 0;
+        margin: 60px 10% 0;
         width: 100%;
         justify-content: space-between;
         display: flex;
@@ -406,9 +406,9 @@ header nav ul {
 
     header .lambdalogo {
         align-self: flex-start;
-        margin-top: 2.3rem;
+        margin-top: 7%;
         margin-bottom: 1.8rem;
-        margin-left: 2rem;
+        margin-left: 5%;
     }
 
     .abstractImg {
@@ -429,7 +429,15 @@ header nav ul {
 
     .top-content .text-container {
         width: 90%;
-        margin-left: 20px;
+        margin-left: 5%;
+    }
+
+    .top-content .text-content p {
+        line-height: 1.6;
+    }
+
+    .top-content .text-container h2 {
+        margin-top: 5px;
     }
 
     .bottom-content {
@@ -438,6 +446,11 @@ header nav ul {
         margin: 0 2% 20px;
         justify-content: space-around;
         flex-flow: column;
+    }
+
+    .bottom-content .text-container p {
+        margin-bottom: 12px;
+        line-height: 1.6;
     }
 
     .middle-content .boxes .box10 {
@@ -466,3 +479,4 @@ header nav ul {
         flex-direction: row;
         justify-content: center;
     }
+}
