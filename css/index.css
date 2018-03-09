@@ -72,12 +72,43 @@ p {
 }
 
 .container {
+    border: 1px solid blue;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
+header {
+    border: 1px solid red;
+    margin: 30px 0 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header nav {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    order: 1;
+}
+
+header nav a {
+    font-size: 1.3rem;
+}
+
+.jumbotron {
+    display: block;
+    border: 1px solid red;
+    margin: 0 0 30px; 0;
+    width: 100%;
+}
+
 .top-content {
+    font-size: 1.5rem;
+    font-weight: bold;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -116,6 +147,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box2 {
+
+}
+
+.box4 {
+
+}
+
+.box6 {
+
+}
+
+.box8 {
+
+}
+
+.box10 {
+    
 }
 
 .bottom-content {
