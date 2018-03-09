@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+/* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
@@ -57,7 +59,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +69,83 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 2% 0;
+}
+
+header nav {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+header nav a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.jumbotron {
+    width: 100%;
+    margin: 25px 0;
+}
+
+/* for 768px */
+@media (max-width: 768px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header nav a {
+        padding-top: 30px;
+        font-size: 0.9rem;
+    }
+}
+
+/* for 400px */
+@media (max-width: 400px) {
+    header {
+        margin-top: 20px;
+    }
+
+    header .logo {
+        margin-bottom: 25px;
+    }
+
+    header nav {
+        border-top: 1px solid lightgrey;
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        align-self: center;
+        padding: 15px 0;
+    }
+
+    .jumbotron {
+        margin: -10px 0 20px 0;
+        width: 100%;
+    }
+}
+
+/* Main Content Styles */
 
 .top-content {
     display: flex;
@@ -85,12 +161,17 @@ p {
     padding-bottom: 20px;  
 }
 
+.top-content .text-container h2 {
+    font-size: 1.1rem;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
+    font-size: 1.1rem;
     padding: 0 2%;
     margin-bottom: 0;
 }
@@ -112,6 +193,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box.forestgreen {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.darkorchid {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.hotpink {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.indigo {
+    background: indigo;
+}
+
+.middle-content .boxes .box.lawngreen {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -122,9 +223,77 @@ p {
     padding-right: 4%;
 }
 
+.bottom-content .text-container h2 {
+    font-size: 1.1rem;
+}
+
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* for 768px */
+@media (max-width: 768px) {
+    .middle-content .boxes .box.teal {
+    background: teal;
+    }   
+
+    .middle-content .boxes .box.gold {
+    background: gold;
+    }
+
+    .middle-content .boxes .box.cadetblue {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box.coral {
+        background: coral;
+    }
+
+    .middle-content .boxes .box.crimson {
+        background: crimson;
+    }
+}
+
+/* for 400px */
+@media (max-width: 400px) {
+    .top-content {
+        flex-direction: column;
+        margin: 0 5%;
+        padding: 0 1% 0 0;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content h2 {
+        margin-top: 25px;
+        font-size: 1.1rem;
+    }
+
+    .middle-content .boxes .box.lawngreen {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .bottom-content .text-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Styles */
 
 footer {
     width: 100%;
@@ -137,10 +306,19 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* for 400px */
+@media (max-width: 400px) {
+    footer nav {
+        margin-top: 20px;
+        justify-content: space-evenly;
+        width: 100%;
+    }
 }
