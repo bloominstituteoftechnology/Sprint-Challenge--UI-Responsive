@@ -94,6 +94,10 @@ header nav a {
     width: 120px;
 }
 
+.jumbo {
+    width: 100%;
+}
+
 
 .top-content {
     display: flex;
@@ -194,17 +198,78 @@ footer nav a {
     text-decoration: none;
 }
 
-@media (max-width 768px) {
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        justify-content: space-around;
+        height: 73px;
+    }
+
+    header img {
+        
+        align-self: center;
+        width: 20%;
+    }
+
+    .jumbo {
+        height: 154px;
+        padding-top: 8px;
+    }
+
+    .top-content {
+        font-size: 1rem;
+    }
+    
+    .top-content .text-container {
+        width: 48%;
+        padding-bottom: 46px;
+        font-size: 1.5rem;
+        padding-top: 25px;
+    }
 
 
 
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
 
+
+    .bottom-content {
+        margin: 0 2% 3%;
+        font-size: 1.6rem;
+        height: 115px;
+    }
+    
 }
 
-@media (max-width 400px) {
+@media (max-width: 400px) {
 
 
 
 
-    
+
 }
