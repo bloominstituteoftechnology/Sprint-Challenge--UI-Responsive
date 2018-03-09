@@ -28,6 +28,33 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+header {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width:100%;
+    display: flex;
+}
+.top-content .jumbo {
+    padding-bottom: 23px;
+    width: 100%;
+    height: 100%
+}
+.text-container {
+    font-size: 1.6rem;
+}
+header nav {
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+header nav a {
+    text-decoration: none;
+    color:black;
+}
 body {
 	line-height: 1;
 }
@@ -56,9 +83,13 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size:62.5%;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -67,7 +98,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -101,15 +132,40 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.box {
     width: 12.5%;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
+    font-size: 1.6rem;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box {
+    min-width: 100px;
+}
+
+.box2 {
+    background: forestgreen;
+}
+
+.box4 {
+    background: darkorchid;
+}
+
+.box6 {
+    background: hotpink;
+}
+
+.box8 {
+    background: indigo;
+}
+
+.box10 {
+    background: lawngreen;
 }
 
 .bottom-content {
@@ -137,10 +193,110 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* 768px layout */
+@media (max-width: 768px) {
+
+    .container header {
+        align-items: center;
+        flex-direction: column;
+        align-items: space-evenly;
+        padding-bottom: 35px;
+    }
+
+    header .logo {
+        padding-bottom: 30px;
+    }
+
+    .box1 {
+        background-color: teal;
+    }
+
+    .box3 {
+        background-color: gold;
+    }
+
+    .box5 {
+        background-color: cadetblue;
+    }
+
+    .box7 {
+        background-color: coral;
+    }
+
+    .box9 {
+        background-color: crimson;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container header {
+        padding-bottom: 0;
+    }
+
+    .container header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a{
+        padding: 15px;
+        text-align: center;
+        width:100%;
+        border-bottom: solid black 1px;
+    }
+
+    header nav a:first-child{
+        border-top: solid black 1px;
+    }
+
+    .container .top-content {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container .bottom-content{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container .text-container{
+        padding: 0;
+        padding-bottom: 20px;
+        font-size: 1.7rem;
+        width: 95%;
+    }
+
+    .middle-content .boxes {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        height: 100%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    body .container .bottom-content {
+        padding: 0;
+        width: 95%;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
