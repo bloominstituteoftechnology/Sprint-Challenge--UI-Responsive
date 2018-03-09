@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -53,6 +53,7 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -69,6 +70,8 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    /* MY CODE: */
+    font-size: 1.6rem;
 }
 
 .top-content {
@@ -83,6 +86,9 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    
+    
+
 }
 
 .middle-content {
@@ -97,6 +103,7 @@ p {
 
 .middle-content .boxes {
     display: flex;
+    
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -108,9 +115,32 @@ p {
     margin: 20px 2.5%;
     color: white;
     display: flex;
+    /*unnecessary flex-grow: 
+    flex-grow: 1;*/
     align-items: center;
     justify-content: center;
 }
+/* MY NUMBERED BOX DEFINITION: */
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: rgb(97, 231, 43);
+}
+
 
 .bottom-content {
     display: flex;
@@ -127,11 +157,16 @@ p {
 }
 
 footer {
+    
     width: 100%;
     background: black;
 }
 
 footer nav {
+    /*MY CODE*/
+    height: 60px; 
+
+
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -144,3 +179,354 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* MY CODE STARTED 
+ MY CODE STARTED
+  MY CODE STARTED*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.7rem;
+    margin-left: 6rem;
+}
+
+.top-content {
+    display: flex;
+}
+
+header {
+    margin-bottom: 1.19rem;
+    width: 100%;
+}
+
+ /*   disp lay: flex;
+    ali gn-content: flex-start;
+    jus tify-content: flex-start;*/
+
+
+header nav {
+    border: 1px solid red;
+    width: 100%;
+    /*height: 80px;
+    /*was commented before new nav div*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    align-content: flex-end;
+    margin-bottom: 2.7rem;
+}
+
+.navbar {
+    border: 3px solid pink;
+    width: 100%;
+    height: 4.3rem;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
+}
+
+.header nav img {
+    
+    border: 1px solid blue;
+    margin-right: 0px;
+    margin-bottom: 1rem;
+    
+}
+
+.container header nav a {
+    border:1px solid green;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    /*might delete 60px below*/
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+}
+
+
+
+/*@media (max-width:1010px) {
+    .container {
+        display: block;
+        /* flex-direction: column; 
+        margin-top: 2.5rem;
+        margin-left: 20.5rem;
+    }
+}*/
+
+@media (max-width:778px) {
+    /*.container {
+        display: block;
+        /* flex-direction: column; 
+        margin-top: 2.5rem;
+        margin-left: 20.5rem;
+    }*/
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        /* MY CODE: */
+        font-size: 1.6rem;
+    }
+
+
+    header nav {
+        border: 1px solid red;
+        width: 100%;
+        /*height: 80px;
+        /*was commented before new nav div*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 2.7rem;
+    }
+
+    .header nav img {
+        order: -1;
+        border: 1px solid blue;
+        /*margin-right: 0px;*/
+        
+        margin-bottom: 1rem;
+        
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+    /*.header nav {
+        order: -1;
+        /*border: 1px solid blue;*/
+        /*margin-right: 0px;
+        margin-bottom: 1rem;
+        
+    }
+
+    .container header nav a {
+        order: -1;
+        border:1px solid green;
+        font-size: 1.4rem;
+        color: black;
+        text-decoration: none;
+        /*might delete 60px below
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-self: flex-end;
+    }*/
+
+}
+    @media (max-width:410px) {
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            /* MY CODE: */
+            font-size: 1.6rem;
+        }
+
+        .container .logo {
+            /*border: 5px solid red;*/
+            margin-bottom: 30px;
+        }
+
+        header nav {
+            border: 1px solid red;
+            width: 100%;
+            padding: 15px;
+            height: 300px;
+            /*height: 80px;
+            /*was commented before new nav div*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            margin-bottom: 2.4rem;
+        }
+    
+        .navbar {
+            border: 3px solid pink;
+            width: 60%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-around;
+        }    
+    
+        .container header nav a {
+            border:1px solid blue;
+        }
+        /*.container header nav a {
+            border:1px solid green;
+            font-size: 1.4rem;
+            color: black;
+            text-decoration: none;
+            /*might delete 60px below*/
+            /*restore: 
+            margin-left: 0px;*/
+            /*display: flex;
+            flex-direction: column;*/
+            /*restore: 
+            align-self: center;
+            justify-content: center;
+            align-self: flex-end;
+        }*/
+    
+        .header_image {
+            width: 100%;
+        }
+
+        .middle-content {
+            margin-bottom: 20px;
+            border-bottom: 1px dashed black;
+            /* may remove: */
+            margin-left: 0px;
+            height: 440px;
+            /* maybe unnecessary : */
+            
+        }
+    /*.header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+    }*/
+
+
+
+    /*.navbar a {
+        /*border: 3px solid pink;
+        width: 100%;
+        /*height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }    */
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        /*color: red;*/
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 5%;
+        margin-left: 0rem;
+        margin-right: 50px;
+        padding-bottom: 20px;  
+        
+        
+    }
+
+    .boxes {
+        border: 1px solid red;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: 80%;
+        width: 100%;
+        
+        
+        
+    }
+
+    .boxes .box {
+        border: 1px solid blue;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-basis: 25%;
+        flex-grow: 1;
+    }
+    
+    .middle-content .boxes .box10 {
+            display: none;
+    }
+        
+    .bottom-content {
+        flex-direction: column;
+        
+    }
+    
+    .bottom-content .text-container {
+        margin-bottom: 17px;
+    }
+
+    footer {
+        
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        background: red;
+        align-content: flex-end;
+
+    }
+
+    footer nav {
+        
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: flex-start;
+
+    }
+
+    footer nav a {
+        
+        border: 1px solid white;
+        display: flex;
+        align-self: flex-start;
+        
+    }
+
+    .bottomtrial {
+        border: 1px solid green;
+        /*height: 100px;*/
+        width: 100%;
+        height: 100px;
+        background: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .bottomtrial div{
+        border: 1px solid white;
+        /*height: 100px;*/
+        width: 100%;
+        height: 20px;
+        background: gray;
+        display: flex;
+        /*align-self: center;*/
+    }
+
+    }
+
