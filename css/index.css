@@ -54,7 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    /*font-size: 62.5%; */
+    font-size: 62.5%; 
 }
 
 h1, h2, h3, h4, h5 {
@@ -76,14 +76,18 @@ p {
 header{ 
     display: flex;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
+    margin-right: 2%;
+    margin-left: 2%;
+    justify-content: space-around;
+    font-size: 1.6rem;
  }
 
 header nav{
     width: 100%;
     display: flex;
     justify-content:space-around;
-    align-items: center;
+    align-items: flex-end;
     
 }
 nav a {
@@ -98,17 +102,30 @@ nav a {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin-left: 1.0%;
+    margin-right: 1.0%; 
+    font-size: 1.6rem;
 }
+.top-content .jumbo{
+    width: 100%;
+    margin-bottom: 20px;
 
+   
+
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    margin-left: 1.0%;
+    margin-right:1.0%;
+
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    font-size: 1.6rem;
 }
 
 .middle-content h2 {
@@ -155,6 +172,7 @@ nav a {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container {
@@ -176,7 +194,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
@@ -186,6 +204,33 @@ footer nav a {
 
 @media(max-width:768px){
 
+header{
+    flex-direction: column;
+    justify-content: center;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    
+    
+
+}
+header .logo{
+    width: 20%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 20px;   
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-left: 0;
+    margin-right: 0; 
+}
 .middle-content .boxes .box {
  
     flex-wrap: wrap;
@@ -212,4 +257,45 @@ footer nav a {
 }
 
 
+
 }
+
+
+
+@media(max-width: 400px){
+
+
+header {
+ 
+   ;
+    margin-top: 30px;
+    width: 100%;   
+
+}
+
+header .logo{
+    width: auto;
+}
+
+header nav{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+}
+header nav a{
+
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black; 
+    width: 100%;
+    display: flex;  
+        justify-content: center;
+       
+        
+}
+}
+    
+}
+
