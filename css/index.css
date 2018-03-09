@@ -363,4 +363,38 @@ footer nav a {
 		height: 40px;
 		margin: 30px 0px;
 	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.top-content .text-container {
+	  width: 90%;
+		margin: 0px 20px;
+	}
+
+	.middle-content .boxes {
+		flex-direction: row-reverse;
+	}
+
+	.middle-content .boxes .box {
+		width: 25%;
+	}
+
+	.middle-content .boxes .box10 {
+		display:none;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-content .text-container {
+	  padding: 2% 0;
+	}
+
+	footer nav {
+  	justify-content: space-around;
+		width: 100%;
+	}
 }
