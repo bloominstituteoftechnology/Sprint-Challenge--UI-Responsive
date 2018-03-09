@@ -51,19 +51,24 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    line-height: 14px;
+    font-size: 1.4rem;
 }
 
 .container {
@@ -71,6 +76,28 @@ p {
     margin: 0 auto;
 }
 
+/* Header Styles */
+
+header {
+    width: 100%;
+    display:flex;
+    margin: 10px;
+}
+
+header nav {
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+.jumbotron {
+    margin: 15px 0 15px;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +139,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +184,84 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* TABLET media query */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .jumbotron {
+        width: 100%;
+    }
+    .middle-content .boxes .box1 {
+        background:  teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+/* Phone media query */
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+    nav {
+        flex-flow: row wrap;
+    }
+    .jumbotron {
+        width: 100%;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    div {
+        display: felx;
+    }
+    .middle-content .boxes .box1 {
+        order: 9;
+    }
+    .middle-content .boxes .box2 {
+        order: 8;
+    }
+    .middle-content .boxes .box3 {
+        order: 7;
+    }
+    .middle-content .boxes .box4 {
+        order: 6;
+    }
+    .middle-content .boxes .box5 {
+        order: 5;
+    }
+    .middle-content .boxes .box6 {
+        order: 4;
+    }
+    .middle-content .boxes .box7 {
+        order: 3;
+    }
+    .middle-content .boxes .box8 {
+        order: 2;
+    }
+    .middle-content .boxes .box9 {
+        order: 1;
+    }
+
 }
