@@ -51,24 +51,52 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
+/*END GENERAL ELEMENTS, MOVING TO LAYOUT SPECIFIC*/
 
 .container {
-    width: 800px;
+    max-width: 85%;
     margin: 0 auto;
+}
+
+nav {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+nav img {
+    max-width: 20%;
+}
+
+.top-image img{
+    max-width: 100%;
+    width: 100%;
 }
 
 .top-content {
@@ -126,6 +154,33 @@ p {
     padding-right: 0;
 }
 
+.lower-content {
+    border-top: 1px dashed black;
+    padding-top: 2%;
+}
+
+.lower-content h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+
+.lower-content_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.lower-content_text {
+    align-self: center;
+    order: -1
+}
+
+.lower-content_text p {
+    font-size: 2rem;
+}
+
+
+
 footer {
     width: 100%;
     background: black;
@@ -137,10 +192,154 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*MEDIA QUERIES BELOW///////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*SPRINT CHALLENGE MEDIA QUERY///////////////////////////////////////*/
+
+@media(max-width: 1200px) {
+    .lower-content_container {
+        display: block;
+    }
+
+    .lower-content .lower-content_image img{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/*SPRINT CHALLENGE MEDIA QUERY///////////////////////////////////////*/
+
+
+
+@media(max-width: 1000px) {
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
+}
+}
+/*END 1000PX MEDIA QUERY, 768PX BELOW/////////////////////////////////////////////////////////////////////*/
+
+@media(max-width: 768px) {
+
+    .container {
+        max-width: 95%;
+    }
+    nav {
+        display: block;
+        max-width: 100%;
+    }
+
+    nav img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 30%;
+    }
+
+    nav a {
+        padding: 3vw;
+        font-size: 2.8vw;
+    }
+
+.middle-content .boxes .box1 {
+    background-color: teal;
+}
+.middle-content .boxes .box3 {
+    background-color: gold;
+}
+.middle-content .boxes .box5 {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box7 {
+    background-color: coral;
+}
+.middle-content .boxes .box9 {
+    background-color: crimson;
+}
+}
+
+/*END 768px MEDIA QUERY, 400px BELOW/////////////////////////////////////////////////////////////////////*/
+
+@media(min-width: 400px) and (max-width: 500px) {
+
+    h2 {
+        font-size: 2.3rem
+    }
+
+    .container {
+        max-width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        margin: 7% 0;
+        max-width: 40%;
+    }
+
+    nav a {
+        border-top: 1px solid black;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .top-image {
+        margin-bottom: 5%;
+    }
+
+    .top-content, .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-content .text-container, .bottom-content .text-container {
+        width: 95%;
+        padding: 5%;
+    }
+
+    .text-container p {
+        font-size: 2rem;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box {
+        width: 25%;
+        height: 25vw;
+    }
+
+    .middle-content .boxes .box10{
+        display: none;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: row;
+    }
