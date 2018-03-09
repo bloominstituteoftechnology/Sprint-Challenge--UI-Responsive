@@ -149,24 +149,24 @@ header nav a {
     justify-content: center;
 }
 
-.box2 {
-
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
 }
 
-.box4 {
-
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
 }
 
-.box6 {
-
+.middle-content .boxes .box6 {
+    background-color: hotpink;
 }
 
-.box8 {
-
+.middle-content .boxes .box8 {
+    background-color: indigo;
 }
 
-.box10 {
-    
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
 }
 
 .bottom-content {
