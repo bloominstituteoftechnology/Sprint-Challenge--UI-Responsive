@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -65,10 +65,41 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
+@media (max-width: 1000px) {
+    
 .container {
     width: 800px;
     margin: 0 auto;
+}
+header {
+ margin: 0 0 0 0;
+}
+header nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: -38px 0 44px 1.3%;
+    width: 100%;
+}
+header nav a {
+    position: relative;
+    display:flex;
+    align-content: space-between;
+    padding: 42px;
+    margin-top: 42px;   
+}
+header nav img{
+    display: flex;
+    width: 16%;
+    height: 42px;
+    margin: 57px 0 0 2.5%;
+    padding-bottom: 0;
+}
+a{
+    margin: 0 0 0 0;
+}
+img{
+    margin: -47px 0 13px 10%;
 }
 
 .top-content {
@@ -77,6 +108,7 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin: 5px -1.9% 21px 1.6%;
 }
 
 .top-content .text-container {
@@ -88,6 +120,7 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin: 0 -1.4% 20px 1.9%;
 }
 
 .middle-content h2 {
@@ -104,18 +137,34 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
+    background: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.middle-content .boxes .box2{
+    background: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box6{
+    background: hotpink;
+}
+.middle-content .boxes .box8{
+    background: indigo;
+}
+.middle-content .boxes .box10{
+    background: lawngreen;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    margin: 0 0 20px 3.2%;
 }
 
 .bottom-content .text-container {
@@ -129,6 +178,7 @@ p {
 footer {
     width: 100%;
     background: black;
+    margin: 0 0 0 1.6%;
 }
 
 footer nav {
@@ -137,10 +187,229 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+}
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    body{
+        overflow-x:hidden;
+    }
+    header nav{
+        display: flex;
+        align-content: center;
+    }
+    header nav a{
+        position: relative;
+        display: flex;
+        margin: 86px 2.3% -9px 0.4%;
+        left: 2.1%;
+    }
+    header nav img{
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        margin: 58px 11.3% 0 -29.8%;
+        position: relative;
+        right: 29.3%;
+        height: 40px;
+        width: 100%;
+    }
+    img{
+        height: 147px;
+        margin: -44px 0 0 0;
+    }
+    .top-content {
+        margin: 20px -2% 0 0;
+    }
+    .middle-content{
+        margin: 20px -4.1% 0 0;
+    }
+    .middle-content .boxes .box1{
+     background: teal;
+ }
+ .middle-content .boxes .box3 {
+     background: gold;
+ }
+ .middle-content .boxes .box5 {
+     background: cadetblue;
+ }
+ .middle-content .boxes .box7{
+     background: coral;
+ }
+ .middle-content .boxes .box9 {
+     background: crimson;
+ }
+    .bottom-content{
+        margin: 20px -0.2% 0 2.1%;
+    }
+    footer{
+        margin: 21px 0 0 0;
+        display: flex;
+        align-content: space-between;
+    }
+}
+@media(max-width: 400px){
+    .container{
+        width: 100%;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: -28px 0 0 0;
+        align-items: center;
+    }
+    header nav img {
+        order: 1;
+        position: relative;
+        left: 87px;
+        width: 41%
+    }
+    header nav a {
+        margin: 4px 0 -59px 0;
+    }
+    img{
+        margin: 32px 0 0 0;
+        height: 76px;
+    }
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        margin: 20px -102% 0 4.25%;
+    }
+    .middle-content{
+        margin: 240px 0 0 0;
+    }
+    .middle-content h2 {
+        position: relative;
+        padding-bottom: 0;
+        margin: -220px 0 0 0;
+    }
+    .middle-content .boxes{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        margin: 0 0 0 0;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 0;
+    }
+    .middle-content .boxes .box1{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box2{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box3{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box4{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box5{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box6{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box7{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box8{
+        width: 27%;
+        left: 0;
+    }
+    .middle-content .boxes .box9{
+        width: 27%;
+        left: 0;
+    }
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 3.3%;
+    }
+    .bottom-content .text-container{
+        padding-bottom: 20px;
+    }
+    footer{
+        margin: 20px 0 0 0;
+        display: flex;
+    }
+    footer nav a{
+        position: relative;
+        padding-right: 23px;
+        left: 14%;
+    }
+   /* .middle-content .boxes .box1{
+margin: -85px 0 0 200px;
+position: relative;
+right:-17px;
+padding-bottom:0;
+width: 98px;
+
+    }
+    .middle-content .boxes .box2{
+        margin: -85px 0 0 0;
+        position: relative;
+        left: 109px;
+        padding-bottom:0;
+        width: 1px;
+    }
+    .middle-content .boxes .box3{
+        margin: -85px 0 0 0;
+        position: relative;
+        left: 36px;
+        padding-bottom:0;
+        width: 1px;
+    }
+      .middle-content .boxes .box4{
+margin: 40px 0 0 200px;
+position: relative;
+right:17px;
+    }
+    .middle-content .boxes .box5{
+        margin:  40px 0 0 0;
+        position: relative;
+        left: 109px;
+        justify-content: center;
+    }
+    .middle-content .boxes .box6{
+        margin:  40px 0 0 0;
+        position: relative;
+        left: 36px;
+    }
+    .middle-content .boxes .box7{
+        margin: 40px 0 0 132px ;
+        position: relative;
+        right:0;
+    }
+    .middle-content .boxes .box8{
+        margin: 40px 0 0 0;
+        position: relative;
+        left: 74px;
+    }
+    .middle-content .boxes .box9{
+        margin: 40px 0 0 0;
+        position: relative;
+        left: 18px;
+    }
+    */
+    .middle-content .boxes .box10{
+    display: none;
+    }
+    
 }
