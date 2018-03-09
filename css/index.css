@@ -196,6 +196,10 @@ footer nav a {
 /*END 1000PX MEDIA QUERY, 768PX BELOW/////////////////////////////////////////////////////////////////////*/
 
 @media(max-width: 768px) {
+
+    .container {
+        max-width: 95%;
+    }
     nav {
         display: block;
         max-width: 100%;
@@ -232,7 +236,7 @@ footer nav a {
 
 /*END 768px MEDIA QUERY, 400px BELOW/////////////////////////////////////////////////////////////////////*/
 
-@media(max-width: 600px) {
+@media(min-width: 400px) and (max-width: 450px) {
 
     h2 {
         font-size: 2.3rem
@@ -275,13 +279,22 @@ footer nav a {
     }
 
     .text-container p {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
     .middle-content .boxes .box {
         width: 25%;
+        height: 25vw;
     }
 
     .middle-content .boxes .box10{
         display: none;
-        }
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: row;
+    }
