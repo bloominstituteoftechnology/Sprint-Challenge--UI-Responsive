@@ -51,30 +51,69 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5%;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
 }
-
+/* 1000px */
 .container {
-    width: 800px;
+    width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.8% 0;
+}
+
+
+header img {
+    margin-right: 5%;
+}
+header nav {
+    /*margin-top: 40px; */
+    margin-top: 4.5%;
+    /*width: 610px;   */
+    width: 69.3%;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.jumbotron {
+    margin: 30px 0 20px;
+    width: 100%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -82,11 +121,11 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2%;
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     border-bottom: 1px dashed black;
 }
 
@@ -105,16 +144,31 @@ p {
     width: 12.5%;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2% 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#box2 {
+    background: forestgreen;
+}
+#box4 {
+    background: darkorchid;
+}
+#box6 {
+    background: hotpink;
+}
+#box8 {
+    background: indigo;
+}
+#box10 {
+    background: lawngreen;
+}
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2%;
     justify-content: space-around;
 }
 
@@ -136,8 +190,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2% 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
