@@ -104,8 +104,8 @@ header .logo {
     justify-content: center;
     margin-left: 1.3%;
     margin-bottom: 25px;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 
 .top-content {
@@ -209,7 +209,27 @@ footer nav a {
     text-decoration: none;
 }
 
+/*################################ EXTRA MEDIA QUERY ######################*/
+@media (max-width: 807px) and (min-width: 769px) {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    .jumbotron {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .top-content .text-container {
+        padding: 0 0 20px;
+    }
+}
+
+/*################################# TABLET ##################################*/
 @media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
 
     header{
         flex-direction: column;
@@ -232,7 +252,11 @@ footer nav a {
 
     .jumbotron {
         margin-left: 0;
-        width: 93%;
+        width: 100%;
+    }
+
+    .top-content {
+        margin-top: 40px;
     }
 
     .middle-content .boxes .box1 {
@@ -254,4 +278,87 @@ footer nav a {
     footer {
         margin-left: 0;
     }
+}
+/*################################# PHONE ##################################*/
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        /* margin-top: 30px; */
+    }
+   
+    header nav {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav a {
+        border-top: 1px solid #b0b0b0;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 1.4rem;
+    }
+
+    header .logo {
+        margin-top: 9px;
+        margin-left: 1.6%;
+        width: 40%;
+    }
+
+    .jumbotron {
+       width: 100%;
+       height: 80px;
+    } 
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 100px;
+        height: 100px;
+        margin: 20px 2.5%;
+        display: flex;
+        font-size: 1.6rem;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        margin: 0 2% 20px;
+    }
+
+    .bottom-content .text-container {
+        font-size: 1.6rem;
+        padding: 10px 0 0 0;
+    }
+     footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0%;
+    } 
 }
