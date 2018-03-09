@@ -57,6 +57,26 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    width: 100%;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+
+header nav a {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    padding: 5%;
+    
+}
+
 h1, h2, h3, h4, h5 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -139,7 +159,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: .875rem;
+    font-size: 1.4rem;
 }
 
 footer nav a {
