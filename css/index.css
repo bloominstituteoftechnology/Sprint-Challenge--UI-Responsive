@@ -267,5 +267,14 @@ footer nav a {
             padding: 15px 0;
             border-top: 1px solid black;
         }
+
+        .top-content {
+            flex-direction: column;
+        }
+
+        .top-content .text-container {
+            width: 100%;
+            padding: 0 0 20px 5%;
+        }
     }
 }
