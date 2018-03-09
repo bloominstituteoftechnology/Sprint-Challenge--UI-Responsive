@@ -494,8 +494,8 @@ footer nav a {
 
     .middle-content .boxes {
         display: flex;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content: center;
         font-size: 1.5rem;
         margin: 0 1%
     }
