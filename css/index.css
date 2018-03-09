@@ -349,3 +349,119 @@ footer nav a {
     margin: 0;
   }
 }
+
+/* At 400px and below do the following */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px 0 0 0;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: center;
+    padding: 4.75% 3.75% 3.5% 7.8%;
+    border-bottom: 1px solid black;
+  }
+
+  header nav a:first-child {
+    border-top: black;
+  }
+
+  header .logo {
+    margin-top: 30px;
+    margin-left: 5.25%;
+  }
+
+  .top-content {
+    padding-bottom: 17px;
+    flex-direction: column;
+  }
+
+  .top-content img {
+    height: 50%;
+  }
+
+  .top-content .text-container {
+    margin: 20px 0 0 0;
+    width: 100%;
+    padding: 0 5% 0 6%;
+  }
+
+  .middle-content .boxes {
+    font-size: 1.6rem;
+  }
+
+  .middle-content .boxes .box {
+    width: 25.5%;
+  }
+
+  .middle-content .boxes .box1 {
+    order: 1;
+  }
+
+  .middle-content .boxes .box2 {
+    order: 0;
+  }
+
+  .middle-content .boxes .box3 {
+    order: -1;
+  }
+
+  .middle-content .boxes .box4 {
+    order: 4;
+  }
+
+  .middle-content .boxes .box5 {
+    order: 3;
+  }
+
+  .middle-content .boxes .box6 {
+    order: 2;
+  }
+
+  .middle-content .boxes .box7 {
+    order: 7;
+  }
+
+  .middle-content .boxes .box8 {
+    order: 6;
+  }
+
+  .middle-content .boxes .box9 {
+    order: 5;
+  }
+
+  .middle-content .boxes .box10 {
+    display: none;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    margin: 0 2% 0;
+  }
+
+  .bottom-content .text-container {
+    padding-bottom: 24px;
+  }
+
+  footer nav {
+    padding: 20px 10%;
+  }
+
+  footer nav a {
+    padding: 0 13% 0 1%;
+  }
+}
