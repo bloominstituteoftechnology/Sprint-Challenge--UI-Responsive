@@ -94,11 +94,18 @@ header nav a {
     margin-left: 1.5%;
 }
 
+header .logo {
+    width: 20%;
+    height: auto;
+}
+
 .jumbotron {
     display: flex;
     justify-content: center;
     margin-left: 1.3%;
     margin-bottom: 25px;
+    width: 93%;
+    height: auto;
 }
 
 .top-content {
@@ -200,4 +207,33 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
 }
