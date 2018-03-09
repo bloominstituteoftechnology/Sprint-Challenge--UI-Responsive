@@ -1,0 +1,5 @@
+1. "box3" has the most specificity weight because it is in the right-most position.
+2. display:block will cause an element to greedily consume space across the entire page width, forcing other items to appear above or below. display:inline will cause an element to only take up the space it needs, allowing other elements to be placed adjacent.
+3. align-items modifies the alignment of the "cross" axis, while justify-content aligns on the main axis.
+4. A fixed layout will use hardcoded px values for all dimensions. An adaptive layout will use media queries to introduce alternate layouts based on screen size. A fluid layout uses relative units such as % and rems for widths and font sizes, so that the layout remains legible as viewport changes. A responsive layout combines fluid relative dimensions with the media queries of the adaptive layouts.
+5. Without the max-width property, the container element will expand to any viewport size and introduce unwanted whitespace or cause legibility issues for users.
