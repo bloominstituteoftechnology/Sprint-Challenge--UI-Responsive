@@ -152,23 +152,23 @@ header nav a{
 }
 
 .middle-content .boxes .box2 {
-    background-color: green;    
+    background-color: forestgreen;    
 }
 
 .middle-content .boxes .box4 {
-    background-color: rgb(172, 76, 172);
+    background-color:darkorchid;
 }
 
 .middle-content .boxes .box6 {
-    background-color: pink;
+    background-color: hotpink;
 }
 
 .middle-content .boxes .box8 {
-    background-color: purple;
+    background-color: indigo;
 }
 
 .middle-content .boxes .box0 {
-    background-color: lightgreen;
+    background-color: lawngreen;
 }
 
 .bottom-content {
@@ -207,3 +207,5 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media(max-width: )
