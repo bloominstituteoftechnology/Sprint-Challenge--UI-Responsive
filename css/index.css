@@ -55,6 +55,9 @@ html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
+html {
+    font-size: 62.5%
+}
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
@@ -143,4 +146,58 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 1000px){
+    .container {
+        max-width: 1000px; 
+}
+    .header {
+        display: flex;
+}
+    .middle-content .boxes .box .box2 {
+        background: forestgreen;
+}
+    .middle-content .boxes .box .box4 {
+        background: darkorchid;
+}
+     .middle-content .boxes .box .box6 {
+        background: hotpink;
+}
+     .middle-content .boxes .box .box8 {
+        background: indigo;
+}
+     .middle-content .boxes .box .box10 {
+        background: lawngreen;
+}
+    
+}
+
+
+@media(max-width: 768px){
+    .container {
+        max-width: 768px;
+    }
+    .middle-content .boxes .box .box1 {
+        background: teal;
+}
+    .middle-content .boxes .box .box3 {
+        background: gold;
+}
+     .middle-content .boxes .box .box5 {
+        background: cadetblue;
+}
+     .middle-content .boxes .box .box7 {
+        background: coral;
+}
+     .middle-content .boxes .box .box10 {
+        background: crimson;
+}
+}
+
+
+@media(max-width: 400px){
+    .container {
+        max-width: 400px;
+    }
 }
