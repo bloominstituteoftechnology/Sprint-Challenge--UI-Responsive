@@ -159,12 +159,13 @@ p {
   max-width: 800px;
   margin: auto;
   font-size: 1.6rem;
+  margin-left: 5.6%;
 }
 header {
   width: 100%;
   display: flex;
   margin-bottom: 48px;
-  margin-left: 5.6%;
+  /* margin-left: 5.6%; */
   padding-top: 15px;
 }
 
@@ -186,11 +187,11 @@ header .logo {
 }
 .jumbo {
   width: 100%;
-  margin-left: 5.6%;
+  /* margin-left: 5.6%; */
 }
-.container {
+.container2 {
   font-weight: bold;
-  margin-left: 5.6%;
+  /* margin-left: 5.6%; */
 }
 .top-content {
   display: flex;
@@ -291,7 +292,7 @@ footer nav a {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
-    justify-content: center;
+    margin: 0 auto;
   }
   header {
     flex-wrap: wrap;
@@ -322,10 +323,61 @@ footer nav a {
   }
 }
 @media (max-width: 400px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+  }
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+  header nav a:last-child {
+    margin-bottom: -50px;
+    border-bottom: none;
+  }
+  header .logo {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .text-content .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+    background: blue;
+  }
+  .middle-content {
+    display: flex;
+  }
+
   .middle-content .boxes {
-    flex-flow: row-reverse;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
   }
   .middle-content .boxes .box10 {
     display: none;
+  }
+  .bottom-content .text-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
