@@ -173,7 +173,7 @@ footer nav a {
 header {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
 }
 
@@ -195,6 +195,6 @@ a {
 }
 
 .jumbotron {
-    width: 90%;
-    margin: 20px 1% 10px;
+    width: 100%;
+    margin: 40px 0 20px 0;
 }
