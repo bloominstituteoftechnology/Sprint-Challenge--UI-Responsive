@@ -164,14 +164,13 @@ header {
   display: flex;
   margin-bottom: 48px;
   margin-left: 5.6%;
-}
-.jumbo {
-  margin-left: 5.6%;
-}
+  padding-top: 15px;
+	    margin-bottom: 32px;
+
 header nav {
   margin: 38px 1% 0;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
 }
 
@@ -179,10 +178,13 @@ header nav a {
   font-size: 1.4rem;
   text-decoration: none;
   color: black;
-  background: blue;
 }
 header .logo {
+  height: 41px;
   order: -1;
+}
+.jumbo {
+  margin-left: 5.6%;
 }
 .container {
   font-weight: bold;
@@ -207,12 +209,13 @@ header .logo {
 .middle-content {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
+  font-size: 1.6rem;
 }
 
 .middle-content h2 {
   padding: 0 2%;
   margin-bottom: 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .middle-content .boxes {
