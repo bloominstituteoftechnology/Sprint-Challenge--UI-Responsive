@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +68,41 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.very-top-content {
+    width: 100%;
+    margin-top: 39px;
+}
+
+.very-top-content img {
+    margin-top: 36px;
+}
+
+ header {
+    width: 100%;
+    text-decoration: none;
+    display:flex;
+    align-items: baseline;
+}
+
+.bar {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 5.5%;
+}
+
+header a {
+    text-decoration: none;
+    text-color: black;
+    font-size: 1.5rem;
 }
 
 .top-content {
@@ -77,6 +111,12 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin-top: 23px;
+    padding-bottom: 4px;
+}
+
+.top-content p {
+    font-size: 1.5rem;
 }
 
 .top-content .text-container {
@@ -137,7 +177,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
