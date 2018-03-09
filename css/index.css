@@ -66,8 +66,32 @@ p {
     line-height: 1.4;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    margin:20px 0 40px 0;
+    
+}
+header nav{
+    display: flex;
+    width: 643px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+header nav a{
+    font-size:1.4rem;
+    text-decoration:none;
+    color:black;
+    
+}
+.jumbotron{
+    margin-bottom: 30px;
+}
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -83,6 +107,7 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -120,6 +145,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -143,4 +169,104 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media (max-width: 1000px){
+    .boxes .box:nth-of-type(2){
+        background-color: forestgreen;
+    }
+    .boxes .box:nth-of-type(4){
+        background-color: darkorchid;
+    }
+    .boxes .box:nth-of-type(6){
+        background-color: hotpink;
+    }
+    .boxes .box:nth-of-type(8){
+        background-color: indigo;
+    }
+    .boxes .box:nth-of-type(10){
+        background-color: lawngreen;
+    }
+}
+
+@media (max-width:768px){
+    header {
+       flex-direction:column; 
+       align-items: center;
+       
+        
+    }
+    header nav {
+        margin-top:3%;
+    }
+    header .logo{
+        width: 147px;
+        margin-top:3%;
+
+    }
+
+    .jumbotron{
+        max-width: 768px;
+    }
+    .container{
+        max-width: 768;
+        overflow-x:hidden;
+    }
+
+    .boxes .box:nth-of-type(1){
+        background-color: teal;
+    }
+    .boxes .box:nth-of-type(3){
+        background-color: gold;
+    }
+    .boxes .box:nth-of-type(5){
+        background-color: cadetblue;
+    }
+    .boxes .box:nth-of-type(7){
+        background-color: coral;
+    }
+    .boxes .box:nth-of-type(9){
+        background-color: crimson;
+    }
+}
+
+@media (max-width:400px){
+    header {
+        flex-direction:column; 
+        align-items: center;
+        
+         
+     }
+    header nav{
+        flex-direction:column;
+        align-items:center;
+        
+    }
+    header nav a{
+        margin-top:20px;
+    }
+    .jumbotron{
+        max-width:400px;
+    }
+    .top-content{
+        flex-direction: column;
+    
+    }
+    .top-content .text-container{
+        width:350px;
+        margin: 0 0 0 5%;
+    }
+
+    .boxes .box:nth-of-type(10){
+        display:none;
+    }
+    .middle-content .boxes .box{
+        width:100px;
+    }
+    footer nav {
+        justify-content:space-around;
+        width: 300px;
+        margin: 0 0 0 10%;
+   
+    }
+
 }
