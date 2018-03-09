@@ -183,3 +183,33 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media(max-width:768px){
+
+.middle-content .boxes .box {
+ 
+    flex-wrap: wrap;
+}
+
+.middle-content .boxes .box:nth-child(1){
+    background: teal;
+}
+
+.middle-content .boxes .box:nth-child(3){
+    background: gold;
+}
+
+.middle-content .boxes .box:nth-child(5){
+    background: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(7){
+    background: coral;
+}
+
+.middle-content .boxes .box:nth-child(9){
+    background: crimson;
+}
+
+
+}
