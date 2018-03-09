@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
   <title>Sprint Challenge - UI / RWD</title>
@@ -13,7 +14,22 @@
 
 <body>
     <div class="container">
+        <header>
+            <ul>
+                <img class="logo" src="data:image/png;base64,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">
+                <p>ambda</p>
+            </ul>
+                <nav>
+                    <a href='#'>Home</a>
+                    <a href='#'>About</a>
+                    <a href='#'>Products</a>
+                    <a href='#'>Blog</a>
+                    <a href='#'>Contact</a>
+            </nav>
+            <img class="top-img" src="https://github.com/markstez05/Sprint-Challenge--UI-Responsive/blob/master/img/jumbo.jpg?raw=true">
+        </header>
         <section class="top-content">
+            
             <div class="text-container">
                 <h2>The Future</h2>
                 <p>Proin sed quam sed tellus vestibulum ultrices quis in nunc. Phasellus id dui id tortor tincidunt efficitur. Proin faucibus imperdiet erat, non varius lacus. Maecenas non nisl id turpis egestas tincidunt. Nam condimentum venenatis magna eget finibus.</p>
@@ -29,16 +45,16 @@
             <h2>Why Did It Have To Be Boxes...</h2>
             
             <div class="boxes">
-                <div class="box">Box 1</div>
-                <div class="box">Box 2</div>
-                <div class="box">Box 3</div>
-                <div class="box">Box 4</div>
-                <div class="box">Box 5</div>
-                <div class="box">Box 6</div>
-                <div class="box">Box 7</div>
-                <div class="box">Box 8</div>
-                <div class="box">Box 9</div>
-                <div class="box">Box 10</div>
+                <div class="box-box1">Box 1</div>
+                <div class="box-box2">Box 2</div>
+                <div class="box-box3">Box 3</div>
+                <div class="box-box4">Box 4</div>
+                <div class="box-box5">Box 5</div>
+                <div class="box-box6">Box 6</div>
+                <div class="box-box7">Box 7</div>
+                <div class="box-box8">Box 8</div>
+                <div class="box-box9">Box 9</div>
+                <div class="box-box10">Box 10</div>
             </div>
         
         </section>
