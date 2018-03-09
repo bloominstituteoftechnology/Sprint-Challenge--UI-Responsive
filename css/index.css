@@ -101,7 +101,7 @@ nav {
 
 header a {
     text-decoration: none;
-    text-color: black;
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -113,6 +113,10 @@ header a {
     border-bottom: 1px dashed black;
     margin-top: 23px;
     padding-bottom: 4px;
+}
+
+.bottom-content p {
+    font-size: 1.6rem;
 }
 
 .top-content p {
@@ -172,15 +176,128 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 59%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 1.4rem;
+    padding: 18px 0%;
+    font-size: 1.5rem;
+    justify-content: space-between;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.box10 {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-left: 0;
+        width: 86%;
+        margin-top: 27px;
+    }
+
+    .top-content {
+        padding-bottom: 26px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: grey solid 1px;
+
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        border-bottom: grey solid 1px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: grey solid 1px;
+    height: 254px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: -4px;
+    }
+
+    .very-top-content img {
+        margin-top: -25px;
+        margin-bottom: 28px;
+    }
+
+    nav {
+        margin-top:0;
+    }
+
+    header img {
+        margin-bottom: 28px;
+        margin-top: -22px;
+    }
+
+    .bar {
+        margin: -31px 0 -2px 0;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -3px;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .bottom-content {
+        flex-direction:column;
+        align-items:center;
+    } 
+
+    .top-content .text-container {
+        width: 84%;
+    }
+
+    .middle-content {
+        margin-top: 20px;
+    }
+
+    .bottom-content .text-container {
+        width: 84%;
+    }
+
+    .boxes {
+    }
+
+    .middle-content .boxes .box {
+        width: 25.5%;
+    }
+
+    .box10 {
+        display:none;
+    }
 }
