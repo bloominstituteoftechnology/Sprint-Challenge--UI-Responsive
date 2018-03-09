@@ -91,6 +91,10 @@ header nav a{
 	text-decoration: none;
 	font-size: 1.4rem;
 }
+a:hover {
+	font-size: 1.6rem;
+	text-decoration: underline;
+}
 
 .container .image-spacer{
 	margin: 3rem 0;
@@ -138,6 +142,10 @@ header nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.container .middle-content .boxes .box:hover {
+	font-size: 2rem;
+	text-decoration: underline;
 }
 .middle-content .boxes .box-2 {
 	background-color: forestgreen;
