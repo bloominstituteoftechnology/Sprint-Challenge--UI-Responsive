@@ -170,11 +170,10 @@ footer nav a {
 header {
     display: flex;
     justify-content: space-evenly;
-
 }
 
 header .logo {
     order: -1;
-    width: 20%;
-    height:
+    width: 10%;
+    height: 5%;
 }
