@@ -239,6 +239,15 @@ footer nav a {
 
     .top-content .text-content p {
         line-height: 1.5;
+        padding-bottom: 16px;
+    }
+
+    .middle-content {
+        margin-right: -2%;
+    }
+
+    .middle-content h2 {
+        padding: 0 2%;
     }
 
     .middle-content .boxes .box1 {
@@ -259,6 +268,14 @@ footer nav a {
 
     .middle-content .boxes .box9 {
         background-color: crimson;
+    }
+
+    .bottom-content {
+        margin-bottom: 19px;
+    }
+
+    footer nav {
+        padding: 20px 1%;
     }
 }
 
