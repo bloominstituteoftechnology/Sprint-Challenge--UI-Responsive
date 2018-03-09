@@ -309,7 +309,9 @@ header nav a{
 
 .middle-content .boxes{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    
+
     
 
 }
@@ -317,9 +319,13 @@ header nav a{
     padding: 50px;
 }
 
+
+
 .middle-content .boxes .box:nth-child(10){
     display: none;
 }
+
+
 
 .bottom-content{
     flex-direction: column;
@@ -344,6 +350,6 @@ footer nav {
 
 
 
-
+    
 
     
