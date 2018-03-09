@@ -67,20 +67,58 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 80rem;
     margin: 0 auto;
+}
+
+header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+header nav {
+    margin-top: 4%; 
+    margin-right: 2%;
+    margin-left: 6%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    font-size: 90%;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header .logo {
+    align-self: flex-start;
+    margin: 3% 0 0 0; 
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+.top-content .jumbo {
+    align-self: flex-start;
+    margin-bottom: 2%;
+}
+
 .top-content .text-container {
-    width: 48%;
+    width: 38%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
@@ -88,6 +126,7 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding: 0 6%;
 }
 
 .middle-content h2 {
@@ -114,8 +153,9 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
     justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .bottom-content .text-container {
@@ -127,8 +167,10 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 80%;
+    height: 3rem;
     background: black;
+    margin: 0 auto;
 }
 
 footer nav {
@@ -137,7 +179,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: .9rem;
 }
 
 footer nav a {
