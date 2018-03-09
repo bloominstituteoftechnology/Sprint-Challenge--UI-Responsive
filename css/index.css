@@ -108,9 +108,12 @@ header nav a:hover {
 }
 
 .jumbotron {
-    margin: 30px 0 20px;
-    /*width: 100%;*/
     display: flex;
+    justify-content: center;
+}
+
+.jumbotron img {
+    width: 100%;
 }
 .top-content {
     display: flex;
@@ -129,6 +132,7 @@ header nav a:hover {
 
 .top-content .text-container h2 {
     margin-bottom: 7%;
+    margin-top: 3%;
 }
 
 .middle-content {
@@ -185,6 +189,7 @@ header nav a:hover {
 
 .bottom-content .text-container h2 {
     margin-bottom: 7%;
+    margin-top: 3%;
 }
 
 .bottom-content .text-container:last-child {
@@ -227,6 +232,7 @@ footer nav a {
 
     .top-content .text-container h2 {
         margin-bottom: 7%;
+        margin-top: 3%;
     }
     .middle-content {
         margin: 3% 2%;
@@ -250,6 +256,7 @@ footer nav a {
 
     .bottom-content .text-container h2 {
         margin-bottom: 7%;
+        margin-top: 3%;
     }
 
 }
