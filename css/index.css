@@ -170,6 +170,7 @@ footer nav a {
     background: lawngreen;
 }
 
+/* Organizes Header With Logo */
 header {
     display: flex;
     flex-flow: row;
@@ -188,13 +189,52 @@ header nav {
 
 }
 
+/* Changes color of a tags */
+
 a {
    text-decoration: none;
    color: black; 
    font-size: 1.2rem;
 }
 
+/* Adjusts Picture */
+
 .jumbotron {
     width: 100%;
     margin: 40px 0 20px 0;
 }
+
+/* Media Query for 768px */
+
+@media(max-width: 768px) {
+
+    header {
+        flex-flow: column wrap;
+        margin-top: 20px;
+    }
+
+    header .logo {
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+/* @media(max-width: 400px) {
+
+} */
