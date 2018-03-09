@@ -82,7 +82,7 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin: 2% 0 3% 0;
+    margin: 3% 0 4% 0;
 }
 
 header nav {
@@ -105,6 +105,12 @@ header nav ul li a:hover {
     color: black;
 }
 
+.top-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -116,11 +122,19 @@ header nav ul li a:hover {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2%;  
+}
+
+.top-content .text-container h2 {
+    font-size: 1.1rem;
+}
+
+.top-content .text-container p {
+    font-size: 1rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     border-bottom: 1px dashed black;
 }
 
@@ -136,6 +150,7 @@ header nav ul li a:hover {
 }
 
 .boxes .box {
+    font-size: 1rem;
     width: 12.5%;
     height: 100px;
     background: black;
@@ -147,29 +162,37 @@ header nav ul li a:hover {
 }
 
 .boxes .box:nth-of-type(2) {
-    background-color: green;
+    background-color: forestgreen;
 }
 
 .boxes .box:nth-of-type(4) {
-    background-color: rgb(160, 57, 160);
+    background-color: darkorchid;
 }
 
 .boxes .box:nth-of-type(6) {
-    background-color: rgb(231, 99, 187);
+    background-color: hotpink;
 }
 
 .boxes .box:nth-of-type(8) {
-    background-color: purple;
+    background-color: indigo;
 }
 
 .boxes .box:nth-of-type(10) {
-    background-color: rgb(24, 250, 24);
+    background-color: lawngreen;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+.bottom-content .text-container h2 {
+    font-size: 1.1rem;
+}
+
+.bottom-content .text-container p {
+    font-size: 1rem;
 }
 
 .bottom-content .text-container {
@@ -199,6 +222,55 @@ footer nav a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 4% 0 5% 0;
+    }
+
+    header nav ul li a {
+        font-size: .9rem;
+    }
+
+    .container .logo {
+        align-self: center;
+        margin-bottom: 4%;
+    }
+
+    .boxes .box {
+        width: 100px;
+    }
+
+    .boxes .box:nth-of-type(1) {
+        background-color: teal;
+    }
+
+    .boxes .box:nth-of-type(3) {
+        background-color: gold;
+    }
+
+    .boxes .box:nth-of-type(5) {
+        background-color: cadetblue;
+    }
+
+    .boxes .box:nth-of-type(7) {
+        background-color: coral;
+    }
+
+    .boxes .box:nth-of-type(9) {
+        background-color: crimson;
+    }
+}
 
 @media only screen and (max-width: 400px) {}
