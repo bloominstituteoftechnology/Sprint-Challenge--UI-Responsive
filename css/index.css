@@ -1,146 +1,383 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.6rem;
+  margin-left: 5.6%;
+}
+header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 48px;
+  /* margin-left: 5.6%; */
+  padding-top: 15px;
 }
 
+header nav {
+  margin: 38px 1% 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+header nav a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+header .logo {
+  height: 41px;
+  order: -1;
+}
+.jumbo {
+  width: 100%;
+  /* margin-left: 5.6%; */
+}
+.container2 {
+  font-weight: bold;
+  /* margin-left: 5.6%; */
+}
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+  font-size: 1.6rem;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
+  margin-top: 21px;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+  font-size: 1.6rem;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  padding: 0 2%;
+  margin-bottom: 0;
+  font-size: 1.8rem;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  background: black;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+/* where i changed the colors */
+.middle-content .boxes .box2 {
+  background: forestgreen;
+}
+.middle-content .boxes .box4 {
+  background: darkorchid;
+}
+.middle-content .boxes .box6 {
+  background: hotpink;
+}
+.middle-content .boxes .box8 {
+  background: indigo;
+}
+.middle-content .boxes .box10 {
+  background: lawngreen;
 }
 
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
+  font-size: 1.6rem;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+  padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 footer {
-    width: 100%;
-    background: black;
+  width: 100%;
+  background: black;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 1.4rem;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  header nav a {
+    width: 59%;
+    margin-left: 3%;
+  }
+
+  header .logo {
+    order: block;
+    margin: 30px auto 0;
+  }
+  .middle-content .boxes .box1 {
+    background: teal;
+  }
+  .middle-content .boxes .box3 {
+    background: gold;
+  }
+  .middle-content .boxes .box5 {
+    background: cadetblue;
+  }
+  .middle-content .boxes .box7 {
+    background: coral;
+  }
+  .middle-content .boxes .box9 {
+    background: crimson;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+  }
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+  header nav a:last-child {
+    margin-bottom: -50px;
+    border-bottom: none;
+  }
+  header .logo {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .text-content .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+    background: blue;
+  }
+  .middle-content {
+    display: flex;
+  }
+
+  .middle-content .boxes {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+  }
+  .middle-content .boxes .box10 {
+    display: none;
+  }
+  .bottom-content .text-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
