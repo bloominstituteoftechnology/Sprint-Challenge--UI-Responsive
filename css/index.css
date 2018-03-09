@@ -273,4 +273,81 @@ footer nav a {
     }
 }
 
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+
+    .container header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .container header nav {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .container header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container header nav ul li {
+        width: 120%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid gray;
+    }
+
+    .container header nav ul li:nth-of-type(5) {
+        border-bottom: 1px solid gray;
+    }
+
+    .container header nav ul li a {
+        width: 100%;
+        height: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    header nav ul li a:hover {
+        background: rgb(151, 148, 148);
+        text-decoration: none;
+        color: black;
+    }
+
+    .logo {
+        margin: 7% 0 0 0;
+    }
+
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+
+    .top-content .text-container {
+        width: 48%;
+        padding: 0 1%;
+        padding-bottom: 2%;  
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+    }
+    
+    .boxes .box:nth-of-type(10) {
+        display: none;
+    }
+    
+}
