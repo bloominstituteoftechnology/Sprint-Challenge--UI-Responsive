@@ -73,6 +73,7 @@ p {
     max-width: 80%;
     margin: 0 auto;
 }
+
 header {
     display: flex;
     align-items: baseline;
@@ -82,9 +83,9 @@ header {
 
 header .logo {
     display: flex;
-    width: 20%;
-    height: 20%;
+    width: 30%;
 }
+
 header ul{
     width: 20%;
     display: flex;
@@ -123,7 +124,6 @@ header .top-img {
     border-bottom: 1px dashed black;
     padding-top: 10px;
 }
-
 
 .top-content .text-container {
     width: 48%;
