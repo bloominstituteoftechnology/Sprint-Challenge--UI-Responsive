@@ -58,14 +58,12 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: 600;
     font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p, a, .box {
-    font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.4;
 }
@@ -197,4 +195,31 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    header img {
+        padding: 10px 0;
+    }
+
+    .jumbo {
+        width: 100%;
+    }
 }
