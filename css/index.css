@@ -166,7 +166,7 @@ header nav a {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin-bottom: 20px;
     justify-content: space-around;
 }
 
@@ -188,9 +188,9 @@ footer {
 }
 
 footer nav {
-    width: 100%;
+    width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
     font-size: 1.4rem;
@@ -235,6 +235,31 @@ footer nav a {
   }
 }
 
+/* Increase fluidity in middle and bottom content area */
+@media (max-width: 600px) {
+  .middle-content .boxes {
+    flex-flow: wrap;
+  }
+
+  .middle-content .boxes .box {
+    width: 21%;
+  }
+
+  .middle-content .boxes .box10 {
+    display: none;
+  }
+
+  .top-content, .bottom-content {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .top-content .text-container, .bottom-content .text-container {
+    width: 80%;
+    padding: 0 0 20px;
+  }
+}
+
 /* Phone */
 @media (max-width: 400px) {
   .logo {
@@ -253,14 +278,8 @@ footer nav a {
     padding: 4%;
   }
 
-  .top-content, .bottom-content {
-    flex-flow: column;
-    align-items: center;
-  }
-
   .top-content .text-container, .bottom-content .text-container {
     width: 90%;
-    padding: 0 0 20px;
   }
 
   .middle-content .boxes {
@@ -271,7 +290,8 @@ footer nav a {
     width: 25%;
   }
 
-  .middle-content .boxes .box10 {
-    display: none;
+  footer nav {
+    width: 100%;
+    justify-content: space-around;
   }
 }
