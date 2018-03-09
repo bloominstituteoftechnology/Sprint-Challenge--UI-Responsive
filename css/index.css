@@ -54,10 +54,47 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* baseline? */
+header nav {
+    width: 75%;
+    justify-content: space-between; 
+}
+
+header img {
+    width: 25%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 7%;    
+    font-size: 1.25rem;     
+}
+
+.jumbotron {
+    margin: 3% 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -66,10 +103,7 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
+
 
 .top-content {
     display: flex;
@@ -112,6 +146,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo
+}
+
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +191,131 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Styling applied at width: 768px */
+
+@media (max-width: 768px) {
+
+    /* Header, Nav Bar, Jumbotron */
+    .container header {
+        display: inline; 
+    }
+
+    .container header .logo-div {
+        display: flex;
+        margin: 3% 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container header nav {
+        width: 100%;
+    }
+
+    .container .jumbotron img {
+        width: 100%;
+    }
+
+    /* Middle Content */
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+}
+
+/* Styling applied at width: 400px */
+
+@media (max-width: 400px) {
+
+    /* Header, Nav Bar, Jumbotron */
+    .container header {
+        display: inline; 
+    }
+
+    .container header .logo-div {
+        display: flex;
+        margin: 3% 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container header nav {
+        width: 100%;
+    }
+
+    .container .jumbotron img {
+        width: 100%;
+    }
+
+    /* Middle Content */
+    .middle-content .boxes {
+        display: flex;
+        width: 100%;
+        border: 1px solid black;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .middle-content .rows {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    /* Bottom Content */
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bottom-content .text-container {
+        margin: 2% 0;
+        width: 100%;
+    }
+
 }
