@@ -162,14 +162,14 @@ a:hover {
 .middle-content .boxes .box-10 {
 	background-color: lawngreen;
 }
-.bottom-content {
+.bottom-content, .new-content{
     display: flex;
     margin: 0 2% 1rem;
     justify-content: space-between;
 		flex-wrap: wrap;
 }
 
-.bottom-content .text-container {
+.bottom-content .text-container, .new-content .text-container{
 		width: 30%;
     padding-right: 3%;
 		font-size: 1.6rem;
@@ -229,7 +229,7 @@ footer nav a {
 	.middle-content .boxes .box-10 {
 		display: none;
 	}
-	.bottom-content .text-container{
+	.bottom-content .text-container, .new-content .text-container{
 		width: 100%;
 		padding: 0 3%;
 		margin-bottom: 2rem;
