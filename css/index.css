@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    font-size:62.5%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -57,7 +58,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 2rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -66,9 +67,9 @@ p {
     line-height: 1.4;
 }
 
+@media (max-width: 1000px)
 .container {
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .top-content {
@@ -112,6 +113,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +158,40 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 2rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px)    
+.container {
+    width: 100%;
+}
+
+.middle-content .boxes .box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box3 {
+    background: gold;
+}
+
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box7 {
+    background: coral;
+}
+
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+@media (max-width: 400px)    
+.container {
+    width: 100%;
 }
