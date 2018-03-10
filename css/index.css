@@ -312,11 +312,13 @@ p {
 .bottom-content {
     width: 100%;
     margin: 0 0 2.5%;
+    padding: 0% 1.5% 0%;
 }
 
 .end-content {
     margin: 0 0 2.5%;
     width: 100%;
+    padding: 0% 1.5% 0%;
 }
 
 footer {
@@ -334,12 +336,7 @@ footer {
     }
     
     header {
-        display: flex;
-        justify-content: center;
-        margin: 3.5% 0% 2.7%;
-        width: 100%;
-        align-content: center;
-        flex-wrap: wrap;
+        margin: 7.5% 0% 0.7%;
     }
     
     header nav {
@@ -348,19 +345,34 @@ footer {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: flex-end;
+        margin: 6% 0 0;
     }
     
     header nav a {
+        padding: 16px 0;
+        margin: auto;
+        display: block;
+        text-align: center;
         font-size: 1.4rem;
         width: 100%;
+        border-bottom: 1px solid gray;
     }
-    
+
     .jumbotron {
-        margin: 2% 0 0;
+        margin: auto;
     }
     
     .top-content {
-        margin: 2.7% 0.5%;
+        margin: 4% 0%;
+        flex-flow: wrap;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 6%;
+        padding-bottom: 20px;
     }
     
     p {
@@ -369,12 +381,11 @@ footer {
     }
     
     .middle-content {
-        width: 100%;
-        margin: 0 0 2.5%;
+        margin: 5% 0 5%;
     }
 
     .middle-content .boxes {
-        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
     }
     
     .middle-content .boxes .box {
@@ -431,13 +442,13 @@ footer {
     }
     
     .bottom-content {
-        width: 100%;
-        margin: 0 0 2.5%;
+        flex-wrap: wrap;
+        margin: 0% 1.5% 5.5%;
     }
     
     .end-content {
-        margin: 0 0 2.5%;
-        width: 100%;
+        flex-wrap: wrap;
+        margin: 0% 1.5% 5.5%;
     }
     
     footer {
