@@ -22,7 +22,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    font-size:62.5%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -52,24 +51,52 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size:62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 2rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
-p {
-    line-height: 1.4;
+h2 {
+    font-size: 1.8rem;
 }
 
-@media (max-width: 1000px)
+p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
 .container {
-    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0% 4%;
+}
+
+header nav {
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+}
+
+header nav a {
+    font-size: 1.4rem;
+    margin: 0% 5.5% 0%;
+}
+
+.jumbotron {
+    margin: 0 10% 0;
 }
 
 .top-content {
@@ -78,6 +105,8 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    width: 80%;
+    margin: 2% 10% 3%;
 }
 
 .top-content .text-container {
@@ -87,8 +116,8 @@ p {
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    width: 80%;
+    margin: -1% 10% 2%;
 }
 
 .middle-content h2 {
@@ -111,6 +140,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 .middle-content .boxes .box2 {
@@ -135,7 +165,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 12% 4%;
     justify-content: space-around;
 }
 
@@ -147,8 +177,15 @@ p {
     padding-right: 0;
 }
 
+.end-content {
+    display: flex;
+    margin: 0 12% 4%;
+    justify-content: space-around;
+}
+
 footer {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     background: black;
 }
 
@@ -158,15 +195,17 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 2rem;
+    /* font-size: 3rem; */
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 768px)    
+@media (max-width: 768px) {
+ 
 .container {
     width: 100%;
 }
@@ -191,7 +230,12 @@ footer nav a {
     background: crimson;
 }
 
-@media (max-width: 400px)    
+}
+
+@media (max-width: 400px) {
+
 .container {
     width: 100%;
+}
+
 }
