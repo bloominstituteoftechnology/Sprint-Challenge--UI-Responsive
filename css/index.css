@@ -69,9 +69,10 @@ p {
 }
 
 .container {
-	 
+	width: 100%; 
     max-width: 800px;
     margin: auto;
+    align-items: center; 
 }
 .container header {
 	display: flex; 
@@ -99,6 +100,7 @@ header nav a {
      
 }
 .top-content {
+	width: 100%; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -181,38 +183,58 @@ footer nav a {
     text-decoration: none;
 }
 @media (min-width: 1000px){
-	.middle-content .boxes .box:nth-child(2) {
+	.middle-content .boxes .Box2 {
 	background: forestgreen;  
 }
-.middle-content .boxes .box:nth-child(4) {
+.middle-content .boxes .Box4{
 	background: darkorchid; }
-	.middle-content .boxes .box:nth-child(6) {
+	.middle-content .boxes .Box6 {
 	background: hotpink; 
 	}
-.middle-content .boxes .box:nth-child(8) {
+.middle-content .boxes .Box8 {
 	background: indigo; 
 }
-.middle-content .boxes .box:nth-child(10) {
+.middle-content .boxes .Box10 {
 	background: lawngreen; 
 }
+}
+
 @media (max-width: 768px){
 	.container{
+
 		width: 100%; 
-        padding: 25px; 
-        margin: auto; 
-	}
-	.middle-content .boxes .box:first-child {
+        padding: 5px; 
+        margin: 0 auto;
+         
+    }
+    header {
+    	width: 100%; 
+    	display: flex; 
+    	flex-stretch: stretch; 
+    	justify-content: center; 
+    }
+
+    header nav {
+    	width: 100%; 
+    }
+    .top-content {
+    	width: 100%; 
+    }
+    .middle-content .boxes .box{
+        min-width: 100px; 
+    }
+	.middle-content .boxes .Box1 {
 		background: teal;  
 	}
-	.middle-content .boxes .box:nth-child(3) {
+	.middle-content .boxes .Box3 {
 	background: gold; }
-	.middle-content .boxes .box:nth-child(5) {
+	.middle-content .boxes .Box5{
 	background: cadetblue; 
 	}
-	.middle-content .boxes .box:nth-child(7) {
+	.middle-content .boxes .Box7 {
 	background: coral; 
 	}
-	.middle-content .boxes .box:nth-child(9) {
+	.middle-content .boxes .Box9 {
 	background: crimson; 
 	}
 	}
@@ -224,6 +246,7 @@ footer nav a {
         margin: auto; 
     }
     header {
+    	width: 100%; 
         flex-wrap: wrap; 
         flex-direction: column; 
       } 
@@ -233,12 +256,21 @@ footer nav a {
         flex-direction: column;
         align-items: center;
     }
+    .middle-content {
+    	width: 100%; 
+    }
 	.middle-content .boxes{
 	display: flex; 
 	flex-direction: row-reverse; 
 	}
-	.middle-content .boxes:not(.last-child){
-	  box-sizing : border-box;
+	 .middle-content .boxes .box{
+        min-width: 100px; 
+    }
+	.middle-content .boxes .box {
+		min-width: 70px; 
+	}
+	.middle-content .boxes .Box10{
+	  display: none;
 	}
 
 
