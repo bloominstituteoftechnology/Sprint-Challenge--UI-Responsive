@@ -241,7 +241,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box1 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -252,7 +252,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box2 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: forestgreen;
     margin: 20px 2.5%;
@@ -263,7 +263,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box3 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -274,7 +274,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box4 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: darkorchid;
     margin: 20px 2.5%;
@@ -285,7 +285,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box5 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -296,7 +296,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box6 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: hotpink;
     margin: 20px 2.5%;
@@ -307,7 +307,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box7 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -318,7 +318,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box8 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: indigo;
     margin: 20px 2.5%;
@@ -329,7 +329,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box9 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -340,7 +340,7 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box10 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: lawngreen;
     margin: 20px 2.5%;
@@ -419,7 +419,7 @@ footer nav a {
         margin: 3%;
     }
     .middle-content .boxes .box1 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: teal;
         margin: 20px 2.5%;
@@ -429,7 +429,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box2 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: forestgreen;
         margin: 20px 2.5%;
@@ -439,7 +439,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box3 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: gold;
         margin: 20px 2.5%;
@@ -449,7 +449,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box4 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: darkorchid;
         margin: 20px 2.5%;
@@ -459,7 +459,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box5 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: cadetblue;
         margin: 20px 2.5%;
@@ -469,7 +469,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box6 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: hotpink;
         margin: 20px 2.5%;
@@ -478,7 +478,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box7 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: coral;
         margin: 20px 2.5%;
@@ -488,7 +488,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box8 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: indigo;
         margin: 20px 2.5%;
@@ -498,7 +498,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box9 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: crimson;
         margin: 20px 2.5%;
@@ -508,7 +508,7 @@ footer nav a {
         justify-content: center;
     }
     .middle-content .boxes .box10 {
-        width: 12.5%;
+        width: 100px;
         height: 100px;
         background: lawngreen;
         margin: 20px 2.5%;
