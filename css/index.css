@@ -199,12 +199,16 @@ header img {
 /* Top Content */
 .top-content {
   display: grid;
+  grid-template-columns: 1fr;
+  margin-right: 1%;
+  margin-left: 1%;
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-  width: 48%;
+  width: 100%;
+  font-size: 1.2rem;
   padding: 0 1%;
   padding-bottom: 20px;
 }
