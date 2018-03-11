@@ -54,22 +54,59 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+    /*spoiler*/
+    width: 100%;
 }
+
+/*Header Styles*/
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+header .logo {
+    display: block;
+    margin: 20px;
+}
+
+header nav  {
+    font-size: 1.6rem;
+    margin: 30px;
+    padding: 25px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.jumbotron {
+    display: block;
+    width: 100%;
+    margin: 20px;
+}
+
 
 .top-content {
     display: flex;
@@ -99,6 +136,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -110,6 +148,27 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
 }
 
 .bottom-content {
@@ -137,10 +196,39 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue; 
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+    background: crimson;
+}
+
+}
+
+@media (max-width: 400px) {
+
+    
 }
