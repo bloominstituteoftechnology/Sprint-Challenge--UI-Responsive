@@ -258,8 +258,9 @@ header img {
 /* Bottom Contestn */
 
 .bottom-content {
-  display: flex;
-  margin: 0 2% 20px;
+  display: grid;
+  margin: 5% 2%;
+  grid-template-columns: 1fr;
   justify-content: space-around;
 }
 
@@ -279,10 +280,11 @@ footer {
 footer nav {
   width: 60%;
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   padding: 20px 2%;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 footer nav a {
