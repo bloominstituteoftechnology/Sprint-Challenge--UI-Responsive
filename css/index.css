@@ -206,6 +206,29 @@ header img {
   grid-row: 1;
 }
 
+@media(min-width:401px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0%;
+  }
+  header {
+    max-width: 768px;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+  }
+  header img {
+    margin: 1% auto;
+  }
+  nav ul {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+  }
+  nav ul a {
+    border: none;
+  }
+}
+
 /* Top Content */
 
 .top-content {
