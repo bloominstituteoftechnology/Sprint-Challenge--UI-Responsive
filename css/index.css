@@ -91,7 +91,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -105,17 +107,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +129,7 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -165,6 +172,7 @@ p {
 }
 
 /* Header */
+
 header {
   max-width: 400px;
   width: 100vw;
@@ -172,6 +180,7 @@ header {
   display: grid;
   grid-template-rows: 35% 65%;
 }
+
 nav ul {
   display: grid;
   height: 100%;
@@ -190,6 +199,7 @@ nav ul a {
   height: 100%;
   font-size: 1.6rem;
 }
+
 header img {
   margin: 9% 30%;
   max-width: 162px;
@@ -197,24 +207,27 @@ header img {
 }
 
 /* Top Content */
+
 .top-content {
   display: grid;
   grid-template-columns: 1fr;
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-bottom: 20px;
+  margin: 0 3%;
   border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
   width: 100%;
+  margin: 2% 0;
   font-size: 1.2rem;
-  padding: 0 1%;
-  padding-bottom: 20px;
+}
+
+.top-content img {
+  width: 106%;
+  margin: 0 -3%;
 }
 
 .middle-content {
-  margin-bottom: 20px;
+  margin: 0 3%;
   border-bottom: 1px dashed black;
 }
 
