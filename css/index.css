@@ -54,28 +54,59 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header nav {
+    margin-top: 4.5%; 
+    width: 69%;
+    justify-content: space-between;
+    display: inline-flex;
+    align-self: flex-end;
+    font-size: 1.4rem;
+    margin-left: 5%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: inline-flex;
+    align-self: flex-start;
+}
+
+.jumbotron {
+    margin-top: 40px;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
     border-bottom: 1px dashed black;
 }
 
@@ -99,6 +130,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -111,6 +143,8 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+
 
 .bottom-content {
     display: flex;
@@ -137,10 +171,175 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+    }
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+    }
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+    }
+
+.middle-content .boxes .box8 {
+    background: indigo;
+    }
+
+.middle-content .boxes .box0 {
+    background: lawngreen;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        }
+
+    header nav {
+        width: 90%;
+        align-self: center;
+        
+    }
+
+
+    header nav a {
+        margin-right: 5%;
+    }
+
+    .logo {
+        max-width: 100%;
+        align-self: center;
+        
+    }
+
+    .jumbotron {
+        width: 100%;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%
+        
+    }
+
+    .middle-content .boxes .box1 {
+    background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+    background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+    background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+    background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+    background: crimson;
+    }
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    html, body {
+    overflow-x: hidden;
+    }
+
+    body {
+    position: relative;
+    }
+
+    header {
+        display: inline-flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    header nav {
+        display: inline-flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 145px;
+        margin-top: 60px;
+        margin-bottom: -6px;
+    }
+
+    header nav a {
+        width: 110%;
+        margin-right: 6%;
+        padding: 4%;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px -50%; 
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-flow: row-reverse wrap;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%
+    }
+
+    .middle-content .boxes .box0 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-content .text-container {
+        margin-bottom: 11px;
+    }
+
+    footer nav {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+}
+
 }
