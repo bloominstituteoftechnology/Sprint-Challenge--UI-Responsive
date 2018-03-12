@@ -141,6 +141,7 @@ header nav a{
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -250,4 +251,58 @@ footer nav a {
         height: 100%;
         margin-bottom: 24px;
     }
+}
+
+@media(max-width: 400px) {
+    header {
+        display:flex;
+        width:100%;
+        margin-bottom: auto;       
+    }
+
+    header .lambda-black{            
+        align-content: center;
+        margin: 2% auto;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a { 
+        padding: 3.8% 100%;
+        border: 1px solid black;        
+    }
+
+    jumbotron .jumbotron {        
+    }
+
+    .top-content .text-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 3% 0 6%;       
+    }
+
+    .top-content .text-container p {
+        margin-bottom: 6%;
+    }
+
+    .middle-content .boxes .box0 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-flow: row-reverse wrap;       
+    }
+    .bottom-content .text-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;        
+    }
+
 }
