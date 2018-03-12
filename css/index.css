@@ -75,13 +75,12 @@ p {
 }
 
 .container {
-   //border: 1px red solid; /*TEMPY TEMPY BORDERS*/
     max-width: 80%;
     margin: 0 auto;
 }
 
+/* HEADER CONTENT */
 header {
-    //border: 1px red solid; /*TEMPY TEMPY BORDERS*/
     display: flex;
     margin: 20px auto;
 }
@@ -104,13 +103,13 @@ header nav a {
     margin: 20px auto;
 }
 
+/* TOP-CONTENT */
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-    //border: 2px blue solid; /*TEMPY TEMPY BORDERS*/
 }
 
 .top-content .text-container {
@@ -119,6 +118,7 @@ header nav a {
     padding-bottom: 20px;  
 }
 
+/* MIDDLE-CONTENT */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -168,6 +168,7 @@ header nav a {
     background: lawngreen;
 }
 
+/* BOTTOM CONTENT */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -182,6 +183,7 @@ header nav a {
     padding-right: 0;
 }
 
+/* MY STRETCH CONTENT */
 .my-content {
     text-align: center;    
 }
@@ -194,6 +196,8 @@ header nav a {
     width: 100%;
 }
 
+
+/* FOOTER CONTENT */
 footer {
     width: 100%;
     background: black;
@@ -216,17 +220,14 @@ footer nav a {
 
 @media (max-width: 768px) {
     html, body {
-        //border: 5px blue solid; /*TEMPY TEMPY BORDERS*/
         width: 100%;  
     }
 
     .container {
-        //border: 2px red solid; /*TEMPY TEMPY BORDERS*/
         max-width: 100%;       
     }    
 
     header {
-        //border: 2px blue solid; /*TEMPY TEMPY BORDERS*/        
         flex-wrap: wrap;
     }
 
@@ -347,6 +348,5 @@ footer nav a {
 
     footer nav a {        
         margin: 0 5%;
-        //padding: 0 3%;
     }
 }
