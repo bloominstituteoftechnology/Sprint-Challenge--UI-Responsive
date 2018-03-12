@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +68,41 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.lambda-black{
+    display:flex;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+}
+
+header nav {
+    width:100%;
+    display: flex;
+    margin-top: 26px;
+    justify-content: space-around;       
+}
+
+.jumbotron {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 22px;
+}
+
+header nav a{
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;  
 }
 
 .top-content {
@@ -83,6 +117,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container p {
+    font-size: 1.6rem;    
 }
 
 .middle-content {
@@ -103,6 +141,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -110,6 +149,27 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
+}
+
+.middle-content .boxes .box2 {
+    background-color: forestgreen;    
+}
+
+.middle-content .boxes .box4 {
+    background-color:darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box0 {
+    background-color: lawngreen;
 }
 
 .bottom-content {
@@ -120,6 +180,10 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+}
+
+.bottom-content .text-container p{
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,10 +201,108 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px){
+    .middle-content .boxes .box1 {
+        background-color: teal;    
+    }
+    
+    .middle-content .boxes .box3 {
+        background-color:gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+
+    header {
+        flex-wrap: wrap;
+        margin-bottom: 36.5px;
+    }
+
+    header nav a{
+        font-size: 1.4rem;
+        color: black;
+        text-decoration: none;  
+    }
+    
+    .lambda-black {
+        margin-left: 41%;
+        margin-bottom: 4px;
+    }
+
+    .jumbotron {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+@media(max-width: 400px) {
+    header {
+        display:flex;
+        width:100%;
+        margin-bottom: auto;       
+    }
+
+    header .lambda-black{            
+        align-content: center;
+        margin: 2% auto;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a { 
+        padding: 3.8% 100%;
+        border: 1px solid black;        
+    }
+
+    jumbotron .jumbotron {        
+    }
+
+    .top-content .text-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 3% 0 6%;       
+    }
+
+    .top-content .text-container p {
+        margin-bottom: 6%;
+    }
+
+    .middle-content .boxes .box0 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-flow: row-reverse wrap;       
+    }
+    .bottom-content .text-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;        
+    }
+
 }
