@@ -235,6 +235,15 @@ footer nav a {
         width: 100%;
     }
 
+    .middle-content .boxes {
+        display: flex;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%
+        
+    }
+
     .middle-content .boxes .box1 {
     background: teal;
     }
