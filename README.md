@@ -1,3 +1,5 @@
+PREVIEW: https://htmlpreview.github.io/?https://github.com/phantomflynn/Sprint-Challenge--UI-Responsive/blob/master/index.html
+
 # Assessing Your User Interface and Responsive Design Learning
 
 * The objective of this challenge is test your knowledge on all of the topics surrounding user interface and responsive web design you learned this week.
