@@ -307,6 +307,11 @@ footer nav a {
         padding-bottom: 15px;
     }
 
+    footer nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
 
 
 
