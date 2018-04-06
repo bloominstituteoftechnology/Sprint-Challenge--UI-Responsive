@@ -289,6 +289,10 @@ footer nav a {
         flex-wrap: wrap-reverse;
     }
 
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+    }
+
 
     .bottom-content {
         justify-content: center;
