@@ -78,7 +78,7 @@ p {
 header {
     display: flex;
     flex-direction: row;
-    padding: 15px 0 30px 0;
+    padding: 15px 0 0 0;
 }
 
 header nav {
