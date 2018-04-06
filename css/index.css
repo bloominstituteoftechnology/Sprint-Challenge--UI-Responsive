@@ -326,6 +326,39 @@ footer nav a {
     }
      
     @media(max-width: 400px) and (min-width: 0px){
+        .lambda {
+            display: none;
+        }
+        .top-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tabletLambda{
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            padding-top: 0.2rem;
+            flex-direction: column;
+            justify-content: center;
+        }
+        a {
+            text-decoration: none;
+            flex-direction: row;
+            color: black;
+            border: 0.0625rem solid darkgrey;
+        }
+        .jumbo {
+            width: 120%;
+            height: 52%;
+        }
+       
         .box10 {
             width: 12.5%;
             height: 100px;
@@ -342,4 +375,65 @@ footer nav a {
             flex-wrap: wrap-reverse;
             justify-content: space-evenly;
         }
-    }   
+        .box1 {
+            width: 12.5%;
+            height: 100px;
+            margin: 20px 2.5%; 
+            background: teal;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box3 {
+            width: 12.5%;
+            height: 100px;
+            margin: 20px 2.5%; 
+            background: gold;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box5 {
+            width: 12.5%;
+            height: 100px;
+            margin: 20px 2.5%; 
+            background: cadetblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box7 {
+            width: 12.5%;
+            height: 100px;
+            margin: 20px 2.5%; 
+            background: coral;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box9 {
+            width: 12.5%;
+            height: 100px;
+            margin: 20px 2.5%; 
+            background: crimson;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+        }
+    }   .bottom-content {
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+        flex-flow: column;
+    }
