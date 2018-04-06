@@ -262,5 +262,8 @@ footer nav a {
     .top-content, .bottom-content {
         flex-flow: column wrap;
     }
+    .bottom-content .text-container {
+        margin-bottom: 2rem;
+    }
 
 }
