@@ -111,7 +111,7 @@ header figure.jumbotron {
     padding-bottom: 2rem;  
 }
 .top-content .text-container h2 {
-    margin-bottom: 3.9%;∫
+    margin-bottom: 3.9%;
 }
 .top-content .text-container p {
     font-size: 1.53rem;
@@ -181,8 +181,11 @@ footer nav a {
     text-decoration: none;
 }
 
-/* @media querie for screen-width < 100em = 1000px */
-@media only screen and (max-width: 100em) {
+/* @media querie for screen-width < 62.5em = 1000px
+    em -> based on system:root font-size -> not in `declarative`
+    fon-size in any css file.
+*/
+@media only screen and (max-width: 62.5em) {
     .container {
         background: #EEE;
     }
@@ -203,3 +206,61 @@ footer nav a {
         background-color: lawngreen;
     }
 } 
+
+/* @media querie for screen-width < 48em = 768px
+    em -> based on system:root font-size -> not in `declarative`
+    fon-size in any css file.
+*/
+@media only screen and (max-width: 48em) {
+    .container {
+        background: lightblue;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        margin-top: 4%;
+        /* justify-content: space-evenly; */
+        width: 100%;
+        padding-right: 4%;∫∫
+    }
+    header figure.logo {
+        padding-right: 4%;
+        /* width: 100%; */
+    }
+    header figure.jumbotron img {
+        max-width: 100%;
+    }
+
+    .top-content {
+        margin-top: 0.4%;
+    }
+    .top-content .text-container p {
+        padding-right: 4%;
+        line-height: 1.45;
+    }
+
+    .middle-content .boxes {
+        justify-content: space-around;
+    }
+    .middle-content .boxes box {
+        padding-left: 1%;
+    }
+    .middle-content .box.box1 {
+        background-color: teal;
+    }   
+    .middle-content .box.box3 {
+        background-color: gold;
+    }   
+    .middle-content .box.box5 {
+        background-color: cadetblue;
+    }   
+    .middle-content .box.box7 {
+        background-color: coral;
+    }   
+    .middle-content .box.box9 {
+        background-color: crimson;
+    }   
+}
