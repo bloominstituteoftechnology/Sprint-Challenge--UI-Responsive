@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -52,13 +52,18 @@ table {
 }
 
 html, body {
-    width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    /*font-size: 62.5%;*/
+    /*font-size: 0.875rem === font-size: 14px;*/
+    /*font-size: 1rem === font-size: 16px;*/
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +72,6 @@ p {
     line-height: 1.4;
 }
 
-
 .container {
     width: 100%;
     max-width: 800px;
@@ -75,38 +79,35 @@ p {
 }
 
 header {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 18px 0;
+    align-items: flex-end;
+    margin: 2.63% auto;
 }
 
 header nav {
-    width: 100%;
-    margin-top: 15px;
-}
-header nav ul {
     display: flex;
     justify-content: space-between;
-    
-}
-
-header img {
-    margin-right: 5%;
-}
-
-.jumbotron {
-    margin: 30px 0 20px;
     width: 100%;
+}
+
+header nav a {
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.jumbo {
+    width: 100%;
+    margin: 2.13% auto;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 1% auto;
     border-bottom: 1px dashed black;
 }
 
@@ -116,8 +117,16 @@ header img {
     padding-bottom: 20px;  
 }
 
+.top-content .text-container p {
+    font-size: 1rem;
+}
+
+.top-content .text-container h2 {
+    margin-bottom: 10px;
+}
+
 .middle-content {
-    margin-bottom: 20px;
+    margin: 20px auto;
     border-bottom: 1px dashed black;
 }
 
@@ -141,25 +150,61 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1rem;
 }
 
-#box2 {
-    background: forestgreen;
+.middle-content .boxes .box:hover {
+    font-weight: bold;
 }
-#box4 {
+
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box2:hover {
+    border: 2px solid forestgreen;
+    background-color: lightgrey;
+    color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
     background-color: darkorchid;
 }
 
-#box6 {
-    background: hotpink;
+.middle-content .boxes .box4:hover {
+    border: 2px solid darkorchid;
+    background-color: lightgrey;
+    color: darkorchid;
 }
 
-#box8 {
-    background: indigo;
+.middle-content .boxes .box6 {
+    background-color: hotpink;
 }
 
-#box10 {
-    background: lawngreen;
+.middle-content .boxes .box6:hover {
+    border: 2px solid hotpink;
+    background-color: lightgrey;
+    color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box8:hover {
+    border: 2px solid indigo;
+    background-color: lightgrey;
+    color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
+}
+
+.middle-content .boxes .box10:hover {
+    border: 2px solid lawngreen;
+    background-color: lightgrey;
+    color: lawngreen;
 }
 
 .bottom-content {
@@ -176,6 +221,10 @@ header img {
     padding-right: 0;
 }
 
+.bottom-content .text-container p {
+    font-size: 1rem;
+}
+
 footer {
     width: 100%;
     background: black;
@@ -186,113 +235,182 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 1.4rem;
+    font-size: 0.875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    padding: 4.17%;
+    width: 100%;
+    text-align: center;
 }
+
+footer nav a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/*********************************************************/
+/**********************tablet*****************************/
+/*********************************************************/
 
 @media (max-width: 768px) {
+
     header {
-        margin: 18px 0 0 0;
-        flex-direction: column-reverse;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 2%;
     }
 
-    header nav ul {
-        margin: 18px 0 0 0;
-        justify-content: space-around;
+    header .logo {
+        margin-bottom: 4%;
     }
 
-    #box1 {
-        background: teal;
+    header nav {
+        justify-content: space-between;
     }
 
-    #box3 {
-        background: gold;
+    header nav a {
+        font-size: 0.875rem;
     }
-    
-    #box5 {
-        background: cadetblue;
-    }
-    
-    #box7 {
-        background: coral;
-    }
-    
-    #box9 {
-        background: crimson;
-    }
-    
-    footer nav {
+
+    .jumbo {
         width: 100%;
+        height: 150px;
     }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box1:hover {
+        border: 2px solid teal;
+        background-color: lightgrey;
+        color: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box3:hover {
+        border: 2px solid gold;
+        background-color: lightgrey;
+        color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box5:hover {
+        border: 2px solid cadetblue;
+        background-color: lightgrey;
+        color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box7:hover {
+        border: 2px solid coral;
+        background-color: lightgrey;
+        color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+
+    .middle-content .boxes .box9:hover {
+        border: 2px solid crimson;
+        background-color: lightgrey;
+        color: crimson;
+    }
+
 }
 
+/*********************************************************/
+/**********************mobile*****************************/
+/*********************************************************/
+
 @media (max-width: 400px) {
-    h1, h2, h3, h4, h5 {
-        font-size: 1.2rem;
-        font-weight: bold;
+
+    header {
+        margin: 0 auto;
     }
 
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li {
-        border-top: 1px solid gray;
+    header nav {
+        flex-flow: column;
         width: 100%;
-        padding-top: 15px;
-        margin: 5px 0 10px 0;
-        text-align: center;
-      }
-    
-      .jumbotron {
-          margin-top: 5px;
-      }
+        height: 225px;
+        justify-content: space-around;
+        border-top: 1px solid black;
+    }
+
+    header .logo {
+        margin: 7.5% auto;
+    }
+
+    header nav a {
+        border-bottom: 1px solid black;
+        padding: 16px;
+    }
+
+    header nav a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .jumbo {
+        margin-top: 0;
+        height: 80px;
+    }
 
     .top-content {
-        align-items: center;
-        flex-direction: column;
+        margin: 4%;
+        flex-flow: column;
     }
 
     .top-content .text-container {
-        width: 95%;
+        width: 100%;
     }
 
     .middle-content .boxes {
-        flex-direction: row-reverse;
+        flex-flow: row-reverse wrap;
     }
 
     .middle-content .boxes .box {
-        width: 25%;
+        width: 100px;
     }
 
-    
-    #box10 {
+    .middle-content .boxes .box10 {
         display: none;
     }
 
     .bottom-content {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .bottom-content .text-container {
-        width: 90%;
+        flex-flow: column;
+        margin-bottom: 10px;
     }
 
-    .text-container {
-        margin-bottom: 19px;
+    .bottom-content .text-container:nth-child(2) {
+        margin: 25px auto;
+    }
+
+    .bottom-content .text-container:last-child {
+        margin-top: -5px;
+    }
+
+    footer {
+        margin-top: 23px;
     }
 
     footer nav {
         width: 100%;
-        font-size: 1rem;
         justify-content: space-evenly;
-
     }
+
 }
