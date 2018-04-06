@@ -103,6 +103,11 @@ header nav a {
     margin-top: 40px;
 }
 
+.jumbotron img {
+    width: 100%;
+    height: auto;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -175,4 +180,40 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Breakpoint at 900px, design for 768px tablet */
+
+@media(max-width: 900px) {
+    
+    .container {
+        max-width: 768px;
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 30px;
+        font-size: 1.4rem; 
+    }
+
+    .jumbotron {
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
