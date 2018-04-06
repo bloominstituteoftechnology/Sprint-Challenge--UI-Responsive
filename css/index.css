@@ -275,6 +275,15 @@ footer nav a {
     }
     .top-content{
         flex-wrap: wrap;
+        font-size: 1.6rem;
+    }
+    .top-content .text-container{
+        padding: 15px;
+        
+    }
+    .top-content .CityImage{
+        width: 100%;
+        padding: 0%;
     }
 
     .middle-content .boxes{
