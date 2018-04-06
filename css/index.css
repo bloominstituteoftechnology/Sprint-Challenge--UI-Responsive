@@ -69,7 +69,7 @@ p {
 }
 
 .container {
-    max-width: 800px; /*from width to max-width*/
+    max-width: 1000px; /*from width to max-width*/
     width: 100%;  /*added to make responsive*/
     margin: 0 auto;
     font-size: 1.6rem; 
