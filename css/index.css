@@ -161,7 +161,7 @@ header .jumbotron {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -247,4 +247,66 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width:768px) {
+
+    header nav {
+        width: 100%;
+    }
+
+
+    header  nav a {
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 10px; 
+    }
+
+    header .logo-image {
+      margin: 0 auto;
+      margin-top: 22px;
+    }
+    
+    header .jumbotron {
+        margin: 0 auto;
+        margin-top: 14px;
+        height: 100%;
+      }
+
+    .top-content {
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+
+    .middle-content {
+        margin-top: 20px;
+    }
+
+    .middle-content h2 {
+        margin-left:  15px;
+    }
+
+    .middle-content .boxes {
+        margin-right: 5px;
+        justify-content: space-evenly;
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
 }
