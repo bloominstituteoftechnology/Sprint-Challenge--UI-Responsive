@@ -267,23 +267,52 @@ footer nav a {
         font-weight: bold;
         width: 100%;
         border-top: 1px gray solid;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding: 4%;
     }
     header nav a:last-child {
         border-bottom: 1px gray solid;
     }
     .lambda-logo {
-        padding: 7% 0;
+        padding: 8% 9% 3% 10%;
+    }
+    .top-content {
+        flex-direction: column;
+        
+    }
+    .top-content .text-container {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    .top-content .text-container:first-child {
+        margin-top: 2%;
+    }
+    .middle-content {
+        margin-top: 5%;
     }
     .middle-content .boxes .box10 {
         display: none;
     }
     .middle-content .boxes {
         flex-direction: row-reverse;
+        justify-content: space-around;
     }
     .middle-content .boxes .box {
-        flex-wrap: wrap;
         padding: 12%;
+    }
+    .bottom-content {
+        flex-direction: column;
+    }
+    .bottom-content .text-container {
+        margin: 3% 1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer {
+        margin: 6% 0 0 0;
+    }
+    footer nav {
+        justify-content: space-evenly;
+        width: 100%;
+        padding-right: 10%;
     }
 }
