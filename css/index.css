@@ -80,9 +80,10 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+
 .top-content .menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
