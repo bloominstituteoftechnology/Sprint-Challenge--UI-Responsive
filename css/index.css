@@ -51,13 +51,17 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,16 +71,49 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 880px;
+    width: 100%;
     margin: 0 auto;
+    padding: 15px 25px;
+}
+
+/* header {
+    margin: 20px 40px 0;
+    padding: 20px;
+} */
+
+header .banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 10px 45px;
+}
+
+.top-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+}
+
+.top-nav a {
+    text-decoration: none;
+}
+
+header .jumbotron {
+    width: 85%;
+    margin-left: 45px;
+    margin-top: 20px;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    font-size: 1.6rem;
 }
 
 .top-content .text-container {
@@ -88,6 +125,7 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    font-size: 1.6rem;
 }
 
 .middle-content h2 {
@@ -112,10 +150,31 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container {
@@ -137,10 +196,124 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px) {
+
+    .container {
+        padding: 0 auto;
+    }
+
+    header .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner img {
+        margin: 10px auto;
+    }
+
+    .top-nav {
+        width: 100%;
+        margin: 15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+    }
+
+    header .jumbotron {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .top-content {
+        width: 100%;
+    }
+
+    .middle-content {
+        width: 100%;
+    }
+
+    .bottom-content {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box:nth-child(1) {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box:nth-child(3) {
+        background-color: gold;
+    }
+    
+    .middle-content .boxes .box:nth-child(5) {
+        background-color: cadetblue;
+    }
+    
+    .middle-content .boxes .box:nth-child(7) {
+        background-color: coral;
+    }
+    
+    .middle-content .boxes .box:nth-child(9) {
+        background-color: crimson;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-nav a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 15px;
+        border-top: 1px solid gray;
+        color: black;
+    }
+
+    .top-content {
+        display: flex;
+    }
+
+    .top-content .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .middle-content .boxes .box:last-child {
+        display: none;
+    }
+    
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
 }
