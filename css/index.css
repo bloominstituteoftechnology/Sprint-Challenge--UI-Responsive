@@ -132,7 +132,6 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: row-reverse;
 }
 
 .middle-content .boxes .box {
@@ -301,4 +300,7 @@ footer nav a {
         margin: 0 10%;
     }
 
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
 }
