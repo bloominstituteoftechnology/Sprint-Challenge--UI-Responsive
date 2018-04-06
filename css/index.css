@@ -201,6 +201,8 @@ footer nav a {
     text-decoration: none;
 }
 
+/*-------------TABLET VIEW---------------*/
+
 @media(max-width: 800px) {
 
 
@@ -212,6 +214,7 @@ footer nav a {
 
      header .logo {
         margin-bottom: 4%;
+        width: 20%;
     }
 
     header nav {
@@ -228,6 +231,7 @@ footer nav a {
 
     .top-content .text-container {
         margin-top: 4% auto;
+        font-size: 1.7rem;
     }
 
     .middle-content .boxes .box1 {
@@ -250,11 +254,17 @@ footer nav a {
         background: crimson;
     }
 
+    .bottom-content .text-container {
+        font-size: 1.7rem;
+    }
+
     footer {
         margin: 0.2%;
     }
 
 }
+
+/*------------MOBILE VIEW---------------*/
 
 @media(max-width: 500px) {
 
