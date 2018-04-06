@@ -145,23 +145,23 @@ header nav {
 }
 
 .middle-content .boxes .box2 {
-    background: forestgreen;
+    background-color: forestgreen;
 }
 
 .middle-content .boxes .box4 {
-    background: darkorchid;
+    background-color: darkorchid;
 }
 
 .middle-content .boxes .box6 {
-    background: hotpink;
+    background-color: hotpink;
 }
 
 .middle-content .boxes .box8 {
-    background: indigo;
+    background-color: indigo;
 }
 
 .middle-content .boxes .box10 {
-    background: lawngreen;
+    background-color: lawngreen;
 }
 
 .bottom-content {
@@ -200,7 +200,7 @@ footer nav a {
 @media screen and (min-width: 401px) and (max-width: 768px) {
     
     .container {
-        max-width: 768px;
+        width: 100%;
     }
 
     header {
@@ -230,30 +230,29 @@ footer nav a {
     }
 
     .middle-content .boxes .box1 {
-        background: teal;
+        background-color: teal;
     }
 
     .middle-content .boxes .box3 {
-        background: gold;
+        background-color: gold;
     }
 
     .middle-content .boxes .box5 {
-        background: cadetblue;
+        background-color: cadetblue;
     }
 
     .middle-content .boxes .box7 {
-        background: coral;
+        background-color: coral;
     }
 
     .middle-content .boxes .box9 {
-        background: crimson;
+        background-color: crimson;
     }
 }
 
 @media screen and (max-width: 400px) {
     
     .container {
-        max-width: 400px;
         width: 100%;
     }
 
@@ -285,7 +284,7 @@ footer nav a {
     header {
         padding-top: 10px;
     }
-    
+
     header img:last-child {
         margin-top: 0px;
         max-width: 100%;
@@ -307,6 +306,28 @@ footer nav a {
 
     .middle-content .boxes .box {
         width: 25%;
+    }
+
+    /*TODO: why won't background colors inherit from tablet view?*/
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
     }
 
     .middle-content .boxes .box10 {
