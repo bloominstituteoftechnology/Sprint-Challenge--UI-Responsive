@@ -149,19 +149,19 @@ header nav a {
     justify-content: center;
 }
 .middle-content .boxes .box2 {
-    background-color: forestgreen;
+    background: forestgreen;
 }
 .middle-content .boxes .box4 {
-    background-color: darkorchid;
+    background: darkorchid;
 }
 .middle-content .boxes .box6 {
-    background-color: hotpink;
+    background: hotpink;
 }
 .middle-content .boxes .box8 {
-    background-color: indigo;
+    background: indigo;
 }
 .middle-content .boxes .box10 {
-    background-color: lawngreen;
+    background: lawngreen;
 }
 .bottom-content {
     display: flex;
@@ -229,19 +229,19 @@ footer nav a {
         margin: 3% 0%;
     }
     .middle-content .boxes .box1 {
-        background-color: teal;
+        background: teal;
     }
     .middle-content .boxes .box3 {
-        background-color: gold;
+        background: gold;
     }
     .middle-content .boxes .box5 {
-        background-color: cadetblue;
+        background: cadetblue;
     }
     .middle-content .boxes .box7 {
-        background-color: coral;
+        background: coral;
     }
     .middle-content .boxes .box9 {
-        background-color: crimson;
+        background: crimson;
     }
     .bottom-content {
         padding: 0 2%;
