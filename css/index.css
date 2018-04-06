@@ -177,6 +177,8 @@ header nav a{
     padding-right: 0;
 }
 
+/*footer*/
+
 footer {
     width: 100%;
     background: black;
@@ -194,4 +196,42 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*Media Queries*/
+
+@media (max-width: 768px){
+
+  header{
+    flex-direction: column;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+
+  header nav{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .middle-content .boxes .box1{
+    background-color: teal;
+  }
+
+  .middle-content .boxes .box3{
+    background-color: gold;
+  }
+
+  .middle-content .boxes .box5{
+    background-color: cadetblue;
+  }
+
+  .middle-content .boxes .box7{
+    background-color: coral;
+  }
+
+  .middle-content .boxes .box9{
+    background-color: crimson;
+  }
+
 }
