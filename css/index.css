@@ -67,6 +67,8 @@ p {
 }
 
 .container {
+    display: grid;
+    grid-template-colums: 
     width: 800px;
     margin: 0 auto;
 }
