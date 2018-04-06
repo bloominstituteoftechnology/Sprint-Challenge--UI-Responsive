@@ -85,7 +85,7 @@ header {
 header nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 0 5.5%;
     width: 100%;
 }
 
@@ -131,14 +131,35 @@ header nav a {
 }
 
 .middle-content .boxes .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 12.5%;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
 }
 
 .bottom-content {
