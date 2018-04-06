@@ -341,11 +341,8 @@ header nav a{
 .bottom-content .text-container {
     width: 85%;
     height: 110px;
+    align-self: center;
 }
-footer {
-    width: 100%;
-    margin: auto;
+
     
-    
-}
 }
