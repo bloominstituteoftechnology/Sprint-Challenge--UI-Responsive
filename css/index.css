@@ -84,10 +84,10 @@ header{
 }
 
 header a{
-    margin: 40px;
-    width: 70%;
+    margin-bottom: 20px;
+    padding: 40px;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     color: gray;
 }
