@@ -226,6 +226,11 @@ footer nav a {
     padding-bottom: 0.65rem;
   }
 
+  .middle-content .boxes .box{
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+
   .middle-content .boxes .box1{
     background-color: teal;
   }
@@ -283,10 +288,10 @@ footer nav a {
     flex-direction: row-reverse;
   }
 
-  .middle-content .boxes .box{
+  /*.middle-content .boxes .box{
     height: 6.25rem;
     width:6.25rem;
-  }
+  }*/
 
   .middle-content .boxes .box10{
     display: none;
