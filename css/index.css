@@ -51,13 +51,15 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +69,8 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -80,10 +83,17 @@ p {
 }
 
 .top-content .text-container {
+    margin-top: 20px;
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    font-size: 1.6rem; 
 }
+.top-content .text-container h2 {
+    font-size: 1.9rem;
+}
+
+
 
 .middle-content {
     margin-bottom: 20px;
@@ -91,6 +101,7 @@ p {
 }
 
 .middle-content h2 {
+    font-size: 1.9rem;
     padding: 0 2%;
     margin-bottom: 0;
 }
@@ -120,6 +131,11 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem; 
+}
+
+.bottom-content .text-container h2{
+    font-size: 1.9rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,10 +153,116 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 footer nav a {
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
 }
+
+.container header {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.container header .logo {
+    margin-left: 10px;
+}
+
+.container header nav a {
+    font-size: 1.5rem;
+    margin:0px 40px 0px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.container #jumbotron {
+    margin: 30px 0px 0px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 768px;
+        width: 100%;
+    }
+
+
+    .container header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 768px;
+        margin-top: 5px;
+        
+    }
+
+    .container header nav {
+        display: flex;
+        width: 768px;
+        
+        
+        
+        justify-content: space-between;
+        
+    }
+
+    .container header .logo {
+        display: block;
+        margin: 10px auto 0;
+    }
+    .container #jumbotron {
+        width: 768px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .container {
+        margin: auto;
+        width: 100%;
+    }
+    
+    .container header {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .container header nav {
+        
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .container header nav a {
+        width: 50%;
+        display: flex;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+        margin: 0px: auto;
+    }
+    header nav:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    .container .top-content .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
