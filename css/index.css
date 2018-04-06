@@ -80,6 +80,8 @@ header {
 }
 
 header .logo {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 header nav {
@@ -190,7 +192,12 @@ footer nav a {
 
 @media(max-width: 768px) {
     header {
+        width: 100%;
         flex-wrap: wrap;
+    }
+
+    header nav {
+        margin: 28px 0 26px 9.55%;
     }
     
     header .logo {
