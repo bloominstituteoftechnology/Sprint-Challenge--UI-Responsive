@@ -99,6 +99,7 @@ p {
 }
 
 .top-content .jumbotron {
+    width: 100%;
     padding-top: 4%;
 }
 
@@ -191,3 +192,59 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        /* margin: 0 auto; */
+    }
+
+    .top-content nav {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 90%; */
+    }
+
+    .top-content nav .logo {
+        /* display: flex;
+        flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 30%;
+    }
+
+    .top-content nav .link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+/* @media (max-wdith: 400px) {
+
+} */
