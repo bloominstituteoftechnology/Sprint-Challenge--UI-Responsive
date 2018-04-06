@@ -224,7 +224,7 @@ footer nav a {
         margin-top: 4%;
         /* justify-content: space-evenly; */
         width: 100%;
-        padding-right: 4%;∫∫
+        padding-right: 4%;
     }
     header figure.logo {
         padding-right: 4%;
@@ -263,4 +263,74 @@ footer nav a {
     .middle-content .box.box9 {
         background-color: crimson;
     }   
+}
+
+/* @media querie for screen-width < 25em = 400px
+    em -> based on system:root font-size -> not in `declarative`
+    fon-size in any css file.
+*/
+@media only screen and (max-width: 25em) {
+    body {
+        width: 100%;
+    }
+    .container {
+        background: lightcoral;
+        width: 100vw;
+        padding: 0;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7%;
+    }
+    header nav div {
+        padding: 3.8% 0;
+        border: 0.1rem solid black;
+        width: 100%;
+        text-align: center;
+    }
+    header figure.logo {
+        padding-right: 0%;
+        padding: 5.25% 0 0;
+        /* width: 100%; */
+    }
+    header figure.jumbotron {
+        margin: 0;
+    }
+    
+    .top-content,
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+    .top-content .text-container {
+        width: 90%;
+        padding-right: 2%;
+    }
+    .top-content {
+        margin-top: 2.7%;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+    .middle-content .box.box10 {
+        display: none;
+    }
+    .bottom-content .text-container {
+        padding-bottom: 5.7%;
+        padding-left: 1%
+    }
+
+    footer nav {
+        width: 84%;
+        margin: 0 auto;
+        padding-right: 8%;
+    }
 }
