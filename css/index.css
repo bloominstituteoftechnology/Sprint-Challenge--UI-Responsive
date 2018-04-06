@@ -1,9 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* /* /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+ article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-* {
+ * {
     box-sizing: border-box;
 }
 
@@ -66,12 +66,12 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-@media(max-width:1000px){
+
 .container {
-    width: 800px;
-    margin: 0 auto;
-    font-size: 1.55rem;
- }
+   width:100%;
+   max-width: 800px;
+   margin: 0 auto;
+   font-size: 1.55rem;
 }
 .container .picture{
     width:100%;
@@ -141,7 +141,7 @@ header nav a{
     justify-content: center;
 }
 /* box colors desktop*/
-.middle-content .boxes :nth-child(2){
+ .middle-content .boxes :nth-child(2){
     background:  forestgreen;
 }
 .middle-content .boxes :nth-child(4){
@@ -155,26 +155,7 @@ header nav a{
 }
 .middle-content .boxes :nth-child(10){
     background: lawngreen;
-}
-
-@media(max-width:768){
-    .container {
-        width:100px;
-    }
-    .middle-content .boxes :nth-child(1){
-        background: teal;
-    } 
-    .middle-content .boxes :nth-child(3){
-        background: gold;
-    }
-    .middle-content .boxes :nth-child(5){
-        background: cadetblue;
-    }
-    .middle-content .boxes :nth-child(7){
-        background: crimson;
-    }
-}
-
+}  
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -209,4 +190,69 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}  
+@media(max-width:768px){
+.container {
+    width:100%;
+
+}   
+header{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom:40px;
+    margin-top:25px;
+}
+header .logo{
+    margin-bottom:26px;
+}
+header nav{
+    padding:0;
+ width:100%;
+ display: flex;
+ justify-content: space-around;
+ font-size: 1.4rem;
+}
+    .middle-content .boxes :nth-child(1){
+        background: teal;
+    } 
+    .middle-content .boxes :nth-child(3){
+        background: gold;
+    }
+    .middle-content .boxes :nth-child(5){
+        background: cadetblue;
+    }
+    .middle-content .boxes :nth-child(7){
+        background: crimson;
+    }
+
+}
+@media(max-width:400px){
+    
+    header nav{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        width:100%; 
+    }
+    .top-content .text-container{
+        width:100%;
+    }
+    .middle-content .boxes {
+       
+    }
+   .bottom-content{
+    display: flex;
+    flex-direction: column;
+    width:100%; 
+   }
+   .bottom-content .text-container{
+       width:100%;
+   }
+
 }
