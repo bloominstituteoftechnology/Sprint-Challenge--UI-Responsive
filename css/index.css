@@ -353,10 +353,11 @@ footer nav a {
             flex-direction: row;
             color: black;
             border: 0.0625rem solid darkgrey;
+            justify-content: center;
         }
         .jumbo {
             width: 120%;
-            height: 5%;
+            height: 52%;
         }
        
         .box10 {
@@ -437,5 +438,15 @@ footer nav a {
             justify-content: space-between;
             flex-flow: column;
         }
-
+        
+        .footerNav {
+            width: 100%;
+            font-size: 1rem;
+        }
+        .footerNav .footera{
+            width: 100%;
+            color: white;
+            text-decoration: none;
+            border: black;
+        }
     }   
