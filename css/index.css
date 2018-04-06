@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%; /* changed font-size */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -137,10 +137,249 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/************
+** BRANDON **
+************/
+/************
+** GENERAL **
+************/
+h2 {
+  font-size: 1.1rem;
+}
+
+.container {
+  padding-top: 1.3rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+/***********
+** HEADER **
+***********/
+.container header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.2rem;
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.nav__nav-links-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-links-container__links a {
+  color: #000;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/****************
+** TOP CONTENT **
+****************/
+.top-content__image {
+  margin-bottom: 1.7rem;
+  width: 100%;
+}
+
+/*.top-content .text-container > h2 {
+  font-size: 1.1rem;
+}*/
+
+/*******************
+** MIDDLE CONTENT **
+*******************/
+.middle-content .boxes .box:nth-child(2) {
+  background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+  background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+  background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+  background: indigo;
+}
+
+.middle-content .boxes .box:last-child {
+  background: lawngreen;
+}
+
+/***********
+** FOOTER **
+***********/
+footer nav a {
+  font-size: 0.9rem;
+}
+
+/******************
+** MEDIA QUERIES **
+******************/
+/**********
+** 768px **
+**********/
+@media(max-width: 768px) {
+  /***********
+  ** HEADER **
+  ***********/
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header img {
+    margin-bottom: 1.7rem;
+    width: 157px;
+  }
+  
+  /*******************
+  ** MIDDLE CONTENT **
+  *******************/
+  .middle-content .boxes .box:nth-child(2) {
+    background: teal;
+  }
+
+  .middle-content .boxes .box:nth-child(4) {
+    background: gold;
+  }
+
+  .middle-content .boxes .box:nth-child(6) {
+    background: cadetblue;
+  }
+
+  .middle-content .boxes .box:nth-child(8) {
+    background: coral;
+  }
+
+  .middle-content .boxes .box:last-child {
+    background: crimson;
+  }
+}
+
+/**********
+** 400px **
+**********/
+@media(max-width: 400px) {
+  .container {
+    padding-top: 1.9rem;
+  }
+  
+  /***********
+  ** HEADER **
+  ***********/
+  .container header {
+    margin-bottom: 0;
+  }
+  
+  .nav__nav-links-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nav-links-container__links {
+    border-top: 1px solid #000;
+    padding: 0.9rem 0;
+    width: 100%;
+  }
+  
+  /****************
+  ** TOP CONTENT **
+  ****************/
+  .top-content img {
+    height: 4.6rem;
+  }
+  
+  .top-content .text-container {
+    width: 89%;
+  }
+  
+  /*******************
+  ** MIDDLE CONTENT **
+  *******************/
+  .middle-content .boxes {
+    flex-direction: row-reverse;
+  }
+  
+  .middle-content .boxes .box {
+    width: 25%;
+  }
+  
+  .middle-content .boxes .box:first-child {
+    background: #087F7F;
+  }
+  
+  .middle-content .boxes .box:nth-child(2) {
+    background: #268A2F;
+  }
+  
+  .middle-content .boxes .box:nth-child(3) {
+    background: #FFD739;
+  }
+
+  .middle-content .boxes .box:nth-child(4) {
+    background: #9834C8;
+  }
+  
+  .middle-content .boxes .box:nth-child(5) {
+    background: #609E9F;
+  }
+
+  .middle-content .boxes .box:nth-child(6) {
+    background: #FE6AB2;
+  }
+  
+  .middle-content .boxes .box:nth-child(7) {
+    background: #FE8056;
+  }
+
+  .middle-content .boxes .box:nth-child(8) {
+    background: #4A027E;
+  }
+  
+  .middle-content .boxes .box:nth-child(9) {
+    background: #DB1A3F;
+  }
+  
+  .middle-content .boxes .box:last-child {
+    display: none;
+  }
+  
+  /*******************
+  ** BOTTOM CONTENT **
+  *******************/
+  .bottom-content {
+    flex-direction: column;
+  }
+  
+  .bottom-content .text-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  /***********
+  ** FOOTER **
+  ***********/
+  footer nav {
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    width: 100%;
+  }
 }
