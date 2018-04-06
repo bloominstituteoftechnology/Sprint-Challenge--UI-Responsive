@@ -50,25 +50,55 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html{
+    font-size: 62.5%
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.4rem;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px 20px;;
+    display: flex;
+    font-size: 2.5rem;
+}
+
+header a{
+    margin-bottom: 20px;
+    padding: 40px;
+    justify-content: space-between;
+    font-size: 1rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.logo{
+    order: -1;
+}
+
+.jumbotron{
+    width: 90%;
+    padding: 0 0 20px 2.5%;
 }
 
 .top-content {
@@ -99,6 +129,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.2rem;
 }
 
 .middle-content .boxes .box {
@@ -111,6 +142,23 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .box2{
+    background: forestgreen;
+}
+.middle-content .boxes .box4{
+    background: darkorchid;
+}
+.middle-content .boxes .box6{
+    background: hotpink;
+}
+.middle-content .boxes .box8{
+    background: indigo;
+}
+.middle-content .boxes .box10{
+    background: lawngreen;
+}
+
 
 .bottom-content {
     display: flex;
@@ -137,10 +185,66 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 0.785rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        flex-direction: row;
+        margin: 20px;
+        padding-left: 20%;
+    }
+    .logo{
+        align-self: center;
+    }
+    header nav{
+        flex-flow: row;
+    }
+    .middle-content .boxes .box1{
+        background: teal;
+    }
+    .middle-content .boxes .box3{
+        background: gold;
+    }
+    .middle-content .boxes .box5{
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7{
+        background: coral;
+    }
+    .middle-content .boxes .box9{
+        background: crimson;
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header a{
+        flex-direction: column;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2.2rem;
+        border-bottom: 1px solid gray;
+    }
+    .top-content .text-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
