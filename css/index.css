@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 43%; /*800px*/
     margin: 0 auto;
 }
 
@@ -136,11 +136,216 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/*Starting with smallest screen size MOBILE*/
+@media (max-width: 25rem){
+.container {
+        width: 25rem;
+        /*400px;*/
+    }
+
+    .top-content {
+        flex-wrap: wrap;
+        
+    }
+
+    .top-content .text-container {
+    width: 48%;
+    padding: 1.6rem 1%;
+    padding-bottom: 20px; 
+    }
+
+    .middle-content {
+        width: 100%;
+        display: block;
+        
+        text-align: center;
+        padding: 20 px 5%;
+        /* 20 px 0 */
+
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+
+    .middle-content .boxes .box {
+        width: 12.5%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-content {
+        margin: 20px 5%;
+
+        /* 20 px 0 */
+    }
+
+    .bottom-content .text-container {
+        margin-top: 4rem;
+        flex-flow: column;
+        align-items: center;
+    }
+
+@media (max-width: 48rem){
+
+.container {
+        width: 48rem;
+        /*678px;*/
+    }
+
+    .top-content {
+        flex-wrap: wrap;
+        
+    }
+
+    .top-content .text-container {
+    width: 48%;
+    padding: 2.6rem 1%;
+    padding-bottom: 20px; 
+    }
+
+    .middle-content {
+        width: 100%;
+        display: block;
+        
+        text-align: center;
+        padding: 20 px 5%;
+        /* 20 px 0 */
+
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+
+    .middle-content .boxes .box {
+        width: 12.5%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-content {
+        margin: 20px 5%;
+
+        /* 20 px 0 */
+    }
+
+    .bottom-content .text-container {
+        margin-top: 8rem;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .boxes .box .Box1{
+    color: teal;
+        }
+    .boxes .box .Box3{
+    color: gold;
+    }
+    .boxes .box .Box5{
+    color: cadetblue;
+    }
+    .boxes .box .Box7{
+    color: coral;
+    }
+    .boxes .box .Box9{
+    color: crimson;
+    }
+
+@media (max-width: 62.5rem){
+.container {
+        width: 62.5rem;
+        /*1000px;*/
+    }
+
+    .top-content {
+        flex-wrap: wrap;
+        
+    }
+
+    .top-content .text-container {
+    width: 48%;
+    padding: 3.2rem 1%;
+    padding-bottom: 20px; 
+    }
+
+    .middle-content {
+        width: 100%;
+        display: block;
+        
+        text-align: center;
+        padding: 20 px 5%;
+        /* 20 px 0 */
+
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+
+    .middle-content .boxes .box {
+        width: 12.5%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-content {
+        margin: 20px 5%;
+
+        /* 20 px 0 */
+    }
+
+    .bottom-content .text-container {
+        margin-top: 12rem; /*rushed guess*/
+        flex-flow: column;
+        align-items: center;
+    }
+    .boxes .box .Box2{
+    color: forestgreen;
+    }
+.boxes .box .Box4{
+    color: darkorchid;
+    }
+.boxes .box .Box6{
+    color: hotpink;
+    }   
+.boxes .box .Box8{
+    color: indigo;
+}
+.boxes .box .Box10{
+    color: lawngreen;
+} 
