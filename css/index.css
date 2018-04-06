@@ -196,3 +196,101 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Media Queries */
+
+/* Tablet Size */
+@media (max-width: 780px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header nav a {
+        padding-top: 30px;
+        font-size: 0.9rem;
+    }
+
+    .middle-content .boxes .box.teal {
+    background: teal;
+    }   
+
+    .middle-content .boxes .box.gold {
+    background: gold;
+    }
+
+    .middle-content .boxes .box.cadetblue {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box.coral {
+        background: coral;
+    }
+
+    .middle-content .boxes .box.crimson {
+        background: crimson;
+    }
+}
+
+@media(max-width: 450px) {
+    header {
+        margin-top: 20px;
+    }
+
+    header .logo {
+        margin-bottom: 25px;
+    }
+
+    header nav {
+        border-top: 1px solid lightgrey;
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        align-self: center;
+        padding: 15px 0;
+    }
+
+    .jumbotron {
+        margin: -10px 0 20px 0;
+        width: 100%;
+    }
+
+    .top-content {
+        flex-direction: column;
+        margin: 0 5%;
+        padding: 0 1% 0 0;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content h2 {
+        margin-top: 25px;
+        font-size: 1.1rem;
+    }
+
+    .middle-content .boxes .box.lawngreen {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .bottom-content .text-container {
+        margin-bottom: 20px;
+    }
+}
