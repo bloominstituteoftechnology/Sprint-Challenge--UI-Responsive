@@ -185,7 +185,7 @@ header nav a {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.main-content .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -209,6 +209,41 @@ header nav a {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+@media (max-width: 1000px) {
+    .main-content .middle-content .boxes .box.box2{
+        background-color: forestgreen;
+    }
+    .main-content .middle-content .boxes .box.box4{
+        background-color: darkorchid;
+    }
+    .main-content .middle-content .boxes .box.box6{
+        background-color: hotpink;
+    }
+    .main-content .middle-content .boxes .box.box8{
+        background-color: indigo;
+    }
+    .main-content .middle-content .boxes .box.box10{
+        background-color: lawngreen;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content .middle-content .boxes .box.box1{
+        background-color: teal;
+    }
+    .main-content .middle-content .boxes .box.box3{
+        background-color: gold;
+    }
+    .main-content .middle-content .boxes .box.box5{
+        background-color: cadetblue;
+    }
+    .main-content .middle-content .boxes .box.box7{
+        background-color: coral;
+    }
+    .main-content .middle-content .boxes .box.box9{
+        background-color: crimson;
+    }
+}
 
 @media (max-width: 400px) {
     .main-content .top-content, .main-content .bottom-content {
@@ -224,11 +259,14 @@ header nav a {
     .main-content .middle-content h2 {
         margin-bottom: 15px;
     }
+    .main-content .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
     .main-content .middle-content .boxes .box {
         width: 25%;
         margin: 4.8% 3.2%;
     }
-    .main-content .middle-content .boxes .box:last-child {
+    .main-content .middle-content .boxes .box.box10 {
         display: none;
     }
 }
