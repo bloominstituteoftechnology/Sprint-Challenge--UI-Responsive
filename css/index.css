@@ -162,59 +162,9 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
-/*jumbotron*/
-@media (max-width: 1000px) {
 
-    .container {
-        width: 100%;
-    }
 
-    header {
-        flex-wrap: wrap;
-    }
-
-    header nav {
-        width: 100%;
-        margin: 38px 3%;
-    }
-
-    header .logo {
-        order: -1;
-        display: block;
-        margin: 30px auto 0;
-    }
-
-    .cta {
-        justify-content: center;
-    }
     
-    .cta .cta-text {
-        margin: 0 5% 0 0;
-    }
-
-    .cta .cta-text h1 {
-        letter-spacing: 0;
-    }
-
-    .cta img {
-        display: none;
-    }
-
-    .main-content .middle-img {
-       width: 100%;
-       margin: 25px auto;
-    }
-
-    .main-content {
-        font-size: 1.4rem;
-       margin: 75px 2% 35px;
-    }
-
-    .contact {
-        margin: 20px 2%;
-    }
-}
-
 /* Tablet */
 @media (max-width: 768px) {
 
