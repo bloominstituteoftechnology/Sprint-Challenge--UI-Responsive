@@ -235,3 +235,61 @@ footer nav a {
   }
 
 }
+
+@media (max-width: 400px){
+
+  header nav{
+    flex-direction: column;
+  }
+
+  header nav a{
+    padding: 0.85rem 0;
+    border-top: 1px solid gray;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav a:last-child{
+    padding-bottom: 0.25rem;
+  }
+
+  .jumbo-img{
+    margin-top: 0;
+  }
+
+  .top-content{
+    flex-direction: column;
+    /*width: 100%;*/
+  }
+
+  .top-content .text-container{
+    width: 100%;
+    padding: 0 0.5rem 1.5rem 0.5rem;
+  }
+
+  .middle-content .boxes{
+    flex-direction: row-reverse;
+  }
+
+  .middle-content .boxes .box{
+    height: 6.25rem;
+    width:6.25rem;
+  }
+
+  .middle-content .boxes .box10{
+    display: none;
+  }
+
+  .bottom-content{
+    flex-direction: column;
+  }
+
+  .bottom-content .text-container {
+      padding-bottom: 1rem;
+  }
+
+  footer nav{
+    width: 100%;
+  }
+
+}
