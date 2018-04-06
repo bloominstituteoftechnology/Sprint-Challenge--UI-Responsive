@@ -1,3 +1,5 @@
+/* jesuarva */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,8 +49,12 @@ table {
 	border-spacing: 0;
 }
 
-* {
+*, *:before, *:after {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 html, body {
@@ -57,8 +63,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -67,27 +73,53 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 80rem;
+    width: 100%;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5% 0 2.7%;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 1.4rem;
+
+}
+
+header figure.jumbotron {
+    margin-top: 4.8%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
+}
+.top-content .text-container h2 {
+    margin-bottom: 3.9%;∫
+}
+.top-content .text-container p {
+    font-size: 1.53rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .middle-content h2 {
@@ -99,13 +131,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.53rem;;
 }
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -114,14 +147,17 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
+.bottom-content .text-container p {
+    font-size: 1.53rem;
+    padding-right: 3.3%;
+}
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
@@ -136,11 +172,34 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* @media querie for screen-width < 100em = 1000px */
+@media only screen and (max-width: 100em) {
+    .container {
+        background: #EEE;
+    }
+
+    .middle-content .box.box2 {
+        background-color: forestgreen;
+    }
+    .middle-content .box.box4 {
+        background-color: darkorchid;
+    }
+    .middle-content .box.box6 {
+        background-color: hotpink;
+    }
+    .middle-content .box.box8 {
+        background-color: indigo;
+    }
+    .middle-content .box.box10 {
+        background-color: lawngreen;
+    }
+} 
