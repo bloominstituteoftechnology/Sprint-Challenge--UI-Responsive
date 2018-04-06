@@ -184,10 +184,6 @@ header .logo {
     padding: 1em 4% 0;
 }
 
-/*.bottom-content .text-container:last-child {
-    padding-right: 0;
-}*/
-
 /*footer*/
 
 footer {
@@ -201,10 +197,50 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5em 2%;
+    margin-top: 1.5em;
     font-size: 2.2em;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*===============================Tablet=========================================*/
+@media (max-width: 768px) {
+
+    .container {
+	width: 100%;
+    }
+
+    header {
+	flex-wrap: wrap;
+    }
+
+    header nav {
+        width: 90%;
+        padding: 0 1.5em 0 1.5em;
+    }
+
+    header .logo {
+        display: block;
+        margin: .81em auto 5em;
+    }
+
+    jumbotron {
+	width: 100%;
+    }
+
+    .top-content .text-container {
+	padding-top: 0;
+    }
+    
+    .bottom-content {
+	margin-bottom: 0;
+    }
+
+    .footer nav {
+	margin-top: 0;
+    }
+	
 }
