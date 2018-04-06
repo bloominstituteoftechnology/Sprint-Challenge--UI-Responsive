@@ -241,10 +241,13 @@ nav a {
     .header-content nav a{
        display: block;
         width: 100%;
-        border: 1px solid gray;
+        border-top: 1px solid gray;
         text-align: center;
         padding: 15px 0;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+    .header-content nav a:last-child {
+        border-bottom: 1px solid gray;
     }
     .header-content {
         padding: 35px 0 0 0;
@@ -269,6 +272,7 @@ nav a {
     }
     .bottom-content {
         flex-direction: column;
+        width: 96%;
     }
     .bottom-content .text-container:nth-child(2){
       padding: 20px 0; 
