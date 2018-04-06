@@ -196,11 +196,11 @@ footer {
 }
 
 footer nav {
-    width: 62%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 2% 2%;
+    padding: 2% 40% 2% .7%;
     font-size: 1.4rem;
 }
 
