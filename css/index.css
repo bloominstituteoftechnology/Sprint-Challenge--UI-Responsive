@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -77,12 +77,14 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+		margin-top: 21px;
+		font-size: 14px;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -114,7 +116,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 0% 20px;
     justify-content: space-around;
 }
 
@@ -143,4 +145,98 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Complete the following tasks to set up a responsive website layout */
+
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	width: 100%;
+	max-width: 880px;
+	border: 1px solid red;
+}
+
+header {
+	height: 66px;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 19px;
+	border: 1px solid blue;
+}
+
+header nav {
+	font-size: 1.6rem;
+	height: 43px;
+	margin-left: 20px;
+	display: flex;
+	width: 596px;
+	justify-content: space-between;
+	border: 1px solid black;
+}
+
+header nav a {
+	text-decoration: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	margin-right: 35px;
+	color: black;
+	border: 3px solid yellow;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+.container .lambda_logo {
+	margin-bottom: 22px;
+	border: 1px solid green;
+	width: 188px;
+}
+
+.jumbo {
+	margin-top: 14px;
+}
+
+.top-content .text-container p {
+	width: 320px;
+}
+
+.middle-content .boxes .box {
+	font-size: 16px;
+}
+.middle-content .boxes .box:nth-child(2) {
+	background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+	background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+	background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+	background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+	background-color: lawngreen;
+}
+
+.bottom-content .bottom-containers {
+	display: flex;
+	width: 878px;
+	justify-content: space-between;
+	border: 1px solid green;
+	margin-right: 59px;
+}
+
+.bottom-content .text-container p {
+	font-size: 14px;
+	width: 171px;
 }
