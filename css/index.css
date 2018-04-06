@@ -224,6 +224,7 @@ footer nav a {
     }
 
     header nav {
+        width: 100%;
         flex-direction: column;
     }
 
@@ -232,34 +233,56 @@ footer nav a {
         text-align: center;
         border-top: 1px solid black;
         font-size: 25px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    header nav a:hover {
+        background-color: orange;
     }
 
     header nav img {
+        margin: 0 auto;
         height: 100px;
         width: 200px;
         justify-content: center;
         padding: 20px;
         margin: 0 auto; 
-    }
-
-    /* header nav img {
-        flex-wrap: wrap;
-    } */
-
-    .logo { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    }   
 
     .top-content {
         width: 400px;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .top-content img {
+        width: 100%S;
     }
 
     .top-content .text-container {
+       width: 100%;
+    }
+
+    .middle-content {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .bottom-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* .top-content .text-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
+    } */
 
 }
