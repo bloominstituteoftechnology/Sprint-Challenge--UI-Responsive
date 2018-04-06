@@ -105,6 +105,10 @@ header nav a {
     border-bottom: .1rem dashed black;
 }
 
+.top-content img {
+    width: 100%;
+}
+
 
 .top-content .text-container {
     margin: 23px 0 0 0;
@@ -210,7 +214,6 @@ footer nav a {
     }
 
     .top-content img {
-        width: 100%;
         height: 145px;
     }
 
