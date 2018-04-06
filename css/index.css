@@ -98,7 +98,6 @@ header .banner {
 
 .top-nav a {
     text-decoration: none;
-    color: black;
 }
 
 header .jumbotron {
@@ -206,6 +205,47 @@ footer nav a {
 }
 
 @media(max-width: 768px) {
+
+    .container {
+        padding: 0 auto;
+    }
+
+    header .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner img {
+        margin: 10px auto;
+    }
+
+    .top-nav {
+        width: 100%;
+        margin: 15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+    }
+
+    header .jumbotron {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .top-content {
+        width: 100%;
+    }
+
+    .middle-content {
+        width: 100%;
+    }
+
+    .bottom-content {
+        width: 100%;
+    }
+
     .middle-content .boxes .box:nth-child(1) {
         background: teal;
     }
@@ -228,42 +268,52 @@ footer nav a {
 }
 
 @media(max-width: 400px) {
+
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-nav a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 15px;
+        border-top: 1px solid gray;
+        color: black;
+    }
+
+    .top-content {
+        display: flex;
+    }
+
+    .top-content .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
     .middle-content .boxes .box:last-child {
         display: none;
     }
     
     .middle-content .boxes {
         display: flex;
-        align-items: flex-end;
-
+        flex-direction: row-reverse;
     }
 
-    .middle-content .boxes .box:nth-child(1) {
-        order: 9;
-    }
-    .middle-content .boxes .box:nth-child(2) {
-        order: 8;
-    }
-    .middle-content .boxes .box:nth-child(3) {
-        order: 7;
-    }
-    .middle-content .boxes .box:nth-child(4) {
-        order: 6;
-    }
-    .middle-content .boxes .box:nth-child(5) {
-        order: 5;
-    }
-    .middle-content .boxes .box:nth-child(6) {
-        order: 4;
-    }
-    .middle-content .boxes .box:nth-child(7) {
-        order: 3;
-    }
-    .middle-content .boxes .box:nth-child(8) {
-        order: 2 ;
-    }
-    .middle-content .boxes .box:nth-child(9) {
-        order: -1;
+    footer nav {
+        width: 100%;
     }
 
 }
