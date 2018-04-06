@@ -74,14 +74,12 @@ p {
     max-width: 800px;
     width: 100%
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 /* Header */
 
 .container header {
     display: flex;
-    border: 1px solid red;
 }
 
 .container header nav {
@@ -90,23 +88,16 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    border: 1px solid red;
 }
 
 .container header nav a {
     text-decoration: none;
     font-size: 1.4rem;
     color: black;
-    border: 1px solid red;
 }
 
 .logo {
     display: flex;
-}
-
-.container .jumbotron {
-    border: 1px solid red;
-
 }
 
 .top-content {
@@ -115,7 +106,6 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     font-size: 1.6rem;
-    border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
@@ -297,7 +287,6 @@ footer nav a {
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-bottom: 20px;
-        border-bottom: 1px dashed black;
     }
     
     .top-content .text-container {
@@ -308,7 +297,6 @@ footer nav a {
     
     .middle-content {
         margin-bottom: 20px;
-        border-bottom: 1px dashed black;
     }
     
     .middle-content h2 {
@@ -479,14 +467,12 @@ footer nav a {
     .container header {
         display: flex;
         flex-direction: column;
-        border: 1px solid red;
     }
 
     .container header .logo {
         display: flex;
         width: 17rem;
         justify-content: center;
-        border: 1px solid red;
         
     }
 
@@ -496,19 +482,12 @@ footer nav a {
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-        border: 1px solid red;
     }
     
     .container header nav a {
         text-decoration: none;
         font-size: 1.4rem;
         color: black;
-        border: 1px solid red;
-    }
-    
-    .container .jumbotron {
-        border: 1px solid red;
-    
     }
 
     .top-content {
