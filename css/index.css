@@ -50,7 +50,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -61,33 +63,67 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
 p {
     line-height: 1.4;
 }
 
 .container {
-    width: 800px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
 }
-
+header {
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header nav {
+    display: flex;
+    width: 80%;
+    padding: 2% 10% 0 2%;
+    justify-content: space-around;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-right: 4%;
+    color: black;
+    display: flex;
+}
+.lambda-logo {
+    padding: 0;
+    margin-left: 8%;
+    margin-bottom: 2%;
+}
+.jumbo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin: 2% 10%;
+    margin-bottom: 2rem;
+    border-bottom: .1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
+    font-size: 1.6rem;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin: 2% 10%;
+    margin-bottom: 2rem;
+    border-bottom: .1rem dashed black;
 }
 
 .middle-content h2 {
@@ -103,31 +139,51 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
+    font-size: 1.6rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    padding: 0 12%;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
+    font-size: 1.6rem;
     padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+.bottom-content .text-container p {
+    display: flex;
+    justify-content: space-evenly;
+}
 footer {
-    width: 100%;
+    width: 80%;
+    margin: 2% 10% 0;
     background: black;
 }
 
@@ -136,11 +192,127 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 3%;
+    }
+    header nav {
+        width: 100%;
+        margin: auto;
+        padding: 2% 0 2% 5%;
+        justify-content: space-between;
+    }
+    .lambda-logo {
+        margin-right: 10%;
+    }
+    .jumbo {
+        margin: 0;
+        width: 100%;
+    }
+    .top-content {
+        margin: 2% 0%;
+    }
+    .middle-content {
+        margin: 3% 0%;
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+    .bottom-content {
+        padding: 0 2%;
+    }
+    footer {
+        width: 100%;
+        margin: 2% 0 0;
+    }
+}
+
+@media(max-width: 400px) {
+    header {
+        padding: 0;
+    }
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    header nav a {
+        padding: 0;
+        justify-content: center;
+        font-weight: bold;
+        width: 100%;
+        border-top: 1px gray solid;
+        padding: 4%;
+    }
+    header nav a:last-child {
+        border-bottom: 1px gray solid;
+    }
+    .lambda-logo {
+        padding: 8% 9% 3% 10%;
+    }
+    .top-content {
+        flex-direction: column;
+        
+    }
+    .top-content .text-container {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    .top-content .text-container:first-child {
+        margin-top: 2%;
+    }
+    .middle-content {
+        margin-top: 5%;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .middle-content .boxes .box {
+        padding: 12%;
+    }
+    .bottom-content {
+        flex-direction: column;
+    }
+    .bottom-content .text-container {
+        margin: 3% 1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer {
+        margin: 6% 0 0 0;
+    }
+    footer nav {
+        justify-content: space-evenly;
+        width: 100%;
+        padding-right: 10%;
+    }
 }
