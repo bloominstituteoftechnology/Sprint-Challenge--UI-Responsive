@@ -54,10 +54,12 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -79,10 +81,32 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content nav {
+    font-size: 1.4rem;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.top-content .logo {
+    /* justify-content: flex-start; */
+    padding: 0 9% 0 0;
+}
+
+.top-content nav a {
+    color: black;
+    text-decoration: none;
+    padding-right: 8.64%;
+}
+
+.top-content .jumbotron {
+    padding-top: 4%;
+}
+
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 3% 1% 0 1%;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -101,21 +125,43 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
+    font-size: 1.6rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2.5% 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2.5%;
     justify-content: space-around;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container {
@@ -136,8 +182,9 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2.5% 2%;
+    /* font-size: 14px; */
+    font-size: 1.4rem;
 }
 
 footer nav a {
