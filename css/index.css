@@ -144,23 +144,23 @@ header nav a:hover {
     justify-content: center;
 }
 
-.middle-content .boxes .box .forestgreen {
+.middle-content .boxes .box.forestgreen {
     background: forestgreen;
 }
 
-.middle-content .boxes .box .darkorchid {
+.middle-content .boxes .box.darkorchid {
     background: darkorchid;
 }
 
- .middle-content .boxes .box .hotping {
+ .middle-content .boxes .box.hotping {
     background: hotpink;
 }
 
- .middle-content .boxes .box .indigo {
+ .middle-content .boxes .box.indigo {
     background: indigo;
 }
 
- .middle-content .boxes .box .lawngreen {
+ .middle-content .boxes .box.lawngreen {
     background: lawngreen;
 }
 
