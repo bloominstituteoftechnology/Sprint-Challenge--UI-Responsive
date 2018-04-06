@@ -254,7 +254,7 @@ footer nav a {
         }
 
         nav {
-            width: 200px;
+            width: 95%;
             display: flex;
             padding-top: 0.2rem;
             flex-direction: row;
