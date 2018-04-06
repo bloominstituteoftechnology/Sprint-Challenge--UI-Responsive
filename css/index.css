@@ -275,4 +275,26 @@ footer nav a {
         width: 100%;
         margin: 0 0 0 5%;
     }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        margin: 10px 0 0;
+    }
+
+    footer nav {
+        width: 80%;
+        margin: 0 10%;
+    }
+
 }
