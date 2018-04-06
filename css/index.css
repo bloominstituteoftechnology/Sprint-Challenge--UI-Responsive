@@ -1,3 +1,5 @@
+/* jesuarva */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,8 +49,12 @@ table {
 	border-spacing: 0;
 }
 
-* {
+*, *:before, *:after {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 html, body {
@@ -57,8 +63,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -67,27 +73,53 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 80rem;
+    width: 100%;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5% 0 2.7%;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 1.4rem;
+
+}
+
+header figure.jumbotron {
+    margin-top: 4.8%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
+}
+.top-content .text-container h2 {
+    margin-bottom: 3.9%;
+}
+.top-content .text-container p {
+    font-size: 1.53rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .middle-content h2 {
@@ -99,13 +131,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.53rem;;
 }
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -114,14 +147,17 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
+.bottom-content .text-container p {
+    font-size: 1.53rem;
+    padding-right: 3.3%;
+}
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
@@ -136,11 +172,165 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* @media querie for screen-width < 62.5em = 1000px
+    em -> based on system:root font-size -> not in `declarative`
+    fon-size in any css file.
+*/
+@media only screen and (max-width: 62.5em) {
+    .container {
+        background: #EEE;
+    }
+
+    .middle-content .box.box2 {
+        background-color: forestgreen;
+    }
+    .middle-content .box.box4 {
+        background-color: darkorchid;
+    }
+    .middle-content .box.box6 {
+        background-color: hotpink;
+    }
+    .middle-content .box.box8 {
+        background-color: indigo;
+    }
+    .middle-content .box.box10 {
+        background-color: lawngreen;
+    }
+} 
+
+/* @media querie for screen-width < 48em = 768px
+    em -> based on system:root font-size -> not in `declarative`
+    fon-size in any css file.
+*/
+@media only screen and (max-width: 48em) {
+    .container {
+        background: lightblue;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        margin-top: 4%;
+        /* justify-content: space-evenly; */
+        width: 100%;
+        padding-right: 4%;
+    }
+    header figure.logo {
+        padding-right: 4%;
+        /* width: 100%; */
+    }
+    header figure.jumbotron img {
+        max-width: 100%;
+    }
+
+    .top-content {
+        margin-top: 0.4%;
+    }
+    .top-content .text-container p {
+        padding-right: 4%;
+        line-height: 1.45;
+    }
+
+    .middle-content .boxes {
+        justify-content: space-around;
+    }
+    .middle-content .boxes box {
+        padding-left: 1%;
+    }
+    .middle-content .box.box1 {
+        background-color: teal;
+    }   
+    .middle-content .box.box3 {
+        background-color: gold;
+    }   
+    .middle-content .box.box5 {
+        background-color: cadetblue;
+    }   
+    .middle-content .box.box7 {
+        background-color: coral;
+    }   
+    .middle-content .box.box9 {
+        background-color: crimson;
+    }   
+}
+
+/* @media querie for screen-width < 25em = 400px
+    em -> based on system:root font-size -> not in `declarative`
+    fon-size in any css file.
+*/
+@media only screen and (max-width: 25em) {
+    body {
+        width: 100%;
+    }
+    .container {
+        background: lightcoral;
+        width: 100vw;
+        padding: 0;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7%;
+    }
+    header nav div {
+        padding: 3.8% 0;
+        border: 0.1rem solid black;
+        width: 100%;
+        text-align: center;
+    }
+    header figure.logo {
+        padding-right: 0%;
+        padding: 5.25% 0 0;
+        /* width: 100%; */
+    }
+    header figure.jumbotron {
+        margin: 0;
+    }
+    
+    .top-content,
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+    .top-content .text-container {
+        width: 90%;
+        padding-right: 2%;
+    }
+    .top-content {
+        margin-top: 2.7%;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+    .middle-content .box.box10 {
+        display: none;
+    }
+    .bottom-content .text-container {
+        padding-bottom: 5.7%;
+        padding-left: 1%
+    }
+
+    footer nav {
+        width: 84%;
+        margin: 0 auto;
+        padding-right: 8%;
+    }
 }

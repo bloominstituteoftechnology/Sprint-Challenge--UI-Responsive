@@ -22,11 +22,11 @@
 
 
 ## Complete the following tasks to set up a responsive website project
-* Correctly place a viewport meta tag in the head of your index.html file that contains these values: ```content="width=device-width, initial-scale=1.0"```
-* In your CSS, Introduce ```font-size:62.5%;``` to the ```html``` element.
-* Convert all pixel font-sizes into rems and use rems for anything new you build.
-* Convert ```.container``` into a max-width responsive class based on it's fixed width's current size.
-* The header and jumbotron are missing from the code.  Use the image named ```desktop-design.png``` to create a pixel perfect replacement. Please note, the ```desktop-design.png``` file is 1000px wide.
+* Correctly place a viewport meta tag in the head of your index.html file that contains these values: ```content="width=device-width, initial-scale=1.0"``` DONE
+* In your CSS, Introduce ```font-size:62.5%;``` to the ```html``` element. DONE
+* Convert all pixel font-sizes into rems and use rems for anything new you build. DONE
+* Convert ```.container``` into a max-width responsive class based on it's fixed width's current size. DONE
+* The header and jumbotron are missing from the code.  Use the image named ```desktop-design.png``` to create a pixel perfect replacement. Please note, the ```desktop-design.png``` file is 1000px wide. DONE
 
 ## Complete the following tasks for desktop at a screen size of 1000px
 * Update the background colors on the following boxes:
