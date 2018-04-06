@@ -137,6 +137,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size:1.6;
 }
 
 .bottom-content .text-container:last-child {
@@ -154,7 +155,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.rem;
 }
 
 footer nav a {
@@ -215,19 +216,22 @@ footer nav a {
 }
 
 /* Tablet */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
     .container {
         width: 100%;
     }
 
     header {
-        flex-wrap: wrap;
+        flex-direction:column;
+        align-items: center;
+        height: 40px;
     }
 
     header nav {
         width: 100%;
         margin: 38px 3%;
+        justify-content:space-between;
     }
 
     header .logo {
@@ -256,19 +260,19 @@ footer nav a {
        width: 100%;
        margin: 25px auto;
     }
-    .middle-content .boxes .box2 {
+    .middle-content .boxes .box1 {
         background-color: teal;
     }
-    .middle-content .boxes .box4 {
+    .middle-content .boxes .box3 {
         background-color: gold;
     }
-    .middle-content .boxes .box6 {
+    .middle-content .boxes .box5 {
         background-color: cadetblue;
     }
-    .middle-content .boxes .box8{
+    .middle-content .boxes .box7{
         background-color: coral;
     }
-    .middle-content .boxes .box10{
+    .middle-content .boxes .box9{
         background-color : crimson;
     }
 
@@ -286,13 +290,22 @@ footer nav a {
 @media (max-width: 400px) {
 
     header {
-        flex-wrap: wrap;
-        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        height : 80px;
+    }
+    header .logo {
+        width:39.5%;
+        height:60%;
+        margin: 10px 0 0 0;
+
+
     }
 
     header nav {
         width: 100%;
-        display: flex;
+        justify-content:space-between;
         flex-direction: column;
         margin: 0;
         align-items: center;
@@ -300,7 +313,7 @@ footer nav a {
 
     header nav a {
         width: 100%;
-        display: block;
+        display: flex;
         text-align: center;
         padding: 20px 0;
         font-size: 2rem;
@@ -323,14 +336,16 @@ footer nav a {
     .cta {
         margin-top: 50px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .middle-content .boxes .box2 {
         background-color: forestgreen;
+        order:-1;
     }
     .middle-content .boxes .box4 {
         background-color: darkorchid;
+        order:2;
     }
     .middle-content .boxes .box6 {
         background-color: hotpink;
