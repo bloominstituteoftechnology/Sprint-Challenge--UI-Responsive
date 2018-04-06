@@ -1,0 +1,5 @@
+1. They are all equal specificity.  //Turns out this is wrong, actually box3 is highest specificity.
+2. Block gives the content lots of space around it, while inline tries to minimize the space that the content takes up.
+3. The axis perpendicular to the one along which content is being laid out.  By default, this is the vertical axis. 
+4. Fixed layout just is what it is, regardless of window size or device.  Fluid layouts scale their elements directly with window/screen size, adaptive layouts use breakpoints to present different styles at different sizes, and responsive layouts combine the properties of both fluid and adaptive.
+5. Using max-width allows us to put a gutter at the sides of the page when viewed in a larger window.  This looks good, and lets us not worry about how the page looks on arbitrarily large monitors - it'll look the same for every size above max-width.
