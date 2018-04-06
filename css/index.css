@@ -76,15 +76,14 @@ p {
 header {
     width: 100%;
     display: flex;
-    margin: 20px 0 35px 0;
+    margin: 2% 0 3.5% 0;
 }
 
 header nav {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
-    margin-left: 5%;
 }
 
 header nav a {
@@ -98,10 +97,18 @@ header .logo {
     /*height: auto;*/
 }
 
+.jumbotron {
+    margin-bottom: 1.5%;
+}
+
+.jumbotron img{
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -110,6 +117,7 @@ header .logo {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    font-size: 2rem;
 }
 
 .middle-content {
@@ -137,6 +145,26 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
 }
 
 .bottom-content {
