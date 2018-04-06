@@ -51,32 +51,43 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; 
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.4rem;
 }
 
 .container {
-    width: 800px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
 }
+
+header nav p{
+    text-decoration: none;
+}
+
+
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: .1rem dashed black;
 }
 
 .top-content .text-container {
@@ -87,7 +98,7 @@ p {
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: .1rem dashed black;
 }
 
 .middle-content h2 {
@@ -137,7 +148,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
