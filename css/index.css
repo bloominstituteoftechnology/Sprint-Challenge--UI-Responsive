@@ -71,22 +71,50 @@ p {
     margin: 0 auto;
 }
 
+/* Header Style */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 3.25% 0; /* 26px / container max-width */
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 1.25% 5%; /* 10px / container max-width */ /* 40px / container max-width */
+}
+
+/* Jumbotron Style */
+.jumbotron {
+    margin: 0.5% 0 2.4%; /* 4px / container max-width */ /* 19px / container max-width */
+}
+
+/* Main Content Style*/
+
+.main-content .top-content .text-container h2,
+ .main-content .bottom-content .text-container h2,
+ .main-content .middle-content h2 {
+    font-size: 1.1rem;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2.5%; /* 20px / container max-width */
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2.5%; /* 20px / container max-width */ 
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2.5%; /* 20px / container max-width */
     border-bottom: 1px dashed black;
 }
 
@@ -105,7 +133,7 @@ p {
     width: 12.5%;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2.5% 2.5%; /* 20px / container max-width */
     color: white;
     display: flex;
     align-items: center;
@@ -114,7 +142,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2.5%; /* 20px / container max-width */
     justify-content: space-around;
 }
 
@@ -126,6 +154,8 @@ p {
     padding-right: 0;
 }
 
+/* Footer Style */
+
 footer {
     width: 100%;
     background: black;
@@ -136,8 +166,9 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 1.4rem;
+    padding: 2.5% 2%; /* 20px / container max-width */
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 footer nav a {
