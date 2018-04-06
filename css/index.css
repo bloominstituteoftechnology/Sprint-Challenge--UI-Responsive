@@ -50,11 +50,12 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html{
+    font-size: 62.5%
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -144,6 +145,21 @@ header a{
     justify-content: center;
 }
 
+.middle-content .boxes .box2{
+    background: forestgreen;
+}
+.middle-content .boxes .box4{
+    background: darkorchid;
+}
+.middle-content .boxes .box6{
+    background: hotpink;
+}
+.middle-content .boxes .box8{
+    background: indigo;
+}
+.middle-content .boxes .box10{
+    background: lawngreen;
+}
 
 
 .bottom-content {
