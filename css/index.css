@@ -277,3 +277,46 @@ footer {
     justify-content: flex-start;
 }
 }
+
+@media(max-width: 400px) {
+.container {
+    width: 100%;
+}   
+header {
+    padding-bottom: 0;
+} 
+.logo {
+    justify-content: center;
+    margin-top: 6.75%;
+    margin-bottom: 9%;
+}
+header nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+}
+header nav a{
+    border-top: gray 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 14.9px 70% 14.9px 72%; 
+}
+.top-content .large-img {
+    margin-top: -3.7%;
+    margin-bottom: 0;
+    height: 79px;
+ 
+}
+.top-content {
+    width: 100%;
+}
+.top-content .text-container{
+    width: 90%;
+    margin-top: 5.4%;
+    display: flex;
+    justify-content: space-between;
+} 
+
+}

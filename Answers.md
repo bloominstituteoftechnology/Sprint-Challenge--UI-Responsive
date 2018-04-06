@@ -1,4 +1,4 @@
-1. 'box' has the most specificity weight.
+1. 'box3' has the most specificity weight.
 2. Display block takes up the full width that is available to it. Inline elements take up the least amount of space as possible and stay on the same line as the last element. 
 3. Align-items goes off of the cross-axis. 
 4. 
