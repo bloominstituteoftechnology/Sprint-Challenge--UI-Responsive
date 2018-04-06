@@ -54,21 +54,52 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.4rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    height: 100px;
+    padding-top: 12px;
+    padding-right: 20px
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    padding-bottom: 20px; 
+}
+
+header a{
+    margin: 40px;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.logo{
+    order: -1;
+}
+
+.jumbotron{
+    width: 90%;
+    padding: 0 0 20px 2.5%;
 }
 
 .top-content {
@@ -99,6 +130,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.2rem;
 }
 
 .middle-content .boxes .box {
@@ -111,6 +143,8 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+
 
 .bottom-content {
     display: flex;
@@ -137,10 +171,47 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 0.785rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        flex-direction: row;
+        margin: 20px;
+        padding-left: 20%;
+    }
+    .logo{
+        align-self: center;
+    }
+    header nav{
+        flex-flow: row;
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header a{
+        flex-direction: column;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2.2rem;
+        border-bottom: 1px solid gray;
+    }
 }
