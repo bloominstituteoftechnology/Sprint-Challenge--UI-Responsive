@@ -349,10 +349,11 @@ footer nav a {
             justify-content: center;
         }
         a {
+            width: 100%;
             text-decoration: none;
             flex-direction: row;
             color: black;
-            border: 0.0625rem solid darkgrey;
+            border-bottom: 0.0625rem solid darkgrey;
             justify-content: center;
         }
         .jumbo {
