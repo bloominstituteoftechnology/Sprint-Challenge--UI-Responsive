@@ -156,7 +156,6 @@ html {
 .container {
 	width: 100%;
 	max-width: 880px;
-	border: 1px solid red;
 }
 
 header {
@@ -164,7 +163,6 @@ header {
 	display: flex;
 	justify-content: flex-start;
 	margin-top: 19px;
-	border: 1px solid blue;
 }
 
 header nav {
@@ -174,7 +172,6 @@ header nav {
 	display: flex;
 	width: 596px;
 	justify-content: space-between;
-	border: 1px solid black;
 }
 
 header nav a {
@@ -184,7 +181,6 @@ header nav a {
 	align-items: flex-end;
 	margin-right: 35px;
 	color: black;
-	border: 3px solid yellow;
 }
 
 header nav a:hover {
@@ -193,7 +189,6 @@ header nav a:hover {
 
 .container .lambda_logo {
 	margin-bottom: 22px;
-	border: 1px solid green;
 	width: 188px;
 }
 
@@ -208,6 +203,7 @@ header nav a:hover {
 .middle-content .boxes .box {
 	font-size: 16px;
 }
+
 .middle-content .boxes .box:nth-child(2) {
 	background-color: forestgreen;
 }
@@ -232,11 +228,47 @@ header nav a:hover {
 	display: flex;
 	width: 878px;
 	justify-content: space-between;
-	border: 1px solid green;
 	margin-right: 59px;
 }
 
 .bottom-content .text-container p {
 	font-size: 14px;
 	width: 171px;
+}
+
+@media (max-width: 768px) {
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header nav {
+		margin-top: 17px;
+		justify-content: space-between;
+	}
+
+	.jumbo {
+		margin-top: 40px;
+	}
+
+.middle-content .boxes .box:nth-child(1) {
+	background-color: teal;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+	background-color: gold;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+	background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+	background-color: coral;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+	background-color: crimson;
+}
 }
