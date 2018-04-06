@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8 rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -68,7 +68,7 @@ p {
 
 .container {
 
-    width: 800px;
+   max-width: 800px;
     margin: 0 auto;
     font-size:62.5%;
 }
@@ -76,7 +76,7 @@ p {
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -84,7 +84,8 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    font-size: 1.6 rem; 
 }
 
 .middle-content {
@@ -113,7 +114,21 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+.middle-content .boxes .box8{
+    background-color: indigo;
+}
+.middle-content .boxes .box10{
+    background-color : lawngreen;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -200,7 +215,7 @@ footer nav a {
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     .container {
         width: 100%;
@@ -240,6 +255,21 @@ footer nav a {
     .main-content .middle-img {
        width: 100%;
        margin: 25px auto;
+    }
+    .middle-content .boxes .box2 {
+        background-color: teal;
+    }
+    .middle-content .boxes .box4 {
+        background-color: gold;
+    }
+    .middle-content .boxes .box6 {
+        background-color: cadetblue;
+    }
+    .middle-content .boxes .box8{
+        background-color: coral;
+    }
+    .middle-content .boxes .box10{
+        background-color : crimson;
     }
 
     .main-content {
@@ -295,6 +325,22 @@ footer nav a {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .middle-content .boxes .box2 {
+        background-color: forestgreen;
+    }
+    .middle-content .boxes .box4 {
+        background-color: darkorchid;
+    }
+    .middle-content .boxes .box6 {
+        background-color: hotpink;
+    }
+    .middle-content .boxes .box8{
+        background-color: indigo;
+    }
+    .middle-content .boxes .box10{
+        display:none;
+        flex-direction: row-reverse;
     }
 
     .cta .cta-text{
