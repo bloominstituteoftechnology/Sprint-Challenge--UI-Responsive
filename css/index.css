@@ -113,9 +113,9 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: ;
     margin: 20px 2.5%;
-    color: white;
+    color:white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,6 +178,7 @@ footer nav a {
 .box.box10{
     background-color:lawngreen;  
 }
+
 
 @media(max-width:768px){
  .box.box1{
