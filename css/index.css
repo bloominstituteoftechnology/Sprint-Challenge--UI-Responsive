@@ -74,19 +74,25 @@ p {
 }
 
 .top-content {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     border-bottom: 1px dashed black;
 }
 
 .top-content .menu {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-evenly;
+    font-size: 1.4 rem;
+    align-items: center
 }
 
+.top-content .menu a {
+    color: black;
+    text-decoration: none;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
