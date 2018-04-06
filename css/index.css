@@ -152,15 +152,26 @@ p {
 }
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    font-size: 1.6rem;
+    padding: 0 2% 20px;
+}
+.stretch img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.stretch h2 {
+    padding: 0 2%;
+}
+.stretch p {
+    padding: 0 2%;
     font-size: 1.6rem;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
@@ -168,6 +179,7 @@ p {
 footer {
     width: 100%;
     background: black;
+    margin-top: 20px;
 }
 
 footer nav {
