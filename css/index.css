@@ -138,6 +138,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .middle-content .boxes .box {
@@ -314,9 +315,37 @@ header nav a{
 }
 .top-content .text-container{
     width: 90%;
-    margin-top: 5.4%;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 } 
+.middle-content h2{
+    margin-top: 9px;
+}
+.middle-content .boxes {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.middle-content .boxes .box { 
+    width: 25%;
+}
+.middle-content .boxes .box:nth-child(10) {
+    display: none;
+}
+.bottom-content {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
 
+.bottom-content .text-container {
+    width: 85%;
+    height: 110px;
+}
+footer {
+    width: 100%;
+    margin: auto;
+    
+    
+}
 }
