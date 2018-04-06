@@ -99,26 +99,26 @@ header .lambda {
 
 header .jumbotron {
     display: block;
-    margin-top: 2.5%
-
+    width: 95%;
+    margin: 2.5% 1% 2.5% 1%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 2.5% 1% 2.5% 1%;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2.5%;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2.5%;
     border-bottom: 1px dashed black;
 }
 
@@ -137,7 +137,7 @@ header .jumbotron {
     width: 12.5%;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2.5% 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -166,7 +166,7 @@ header .jumbotron {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2.5%;
     justify-content: space-around;
 }
 
@@ -188,7 +188,7 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    padding: 2.5% 2%;
     font-size: 1.4rem;
 }
 
