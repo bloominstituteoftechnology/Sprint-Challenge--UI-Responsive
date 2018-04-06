@@ -58,7 +58,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -68,8 +68,34 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    margin: 20px 0 35px 0;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 5%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+header .logo {
+    width: 15%;
+    /*height: auto;*/
 }
 
 .top-content {
