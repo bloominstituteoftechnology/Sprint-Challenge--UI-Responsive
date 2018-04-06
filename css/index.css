@@ -161,6 +161,18 @@ nav {
     order: 2;
 }
 
+.top-content {
+    padding-top: 2em;
+}
+
+.top-content .text-container {
+    font-size: 1.6rem;
+}
+
+.bottom-content .text-container {
+    font-size: 1.6rem;
+}
+
 @media (max-width: 1000px) {
     .boxes .box:nth-child(1) {
         background: teal;
