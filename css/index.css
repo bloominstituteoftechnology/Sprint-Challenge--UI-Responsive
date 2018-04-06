@@ -95,10 +95,10 @@ header nav a {
     header {
         flex-direction: column;
         align-items: center;
-        padding: 35px 0 0 0;
+        padding: 4.5% 0 0 0; /*35px / max-width */
     }
     header nav a {
-        padding: 30px 0;
+        padding: 3.9% 0; /*30px / max-width */
         font-size: 0.9rem;
     }
 }
@@ -107,16 +107,16 @@ header nav a {
     header {
         flex-direction: column;
         align-items: center;
-        padding: 35px 0 0 0;
+        padding: 8.75% 0 0 0; /*35px / max-width */
     }
     header nav {
-        margin-top: 30px;
+        margin-top: 7.5%; /*35px / max-width */
         display: flex;
         flex-direction: column;
     }
     header nav a {
         width: 100%;
-        padding: 15px 0;
+        padding: 3.75% 0; /*15px / max-width */
         font-size: 0.9rem;
         border-top: 1px solid grey;
         text-align: center;
@@ -137,7 +137,7 @@ header nav a {
 
 @media (max-width: 1000px) {
     .jumbotron {
-        margin: 5px 0 20px;
+        margin: 0.5% 0 2%; /*5px / max-width */ /*20px / max-width */
     }
 }
 
@@ -247,7 +247,7 @@ header nav a {
 
 @media (max-width: 400px) {
     .main-content .top-content, .main-content .bottom-content {
-        padding: 0 10px;
+        padding: 0 2.5%; /*10px / max-width */
     }
     .top-content, .middle-content, .bottom-content {
         flex-direction: column;
