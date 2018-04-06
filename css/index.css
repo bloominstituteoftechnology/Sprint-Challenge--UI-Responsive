@@ -51,13 +51,16 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size:62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +70,27 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    margin-top: 17px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-content {
@@ -79,10 +101,19 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content img {
+    width: 100%;
+    margin: 20px 0;
+    padding-top: 25px;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container p {
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -99,6 +130,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -116,6 +148,10 @@ p {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+.bottom-content .text-container p {
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container {
@@ -137,10 +173,122 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width:1000px){
+    .middle-content .boxes .box.box2 {
+        background-color: forestgreen;
+    }
+    .middle-content .boxes .box.box4 {
+        background-color: darkorchid;
+    }
+    .middle-content .boxes .box.box6 {
+        background-color: hotpink;
+    }
+    .middle-content .boxes .box.box8 {
+        background-color: indigo;
+    }
+    .middle-content .boxes .box.box10 {
+        background-color: lawngreen;
+    }
+}
+
+@media(max-width:768px){
+     .middle-content .boxes .box.box1 {
+        background-color: teal;
+    }
+    .middle-content .boxes .box.box3 {
+        background-color: gold;
+    }
+    .middle-content .boxes .box.box5 {
+        background-color: cadetblue;
+    }
+    .middle-content .boxes .box.box7 {
+        background-color: coral;
+    }
+    .middle-content .boxes .box.box9 {
+        background-color: crimson;
+    }   
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    header img {
+        margin-bottom: 33px;
+    }
+    .top-content img {
+        margin-top: 12px;
+        height: 172px;
+    }
+}
+
+@media(max-width:400px){
+    .middle-content .boxes .box.box10 {
+        display: none;
+    }
+    .middle-content .boxes {
+        flex-direction: row-reverse;  
+    }
+    .middle-content .boxes .box {
+        flex-basis: 25%;
+    }
+    header img {
+        padding-top: 15px;
+    }
+    header nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: 22rem;
+        font-size: 1.4rem;    
+    }
+    header nav a {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid gray;
+        padding-top: 15px;
+    }
+    .top-content img {
+        margin-top: 0;
+        padding: 0;
+        height: 80px;
+    }
+    .top-content {
+        flex-direction: column;
+        align-items: space-around;
+    }
+    .top-content .text-container {
+        width: 100%;
+        padding-left: 25px;
+    }
+    .top-content .text-container p {
+        width: 95%;
+    }
+    .bottom-content {
+        flex-direction: column;
+        align-items: space-around;
+    }
+    .bottom-content .text-container {
+        width: 100%;
+    }
+    .bottom-content .text-container.text-container2 {
+        padding-top: 20px;
+    }
+    .bottom-content .text-container.text-container3 {
+        padding-top: 20px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    footer nav {
+        display: flex;
+    }
 }
