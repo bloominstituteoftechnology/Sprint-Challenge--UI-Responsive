@@ -54,45 +54,84 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 2.8em;
+    margin-bottom: 1em;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    font-size: 2.25em;
+    line-height: 1.511em;
 }
 
 .container {
-    width: 800px;
+    width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
+/*header*/
+
+header {
+    padding: 3em 0 4em 0;
+    display: flex;
+}
+
+header nav {
+    align-items: end;
+    width: 75%;
+    justify-content: space-between;
+    margin-left: 5em;
+    display: flex;
+}
+
+header nav a {
+    font-size: 2.2em;
+    text-decoration: none;
+    color: black;
+}
+
+header .logo {
+    margin: 0 .7em 0 0;
+}
+
+/*jumbotron*/
+
+.jumbotron {
+    margin-top: 2em;
+}
+
+/*top content*/
+    
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin: 1.5em 0 1.5em 0;
+    border-bottom: .2em dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 2.1em 1%;
+    padding-bottom: 3em;  
 }
 
+/*middle content*/
+
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin: 3.5em 0 1.5em 0;
+    border-bottom: .2em dashed black;
 }
 
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    font-size: 2.6em;
 }
 
 .middle-content .boxes {
@@ -103,28 +142,53 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 6em;
     background: black;
-    margin: 20px 2.5%;
+    margin: 1.1em 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:2.8em;
 }
 
+.middle-content .boxes #box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes #box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes #box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes #box8 {
+    background: indigo;
+}
+
+.middle-content .boxes #box10 {
+    background: lawngreen;
+}
+
+/*bottom content*/
+    
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 1.6em 0;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding: 1em 4% 0;
 }
 
-.bottom-content .text-container:last-child {
+/*.bottom-content .text-container:last-child {
     padding-right: 0;
-}
+}*/
+
+/*footer*/
 
 footer {
     width: 100%;
@@ -136,8 +200,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 1.5em 2%;
+    font-size: 2.2em;
 }
 
 footer nav a {
