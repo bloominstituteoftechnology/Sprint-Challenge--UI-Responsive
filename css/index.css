@@ -73,34 +73,33 @@ p {
 }
 
 /* Header Styles */
+
 header {
     width: 100%;
     display: flex;
-
-}
-
-.navbar .lambdaLogo {
-    display: flex;
-    margin: 28px 0 0 10%;
-    justify-content: flex-start;
+    padding: 2% 0;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 70%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     display: flex;
 }
 
 header nav a {
+    align-self: flex-end;
     text-decoration: none;
-    color: grey;
-    font-size: 1.8rem;
+    color: black;
 }
 
 header nav a:hover {
     text-decoration: underline;
-    color: black;
+    color: gray;
+}
+
+.jumbotron {
+    width: 100%;
+    margin: 25px 0;
 }
 
 
@@ -143,6 +142,26 @@ header nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box .forestgreen {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box .darkorchid {
+    background: darkorchid;
+}
+
+ .middle-content .boxes .box .hotping {
+    background: hotpink;
+}
+
+ .middle-content .boxes .box .indigo {
+    background: indigo;
+}
+
+ .middle-content .boxes .box .lawngreen {
+    background: lawngreen;
 }
 
 .bottom-content {
