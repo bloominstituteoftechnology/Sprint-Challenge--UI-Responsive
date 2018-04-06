@@ -174,7 +174,7 @@ footer nav a {
 
     header {
         flex-wrap:wrap;
-        flex-direction:column;
+        
         align-items: center;
         height: 40px;
     }
