@@ -54,22 +54,27 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-		font-size: 62.5% 10px;
+		font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.44rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
+    font-size: 1.6rem;
     line-height: 1.4;
+}
+
+div{
+  font-size: 1.6rem
 }
 
 .container {
 		width: 100%;
-    max-width: 800px;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -79,7 +84,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	height: 4.5rem;
+	height: 7.2rem;
 }
 
 header nav{
@@ -90,6 +95,7 @@ header nav{
 }
 
 header nav a{
+  font-size: 1.6rem;
 	text-decoration: none;
 	color: black;
 }
@@ -98,26 +104,26 @@ header nav a{
 
 .jumbo-img{
 	width: 100%;
-	margin-top: 1.5rem;
+	margin-top: 2.4rem;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-		margin-top: 1.35rem;
-    margin-bottom: 20px;
+		margin-top: 2.16rem;
+    margin-bottom: 2rem;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     border-bottom: 1px dashed black;
 }
 
@@ -134,9 +140,9 @@ header nav a{
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -165,7 +171,7 @@ header nav a{
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
 }
 
@@ -178,14 +184,14 @@ header nav a{
 }
 
 .death-star{
-  max-width: 880px;
+  max-width: 88rem;
   width: 100%;
-  height: 15rem;
+  height: 24rem;
   background-image: url(https://overmental.com/wp-content/uploads/2015/07/Death-Star-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 
@@ -201,8 +207,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
@@ -217,18 +223,18 @@ footer nav a {
   header{
     flex-direction: column;
     height: auto;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
   }
 
   header nav{
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 0.65rem;
+    padding-top: 3.2rem;
+    padding-bottom: 1.04rem;
   }
 
   .middle-content .boxes .box{
-    height: 6.25rem;
-    width: 6.25rem;
+    height: 10rem;
+    width: 10rem;
   }
 
   .middle-content .boxes .box1{
@@ -260,14 +266,14 @@ footer nav a {
   }
 
   header nav a{
-    padding: 0.85rem 0;
+    padding: 1.36rem 0;
     border-top: 1px solid gray;
     width: 100%;
     text-align: center;
   }
 
   header nav a:last-child{
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.4rem;
   }
 
   .jumbo-img{
@@ -276,22 +282,16 @@ footer nav a {
 
   .top-content{
     flex-direction: column;
-    /*width: 100%;*/
   }
 
   .top-content .text-container{
     width: 100%;
-    padding: 0 0.5rem 1.5rem 0.5rem;
+    padding: 0 0.8rem 2.4rem 0.8rem;
   }
 
   .middle-content .boxes{
     flex-direction: row-reverse;
   }
-
-  /*.middle-content .boxes .box{
-    height: 6.25rem;
-    width:6.25rem;
-  }*/
 
   .middle-content .boxes .box10{
     display: none;
@@ -302,7 +302,7 @@ footer nav a {
   }
 
   .bottom-content .text-container {
-      padding-bottom: 1rem;
+      padding-bottom: 1.6rem;
   }
 
   footer nav{
