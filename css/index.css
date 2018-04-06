@@ -272,3 +272,51 @@ header nav a:hover {
 	background-color: crimson;
 }
 }
+
+@media (max-width: 400px) {
+
+.container {
+	width: 100%;
+}
+
+header {
+	border: 1px solid red;
+	height: 280px;
+	width: 100%;
+}
+
+header nav {
+	height: 200px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	align-content: space-around;
+	margin-right: 16px;
+	border: 1px solid blue;
+	width: 100%;
+}
+
+header nav a {
+	border-top: 1px solid black;
+	height: 40px;
+	width: 100%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1px;
+}
+
+.jumbo img {
+	width: 400px;
+}
+
+.top-content {
+	display: block;
+}
+
+.bottom-content .bottom-containers {
+	display: block;
+}
+}
