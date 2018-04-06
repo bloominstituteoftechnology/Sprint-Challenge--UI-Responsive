@@ -172,6 +172,7 @@ header nav a {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 20px;
 }
 
 .bottom-content .text-container {
@@ -185,6 +186,7 @@ header nav a {
 footer {
     width: 100%;
     background: black;
+    margin: 0 auto;
 }
 
 footer nav {
@@ -199,4 +201,23 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
+}
+
+@media(max-width: 768) {
+    
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 400) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
