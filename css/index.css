@@ -356,7 +356,7 @@ footer nav a {
         }
         .jumbo {
             width: 120%;
-            height: 52%;
+            height: 5%;
         }
        
         .box10 {
@@ -431,9 +431,11 @@ footer nav a {
             flex-direction: row;
             flex-flow: wrap;
         }
-    }   .bottom-content {
-        display: flex;
-        margin: 0 2% 20px;
-        justify-content: space-around;
-        flex-flow: column;
-    }
+        .bottom-content {
+            display: flex;
+            margin: 0 2% 20px;
+            justify-content: space-between;
+            flex-flow: column;
+        }
+
+    }   
