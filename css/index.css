@@ -58,13 +58,13 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.4rem;
 }
 
 .container {
@@ -113,8 +113,8 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-    font-size: 1.4rem;
+    border-bottom: .1rem dashed black;
+    font-size: 1.6rem;
 }
 
 .top-content .text-container {
@@ -125,7 +125,7 @@ p {
 
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    border-bottom: .1rem dashed black;
 }
 
 .middle-content h2 {
@@ -148,6 +148,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
 }
 .middle-content .boxes .box2{
     background-color: forestgreen;
@@ -178,6 +179,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -195,7 +197,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
@@ -216,7 +218,7 @@ footer nav a {
     .container header img{
         display: flex;
         justify-content: center;
-        margin: 0 0 0 34.5%;
+        margin: 10px 0 0 38.5%;
     }
     .middle-content .boxes .box1{
         background-color: teal;
@@ -237,8 +239,10 @@ footer nav a {
     .middle-content .boxes .box9{
         background-color: crimson;
     }
-    .top-content CityImage{
-        width: 100%
+    .top-content .CityImage{
+        width: 100%;
+        margin: 0;
+        padding: 30px 0 30px 0;
     }
 }
 
@@ -252,6 +256,7 @@ footer nav a {
     header {
         justify-content: center;
         flex-wrap: wrap;
+        height: auto;
     }
     header nav {
         width: 100%;
@@ -263,12 +268,12 @@ footer nav a {
         display: block;
         text-align: center;
         padding: 20px 0;
-        font-size: 2rem;
-        border-bottom: 1px solid gray;
+        font-size: 1.6rem;
+        border-bottom: .1rem solid black;
 
     }
     header nav a:first-child {
-        border-top: 1px solid gray;
+        border-top: .1rem solid black;
     }
     .container header img{
         margin: 0 0 0 28.8%;
@@ -279,6 +284,7 @@ footer nav a {
     }
     .top-content .text-container{
         padding: 15px;
+        width: 100%;
         
     }
     .top-content .CityImage{
@@ -299,5 +305,13 @@ footer nav a {
    .middle-content .boxes .box10{
        display: none;
    }
+
+   .bottom-content .text-container {
+       margin: 10px 0 0;
+   }
+   .bottom-content{
+       flex-direction: column;
+   }
+
 
 }

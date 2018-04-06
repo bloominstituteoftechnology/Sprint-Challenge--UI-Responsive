@@ -1,6 +1,6 @@
 1. If you saw this HTML: ```<div class="box box1 box2 box3"></div>``` which class has the most specificity weight?
 
-I would assume box3 would have the most specificity weight but Im a little unsure after all my reading on the web.
+I would assume they all have equal specificity.
 
 2. Describe the difference between ```display: block;``` and ```display: inline;```.
 
@@ -15,7 +15,7 @@ I believe you are using the cross axies
 
 Fixed Layout: Fixed layouts use static widths and heights on all elements and dont adapt to changes in screen size.
 
-Adaptive Layout:
+Adaptive Layout: Adaptive layouts use breakpoints to adjust for screen sizes.
 
 Fluid Layout: Fluid layout use percentages instead of pixels, but other unit of measurement will work as well such as ems.
 
