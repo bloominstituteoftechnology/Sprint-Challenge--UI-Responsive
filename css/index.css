@@ -97,9 +97,9 @@ header nav a {
 }
 
 .jumbotron {
-    display: flex;
-    justify-content: center;
+    display: block;
     width: 100%;
+    height: auto;
     margin-top: 40px;
 }
 
@@ -147,6 +147,27 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2{
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4{
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6{
+    background-color: hotpink;
+}
+
+
+.middle-content .boxes .box8{
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10{
+    background-color: lawngreen;
 }
 
 .bottom-content {
@@ -206,12 +227,85 @@ footer nav a {
         margin-top: 30px;
     }
 
+    .middle-content .boxes .box1{
+        background-color: teal;
+    }
+    
+    .middle-content .boxes .box3{
+        background-color: gold;
+    }
+    
+    .middle-content .boxes .box5{
+        background-color: cadetblue;
+    }
+    
+    
+    .middle-content .boxes .box7{
+        background-color: coral;
+    }
+    
+    .middle-content .boxes .box9{
+        background-color: crimson;
+    }
+
+}
 
 
+/* Breakpoint at 550px, design for 400px phone */
 
 
+@media(max-width: 550px) {
+    header {
+        margin-top: 30px;
+    }
 
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    header nav a {
+        border-top: 1px solid grey;
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 15px 0px;
+    }
+
+    .jumbotron {
+        margin-top: 0px;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 6%;
+        padding-bottom: 15px;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        margin: 0 0 20px;
+    }
+
+    .bottom-content .text-container {
+        padding: 0 3%;
+        padding-bottom: 15px;
+    }
 
 
 
