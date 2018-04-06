@@ -1,5 +1,6 @@
 1. If you saw this HTML: ```<div class="box box1 box2 box3"></div>``` which class has the most specificity weight?
     - all classes here have the same weight
+    // box3 is a correct answer
 2. Describe the difference between ```display: block;``` and ```display: inline;```.
     - display: block - would take the entire width of its container (no sharing);
     - display: inline - would take the minimum space it is needed and able to share its row with other elements;
