@@ -77,10 +77,10 @@ p {
 
 header{
     width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 40px auto;
+    padding: 0 20px 20px;;
     display: flex;
-    padding-bottom: 20px; 
+    font-size: 2.5rem;
 }
 
 header a{
@@ -242,5 +242,9 @@ footer nav a {
         padding: 20px 0;
         font-size: 2.2rem;
         border-bottom: 1px solid gray;
+    }
+    .top-content .text-container{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
