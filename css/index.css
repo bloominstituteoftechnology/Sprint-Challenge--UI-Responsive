@@ -51,13 +51,17 @@ table {
     box-sizing: border-box;
 }
 
+html{
+    font-size:62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,41 +71,77 @@ p {
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin-top:20px;
+    margin-left:9%
 }
 
+header{
+    display: flex;
+    justify-content: left;
+    margin: 3rem auto;
+
+    
+}
+
+header nav{
+    display: flex;
+    order: 1;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+
+header nav a:link{
+    text-decoration:none;
+    color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    font-size:1.4rem;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     border-bottom: 1px dashed black;
+    padding-top:3rem;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    font-size: 1.55rem;  
+}
+.top-content:nth-child(2){
+    margin-right:-7%;
+    margin-left:3%;
 }
 
+.billboard{
+    width:100%;
+}
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
+    padding: 0 4%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
+    width:100%;
+    margin-left:3%;
+    }
 
-.middle-content .boxes .box {
+.box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -110,12 +150,14 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:1.4rem;;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size:1.6rem;
 }
 
 .bottom-content .text-container {
@@ -127,20 +169,132 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 67%;
     background: black;
 }
 
 footer nav {
-    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width:1000px){
+    .box:nth-child(2){
+        background:forestgreen;
+    }
+    .box:nth-child(4){ 
+        background:darkorchid;
+    }
+    .box:nth-child(6){ 
+        background:hotpink;
+    }
+    .box:nth-child(8){ 
+        background:indigo;
+    }
+    .box:nth-child(10){ 
+        background:lawngreen;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        margin: 2rem 0 0 0;
+    }
+    header{
+        flex-direction:column;
+        margin: 3rem auto;
+    }
+    header .logo{
+        width:20.4%;
+        align-self:center;
+        margin-bottom:3rem;
+
+    }  
+    header nav{
+        width:100%;
+        justify-content:space-between;
+        margin: 0 2%;
+    }
+    .box:nth-child(1){
+        background:teal;
+    }
+    .box:nth-child(3){
+        background: gold;
+    }
+    .box:nth-child(5){
+        background:cadetblue;
+    }
+    .box:nth-child(7){
+        background:coral;
+    }
+    .box:nth-child(9){
+        background:crimson;
+    }
+}
+
+@media(max-width:400px){
+    .container{
+        width:100%;
+        margin:0;
+    }
+    header{
+        flex-direction:column;
+        justify-content: center;
+        margin:0;
+        
+      
+    }
+    header nav{
+        flex-direction:column;
+        width: 100%;
+        display:flex;
+        margin:0;
+        align-items:center;
+    }
+    header nav a:link{
+        width:100%;
+        display:block;
+        flex-direction: row;
+        border-bottom: 1px solid gray;
+        padding:15px 0;
+        font-size:2rem;
+        text-align: center;
+    }
+    
+    header nav a:nth-child(1){
+        border-top:1px solid gray;
+
+
+    }
+    header .logo{
+        order: -1;
+        margin: 20px 0;
+        align-self:center;
+        height: 15.7%;
+        width:39.25%;
+    }
+    .boxes{
+        flex-direction:row-reverse;
+    }
+    .box{
+        max-width: 10rem;
+        max-height: 10rem;
+        width: 100%;
+        display: flex;
+        margin: 5px 15px 5% 0%;
+    }    
+    .box:nth-child(10){
+        display:none;
+    }
+    footer {
+        width:100%;
+    }
 }
