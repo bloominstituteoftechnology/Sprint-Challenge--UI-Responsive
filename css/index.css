@@ -193,6 +193,7 @@ h2 {
 ****************/
 .top-content__image {
   margin-bottom: 1.7rem;
+  width: 100%;
 }
 
 /*.top-content .text-container > h2 {
