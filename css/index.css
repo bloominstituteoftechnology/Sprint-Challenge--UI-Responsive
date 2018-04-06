@@ -52,18 +52,52 @@ table {
 }
 
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+header .lambdalogo {
+    align-self: flex-start;
+    margin-top: 2%;
+}
+
+header nav ul {
+    font-size: 1.5rem;
+    margin: 40px 10% 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 3.8rem;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+header nav ul li a {
+    margin: 23px -2% 0;    
+    text-decoration: none;
+    color: black;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    font-size: 1.6rem;
+    line-height: 1.7;
 }
 
 .container {
@@ -75,7 +109,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    margin-top: 22px;
     border-bottom: 1px dashed black;
 }
 
@@ -85,7 +120,17 @@ p {
     padding-bottom: 20px;  
 }
 
+.top-content .text-container p {
+    line-height: 1.4;
+    margin-bottom: 11px;
+}
+
+.abstractImg {
+    margin-bottom: 7px;
+}
+
 .middle-content {
+    margin-top: 1px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -102,6 +147,7 @@ p {
 }
 
 .middle-content .boxes .box {
+    font-size: 1.7rem;
     width: 12.5%;
     height: 100px;
     background: black;
@@ -112,6 +158,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +186,11 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+}
+
+.bottom-content .text-container p {
+    line-height: 1.4;
+    margin-bottom: 11px;
 }
 
 .bottom-content .text-container:last-child {
@@ -143,4 +214,271 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    header .lambdalogo {
+        align-self: flex-start;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    header nav ul {
+        font-size: 1.5rem;
+        margin: 60px 10% 0;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    .middle-content .boxes .box {
+        min-width: 100px;
+    }
+
+    .abstractImg {
+        width: 100%;
+        margin-top: 0.5rem;
+    
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+    margin-top: 1px;
+    border-bottom: 1px dashed black;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-between;
+}
+
+.bottom-content .text-container p {
+    line-height: 1.4;
+    margin-bottom: 11px;
+}
+
+.top-content .text-container p {
+    line-height: 1.4;
+    margin-bottom: 11px;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+.middle-content {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+.bottom-content .text-container {
+    width: 100%;
+    padding-right: 4%;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+header nav ul {
+    font-size: 1.5rem;
+    margin: 40px 10% 0;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.middle-content .boxes .box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box3 {
+    background: gold;
+}
+
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box7 {
+    background: coral;
+}
+
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+}
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    header nav ul {
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+
+    header nav ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    header nav ul li a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        line-height: 25px;
+        margin: 20px 0 0;
+        text-decoration: none;
+        color: black;
+        border-top: 1px solid black;
+    }
+
+    header nav ul li a p {
+        display: flex;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header .lambdalogo {
+        align-self: flex-start;
+        margin-top: 7%;
+        margin-bottom: 1.8rem;
+        margin-left: 5%;
+    }
+
+    .abstractImg {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .top-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        line-height: 10px;
+        flex-flow: column;
+        margin-bottom: 15px;
+        margin-top: 1px;
+        border-bottom: 1px dashed black;
+    }
+
+    .top-content .text-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .top-content .text-content p {
+        line-height: 1.6;
+    }
+
+    .top-content .text-container h2 {
+        margin-top: 5px;
+    }
+
+    .bottom-content {
+        width: 99%;
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+        flex-flow: column;
+    }
+
+    .bottom-content .text-container p {
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        background: black;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    footer nav a {
+        width: 100%;
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+    }
 }
