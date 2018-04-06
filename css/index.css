@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -66,9 +66,40 @@ p {
     line-height: 1.4;
 }
 
+html{
+	font-size:62.5%;
+}
+
 .container {
+		max-width: 1000px;
     width: 800px;
     margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	display: flex;
+}
+
+.logo{
+	position: relative;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+header .nav-bar{
+	margin-top: 5%;
+	width: 760%;
+	justify-content: space-around;
+	display: flex;
+}
+
+.jumbo{
+	max-width: 100%;
+	height: auto;
+	padding: 2% 2%;
 }
 
 .top-content {
@@ -82,13 +113,14 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+
 
 .middle-content h2 {
     padding: 0 2%;
@@ -103,7 +135,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 0.1%;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -111,6 +143,122 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.box1{
+	background: black;
+	width: 12.5%;
+	height: auto;
+	background: black;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box3{
+	background: black;
+	width: 12.5%;
+	height: auto;
+	background: black;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box5{
+	background: black;
+	width: 12.5%;
+	height: auto;
+	background: black;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box7{
+	background: black;
+	width: 12.5%;
+	height: auto;
+	background: black;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box9{
+	background: black;
+	width: 12.5%;
+	height: auto;
+	background: black;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box2{
+	background: forestgreen;
+	width: 12.5%;
+	height: 100px;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box4{
+	background-color: darkorchid;
+	width: 12.5%;
+	height: 100px;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box6{
+	background-color: hotpink;
+	width: 12.5%;
+	height: 100px;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box8{
+	background-color: indigo;
+	width: 12.5%;
+	height: 100px;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box10{
+	background-color: lawngreen;
+	width: 12.5%;
+	height: 100px;
+	margin: 3.2% 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 .bottom-content {
     display: flex;
@@ -137,10 +285,213 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px){
+	.container{
+		max-width: 768px;
+		width: 100%
+	}
+
+	.jumbo{
+		max-width: 768px;
+		width: 100%;
+		padding: 2% 2%;
+	}
+
+	.middle-content{
+		/*display: none;*/
+	}
+
+	.box1{
+		background: teal;
+		width: 12.5%;
+		height: 100px;
+		margin: 3.2% 2.5%;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.box3{
+		background-color: gold;
+		width: 12.5%;
+		height: 100px;
+		margin: 3.2% 2.5%;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.box5{
+		background-color: cadetblue;
+		width: 12.5%;
+		height: 100px;
+		margin: 3.2% 2.5%;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.box7{
+		background-color: coral;
+		width: 12.5%;
+		height: 100px;
+		margin: 3.2% 2.5%;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.box9{
+		background-color: crimson;
+		width: 12.5%;
+		height: 100px;
+		margin: 3.2% 2.5%;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	footer{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		flex-flow: row wrap;
+	}
+	footer nav {
+
+		align-items: center;
+		}
+	footer nav a {
+		justify-content: space-between;
+		margin: 0 2.2%;
+	}
+
+	@media(max-width: 400px){
+
+
+		header{
+			display: flex;
+
+		}
+
+		header .nav-bar {
+			width: 100%;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		header .logo {
+			order: -1;
+			width: 35%;
+			margin: 1.5% 1.5%;
+			align-items: center;
+			justify-content: center;
+	 }
+
+	 header a{
+		 width: 100%;
+		 font-size: 1.8rem;
+		 margin: 1.3% 1.3%;
+		 display: flex;
+		 align-items: center;
+		 justify-content: center;
+		 border-bottom: 1px solid black;
+		 padding: 1.7%;
+	 }
+
+	 .jumbo{
+		 width: 100%;
+	 }
+
+	 .middle-content .boxes {
+	     flex-direction: row-reverse;
+	 }
+
+	 .box1{
+		 width: 25%;
+	 }
+
+	 .box2{
+		 width: 25%;
+	 }
+
+	 .box3{
+		 width: 25%;
+	 }
+
+	 .box4{
+		 width: 25%;
+	 }
+
+	 .box5{
+		 width: 25%;
+	 }
+
+	 .box6{
+		 width: 25%;
+	 }
+
+	 .box7{
+		 width: 25%;
+	 }
+
+	 .box8{
+		width: 25%;
+	}
+
+	.box9{
+		width: 25%;
+	}
+
+	 .box10{
+		 display: none;
+	 }
+
+	 .top-content{
+
+		 display: flex;
+		 flex-flow: column wrap;
+		 justify-content: center;
+		 padding: 20px ;
+	 }
+
+	 .bottom-content{
+		 display: flex;
+		 flex-flow: column wrap;
+		 justify-content: center;
+		 margin: 20px 20px;
+	 }
+
+	.text-container{
+		font-size: 1.5rem;
+	}
+
+	footer{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		flex-flow: row wrap;
+	}
+	footer nav {
+
+		align-items: center;
+		}
+	footer nav a {
+		justify-content: space-between;
+		margin: 0 2.2%;
+	}
+	}
 }
