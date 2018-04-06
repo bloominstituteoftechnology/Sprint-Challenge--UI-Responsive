@@ -13,7 +13,7 @@ I believe you are using the cross axies
 
 4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
 
-Fixed Layout: Fixed layouts use static widths and heights on all elements and dont adaptive to changes in screen size.
+Fixed Layout: Fixed layouts use static widths and heights on all elements and dont adapt to changes in screen size.
 
 Adaptive Layout:
 

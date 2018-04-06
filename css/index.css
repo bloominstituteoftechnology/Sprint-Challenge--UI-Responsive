@@ -256,7 +256,6 @@ footer nav a {
     header nav {
         width: 100%;
         flex-direction: column;
-        margin: 0;
         padding: 0;
     }
     header nav a {
@@ -266,6 +265,7 @@ footer nav a {
         padding: 20px 0;
         font-size: 2rem;
         border-bottom: 1px solid gray;
+
     }
     header nav a:first-child {
         border-top: 1px solid gray;
