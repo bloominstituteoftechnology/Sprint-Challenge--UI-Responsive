@@ -242,7 +242,7 @@ footer nav a {
 
     header {
         display:flex;
-        flex-direction: column;
+        
         align-items:center;
         height : 80px;
     }
