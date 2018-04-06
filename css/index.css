@@ -237,6 +237,9 @@ footer nav a {
     .middle-content .boxes .box9{
         background-color: crimson;
     }
+    .top-content CityImage{
+        width: 100%
+    }
 }
 
 @media (max-width: 400px) {
@@ -270,4 +273,22 @@ footer nav a {
     .container header img{
         margin: 0 0 0 28.8%;
     }
+    .top-content{
+        flex-wrap: wrap;
+    }
+
+    .middle-content .boxes{
+        flex-direction: row-reverse
+    } 
+
+   .middle-content .boxes .box{
+       display: flex;
+       width: 25%;
+       flex-wrap: wrap-reverse;
+       
+   }
+   .middle-content .boxes .box10{
+       display: none;
+   }
+
 }
