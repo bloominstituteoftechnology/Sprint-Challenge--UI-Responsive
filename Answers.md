@@ -6,7 +6,7 @@
 
 2. Describe the difference between ```display: block;``` and ```display: inline;```.
 
-      Block elements take up the full width avaliable to them, forcing anything next to them below.
+      Block elements take up the full width available to them, forcing anything next to them below.
 
       Inline elements will take up only as much width as is needed allowing other elements to appear next to them.
 
@@ -20,7 +20,7 @@
 
       A fluid layout is based solely on the viewport.
 
-      An adaptive layout changes its layout at set breakpoints. The laour remains rigid if the screen size changes between the set brekpoints.
+      An adaptive layout changes its layout at set breakpoints. The layout remains rigid if the screen size changes between the set breakpoints.
 
       A responsive layout adjusts to fit any screen size from mobile up to large desktop screens.
       
