@@ -211,6 +211,26 @@ footer nav a {
         display: flex;
         flex-direction: column;
     }
+
+    .middle-content .boxes .box:nth-child(1) {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box:nth-child(3) {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box:nth-child(5) {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-child(7) {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box:nth-child(9) {
+        background-color: crimson;
+    }
 }
 
 @media(max-width: 400px) {
@@ -268,6 +288,7 @@ footer nav a {
         justify-content: center;
         flex-wrap: wrap-reverse;
     }
+
 
     .bottom-content {
         justify-content: center;
