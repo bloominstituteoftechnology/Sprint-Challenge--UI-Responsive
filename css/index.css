@@ -375,7 +375,7 @@ footer nav a {
         .middle-content .boxes {
             display: flex;
             flex-wrap: wrap-reverse;
-            justify-content: space-evenly;
+            justify-content: spc;
         }
         .box1 {
             width: 12.5%;
@@ -443,6 +443,7 @@ footer nav a {
         .footerNav {
             width: 100%;
             font-size: 1rem;
+            flex-direction: row;
         }
         .footerNav .footera{
             width: 100%;
@@ -450,4 +451,9 @@ footer nav a {
             text-decoration: none;
             border: black;
         }
+        .footera {
+            display: flex;
+            flex-direction: row;
+            text-align-last: center;
+        }   
     }   
