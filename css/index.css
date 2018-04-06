@@ -53,6 +53,7 @@ table {
 
 html, body {
     height: 100%;
+    font-size:62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -67,8 +68,36 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width:800px;
+    width: 100%;
     margin: 0 auto;
+    /* display: flex;
+    flex-flow: column; */
+}
+
+.container header {
+    border: 2px solid purple;
+    /* margin-top: 2.3%;
+    margin-left: 0.5%; */
+    display: flex;
+   flex-direction: row;
+}
+.container .LambdaLogo {
+border: 2px solid green;
+
+}
+
+.container nav {
+display:flex;
+font-size: 1.7rem;
+border: 2px solid rebeccapurple;
+}
+.container nav a {
+    width: 100%;
+}
+
+.container .logo {
+    margin-top: 4.2%;
 }
 
 .top-content {
@@ -76,17 +105,21 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    margin-top: 2.7%;
     border-bottom: 1px dashed black;
+    /* border:2px solid red; */
 }
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 0 1%;  
+    padding-left: 2.7%;
+    font-size: 1.6rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2.5%;
+    margin-left: .7%;
     border-bottom: 1px dashed black;
 }
 
@@ -110,8 +143,29 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
 }
 
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+    
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +174,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -129,6 +184,7 @@ p {
 footer {
     width: 100%;
     background: black;
+    margin-top: 
 }
 
 footer nav {
@@ -143,4 +199,28 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+   .container header {
+       display:flex;
+        flex-direction: row;
+    }
+    .container .LambdaLogo {
+        align-self: flex-start;
+
+    }
+    .container a {
+        align-self: center;
+        
+    }
+    .container .logo {
+        align-self: flex-end;
+        justify-content: center
+    }
 }
