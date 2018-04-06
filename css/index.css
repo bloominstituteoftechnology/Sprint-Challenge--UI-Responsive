@@ -87,8 +87,9 @@ header {
 
 header nav {
     margin: 38px 1% 0;
-    width: 69%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
     display: flex;
     font-size: 1.4rem;
 }
@@ -214,10 +215,10 @@ footer nav a {
     }
 
     header {
-    /*border: 1px solid purple;*/    
-    width: 100%;
-    display: flex;
-    justify-content: center;
+        /*border: 1px solid purple;*/    
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     header nav {
