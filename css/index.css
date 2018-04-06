@@ -260,7 +260,7 @@ footer nav a {
 	margin-bottom: 30px;
     }
 
-    .footer nav {
+    footer nav {
 	margin-top: 0;
     }
 	
@@ -325,7 +325,31 @@ footer nav a {
     .middle-content .boxes .box:last-child {
 	display: none;
     }
-	
+
+    .bottom-content {
+	flex-direction: column;
+	margin-bottom: 20px;
+    }
+
+    .bottom-content .text-container {
+	padding: 10px 10px 15px 10px;
+    }
+
+    .bottom-content .text-container:last-child {
+	padding-bottom: 0;
+    }
+
+    footer nav {
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	padding: 5%;
+    }
+
+    footer nav a {
+	padding: 3%;
+    }
+    
 }
     
 
