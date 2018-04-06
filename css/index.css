@@ -305,6 +305,9 @@ footer nav a {
     }
     .middle-content .boxes .box10{
         display:none;
+        
+    }
+    .middle-content .boxes {
         flex-direction: row-reverse;
     }
 
