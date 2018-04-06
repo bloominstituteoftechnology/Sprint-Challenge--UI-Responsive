@@ -69,11 +69,11 @@ p {
 }
 
 .container {
-    max-width: 1000px; /*from width to max-width*/
+    max-width: 800px; /*from width to max-width*/
     width: 100%;  /*added to make responsive*/
     margin: 0 auto;
     font-size: 1.6rem; 
-    border: solid purple;
+    
     
 }
 
@@ -83,7 +83,7 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-    border: solid blue; 
+     
 }
 
 .top-content .text-container {
@@ -156,22 +156,23 @@ footer nav a {
 /*HEADER*/
 
 .container header{
-    border: solid pink;
+    
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 20px;
+    
+    height: 264px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
 .container header nav{
-    border: solid yellow;
-    align-self: flex-end;
+    
+    align-self: center;
     width: 80%;
     display: flex; 
     justify-content: space-around;
-    
+    height: 0px;
     
 }
 
@@ -181,18 +182,30 @@ footer nav a {
 }
 
 /* IMG */
-.img:first-child{
-    border: solid red;
-    width: 20%;
+header .img:first-child{
     
+    height: 48px;
+    width: 20%;
+    margin-top: 15px;
 }
 
-.img:last-child{
+header .img:last-child{
     max-width: 100%;
-    margin: 40px, 0;
-    border: solid purple;
+    height:150px;
+    align-self: flex-end;
+    margin-bottom: 5px;
 }
 
+/*Content*/
+
+
+
+
+
+ .top-content{
+    display: flex;
+    height: 164px;
+}
 
 
 /* BOXES */
@@ -218,35 +231,7 @@ footer nav a {
 }
 
 
-/*TABLET BOXES*/
 
-.boxes .box:nth-child(1){
-
-    background: black;
-
-}
-
-.boxes .box:nth-child(3){
-
-    background: black;
-}
-
-.boxes .box:nth-child(5){
-
-    background: black;
-
-}
-
-.boxes .box:nth-child(7){
-
-    background: black;
-
-}
-
-.boxes .box:nth-child(9){
-
-    background: black;
-}
 
 
 /*TABLET CHANGE*/
@@ -255,10 +240,18 @@ footer nav a {
     .container{
 
         width: 100%;
+        
+    }
+
+
+
+    header nav{
+
+        width: 85%;
+
+
 
     }
-}
-
 
     /* BOXES  TABLET */
 
@@ -290,7 +283,7 @@ footer nav a {
         background: crimson;
     }
 
-
+}
     
 
 
