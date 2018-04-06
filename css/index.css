@@ -91,6 +91,10 @@ header img:last-child {
     margin: 40px 0 23px 0;
 }
 
+header nav a:hover {
+    text-decoration: underline;
+}
+
 header nav {
     display: flex;
     justify-content: space-around;
@@ -203,6 +207,10 @@ footer nav a {
         flex-direction: column;
     }
 
+    header nav a:hover {
+        text-decoration: underline;
+    }
+
     header nav {
         width: 100%;
         margin-top: 30px;
@@ -244,11 +252,22 @@ footer nav a {
 
 @media screen and (max-width: 400px) {
     
-    .container {max-width: 400px}
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
 
     header nav {
         flex-direction: column;
         justify-content: flex-end;
+        margin-top: 30px;
+        width: 100%;
     }
 
     header nav a {
@@ -258,12 +277,19 @@ footer nav a {
         padding: 15px 0;
     }
 
+    header nav a:hover {
+        background-color: gray;
+        color: white;
+    }
+
     header {
         padding-top: 10px;
     }
-
+    
     header img:last-child {
         margin-top: 0px;
+        max-width: 100%;
+        align-self: center;
     }
 
     .top-content .text-container {
