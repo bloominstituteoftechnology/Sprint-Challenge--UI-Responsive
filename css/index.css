@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	max-width: 800px
 }
 ol, ul {
 	list-style: none;
@@ -57,7 +58,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,16 +68,35 @@ p {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     width: 800px;
     margin: 0 auto;
 }
 
 .top-content {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 2px;
     border-bottom: 1px dashed black;
+}
+
+.top-content nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4 rem;
+    align-items: center
+    text-decoration: none
+    font-color: black
+}
+
+.top-content nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4 rem;
+    align-items: center
 }
 
 .top-content .text-container {
@@ -137,7 +157,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
