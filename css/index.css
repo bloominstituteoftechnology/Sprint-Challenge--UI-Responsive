@@ -81,7 +81,13 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.top-content nav {
+.top-content header {
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.top-content header nav {
     font-size: 1.4rem;
     margin-top: 3%;
     width: 100%;
@@ -92,10 +98,10 @@ p {
     padding: 0 9% 0 0;
 }
 
-.top-content nav a {
+.top-content header nav a {
     color: black;
     text-decoration: none;
-    padding-right: 8.64%;
+    padding-right: 12%;
 }
 
 .top-content .jumbotron {
@@ -199,29 +205,33 @@ footer nav a {
         /* margin: 0 auto; */
     }
 
-    .top-content nav {
-        display: flex;
-        /* flex-wrap: wrap; */
+    .top-content header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top-content header .logo {
+        /* display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
+        width: 30%; */
+        padding: 0;
+    }
+
+    .top-content header nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
+        /* padding-left: 12%; */
         /* width: 90%; */
     }
 
-    .top-content nav .logo {
-        /* display: flex;
-        flex-wrap: wrap; */
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        width: 30%;
-    }
-
-    .top-content nav .link {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+    .top-content nav a {
+        padding: 0;
     }
 
     .middle-content .boxes .box1 {
@@ -245,6 +255,80 @@ footer nav a {
     }
 }
 
-/* @media (max-wdith: 400px) {
+@media (max-width: 400px) {
+    .container {
+        max-width: 400px;
+    }
 
-} */
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .top-content header nav {
+        margin: 1px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        /* margin: 5% 5% 0 5%; */
+        padding: 5% 6% 3%;
+    }
+
+    .top-content header .logo {
+        padding: 4%;
+    }
+
+    .top-content header nav a {
+        padding: 4%;
+        border-top: 1px solid gray;
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-content .jumbotron {
+        padding: 0;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+        width: 100px;
+        margin: 5% 4%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        display: inherit;
+        flex-direction: row;
+    }
+
+    .bottom-content .text-container {
+        padding: 0 4% 0 2%;
+    }
+
+    .bottom-content .text-container .bottom {
+        padding-top: 22px;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 10% 0 0 0;
+    }
+
+    footer nav a {
+        padding: 15px 0 20px 0;
+    }
+}
