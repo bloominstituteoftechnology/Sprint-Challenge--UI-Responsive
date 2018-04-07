@@ -311,52 +311,125 @@ footer nav a {
     }
 }
 
-@media(max-width:400px) {
+@media(max-width:400px) {    
+    
+
+   header nav {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       /* justify-content: center; */
+       align-items: center;
+       padding: 0px;
+       margin: 0px;
+    }
+    
+    header .logo-image {
+        margin-top: 30px;
+        margin-bottom: 28px;
+        width: 40%;
+      }
+
+      header nav a {
+       border-top: 1px solid grey;
+       
+       width: 100%;
+       padding: 15px 0px;
+       margin: 0px 0px;
+     }
+ 
+      header .jumbotron {
+        margin-top: 0px;
+      }
+
+      .top-content .text-container{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-content: center;
+          padding: 5px 25px; 
+      }
+
+      .top-content .text-container:nth-child(2){
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .middle-content h2 {
+        margin-left:  5px;
+    }
+
 
     .middle-content .boxes {
        flex-direction: row-reverse;
-       justify-content: space-evenly;
-       
     }
 
     .middle-content .boxes .box1 {
         background: teal;
+        width: 100px;
     }
     
     .middle-content .boxes .box3 {
         background: gold;
+        width: 100px;
     }
     
     .middle-content .boxes .box5 {
         background: cadetblue;
+        width: 100px;
     }
     
     .middle-content .boxes .box7 {
         background: coral;
+        width: 100px;
     }
     
     .middle-content .boxes .box9 {
         background: crimson;
+        width: 100px;
     }
 
     .middle-content .boxes .box2 {
         background: forestgreen;
+        width: 100px;
     }
     
     .middle-content .boxes .box4 {
         background: darkorchid;
+        width: 100px;
     }
     
     .middle-content .boxes .box6 {
         background: hotpink;
+        width: 100px;
     }
     
     .middle-content .boxes .box8 {
         background: indigo;
+        width: 100px;
     }
     
     .middle-content .boxes .box10 {
         display: none;
+        width: 100px;
     }
-    
+
+    .bottom-content  {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+    }
+
+    .bottom-content p {
+        margin-bottom: 19px;
+    }
+
+    footer nav {
+     width: 100%;
+     display: flex;
+     padding-right: 60px;
+     padding-left: 40px; 
+     /* justify-content: space-evenly;  */
+    }
+
 }
