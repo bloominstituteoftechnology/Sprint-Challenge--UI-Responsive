@@ -63,7 +63,7 @@ html, body {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     font-size: 1.6rem;
 }
@@ -87,12 +87,13 @@ header {
 
 header nav {
     width: 100%;
-    margin-top: 50px; 
+    margin-top: 55px; 
     justify-content: space-around;
     display: flex;
 }
 
 header nav a {
+    font-size: 1.4rem;
     text-decoration: none;
     color: black;
 }
@@ -104,7 +105,7 @@ header nav a:hover {
 
 header .logo {
     margin-top: 28px;
-    margin-right: 28px;
+    margin-right: 0;
     margin-bottom: 20px;
 }
 
@@ -150,6 +151,7 @@ header .logo {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -225,6 +227,8 @@ footer nav a {
 
     header nav {
         width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     header .logo {
@@ -264,14 +268,15 @@ footer nav a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0;
     }
 
     header nav a {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 1.6rem;
+        padding: 15px 0;
+        font-size: 1.4rem;
         border-top: 1px solid gray;
     }
 
@@ -280,19 +285,28 @@ footer nav a {
     }
 
    .top-content {
-       width: 100%;
        display: flex;
        flex-direction: column;
+       margin: 2rem;
    }
 
    .top-content .text-container {
        width: 100%;
    }
 
+   .middle-content .boxes {
+       flex-direction: row-reverse;
+   }
+
+   .middle-content .boxes .box10 {
+       display: none;
+   }
+
    .bottom-content {
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding: 2rem;
     }
 
     .bottom-content .text-container {
@@ -300,7 +314,4 @@ footer nav a {
         justify-content: space-around;
     }
 
-    .bottom-content .text-container h2 {
-        margin-top: 2rem;
-    }
 }
