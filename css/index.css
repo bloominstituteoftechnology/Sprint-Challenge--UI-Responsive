@@ -23,25 +23,32 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -57,7 +64,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem; /* 18px; */
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -68,7 +75,7 @@ p {
 
 .container {
     width: 800px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .top-content {
@@ -78,7 +85,7 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 		margin-top: 21px;
-		font-size: 14px;
+		font-size: 1.4rem; /* 14px; */
 }
 
 .top-content .text-container {
@@ -129,22 +136,22 @@ p {
 }
 
 footer {
-    width: 100%;
-    background: black;
+	width: 100%;
+  background: black;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 1.4rem; /* 14px; */
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /* Complete the following tasks to set up a responsive website layout */
@@ -156,6 +163,7 @@ html {
 .container {
 	width: 100%;
 	max-width: 880px;
+	margin: 0 auto;
 }
 
 header {
@@ -166,11 +174,12 @@ header {
 }
 
 header nav {
-	font-size: 1.6rem;
+	font-size: 1.4rem; /* 14px; */
 	height: 43px;
-	margin-left: 20px;
+	margin-left: 1.36%; /* 12px; */
+	margin-top: -3px;
 	display: flex;
-	width: 596px;
+	width: 67.73%; /* 596px; */
 	justify-content: space-between;
 }
 
@@ -179,7 +188,7 @@ header nav a {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
-	margin-right: 35px;
+	margin-right: 5.87%; /* 35px; */
 	color: black;
 }
 
@@ -189,19 +198,49 @@ header nav a:hover {
 
 .container .lambda_logo {
 	margin-bottom: 22px;
-	width: 188px;
+	width: 21.36%; /* 188px; */
+	margin-left: 4.32%; /* 38px; */
 }
 
 .jumbo {
 	margin-top: 14px;
+	margin-left: 4.66%; /* 41px; */
 }
 
-.top-content .text-container p {
-	width: 320px;
+.top-content {
+	margin-left: 4.43%; /* 39px; */
+}
+
+.top-content .text-container:first-child p {
+	width: 96.15%; /* 372px; */
+	font-size: 1.6rem; /* 16px; */
+	margin-left: -.25%; /* -1px; */
+	margin-top: -2px;
+}
+
+.top-content .text-container:nth-child(2) h2 {
+	margin-left: -5.17%; /* -20px; */
+}
+
+.top-content .text-container:nth-child(2) p {
+	font-size: 1.6rem; /* 16px; */
+	width: 96.15%; /* 372px; */
+	margin-left: -5.2%; /* -21px; */
+	margin-top: -1px;
+}
+
+.middle-content {
+	margin-left: 4.32%; /* 38px ;*/
+}
+
+.middle-content .boxes {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-	font-size: 16px;
+	font-size: 1.6rem; /* 16px; */
+	width: 11.88%; /* 100px; */
 }
 
 .middle-content .boxes .box:nth-child(2) {
@@ -224,33 +263,134 @@ header nav a:hover {
 	background-color: lawngreen;
 }
 
-.bottom-content .bottom-containers {
-	display: flex;
-	width: 878px;
-	justify-content: space-between;
-	margin-right: 59px;
+.bottom-content {
+	height: 120px;
 }
 
-.bottom-content .text-container p {
-	font-size: 14px;
-	width: 171px;
+.bottom-content .bottom-containers {
+	display: flex;
+	height: 119px;
+	width: 100%; /* 880px; */
+	margin-right: 6.7%; /* 59px; */
+}
+
+.bottom-content .bottom-containers .text-container:first-child {
+	margin-left: 7.43%; /* 61px; */
+}
+
+.bottom-content .bottom-containers .text-container:first-child p {
+	font-size: 1.6rem; /* 16px; */
+	width: 100%; /* 197px; */
+	margin-top: -2px;
+	height: 85px;
+}
+
+.bottom-content .bottom-containers .text-container:nth-child(2) {
+	margin-left: 4.38%; /* 36px; */
+}
+
+.bottom-content .bottom-containers .text-container:nth-child(2) p {
+	width: 100%; /* 197px; */
+	font-size: 1.6rem;
+	height: 87px;
+	margin-top: -3px;
+	margin-left: -.41%; /* -1px; */
+}
+
+.bottom-content .bottom-containers .text-container:nth-child(3) {
+	margin-left: 4.02%; /* 33px; */
+}
+
+.bottom-content .bottom-containers .text-container:nth-child(3) p {
+	font-size: 1.6rem; /* 16px; */
+	width: 100%; /* 197px; */
+	height: 86px;
+	margin-top: -3px;
+}
+
+footer {
+	margin-left: 4.66%; /* 41px; */
 }
 
 @media (max-width: 768px) {
 
-	header {
-		flex-direction: column;
-		align-items: center;
+.container {
+	width: 100%;
+}
+
+header {
+	height: 84px;
+	flex-direction: column;
+	align-items: center;
+}
+
+header .lambda_logo img {
+	margin-left: 1.9%; /* -3px; */
+}
+
+header nav {
+	margin-top: 0px;
+	width: 90.56%; /* 668px; */
+	justify-content: flex-start;
 	}
 
-	header nav {
-		margin-top: 17px;
-		justify-content: space-between;
-	}
+header nav a:first-child {
+	margin-right: 0;
+}
 
-	.jumbo {
-		margin-top: 40px;
-	}
+header nav a:nth-child(2) {
+	margin-right: 0;
+	margin-left: 16.62%; /* 111px; */
+}
+
+header nav a:nth-child(3) {
+	margin-right: 0;
+	margin-left: 16.77%; /* 112px; */
+}
+
+header nav a:nth-child(4) {
+	margin-right: 0;
+	margin-left: 16.62%; /* 111px; */
+}
+
+header nav a:nth-child(5) {
+	margin-right: 0;
+	margin-left: 16.77%; /* 112px; */
+}
+
+.jumbo {
+	margin-top: 36px;
+	margin-left: 0;
+}
+
+.jumbo img {
+	width: 100%;
+}
+
+.top-content {
+	margin-left: 0;
+	margin-top: 14px;
+}
+
+.top-content .text-container:first-child p {
+	width: 100.27%; /* 355px; */
+	margin-top: 14px;
+}
+
+.top-content .text-container:nth-child(2) h2 {
+	margin-left: 0px;
+	margin-top: 2px;
+}
+
+.top-content .text-container:nth-child(2) p {
+	margin-left: 0px;
+	width: 100.55%; /* 356px; */
+	margin-top: -3px;
+}
+
+.middle-content {
+	margin-left: 0;
+}
 
 .middle-content .boxes .box:nth-child(1) {
 	background-color: teal;
@@ -271,6 +411,10 @@ header nav a:hover {
 .middle-content .boxes .box:nth-child(9) {
 	background-color: crimson;
 }
+
+footer {
+	margin-left: 0;
+}
 }
 
 @media (max-width: 400px) {
@@ -280,43 +424,187 @@ header nav a:hover {
 }
 
 header {
-	border: 1px solid red;
-	height: 280px;
 	width: 100%;
+	height: 322px;
+	margin: 0;
+	padding:0;
+}
+
+.container .lambda_logo {
+	margin: 0;
+	margin-top: 27px;
+	margin-left: 3%;
+	width: 100%;
+}
+
+header .lambda_logo img {
+	margin-left: 30%;
 }
 
 header nav {
-	height: 200px;
+	height: 100%;
 	flex-direction: column;
+	margin-top: 29px;
+	margin-left: 0;
 	align-items: center;
-	justify-content: flex-start;
-	align-content: space-around;
-	margin-right: 16px;
-	border: 1px solid blue;
 	width: 100%;
 }
+
 
 header nav a {
 	border-top: 1px solid black;
-	height: 40px;
 	width: 100%;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 1px;
+	margin-top: 1px;
+}
+
+header nav a:first-child {
+	padding-top: 15px;
+	padding-left: 17px;
+	margin-top: 0px;
+	width: 100%;
+}
+
+header nav a:nth-child(2) {
+	margin-left: 0;
+	padding-top: 14px;
+	padding-left: 4%;
+	margin-top: 16px;
+}
+
+header nav a:nth-child(3) {
+	margin-left: 0;
+	padding-left: 4%;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+header nav a:nth-child(4) {
+	margin-left: 0px;
+	padding-top: 15px;
+	margin-top: 16px;
+	padding-left: 4%;
+}
+
+header nav a:nth-child(5) {
+	margin-left: 0px;
+	padding-left: 4%;
+	padding-top: 15px;
+	margin-top: 14px;
+}
+
+.jumbo {
+	margin-top: 0;
+	width: 100%;
+	height: 77px;
 }
 
 .jumbo img {
-	width: 400px;
+	height: 100%;
 }
 
 .top-content {
 	display: block;
+	margin-left: 5%;
+	margin: 25px;
+}
+
+.top-content .text-container {
+	width: 100%;
+}
+
+.top-content .text-container:first-child p {
+	width: 100%;
+	margin-top: 16px;
+}
+
+.top-content .text-container:nth-child(2) P {
+	margin-left: 0;
+	width: 100%;
+	margin-top: 1px;
+}
+
+.middle-content .boxes {
+	width: 100%;
+}
+
+.boxes .box:nth-child(1) {
+	width: 26%;
+	order: 3;
+}
+
+.boxes .box:nth-child(2) {
+	width: 26%;
+	order: 2;
+}
+
+.boxes .box:nth-child(3) {
+	width: 26%;
+	order: 1;
+}
+
+.boxes .box:nth-child(4) {
+	width: 26%;
+	order: 6
+}
+
+.boxes .box:nth-child(5) {
+	width: 26%;
+	order: 5;
+}
+
+.boxes .box:nth-child(6) {
+	width: 26%;
+	order: 4;
+}
+
+.boxes .box:nth-child(7) {
+	width: 26%;
+	order: 9;
+}
+
+.boxes .box:nth-child(8) {
+	width: 26%;
+	order: 8;
+}
+
+.boxes .box:nth-child(9) {
+	width: 26%;
+	order: 7;
+}
+
+.boxes .box:nth-child(10) {
+	display: none;
+}
+
+.bottom-content {
+	height: 350px;
 }
 
 .bottom-content .bottom-containers {
-	display: block;
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom-content .bottom-containers .text-container:first-child {
+	margin-left: 15px;
+}
+
+.bottom-content .bottom-containers .text-container:nth-child(2) {
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.bottom-content .bottom-containers .text-container:nth-child(3) {
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+footer {
+	margin-top: 70px;
+}
+
+footer nav {
+	width: 100%;
+	justify-content: space-around;
 }
 }
