@@ -51,7 +51,7 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html, body {    
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -72,24 +72,28 @@ p {
     max-width: 100%;
     margin: 0 auto;
 }
-header {
-     display: flex; 
-    margin-top: 32px;  
-}
 
+header{
+    	display: flex;
+    	align-items: center;
+        justify-content: space-around;
+        margin-top: 32px; 
+    	
+    }
 header .logo {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 header nav {
-    margin: 20px 0 0 20px;    
+    margin: 20px 0 20px 2.5%;    
 }
 
 header nav a {
     text-decoration: none;
     color: black;
     margin: 34px;
+    
 
 }
 .top-content {
@@ -136,7 +140,7 @@ header nav a {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2.5%;
     justify-content: space-around;
 }
 
@@ -159,7 +163,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.0rem;
 }
 
 footer nav a {
@@ -220,38 +224,43 @@ footer nav a {
         }
     }
 
-    @media(max-width: 400px) {
-        header {  
-            border: 1px solid red;       
-            margin: 30px 0 0;
+     @media(max-width: 400px) {
+    header { 
+        display: flex;
+        flex-direction: column;     
+            
         }
-        header nav { 
-            border: 1px solid red; 
+        header nav {           
             display: flex;
-            flex-direction: column-reverse;          
-            align-items: center;
-            justify-content: center;          
+            flex-direction: column;       
+            justify-content: center; 
+            width: 100%; 
+            margin-right: 10%;      
            
         }
 
-        header nav a {   
-            display: flex;                     
-            border-top: 1px solid gray;
-            width: 100%;   
-            text-align: center;         
-            font-size: 1.4rem;
-            justify-content: center;           
-            padding-top: 20px;
-                   
-        }           
+        header nav a { 
+            padding: 0.85rem 0;                              
+            border-top: 1px solid gray;   
+            justify-content: center;                   
+            padding-top: 20px;  
+            margin: 0px;   
+            text-align: center;              
+        }  
+        
+        header nav a:last-child{
+            padding-bottom: 0;
+          }
+          
+          .top-content {
+              flex-direction: column;
+          }
 
         .top-content .text-container {
-            width: 90%;
-        }
-        header .logo { 
-            height: 25px;                 
-
-        } 
+            width: 100%;
+            padding: 0px 3%;
+            padding-bottom: 14px;
+        }        
  
         .middle-content .boxes .box10 {
             display: none;
@@ -260,23 +269,22 @@ footer nav a {
             .middle-content .boxes {
                 flex-direction: row-reverse;
             }
-                       
-
-        .middle-content .boxes .box1 {
-            background:  teal;
-        }
-        .middle-content .boxes .box3 {
-             background: gold;
-         }
-        
-         .middle-content .boxes .box5 {
-            background: cadetblue;
-        }
-        .middle-content .boxes .box7 {
-            background: coral;
-        }
-        .middle-content .boxes .box9 {
-            background: crimson;
+                .middle-content .boxes .box {
+                width: 25%;
+            } 
+            
+            .bottom-content {
+                flex-direction: column;
             }
+
+            .bottom-content .text-container {
+            width: 100%;
+            padding: 0px 2.5%;
+            padding-bottom: 14px;
+            }
+
+            footer nav {
+                width: 100%;
+            }   
         }
-    
+             
