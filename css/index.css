@@ -16,38 +16,38 @@
    figure, figcaption, footer, header, hgroup, 
    menu, nav, output, ruby, section, summary,
    time, mark, audio, video {
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: inherit;
-     vertical-align: baseline;
- }
- /* HTML5 display-role reset for older browsers */
- article, aside, details, figcaption, figure, 
- footer, header, hgroup, menu, nav, section {
-     display: block;
- }
- body {
-     line-height: 1rem;
- }
- ol, ul {
-     list-style: none;
- }
- blockquote, q {
-     quotes: none;
- }
- blockquote:before, blockquote:after,
- q:before, q:after {
-     content: '';
-     content: none;
- }
- table {
-     border-collapse: collapse;
-     border-spacing: 0;
- }
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+       display: block;
+   }
+   body {
+       line-height: 1rem;
+   }
+   ol, ul {
+       list-style: none;
+   }
+   blockquote, q {
+       quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+       content: '';
+       content: none;
+   }
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
 
- * {
+   * {
     box-sizing: border-box;
 }
 
@@ -58,20 +58,20 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 2.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 5.5%;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 2.5rem;
-    font-size: 2rem;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
 }
 
 header {
     display: flex;
     align-items: baseline;
-    margin: 3rem 0 6rem 0;
+    margin: 2.5% 0 5% 0;
 }
 
 header nav {
@@ -95,53 +95,55 @@ header nav a:hover {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .hero {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 4rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 3.375% 0;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5%;
     border-bottom: 0.1rem dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1rem;
-    padding-bottom: 2rem;  
+    width: 49%;
+    padding: 0 0 2.5% 2.5%; 
 }
 
 .middle-content {
-    margin-bottom: 2rem;
+    margin-bottom: 3%;
     border-bottom: 0.1rem dashed black;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .middle-content h2 {
-    padding: 0 2rem;
-    margin: 3rem 0 2.5rem;
+    padding: 0.375% 2.125% 0.5%;
+    margin-bottom: 0;
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-self: center;
+    width: 97.7%;
 }
 
 .middle-content .boxes .box {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     background: black;
-    margin: 0 3.5rem 4rem;
+    margin: 2.5% 3.438% 2.5%;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +167,7 @@ header nav a:hover {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2.5%;
     justify-content: space-around;
 }
 
@@ -175,6 +177,9 @@ header nav a:hover {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+.bottom-content .text-container h2 {
+    margin-bottom: 9%;
 }
 
 footer {
@@ -187,8 +192,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2.5% 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
@@ -200,18 +205,27 @@ footer nav a {
     header {
         flex-flow: column wrap;
         align-items: center;
-        margin: 2rem 0 0 0;
+        margin: 2.6% 0 0 0;
     }
 
     header nav {
         width: 100%;
-        margin: 3rem;
+        margin: 3.2rem;
+    }
+    .hero {
+        margin-bottom: 3.1%;
+    }
+    .top-content {
+        margin-bottom: 2.7%;
+    }
+    .top-content .text-container {
+        padding: 0 1% 2.5% 2.5%;
+    }
+    .middle-content {
+        margin-bottom: 3.2%;
     }
     .middle-content .boxes .box {
-        width: 100px;
-        height: 100px;
-        margin: 0 2.4rem 4rem;
-
+        margin: 2.8% 3.08% 2.5%;
     }
     .middle-content .boxes .box1 {
         background-color: teal;
@@ -228,42 +242,90 @@ footer nav a {
     .middle-content .boxes .box9 {
         background-color: crimson;
     }
+    footer {
+        padding: 0.5% 0;
+    }
+    footer nav {
+        padding: 0.7% 0; 
+    }
+    footer nav a {
+        padding: 3% 0;
+        margin: 0 3.3%;
+    }
 }
 
 @media (max-width: 400px) {
     .container {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
+    }
+    header {
+        margin: 0;
+    }
+    header .logo {
+        margin: 7.5% 0;
     }
     header nav {
         flex-flow: column wrap;
         text-align: center;
-        margin-bottom: 0;
+        margin: 0;
     }
     header nav a {
-        padding: 2rem;
+        padding: 4.25%;
         border-bottom: 1px solid gray;
     }
     header nav a:first-child {
         border-top: 1px solid gray;
     }
+    .hero {
+        margin-bottom: 6.7%;
+    }
+    .top-content {
+        margin-bottom: 5.5%;
+    }
     .top-content .text-container {
         width: 100%;
+        padding: 0 6% 6% 6%;
+    }
+    .top-content .text-container:last-child {
+        padding: 0 6% 5.5% 6%;
+    }
+    .middle-content {
+        margin-bottom: 6.3%;
     }
     .middle-content .boxes .box10 {
         display: none;
     }
     .middle-content .boxes {
         flex-direction: row-reverse;
+        justify-content: center;
     }
     .middle-content .boxes .box {
-        margin: 0 1.5rem 4rem;
+        margin: 5.6% 3.8% 4.7%;
     }
     .top-content, .bottom-content {
         flex-flow: column wrap;
     }
-    .bottom-content .text-container {
-        margin-bottom: 2rem;
+    .bottom-content {
+        margin: 0 3% 4%;
     }
-
+    .bottom-content .text-container {
+        padding-bottom: 6.2%;
+    }
+    .bottom-content .text-container h2 {
+        margin-bottom: 5%;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+    footer nav {
+        width: 87%;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    footer nav a {
+        padding: 6.4% 0;
+        margin: 0 3.3%;
+    }
 }
