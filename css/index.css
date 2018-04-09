@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -53,11 +53,13 @@ table {
 
 html, body {
     height: 100%;
+   /* font-size: 62.5%;  */
+   font-size: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,12 +69,9 @@ p {
 }
 
 .container {
-    width: 1000px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 880px;
     margin: 0 auto;
-/*background: color blue;*/
-/*my html doesn't seem to be affected by any changes I made in this file
-so I put that line in to test it, and nothing turned blue. */ 
 }
 
 /*header & jumbotron*/
@@ -80,6 +79,7 @@ so I put that line in to test it, and nothing turned blue. */
 header {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 header .logo {
@@ -88,11 +88,15 @@ header .logo {
 
 header nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 40px;
+    width: 70%;
 }
 
 header nav a {
+    flex-direction: row;
+    justify-content: center;
     font: color black;
 }
 
@@ -100,7 +104,7 @@ header nav a {
     display: flex;
     justify-content: center;
     padding: 15px;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 /*end of header & jumbotron*/
@@ -149,23 +153,23 @@ header nav a {
 /* Box Color */
 
 .middle-content .boxes .box2 {
-    color: forestgreen;
+    background-color: forestgreen;
 }
 
 .middle-content .boxes .box4 {
-    color: darkorchid;
+    background-color: darkorchid;
 }
 
 .middle-content .boxes .box6 {
-    color: hotpink;
+    background-color: hotpink;
 }
 
 .middle-content .boxes .box8 {
-    color: indigo;
+    background-color: indigo;
 }
 
 .middle-content .boxes .box10 {
-    color: lawngreen;
+    background-color: lawngreen;
 }
 
 /* end of box color */
@@ -223,23 +227,23 @@ footer nav a {
     }
 
     .middle-content .boxes .box1 {
-        color: teal;
+        background-color: teal;
     }
     
     .middle-content .boxes .box3 {
-        color: gold;
+        background-color: gold;
     }
     
     .middle-content .boxes .box5 {
-        color: cadetblue;
+        background-color: cadetblue;
     }
     
     .middle-content .boxes .box7 {
-        color: coral;
+        background-color: coral;
     }
     
     .middle-content .boxes .box9 {
-        color: crimson;
+        background-color: crimson;
     }
 
 }
@@ -268,32 +272,49 @@ footer nav a {
 
     header nav a {
         width: 100%;
-        display: block;
+        display: flex;
+        align-self: center;
         padding: 5% 0;
         font-size: .875rem;
         border-bottom: 1px solid gray;
     }
 
-    .top-content {
+    .top-content, .bottom-content {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        height: 300px;
     }
 
     .middle-content {
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
+    
+        flex-flow: row-reverse;
+        
+    }
+
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background-color: crimson;
     }
 
     .middle-content .boxes .box10 {
         display: none;
-    }
-
-    .bottom-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 
 }
