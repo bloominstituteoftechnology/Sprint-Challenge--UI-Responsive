@@ -221,12 +221,14 @@ header .logo {
         flex-wrap: wrap;
         justify-content: space-around;
         padding-bottom: 35px;
+        margin-top: 10px;
     }
 
     /* Fix menu items width */
   
     header nav {
         width: 100%;
+        margin-left: 0;
     }
 
     header .logo {
@@ -262,6 +264,91 @@ header .logo {
     
     .middle-content .boxes .box.box9 {
         background: crimson;
+    }
+
+}
+
+/* Mobile styles */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+
+    header nav {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 20px 0 30px;
+    }
+
+    .jumbotron-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .container .top-content .text-container {
+        width: 90%;
+    }
+
+    .container .bottom-content {
+        flex-wrap: wrap;
+        margin-left: 0;
+        padding-left: 3%;
+    }
+
+    .container .bottom-content .text-container {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .middle-content .boxes .box.box10 {
+        display: none;
+    }
+
+    footer nav {
+        justify-content: space-evenly;
+        width: 92%;
+        margin-left: 2%; 
+    }
+
+    footer nav a {
+        margin: 0 0%;
     }
 
 }
