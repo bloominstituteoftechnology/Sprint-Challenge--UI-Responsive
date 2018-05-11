@@ -240,3 +240,28 @@ html {
     }
 }
 
+@media (max-width: 400px) {
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+    .jumbotron img {
+        max-width: 400px;
+        width: 100%;
+    }
+    .boxes .box.box-10 {
+        display: none;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+
+    
+    .navbar ul .img {
+        align-self: center;
+        margin-right: 450px;
+    }
+}
