@@ -6,7 +6,8 @@
 4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
 5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
 
-1. Class box3 has the most specificity weight.
+  Answers
+1. Class box has the most specificity weight.
 2. When using `display: block`, the item fills the width of the screen. New items will appear below the previous item. This is the default in regular CSS. When using `display: inline`, the item takes up the least amount of room possible and items will appear next to each other.
 3. In flexbox, `align` always refers to the cross axis and it may be vertical or horizontal, as it is perpendicular to the main axis which can change based on things like `flex-direction`.
 4. Fixed v adaptive v fluid v responsive
