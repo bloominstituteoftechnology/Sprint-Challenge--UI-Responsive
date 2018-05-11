@@ -2,7 +2,7 @@
 
 1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight?
 
-    All of these classes have equal specificity weight to each other unless combined.
+    box3.
 
 2. Describe the difference between `display: block;` and `display: inline;`.
 

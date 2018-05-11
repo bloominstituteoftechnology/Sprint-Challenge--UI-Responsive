@@ -74,7 +74,18 @@ p {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    /* display: grid; */
+}
+
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.container nav a {
+    flex-grow: auto;
 }
 
 .top-content {
@@ -170,6 +181,9 @@ footer nav a {
 }
 
 @media (max-width: 768px) {
+    header nav {
+        margin-top: 30px;
+    }
     .container .middle-content .boxes .box:nth-child(1) {
         background: teal;
     }
@@ -195,5 +209,13 @@ footer nav a {
     .container .middle-content .boxes {
         display: flex;
         flex-direction: row-reverse;
+    }
+    header nav a {
+        font-size: 1.4rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid darkgray;
     }
 }
