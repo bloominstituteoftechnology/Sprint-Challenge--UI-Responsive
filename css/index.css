@@ -284,11 +284,16 @@ header .logo {
 /*---MEDIA QUERIES -PHONE (400PX)*/
 @media  screen and (max-width: 400px) {
 
+.container{
+    width: 100%;
+    max-width: 400px;
+}
+
 header {
    /* width: 20%;*/
     display: flex;
     flex-wrap: wrap;
-   /* flex-direction: column;*/
+ /*   flex-direction: column;*/
     justify-content: center;
 }
 
@@ -312,8 +317,25 @@ header .logo {
     order: -1;
 }
 
+.jumbotron {
+    width: 100%;
+}
+
+
 
 /*---Middle Content (400px)*/
+
+.top-content {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .middle-content .boxes .box {
     background: teal;
