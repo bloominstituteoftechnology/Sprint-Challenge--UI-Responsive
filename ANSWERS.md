@@ -5,6 +5,8 @@
 4. Fixed layout stays the same no matter what window size. Adaptive layout adjusts to screen size using media queries and fixed widths. Fluid layout adjusts to screen size using percentage widths. Responsive layouts have responsive text sizes along with window sizing.
 5. That sets the maximum width for the entire page and allows for responsive design.
 
+<!-- End Answers -->
+
 1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight?
   
   
