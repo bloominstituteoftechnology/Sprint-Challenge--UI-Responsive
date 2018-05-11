@@ -56,8 +56,12 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -66,9 +70,46 @@ p {
     line-height: 1.4;
 }
 
+/* Desktop */
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header nav {
+    margin-top: 45px; 
+    padding-left: 25%;
+    padding-right: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin-left: -100%;
+    margin-top: 20px;
+    padding: 0 0 5px;
 }
 
 .top-content {
@@ -79,9 +120,13 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content .jumbotron {
+    padding-top: 35px;
+}
+
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 23px 1%;
     padding-bottom: 20px;  
 }
 
@@ -112,6 +157,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:last-child {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +202,163 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Table view*/
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 100%;
+        padding: 0 7.2917%;
+    }
+
+    header nav a {
+        margin-top: -20px;
+        color: black;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .top-content .jumbotron {
+        padding-top: 28px;
+        height: 175px;
+    }
+
+    .top-content .text-container {
+        width: 48%;
+        padding: 23px 1%;
+        padding-bottom: 20px;  
+    }
+
+    .middle-content .boxes .box {
+        width: 13%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .middle-content .boxes .box:first-child {
+        background: teal;
+    }
+
+    .middle-content .boxes .box:nth-child(3) {
+        background: gold;
+    }
+
+    .middle-content .boxes .box:nth-child(5) {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-child(7) {
+        background: coral;
+    }
+
+    .middle-content .boxes .box:nth-child(9) {
+        background: crimson;
+    }
+
+    /* Phone */
+@media (max-width: 400px) {
+
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        /* padding-top: 5px; */
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.4rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 51px 0;
+    }
+
+    .top-content .jumbotron {
+        margin-top: 46px;
+        height: 110px;
+    }
+
+    .top-content {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .top-content .text-container {
+        width: 90%;
+        padding: 23px 1%;
+        padding-bottom: 0px;  
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box {
+        width: 24%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .middle-content .boxes .box:last-child {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+    
 }
