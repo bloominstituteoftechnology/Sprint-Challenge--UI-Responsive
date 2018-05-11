@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+		font-size: 62.5%
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,6 +67,29 @@ p {
     line-height: 1.4;
 }
 
+
+
+
+/* mystyles */
+header {
+    width: 100%;
+    display: flex;
+}
+header nav {
+    width: 80%;
+    justify-content: space-around;
+    display: flex;
+		padding-top: 3%;
+}
+header nav a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: black;
+}
+
+
+/* top-content */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -78,13 +102,26 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
+.top-content img {
+	margin-top: 40px;
+	margin-bottom: 23px;
+}
+.top-content h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.top-content p {
+	font-size: 1.6rem;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+		font-weight: bold;
 }
 
+
+/* middle */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -93,6 +130,7 @@ p {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+		font-weight: bold;
 }
 
 .middle-content .boxes {
@@ -110,6 +148,37 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+		font-size: 1.6rem;
+}
+.middle-content .boxes .box:nth-child(1) {
+	background: teal;
+}
+.middle-content .boxes .box:nth-child(2) {
+	background: forestgreen;
+}
+.middle-content .boxes .box:nth-child(3) {
+	background: gold;
+}
+.middle-content .boxes .box:nth-child(4) {
+	background: darkorchid;
+}
+.middle-content .boxes .box:nth-child(5) {
+	background: cadetblue;
+}
+.middle-content .boxes .box:nth-child(6) {
+	background: hotpink;
+}
+.middle-content .boxes .box:nth-child(7) {
+	background: coral;
+}
+.middle-content .boxes .box:nth-child(8) {
+	background: indigo;
+}
+.middle-content .boxes .box:nth-child(9) {
+	background: crimson;
+}
+.middle-content .boxes .box:nth-child(10) {
+	background: lawngreen;
 }
 
 .bottom-content {
@@ -120,6 +189,8 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+		font-size: 1.6rem;
+		font-weight: bold;
 }
 
 .bottom-content .text-container:last-child {
@@ -143,4 +214,80 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+	header {
+		flex-wrap: wrap;
+	}
+	header nav {
+		width: 100%;
+		padding: 0;
+	}
+	header img {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 55px;
+		margin-bottom: 30px;
+	}
+	.top-content img {
+		width: 100%;
+	}
+}
+@media (max-width: 400px) {
+	.container{
+		width: 100%;
+	}
+	header nav {
+		flex-wrap: wrap;
+	}
+	header nav a {
+		width: 100%;
+		border-top: 1px solid;
+		height: 50px;
+		text-align: center;
+		padding-top: 20px;
+	}
+.top-content img {
+	margin-top: 0;
+}
+	.top-content .text-container{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0 5%;
+	}
+	.middle-content .boxes .box:nth-child(10) {
+		display: none;
+	}
+	.middle-content .boxes {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+	}
+	.middle-content .boxes .box{
+		width: 25%;
+	}
+	.bottom-content{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.bottom-content .text-container{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0 5%;
+		margin-bottom: 20px;
+	}
+	footer nav{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
 }
