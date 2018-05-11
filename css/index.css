@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -68,8 +69,34 @@ p {
 
 .container {
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px 15px 15px;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 69.32%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.6rem;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+header .logo {
+        order: -1;
+        display: flex;
+    }
 
 .top-content {
     display: flex;
@@ -112,6 +139,23 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box:nth-child(4) {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box:nth-child(6) {
+    background-color: hotpink;
+}
+.middle-content .boxes .box:nth-child(8) {
+    background-color: indigo;
+}
+.middle-content .boxes .box:nth-child(10) {
+    background-color: lawngreen;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -144,3 +188,68 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+    .middle-content .boxes .box:nth-child(1) {
+    background-color: teal;
+}
+.middle-content .boxes .box:nth-child(3) {
+    background-color: gold;
+}
+.middle-content .boxes .box:nth-child(5) {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box:nth-child(7) {
+    background-color: coral;
+}
+.middle-content .boxes .box:nth-child(9) {
+    background-color: crimson;
+}
+}
+/* Phone */
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+}
+    .middle-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+    
+      header {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /*header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }*/
+
+    
+
+     .middle-content .boxes .box:nth-child(10) {
+    display:none;
+}
+
+
+
+
