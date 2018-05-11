@@ -75,6 +75,7 @@ p {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    font-size: 1.25rem;
 }
 
 header {
@@ -84,6 +85,7 @@ header {
 
 header .header__img {
     align-self: flex-start;
+    margin-top: 20px;
 }
 
 header nav {
@@ -148,23 +150,23 @@ header nav a:hover {
 }
 
 .middle-content .boxes .box2 {
-    color: forestgreen;
+    background: forestgreen;
 }
 
 .middle-content .boxes .box4 {
-    color: darkorchid;
+    background: darkorchid;
 }
 
 .middle-content .boxes .box6 {
-    color: hotpink;
+    background: hotpink;
 }
 
 .middle-content .boxes .box8 {
-    color: indigo;
+    background: indigo;
 }
 
 .middle-content .boxes .box10 {
-    color: lawngreen;
+    background: lawngreen;
 }
 
 .bottom-content {
@@ -184,6 +186,7 @@ header nav a:hover {
 footer {
     width: 100%;
     background: black;
+    margin: 9px;
 }
 
 footer nav {
@@ -192,7 +195,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
