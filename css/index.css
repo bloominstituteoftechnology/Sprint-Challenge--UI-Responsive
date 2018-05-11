@@ -270,12 +270,20 @@ header nav {
         width: 100%;
 }
 
+header{
+	    margin-top: 5%;
+	    margin-bottom: 0%;
+}
+
+
 header nav{
         flex-direction: column;
+        margin-top: 8%;
 }
 
 header nav a{
 	    border: 1px solid black;
+	    border-bottom:none;
 	    text-align: center;
 	    height: 40px;
 	    padding: 3%;
@@ -297,11 +305,16 @@ header nav a{
 
 .top-content{
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
+	margin-top: 2%;
+	padding-bottom: 2%;
+        padding-left: 5%;
+	
 
 }
 
 .middle-content{
+	    /*border-top: 1px dashed black;*/	
 	    border-bottom: 1px dashed black;
 
 }
@@ -320,7 +333,20 @@ header nav a{
 .bottom-content{
         display: flex;
         flex-direction: column;
+	/*padding-left: 5%;*/
 
 }
+
+.bottom-content .text-container{
+	margin-bottom: 5%;
+
+}
+
+footer nav{
+	width: 100%;
+	justify-content: space-evenly;
+
+}
+
 
 }
