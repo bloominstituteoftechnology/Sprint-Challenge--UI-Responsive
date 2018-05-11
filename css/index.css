@@ -234,6 +234,75 @@ footer nav a {
   .middle-content .boxes .box9 {
     background: crimson;
   }
-  
 
 }
+
+@media (max-width: 400px){
+
+  header {
+    margin-top: 7%;
+  }
+  
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-right: 0;
+  }
+
+  header nav a {
+    width: 100%;
+    border-bottom: .1rem solid gray;
+    text-align: center;
+    padding: 4% 0;
+  }
+
+  header nav a:first-child {
+    border-top: .1rem solid gray;
+  }
+
+  .top-content {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .top-content .jumbotron {
+    height: 80px;
+  }
+
+  .top-content .text-container {
+    width: 100%;
+    padding: 3% 7%;
+  }
+
+  .middle-content .boxes {
+  }
+
+  .middle-content .boxes .box {
+    width: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .middle-content .boxes {
+    flex-direction: row-reverse;
+  }
+
+  .middle-content .boxes .box10 {
+    display: none;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-content .text-container {
+    padding-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+}
+
+
