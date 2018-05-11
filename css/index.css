@@ -254,23 +254,27 @@ header nav {
 	margin: 0 2% 3%;
 }
 
-
-
-
-
 }
-
-
-
 
 
 /*phone*/
 
 @media(max-width:400px){
 
+.container{
+        width: 100%;
+}
 
+header nav{
+        flex-direction: column;
+}
 
-
+header nav a{
+	    border: 1px solid black;
+	    text-align: center;
+	    height: 40px;
+	    padding: 3%;
+}
 
 
 
