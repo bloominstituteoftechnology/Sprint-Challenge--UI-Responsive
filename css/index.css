@@ -198,3 +198,42 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    width: 80%;
+    margin-top: 4%;
+  }
+
+  .middle-content .boxes .box1 {
+    background: teal;
+  }
+  
+  .middle-content .boxes .box3 {
+    background: gold;
+  } 
+
+  .middle-content .boxes .box5 {
+    background: cadetblue;
+  }
+ 
+  .middle-content .boxes .box7 {
+    background: coral;
+  }
+
+  .middle-content .boxes .box9 {
+    background: crimson;
+  }
+  
+
+}
