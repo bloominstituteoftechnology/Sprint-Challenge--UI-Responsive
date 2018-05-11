@@ -363,6 +363,21 @@ footer nav a {
     header nav a:last-child {
         border-bottom: 1px solid black;
     }
+    .top-content {
+        flex-flow: column;
+        width: 100%;
+    }
+    .top-content .text-container {
+        width: 100%;
+    }
+    .bottom-content {
+        flex-flow: column;
+        width: 100%;
+    }
+    .bottom-content .text-container {
+        width: 100%;
+        margin-bottom: 24px;
+    }
     .boxes {
         flex-flow: row-reverse;
     }
