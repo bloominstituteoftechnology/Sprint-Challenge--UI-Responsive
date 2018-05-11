@@ -209,3 +209,15 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Tablet Breakpoint */
+
+@media (max-width: 768px) {
+
+}
+
+/* Mobile Breakpoint */
+
+@media (max-width: 400px) {
+    
+}
