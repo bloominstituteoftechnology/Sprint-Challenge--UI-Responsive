@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+		font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rems;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +68,44 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	align-items: flex-end;
+	margin: 5% auto 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 86.5%;
+}
+
+header img {
+	/* May want to come back and set a width */
+	align-self: flex-end;
+	width: 17.5%;
+}
+
+header nav a {
+	font-size: 1.4rem;
+	color: black;
+	text-decoration: none;
+}
+
+.jumbo {
+	width: 80%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	align-self: center;
 }
 
 .top-content {
@@ -77,17 +114,27 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+		font-size: 1.6rem;
+		width: 70%;
+		align-self: center;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+.top-content .text-container h2 {
+		font-size: 1.8rem;
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+		font-size: 1.6rem;
+		width: 80%;
+		align-self: center;
 }
 
 .middle-content h2 {
@@ -99,6 +146,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+		width: 100%;
 }
 
 .middle-content .boxes .box {
@@ -112,10 +160,33 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box.box2 {
+	background: forestgreen;
+}
+
+.middle-content .boxes .box.box4 {
+	background: darkorchid;
+}
+
+.middle-content .boxes .box.box6 {
+	background: hotpink;
+}
+
+.middle-content .boxes .box.box8 {
+	background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+	background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+		font-size: 1.6rem;
+		width: 70%;
+		align-self: center;
 }
 
 .bottom-content .text-container {
@@ -127,8 +198,10 @@ p {
 }
 
 footer {
-    width: 100%;
+    width: 80%;
     background: black;
+		font-size: 1.6rem;
+		align-self: center;
 }
 
 footer nav {
@@ -137,10 +210,140 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+	}
+
+	header img {
+		align-self: center;
+		margin-bottom: 5%;
+	}
+
+	header nav {
+		align-self: center;
+	}
+
+	.jumbo {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	.top-content {
+		width: 100%;
+	}
+
+	.middle-content {
+		width: 100%;
+	}
+
+	.middle-content .boxes .box1 {
+		background: teal;
+	}
+
+	.middle-content .boxes .box.box3 {
+		background: gold;
+	}
+
+	.middle-content .boxes .box.box5 {
+		background: cadetblue;
+	}
+
+	.middle-content .boxes .box.box7 {
+		background: coral;
+	}
+
+	.middle-content .boxes .box.box9 {
+		background: crimson;
+	}
+
+	.bottom-content {
+		width: 100%;
+		align-self: center;
+	}
+
+	.bottom-content .text-container {
+		margin-left: 2%;
+	}
+
+	footer {
+		width: 100%;
+	}
+}
+
+
+/* Mobile Styles */
+@media (max-width: 400px) {
+	header {
+		width: 100%;
+	}
+	header img {
+		width: 50%;
+		align-self: center;
+	}
+
+	header nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		border-top: 1px solid;
+	}
+
+	header nav a {
+		width: 100%;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		border-bottom: 1px solid;
+		align-self: center;
+		text-align: center;
+	}
+
+	.top-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.top-content .text-container {
+		width: 95%;
+	}
+
+	.middle-content .boxes {
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
+	}
+
+	.middle-content .boxes .box {
+		width: 25%;
+	}
+
+	.middle-content .boxes .box.box10 {
+		display: none;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bottom-content .text-container {
+		margin-top: 5%;
+		width: 95%;
+	}
+
+	footer nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
 }
