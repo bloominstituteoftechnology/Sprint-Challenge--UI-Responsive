@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -53,11 +53,12 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,14 +68,46 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 45px;
+    width: 69.3%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header .logo {
+    align-self: flex-end;
+    margin: 28px 25px 25px 0;
+    display: flex;
+    order: -1;
+}
+
+/*---Top Content---*/
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 40px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -82,9 +115,12 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    font-size: 1.5rem;
 }
 
+
+/*--Middle Content--*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -110,12 +146,36 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
 }
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+/*--Bottom Content---*/
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 .bottom-content .text-container {
@@ -137,10 +197,162 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*---MEDIA QUERIES -TABLET (768PX)*/
+@media screen and (max-width: 768px) {
+
+.container{
+    width: 100%;
+}
+
+/* Header Styles(768px) */
+
+header {
+   /* width: 20%;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav {
+    margin: 40px 0 30px 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.4rem;
+
+}
+
+header .logo {
+    display: block;
+    margin: 28px 6.51% 0 11.8%;
+    order: -1;
+
+}
+
+/*--Middle Content- Phone(768px)*/
+
+.middle-content .boxes .box {
+    background: teal;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box3 {
+    background: gold;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box7 {
+    background: coral;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+}
+
+
+/*---MEDIA QUERIES -PHONE (400PX)*/
+@media  screen and (max-width: 400px) {
+
+header {
+   /* width: 20%;*/
+    display: flex;
+    flex-wrap: wrap;
+   /* flex-direction: column;*/
+    justify-content: center;
+}
+
+header nav {
+    /*margin: 40px 0 30px 0;*/
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    border: lightgray;
+    text-align: center;
+}
+nav a {
+    padding: 15px 0 15px 0;
+    border: solid 1px lightgray ;
+}
+
+header .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 20px;
+    order: -1;
+}
+
+
+/*---Middle Content (400px)*/
+
+.middle-content .boxes .box {
+    background: teal;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box3 {
+    background: gold;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box7 {
+    background: coral;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+.middle-content .boxes .box10 {
+    display: none;
+}
+
+}
+
+
