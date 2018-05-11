@@ -96,6 +96,7 @@ header nav {
 }
 
 header nav a {
+    font-size: 1.4rem;
     text-decoration: none;
     color: #b0b0b0;
 }
