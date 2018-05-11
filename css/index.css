@@ -1,146 +1,364 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
+}
+
+/* start project css */
+
+html {
+  font-size: 62.5%;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  margin-top: 2.3%;
+}
+
+header img {}
+
+header nav {
+  padding: 0 0 0 0%;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  justify-content: space-around;
+  font-size: 1.4rem;
 }
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5% 0 0 0;
+  border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  width: 48%;
+  padding: 0 1%;
+  margin: 3% 0 3% 0;
+}
+
+.top-content .text-container p {
+  font-size: 1.5rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  margin: 2.5% 0 0 0;
+  border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  padding: 0 2%;
+  margin-bottom: 0;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  background: black;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-content .boxes .box-2 {
+  background-color: forestgreen;
+}
+
+.middle-content .boxes .box-4 {
+  background-color: darkorchid;
+}
+
+.middle-content .boxes .box-6 {
+  background-color: hotpink;
+}
+
+.middle-content .boxes .box-8 {
+  background-color: indigo;
+}
+
+.middle-content .boxes .box-10 {
+  background-color: lawngreen;
 }
 
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  margin: 2.4% 0 0 2%;
+  justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+  padding-right: 8%;
+  font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 6%;
 }
 
 footer {
-    width: 100%;
-    background: black;
+  width: 100%;
+  background: black;
+  margin-top: 2.3%;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8% 2%;
+  font-size: 1.4rem;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin: 2.7% 0 2% 0;
+
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  header nav a {
+    margin: 4% 7.7% 0 7.5%;
+  }
+  section img {
+    height: 148px;
+		width: 100%;
+  }
+	.top-content {
+		justify-content: space-between;
+		padding: 0 0 3.3% 0;
+		width: 100%;
+
+	}
+	.top-content .text-container {
+		width: 49%;
+	}
+.top-content .text-container h2 {
+	font-size: 1.7rem;
+}
+.middle-content h2 {
+display: block;
+margin: 0;
+padding: 0.4% 0 0 0;
+}
+.middle-content .boxes {
+	justify-content: space-between;
+	padding: 0 2% 0.4% 0;
+	margin: 0;
+}
+.middle-content .boxes .box-1 {
+  background-color: teal;
+}
+
+.middle-content .boxes .box-3 {
+  background-color: gold;
+}
+
+.middle-content .boxes .box-5 {
+  background-color: cadetblue;
+}
+
+.middle-content .boxes .box-7 {
+  background-color: coral;
+}
+
+.middle-content .boxes .box-9 {
+  background-color: crimson;
+}
+.middle-content .boxes .box {
+	width: 13.5%;
+	margin: 20px 0.5% 2.5% 2.7%;
+}
+
+.bottom-content {
+	margin: 2.5% 0 0 0;
+	padding: 0;
+}
+.bottom-content .text-container {
+  padding: 0 10% 0% 0;
+
+}
+footer {
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+}
+
+@media (max-width: 400px) {
+
+	.container {
+    width: 100%;
+    /* padding: 0 20px 0 20px; */
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+		margin: 8% 0 0 0;
+  }
+  header nav {
+    flex-direction: column;
+    margin: 8% 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  header nav a {
+    margin: 0;
+    padding: 4.1% 0 4.1% 0;
+    text-align: center;
+    border-top: 1px solid grey;
+    font-size: 1.4rem;
+  }
+
+  header nav a:last-child {
+    border-bottom: 1px solid grey;
+  }
+
+	.top-content {
+		margin-top: 0;
+		padding: 0 0 1.7% 0;
+		flex-direction: column;
+		width: 100%;
+
+	}
+	.top-content .text-container {
+		padding: 3.7% 2.8% 2.8% 2.8%;
+		width: 100%;
+	}
+
+	.top-content .text-container h2 {
+		font-size: 1.8rem;
+	}
+
+	.top-content img {
+		height: 77px;
+	}
+	.middle-content h2 {
+		padding: 0 0 0 4%;
+	}
+	.middle-content {
+		width: 100%;
+		margin: 5% 0 0 0;
+	}
+	.middle-content .boxes {
+		justify-content: space-evenly;
+		flex-direction: row-reverse;
+	}
+
+	.middle-content .boxes .box {
+		width: 28%;
+
+	}
+	.middle-content .boxes .box-10 {
+	  display: none;
+	}
+	.bottom-content {
+		width: 100%;
+		/* margin: 4%; */
+		padding: 0 3% 0 4%;
+		flex-direction: column;
+	}
+	.bottom-content .text-container {
+		padding-bottom: 5%;
+	}
+
+	footer nav {
+		width: 100%;
+		justify-content: space-around;
+		padding: 5% 0 5% 0;
+	}
 }
