@@ -72,16 +72,23 @@ p {
     margin: 0 auto;
 }
 
-.container .nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    width: 100%;
     margin-bottom: 5%;
 }
 
-.container .nav p {
+.nav .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav p {
     font-size: 1.4rem;
-    margin-right: 5.5%;
+    margin: 0 5.5%;
 }
 
 .jumbotron {
@@ -189,4 +196,68 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+      display: block;
+      margin-bottom: 4.5%;
+  }
+
+  .nav .logo {
+      display: block;
+      text-align: center;
+      margin-bottom: 4%;
+  }
+
+  .jumbotron img {
+      max-width: 100%;
+  }
+
+  .top-content .text-container {
+      padding: 0 0 2.604% 0;
+  }
+
+  .middle-content {
+      margin: 2% 0;
+      padding-bottom: 0.65104%;
+  }
+
+  .middle-content h2 {
+      padding: 0;
+  }
+
+  .middle-content .boxes {
+      justify-content: space-between;
+  }
+
+  .middle-content .boxes .box1 {
+      background: teal;
+  }
+
+  .middle-content .boxes .box3 {
+      background: gold;
+  }
+
+  .middle-content .boxes .box5 {
+      background: cadetblue;
+  }
+
+  .middle-content .boxes .box7 {
+      background: coral;
+  }
+
+  .middle-content .boxes .box9 {
+      background: crimson;
+  }
+
+  .bottom-content {
+      margin: 2.75% 0;
+  }
+
+  footer nav {
+      padding: 2.6041% 0;
+  }
+
 }
