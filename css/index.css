@@ -291,3 +291,23 @@ footer nav a {
   color: white;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+  }
+  header img {
+    max-width: 21%;
+    margin-left: 41%;
+    margin-top: 1%;
+  }
+  header nav {
+    width: 102%;
+    margin-left: 1%;
+    margin-top: 3.8%;
+    justify-content: space-around;
+  }
+}
