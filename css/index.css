@@ -50,6 +50,9 @@ table {
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 
 html, body {
     height: 100%;
@@ -57,7 +60,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +70,22 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    justify-content: space-between;
+}
+
+header img {
+    width: 100%;
 }
 
 .top-content {
@@ -101,7 +118,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -137,10 +154,77 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/* Desktop 1000px */
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box2 {
+        background:forestgreen;
+    }
+
+    .middle-content .boxes .box4 {
+        background:darkorchid;
+    }
+
+    .middle-content .boxes .box6 {
+        background:hotpink;
+    }
+
+    .middle-content .boxes .box8 {
+        background:indigo;
+    }
+
+    .middle-content .boxes .box10 {
+        background:lawngreen;
+    }
+
+}
+
+
+/* tablet 768px */
+@media (max-width: 768px) {
+    .containter {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box1 {
+        background:teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background:gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background:cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background:coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background:crimson;
+    }
+}
+
+/* phone 400px */
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
 }
