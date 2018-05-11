@@ -318,5 +318,9 @@ footer nav a {
         flex-direction: column;
 
     }
+    
+    .bottom-content .text-container {
+        
+    }
 
 }
