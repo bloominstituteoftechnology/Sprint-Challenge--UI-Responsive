@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -137,10 +137,54 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media(max-width: 1000px) {
+    .container {
+        width: 1000px;
+    }
+    
+    .header  {
+        display: flex
+    }
+
+    .header img {
+        justify-content: flex-start;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+   .nav nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 2%;
+    font-size: 1.4rem;
+    }
+
+   .nav nav a {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .top-content {
+        padding: 20px;
+    }
+
+    .top-content .text-container p{
+        font-size: 2rem;
+    }
+
+    
 }
