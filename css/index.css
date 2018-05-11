@@ -236,6 +236,11 @@ footer nav a {
     text-decoration: none;
 }
 
+
+
+
+
+/* Tablet */
 @media (max-width:768px){
     header{
         flex-direction: column;
@@ -268,6 +273,12 @@ footer nav a {
     }               
 }
 
+
+
+
+
+
+/* Mobile */
 @media (max-width:400px){
     header {
         margin: 20px 0;
@@ -314,8 +325,9 @@ footer nav a {
         align-items: center;
     }
 
-    .bottome-content .text-container{
-        width: 91%;
+    .bottom-content .text-container{
+        width: 100%;
+        padding-bottom: 15px;
     }
 
     footer nav {
