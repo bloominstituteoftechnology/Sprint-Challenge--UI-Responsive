@@ -152,23 +152,23 @@ header nav a {
     justify-content: center;
 }
 
-#box2 {
+.middle-content .box.box2 {
 	background-color: forestgreen;
 }
 
-#box4 {
+.middle-content .box.box4 {
 	background-color: darkorchid;
 }
 
-#box6 {
+.middle-content .box.box6 {
 	background-color: hotpink;
 }
 
-#box8 {
+.middle-content .box.box8 {
 	background-color: indigo;
 }
 
-#box10 {
+.middle-content .box.box10 {
 	background-color: lawngreen;
 }
 
@@ -234,23 +234,23 @@ footer nav a {
 			padding-top: 1%;
 		}
 
-		#box1 {
+		.middle-content .box.box1 {
 			background-color: teal;
 		}
 
-		#box3 {
+		.middle-content .box.box3 {
 			background-color: gold;
 		}
 
-		#box5 {
+		.middle-content .box.box5 {
 			background-color: cadetblue;
 		}
 
-		#box7 {
+		.middle-content .box.box7 {
 			background-color: coral;
 		}
 
-		#box9 {
+		.middle-content .box.box9 {
 			background-color: crimson;
 		}
 }
@@ -316,7 +316,7 @@ footer nav a {
 		.middle-content .boxes {
 			flex-flow: row-reverse wrap;
 		}
-		#box10 {
+		.middle-content .box.box10 {
 			display: none;
 		}
 
