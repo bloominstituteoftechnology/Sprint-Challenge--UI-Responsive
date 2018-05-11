@@ -264,9 +264,10 @@ footer nav a {
     header nav a:last-child {
         border-bottom: 1px solid black;
     }
+    .boxes {
+        flex-flow: row-reverse;
     }
-    .jumbotron-img {
-        display: block;
+    .boxes .box.box10 {
+        display: none;
     }
-   
 }
