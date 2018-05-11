@@ -290,16 +290,17 @@ footer nav a {
 
     header {
         justify-content: center;
-    }
-
-    header .logo {
+      }
+      
+      header .logo {
         padding-bottom: 13px;
         margin-top: 30px;
-    }
-
-    header nav {
+      }
+      
+      header nav {
         flex-direction: column;
         margin-top: 15px;
+        padding: 0;
       }
       
       header nav a {
