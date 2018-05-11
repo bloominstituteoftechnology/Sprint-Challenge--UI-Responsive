@@ -285,6 +285,7 @@ footer nav a {
         border-bottom: 1px solid gray;
         width: 100%;
         margin: auto;
+        padding-top: 14px;
     }
 
     header nav a:first-child {
