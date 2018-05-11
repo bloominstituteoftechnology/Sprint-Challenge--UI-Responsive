@@ -229,6 +229,22 @@ footer nav a {
     .boxes .box {
          width: 16.28%; /**/
     }
+    /* Box colors */
+    .boxes .box.box1 {
+        background: teal;
+    }
+    .boxes .box.box3 {
+        background: gold;
+    }
+    .boxes .box.box5 {
+        background: cadetblue;
+    }
+    .boxes .box.box7 {
+        background: coral;
+    }
+    .boxes .box.box9 {
+        background: crimson;
+    }
 }
 
 /* Mobile Breakpoint */
