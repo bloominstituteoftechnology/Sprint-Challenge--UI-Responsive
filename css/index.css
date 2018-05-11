@@ -56,6 +56,10 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -67,8 +71,29 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0 38px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-content {
@@ -82,7 +107,9 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-top: 24px;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -104,12 +131,55 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+
+.box1{
+    background: black;
+}
+
+.box2 {
+    background: forestgreen;
+}
+
+.box3{
+    background: black;
+}
+
+.box4 {
+    background: darkorchid;
+}
+
+.box5 {
+    background: black;
+}
+
+.box6 {
+    background: hotpink;
+}
+
+.box7{
+    background: black;
+}
+
+.box8 {
+    background: indigo;
+}
+
+.box9{
+    background: black;
+}
+
+.box10 {
+    background: lawngreen;
 }
 
 .bottom-content {
@@ -120,6 +190,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
