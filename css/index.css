@@ -300,7 +300,7 @@ footer nav a {
     flex-direction: column;
   }
   header img {
-    max-width: 21%;
+    max-width: 20%;
     margin-left: 41%;
     margin-top: 1%;
   }
@@ -309,5 +309,8 @@ footer nav a {
     margin-left: 1%;
     margin-top: 3.8%;
     justify-content: space-around;
+  }
+  .jumbo img {
+    margin-left: 0;
   }
 }
