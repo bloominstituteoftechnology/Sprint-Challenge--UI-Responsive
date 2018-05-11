@@ -139,9 +139,9 @@ nav a:hover{
 }
 
 .middle-content .boxes .box {
-    /* width: 12.5%; */
+    width: 12.5%;
     height: 100px;
-    /* background: black; */
+    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -152,53 +152,28 @@ nav a:hover{
 
 }
 
-.box1{
-    width: 12.5%;
-    background: black;
-}
 
-.box2 {
-    width: 12.5%;
+.middle-content .boxes .box2 {
     background: forestgreen;
 }
 
-.box3{
-    width: 12.5%;
-    background: black;
-}
 
-.box4 {
-    width: 12.5%;
+.middle-content .boxes .box4 {
     background: darkorchid;
 }
 
-.box5 {
-    width: 12.5%;
-    background: black;
-}
 
-.box6 {
-    width: 12.5%;
+.middle-content .boxes .box6 {
     background: hotpink;
 }
 
-.box7{
-    width: 12.5%;
-    background: black;
-}
 
-.box8 {
-    width: 12.5%;
+.middle-content .boxes .box8 {
     background: indigo;
 }
 
-.box9{
-    width: 12.5%;
-    background: black;
-}
 
-.box10 {
-    width: 12.5%;
+.middle-content .boxes .box10 {
     background: lawngreen;
 }
 
@@ -256,19 +231,19 @@ footer nav a {
         padding-top: 13px;
     }
 
-    .box1{
+    .middle-content .boxes .box1{
         background: teal;
     }
-    .box3{
+    .middle-content .boxes .box3{
         background: gold;
     }
-    .box5{
+    .middle-content .boxes .box5{
         background: cadetblue;
     }
-    .box7{
+    .middle-content .boxes .box7{
         background: coral;
     }
-    .box9{
+    .middle-content .boxes .box9{
         background: crimson;
     }               
 }
@@ -304,17 +279,17 @@ footer nav a {
         width: 91%;
     }
 
-    .boxes {
+    .middle-content .boxes .boxes {
         padding: 0;
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .box {
+    .middle-content .boxes .box {
         width: 28%;
     }
 
-    .box10{
+    .middle-content .boxes .box10{
         display: none;
     }
 
