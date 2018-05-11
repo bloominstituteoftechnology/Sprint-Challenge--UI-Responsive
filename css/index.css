@@ -135,7 +135,7 @@ header nav a {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6,.box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -145,6 +145,28 @@ header nav a {
     align-items: center;
     justify-content: center;
 }
+
+.box2{
+	background: forestgreen;
+}
+
+.box4{
+	background: darkorchid;
+}
+
+.box6{
+	background: hotpink;
+}
+
+.box8{
+	background: indigo;
+}
+
+.box10{
+	 background:  lawngreen;
+}
+
+
 
 .bottom-content {
     display: flex;
