@@ -200,8 +200,6 @@ footer nav a {
 @media (max-width: 768px) {
     .container {
         max-width: 768px;
-        width: 100%;
-        margin: 0 auto;
     }
 
     header {
@@ -220,7 +218,13 @@ footer nav a {
     }
 
     .jumbo {
+        height: auto;
+        padding: 0 0 20px;
         width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        width: 13%;
     }
 
     .middle-content .boxes .box1 {
@@ -241,5 +245,82 @@ footer nav a {
 
     .middle-content .boxes .box9 {
         background-color: crimson;
+    }
+
+    .bottom-content {
+        margin: 20px 2% 20px;
+    }
+
+    @media (max-width: 400px) {
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        header {
+            margin: 45px auto 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        header nav {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 0;
+            margin: 10px 0 0;
+        }
+
+        header nav a {
+            width: 100%;
+            text-align: center;
+            padding: 12px 0;
+            border-top: 1px solid black;
+        }
+
+        .top-content {
+            flex-direction: column;
+        }
+
+        .top-content .text-container {
+            width: 100%;
+            padding: 0 0 20px 5%;
+        }
+
+        .middle-content .boxes {
+            flex-direction: row-reverse;
+        }
+
+        .middle-content .boxes .box {
+            width: 25.5%;
+        }
+
+        .middle-content .boxes .box10 {
+            display: none;
+        }
+
+        .bottom-content {
+            flex-direction: column;
+            margin-left: 3%;
+            width: 87%;
+            letter-spacing: -.5px;
+        }
+
+        .bottom-content .text-container {
+            padding: 10px 0;
+        }
+
+        .bottom-content .text-container.curveball {
+            width: 110%;
+        }
+
+        footer nav {
+            width: 100%;
+            justify-content: space-around;
+            padding: 20px 5%;
+        }
+
+        footer {
+            margin-bottom: 20px;
+        }
     }
 }
