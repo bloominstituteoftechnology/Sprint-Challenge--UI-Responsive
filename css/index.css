@@ -78,6 +78,38 @@ p {
     font-size: 1.6rem;
 }
 
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header nav {
+    margin-top: 45px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    /* margin-left: 200px; */
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin-left: -100%;
+    margin-top: 20px;
+    padding: 0 0 5px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -86,9 +118,13 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content .jumbotron {
+    padding-top: 35px;
+}
+
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 23px 1%;
     padding-bottom: 20px;  
 }
 
@@ -117,6 +153,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:last-child {
+    background: lawngreen;
 }
 
 .bottom-content {
