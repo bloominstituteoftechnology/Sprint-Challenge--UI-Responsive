@@ -311,7 +311,7 @@ header nav a{
 .middle-content .boxes{
 	display: flex;
        flex-wrap: wrap;
-        /*flex-direction: row-reverse;*/
+        flex-direction: row-reverse;
 }
 
 .middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6,.box7, .box8, .box9{
