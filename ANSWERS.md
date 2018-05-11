@@ -1,7 +1,7 @@
 <!-- Answers to the Self Study Questions go here -->
 
-1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight?
-2. Describe the difference between `display: block;` and `display: inline;`.
-3. While using flexbox, what axis are you using when you use the property: `align-items: center`?
-4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
-5. Why do we need to use the CSS property max-width on the outter most container in a responsive website?
+1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight? box3
+2. Describe the difference between `display: block;` and `display: inline;`. display: block takes up the entire block for the given element. display: inline takes up just enough width that it needs for the given element.
+3. While using flexbox, what axis are you using when you use the property: `align-items: center`? cross-axis
+4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout? fixed layout is basically a static webpage where everything is set into one position. adaptive layout is where it detects the device that is trying to access the site and provides pre-set settings for that particular device. fluid layout is set where it tries to take up the same amount of space per element no matter what type of device you are trying to access the site from. responsive layout uses media queries to decide what type of settings are needed based on the pixel size of the user's screen that is trying to access the website.
+5. Why do we need to use the CSS property max-width on the outter most container in a responsive website? so, depending on the type of device that you are using, the elements are able to take up the full amount of space on the screen. Also, it lets the browser know what screen size the user is using and grabs the specified elements from the media query that matches the given screen size.
