@@ -58,8 +58,10 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 4%;
+   /* font-size: 18px;
+    margin-bottom: 15px;*/
     font-family: 'Rubik', sans-serif;
 }
 
@@ -115,13 +117,18 @@ header nav a {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+   /* padding: 0 1%;
+    padding-bottom: 20px;  */
+
+    padding: 16px 1%;
+    padding-bottom: 0px;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 3%;
+    margin-top: 5%;
+	/* margin-bottom: 20px;
+    border-bottom: 1px dashed black;*/
 }
 
 .middle-content h2 {
