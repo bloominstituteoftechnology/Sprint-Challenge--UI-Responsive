@@ -74,14 +74,13 @@ p {
 
 /*
 
-						Desktop	Display viewport CSS
+Desktop	Display viewport CSS
 
  */
 .container {
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
 		font-size: 1.6rem;
-		padding: 10px
 }
 
 /* Header Style */
@@ -96,7 +95,7 @@ header {
 	justify-content: center;
 	width: 100%
 	display: inline;
-	margin: 38px auto;
+	margin: 38px auto 25px;
 }
 
 .container .jumbotron .jumboimage {
@@ -113,7 +112,7 @@ header nav {
 header nav a {
 	text-decoration: none;
 	color: black;
-	margin
+	font-size: 1.4rem;
 }
 
 header nav a:hover {
@@ -170,6 +169,25 @@ header nav a:hover {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+	background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+	background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+	background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+	background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+	background-color: lawngreen;
+}
 /* Bottom Content Style */
 
 .bottom-content {
@@ -207,7 +225,7 @@ footer nav a {
 
 /*
 
-						Tablet 	Display viewport CSS
+Tablet 	Display viewport CSS
 
  */
 @media (max-width: 768px) {
@@ -215,19 +233,17 @@ footer nav a {
 		display: flex;
 		flex-flow: column wrap;
 		width: 100%;
-		padding: 0 0;
-	}
+		padding: 0;
+		margin: 0;
+}
 
+/* Header Style */
 body .container	header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		align-content: space-around;
-	}
-
-	/* body .container header nav {
-		display: flex;
-} */
+}
 
 .container header .logo {
 	align-self: center;
@@ -235,16 +251,42 @@ body .container	header {
 	margin: 10px;
 }
 
+.container header nav {
+	margin-top: 20px;
+}
+
 .container header nav a {
 	text-align: center;
 }
 
+.container .jumbotron .jumboimage {
+	height: 100%;
 }
 
+/* Middle Style */
+.middle-content .boxes .box:nth-child(1) {
+	background-color: teal;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+	background-color: gold;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+	background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+	background-color: coral;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+	background-color: crimson;
+}
 
  /*
 
- 						Phone 	Display viewport CSS
+ Phone 	Display viewport CSS
 
   */
 @media (max-width: 400px) {
@@ -255,6 +297,7 @@ body .container	header {
 		padding: 0 0;
 	}
 
+/* Header Style */
 	header {
 		display: flex;
 		justify-content: center;
@@ -277,8 +320,8 @@ body .container	header {
 		text-align: center;
 		width: 100%;
 		border-bottom: 1px black solid;
-		padding: 15px 3.91% 15px;
-		font-size: 20px;
+		padding: 3.89% 3.91%;
+		font-size: 1.3rem;
 		margin: 0%;
 	}
 
@@ -287,7 +330,62 @@ body .container	header {
 	}
 
 	.container .jumbotron {
-		padding: 0 2.46%;
+		margin: 0;
 	}
+
+	.container .jumbotron .jumboimage{
+		height: 100%;
+		width: 100%;
+	}
+
+/* Top Content Style */
+	.top-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-content .text-container {
+		width: 100%;
+		padding: 9px 15px;
+		margin-top: 10px;
+	}
+
+/* Middle Content Style */
+	.middle-content h2 {
+		padding: 0;
+	}
+
+	.middle-content .boxes {
+		display: flex;
+		flex-flow: row-reverse wrap;
+	}
+
+	.middle-content .boxes .box {
+ 		width: 26.5%;
+		margin: 23px 2.5%;
+	}
+
+	.middle-content .boxes .box:nth-child(10) {
+		display: none;
+	}
+
+	.middle-content .boxes .column1 {
+		align-self: flex-end;
+	}
+
+	.middle-content .boxes .column2 {
+		align-self: flex-end;
+	}
+	 .middle-content .boxes .column3 {
+		 align-self: flex-end;
+	 }
+
+/* Bottom Content Style */
+	 .bottom-content {
+		 display: flex;
+		 flex-direction: column;
+		 margin: 20px 2%;
+	 }
+
 
 }
