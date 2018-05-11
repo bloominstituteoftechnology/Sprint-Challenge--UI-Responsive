@@ -211,6 +211,7 @@ header img {
 
 .middle-content {
   margin-bottom: 20px;
+  margin-left: 10%;
   border-bottom: 1px dashed black;
 }
 
@@ -223,6 +224,8 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-right: 9.9%;
+  font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -235,11 +238,30 @@ header img {
   align-items: center;
   justify-content: center;
 }
-
+#box2 {
+  background-color: forestgreen;
+}
+#box4 {
+  background: darkorchid;
+}
+#box6 {
+  background: hotpink;
+}
+#box8 {
+  background: indigo;
+}
+#box10 {
+  background: lawngreen;
+}
 .bottom-content {
   display: flex;
-  margin: 0 2% 20px;
+  margin: 0 12% 9%;
+  font-size: 1.6rem;
   justify-content: space-around;
+}
+
+.bottom-content h2 {
+  margin-bottom: 7%;
 }
 
 .bottom-content .text-container {
