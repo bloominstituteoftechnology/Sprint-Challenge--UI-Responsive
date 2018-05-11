@@ -89,7 +89,7 @@ header nav{
     width: 76%;
     padding: 0 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
 }
 
