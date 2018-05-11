@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,10 +24,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	font-size: 62.5%;
+}
+
 body {
 	line-height: 1;
 }
@@ -66,10 +71,61 @@ p {
     line-height: 1.4;
 }
 
+
+/*
+
+						Desktop	Display viewport CSS
+
+ */
 .container {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
+		font-size: 1.6rem;
+		padding: 10px
 }
+
+/* Header Style */
+
+header {
+	width: 100%;
+	display: flex;
+}
+
+.container .jumbotron {
+	display: flex;
+	justify-content: center;
+	width: 100%
+	display: inline;
+	margin: 38px auto;
+}
+
+.container .jumbotron .jumboimage {
+	width: 100%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 100%;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+	margin
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.container header .logo {
+	align-self: flex-start;
+}
+
+/* Top Main Content Style */
 
 .top-content {
     display: flex;
@@ -82,8 +138,10 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
+
+/* Middle Content Style */
 
 .middle-content {
     margin-bottom: 20px;
@@ -111,6 +169,8 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* Bottom Content Style */
 
 .bottom-content {
     display: flex;
@@ -143,4 +203,91 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*
+
+						Tablet 	Display viewport CSS
+
+ */
+@media (max-width: 768px) {
+	.container {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		padding: 0 0;
+	}
+
+body .container	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: space-around;
+	}
+
+	/* body .container header nav {
+		display: flex;
+} */
+
+.container header .logo {
+	align-self: center;
+	padding: 20 0 20 0;
+	margin: 10px;
+}
+
+.container header nav a {
+	text-align: center;
+}
+
+}
+
+
+ /*
+
+ 						Phone 	Display viewport CSS
+
+  */
+@media (max-width: 400px) {
+	.container: {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		padding: 0 0;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container header .logo {
+		align-self: center;
+		padding: 20px;
+	}
+
+	body .container header nav {
+		display: flex;
+		flex-direction: column;
+
+		margin: 0;
+		padding: 0;
+	}
+
+	.container header nav a {
+		text-align: center;
+		width: 100%;
+		border-bottom: 1px black solid;
+		padding: 15px 3.91% 15px;
+		font-size: 20px;
+		margin: 0%;
+	}
+
+	.container header nav a:first-child {
+		border-top: 1px solid black;
+	}
+
+	.container .jumbotron {
+		padding: 0 2.46%;
+	}
+
 }
