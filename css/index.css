@@ -306,6 +306,13 @@ footer nav a {
 			padding-right: 10%;
 	}
 
+	.middle-content .boxes {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row-reverse;
+			justify-content: space-evenly;
+	}
+
 	.middle-content .boxes .box {
 			width: 25%;
 			height: 100px;
