@@ -51,24 +51,56 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.jumbotron {
+    margin: 3rem 0 3rem 0;
 }
 
 .top-content {
@@ -105,6 +137,7 @@ p {
     width: 12.5%;
     height: 100px;
     background: black;
+    font-size: 1.6rem;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -137,10 +170,34 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Desktop Styles */
+
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
 }
