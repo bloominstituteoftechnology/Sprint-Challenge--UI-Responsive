@@ -88,8 +88,8 @@ header {
 
 header nav {
     margin-top: 45px; 
-    padding-left: 200px;
-    padding-right: 40px;
+    padding-left: 25%;
+    padding-right: 5%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -208,4 +208,28 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Table view*/
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 100%;
+        padding: 0 3.9063%;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
 }
