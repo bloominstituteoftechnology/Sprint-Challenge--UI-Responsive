@@ -67,6 +67,10 @@ p {
     line-height: 1.4;
 }
 
+@media(max-width: 800px){
+    
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
