@@ -81,7 +81,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px;
+    margin-top: 45px;
     width: 69.3%;
     justify-content: space-between;
     display: flex;
@@ -91,13 +91,12 @@ header nav {
 header nav a {
     text-decoration: none;
     color: black;
-
 }
 
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 11.3%;
+    margin: 28px 25px 25px 0;
     display: flex;
     order: -1;
 }
@@ -108,6 +107,7 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 40px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -146,25 +146,28 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 15px;
 }
 
-/*.middle-content .boxes .box2 {
+.middle-content .boxes .box2 {
     background: forestgreen;
-}*/
+}
 
-/*.middle-content .boxes .box2 {
-    background: forestgreen;
-}*/
+.middle-content .boxes .box4 {
+    background: #d9b3ff;
+}
 
-/*.middle-content .boxes .box6 {
+.middle-content .boxes .box6 {
     background: pink;
 }
-/*.middle-content .boxes .box8 {
+
+.middle-content .boxes .box8 {
     background: purple;
-}*/
-/*.middle-content .boxes .box10 {
+}
+
+.middle-content .boxes .box10 {
     background: limegreen;
-}*/
+}
 
 /*--Bottom Content---*/
 
