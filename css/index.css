@@ -241,7 +241,7 @@ footer nav a {
     .top-content .jumbotron {
         padding-top: 28px;
         height: 175px;
-}
+    }
 
     .top-content .text-container {
         width: 48%;
@@ -280,4 +280,85 @@ footer nav a {
         background: crimson;
     }
 
+    /* Phone */
+@media (max-width: 400px) {
+
+    .container {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        /* padding-top: 5px; */
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.4rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 51px 0;
+    }
+
+    .top-content .jumbotron {
+        margin-top: 46px;
+        height: 110px;
+    }
+
+    .top-content {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .top-content .text-container {
+        width: 90%;
+        padding: 23px 1%;
+        padding-bottom: 0px;  
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box {
+        width: 24%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .middle-content .boxes .box:last-child {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+    
 }
