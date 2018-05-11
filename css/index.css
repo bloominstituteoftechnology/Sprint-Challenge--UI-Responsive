@@ -226,6 +226,7 @@ footer nav a {
         display: flex;
         width: 100%;
         flex-direction: row;
+        margin-top: 3%;
     }
      header nav {
          width: 90%;
