@@ -181,6 +181,7 @@ header nav a {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -204,4 +205,28 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header .logo {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    header nav {
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 25px;
+
+    }
+
+    
 }
