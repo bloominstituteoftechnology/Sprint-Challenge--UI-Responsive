@@ -54,40 +54,72 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size:62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
 }
-
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
+ /* header content */
+ header{
+     display: flex;
+     justify-content: space-between;
+     margin: 2rem auto 4rem auto;
+     align-items: baseline;
+
+ }
+ header nav{
+     width: 70%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-right: 2rem;
+ }
+ header img{
+    max-width: 157px;
+    max-height: 40px;
+}
+ nav a{
+     text-decoration: none;
+     font-size: 1.3rem;
+     color: rgb(53, 53, 53);
+ }
+ .header__img{
+    width: 100%;
+}
+/* header ends */
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin: 2rem 0;
+    border-bottom: 0.1rem dashed black;
+    font-size: 1.3rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
+    
 }
 
 .middle-content h2 {
@@ -99,23 +131,42 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.3rem;
+}
+.middle-content .box:nth-child(2) {
+    background-color: aquamarine;
 }
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.middle-content .box:nth-child(2) {
+    background-color: forestgreen;
+}
+.middle-content .box:nth-child(4) {
+    background-color: darkorchid;
+}.middle-content .box:nth-child(6) {
+    background-color: hotpink;
+}.middle-content .box:nth-child(8) {
+    background-color: indigo;
+}.middle-content .box:nth-child(10) {
+    background-color: lawngreen;
+}
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
+    font-size: 1.3rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .bottom-content .text-container {
@@ -136,11 +187,96 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    header nav{
+        width: 95%;
+        margin: auto;
+        padding: 0;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        margin-bottom: 2rem;
+    }
+    .middle-content .box:nth-child(1) {
+        background-color: teal;
+    }
+    .middle-content .box:nth-child(3) {
+        background-color: gold;
+    }
+    .middle-content .box:nth-child(5) {
+        background-color: cadetblue;
+    }
+    .middle-content .box:nth-child(7) {
+        background-color: coral;
+    }
+    .middle-content .box:nth-child(9) {
+        background-color: crimson;
+    }
+}
+@media (max-width: 400px){
+    .middle-content .box:nth-child(10) {
+        display: none;
+    }
+    header{
+        margin-bottom: 0;
+    }
+    header nav{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    header nav a{
+        width: 100%;
+        padding: 1.4rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    /* header ends */
+
+    .top-content {
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    .top-content .text-container{
+        width: 100%
+    }
+    .middle-content .boxes .box{
+        width: 30%;
+        margin: 2rem 0.5rem;
+    }
+    .middle-content .boxes {
+       
+        flex-direction: row-reverse;
+    }
+    .bottom-content {
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    .bottom-content .text-container{
+        width: 100%;
+    }
+    .bottom-content .text-container:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+    
+    /* content end */
+    footer nav{
+        width: 90%;
+    }
 }
