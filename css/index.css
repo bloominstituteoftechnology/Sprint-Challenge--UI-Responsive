@@ -189,3 +189,41 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px){
+
+        header nav{
+            font-size: 90%;
+            width: 90%;
+            justify-content: space-between;
+        }
+
+        .middle-content .boxes .box:nth-child(1) {
+            background: teal;
+        }
+        
+        .middle-content .boxes .box:nth-child(3) {
+            background: gold;
+        }
+        
+        .middle-content .boxes .box:nth-child(5) {
+            background: cadetblue;
+        }
+        
+        .middle-content .boxes .box:nth-child(7) {
+            background: coral;
+        }
+        
+        .middle-content .boxes .box:nth-child(9) {
+            background: crimson;
+        }
+     
+}
+
+@media (max-width: 400px){
+
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+    }
+    
+}
