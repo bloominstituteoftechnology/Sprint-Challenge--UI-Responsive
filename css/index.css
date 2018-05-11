@@ -336,6 +336,7 @@ footer {
 	}
 	.middle-content .boxes {
 		justify-content: space-evenly;
+		flex-direction: row-reverse;
 	}
 
 	.middle-content .boxes .box {
