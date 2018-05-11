@@ -76,7 +76,6 @@ p {
     width: 100%;
     margin: 0 auto; 
 }
-
 header {
     padding: 20px 0;
     width: 100%;
@@ -99,11 +98,9 @@ header nav a{
 header .jumbo {
     padding: 40px 0 0;
 }
-
 .container{
     width: 80%;
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +108,6 @@ header .jumbo {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -120,23 +116,19 @@ header .jumbo {
 .text-container p{
     font-size: 1.6rem;
 }
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -163,26 +155,18 @@ header .jumbo {
 .boxes .box:nth-of-type(10){
     background-color: lawngreen;
 }
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -191,14 +175,13 @@ footer nav {
     padding: 20px 2%;
     font-size: 1.4rem;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
 /* media query 768*/
 @media (max-width: 768px){
-
     .container{
         max-width:768px;
         width: 100%;
@@ -226,7 +209,6 @@ footer nav a {
         background-color: crimson;
     }
 }
-
 /* media query 768*/
 @media (max-width: 400px){
     .container{
@@ -234,8 +216,8 @@ footer nav a {
         width: 100%;
     }
     header{
-        margin-top: 10px;
-        background-color: pink;
+        padding-top: 30px;
+        height: 100%;
     }
     header .lambda{
         padding-bottom: 10px;
@@ -243,21 +225,58 @@ footer nav a {
     header nav{
         padding-top: 5px;
         display:flex;
-        flex-direction: column;
-        background-color: blue;
-        
+        flex-direction: column;     
     }
     header nav a{
         width: 100%;
         border-top: 1px solid gray;
-        margin: 18px 0 0;
+        margin: 15px 0 0;
         padding-top: 15px;
         align-self: center;
     }
     header .jumbo{
         width: 100%;
-        height: 120px;
+        max-height: 120px;
+        height: 100%;
+        position: relative;
+        bottom: 25px;
     }
-
-
+    .container .top-content{
+        padding-top: 6%;
+        padding-bottom: 2%;
+    }
+    .container .top-content .text-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 2% 3% 3% 6%;
+    }
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .middle-content .boxes .box {
+        width: 100px;
+    }
+    .boxes .box:nth-of-type(10){
+        display: none;
+    }
+    .container .bottom-content{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .container .bottom-content .text-container{
+        padding: 0% 4% 5% 1%;
+    }
+    .bottom-content .text-container:last-child {
+        width: 100%;
+        padding-right: 0%;
+        padding-bottom: 20px;
+    }
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
