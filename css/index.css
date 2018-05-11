@@ -146,7 +146,28 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+/* Box Colors */
+
+.boxes .box.box2 {
+    background: forestgreen;
 }
+
+.boxes .box.box4 {
+    background: darkorchid;
+}
+
+.boxes .box.box6 {
+    background: hotpink;
+}
+
+.boxes .box.box8 {
+    background: indigo;
+}
+
+.boxes .box.box10 {
+    background: lawngreen;
+}
+
 
 .bottom-content {
     display: flex;
