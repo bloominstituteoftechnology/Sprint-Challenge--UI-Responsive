@@ -73,6 +73,30 @@ p {
     margin: 0 auto;
     font-size: 1.6rem;
 }
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px 15px 15px;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 69.32%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.6rem;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+header .logo {
+        order: -1;
+        display: flex;
+    }
 
 .top-content {
     display: flex;
@@ -185,3 +209,51 @@ footer nav a {
 .middle-content .boxes .box:nth-child(9) {
     background-color: crimson;
 }
+/* Phone */
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+}
+    .middle-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+    .box{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+      header {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    
+
+     .middle-content .boxes .box:nth-child(10) {
+    
+    
+    display:none;
+}
+
+
+
+
