@@ -56,8 +56,16 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +75,42 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: 20px 0 40px;
+}
+
+header .logo {
+    width: 157px;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 2;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+header nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: cadetblue;
+}
+
+.jumbotron {
+    width: 100%;
+    margin: 0 0 20px;
 }
 
 .top-content {
@@ -112,6 +154,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +199,135 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    header {
+        flex-direction: column; 
+        align-items: center;
+        margin: 20px 0 35px;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 30px 0 0;
+    }
+
+    .middle-content .boxes .box {
+        width: 13%;
+    }
+
+    .middle-content .boxes .box:nth-child(1) {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box:nth-child(3) {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box:nth-child(5) {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-child(7) {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box:nth-child(9) {
+        background-color: crimson;
+    }
+
+}
+
+
+/* Phone */
+@media (max-width: 400px) {
+
+    .container {
+        max-width: 400px;
+    }
+
+    header {
+        margin: 30px 0 0;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        padding: 15px 0;
+        border-top: 1px solid #a9a9a9;
+        text-align: center;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid #a9a9a9;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 6% 20px;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+    }
+
+
+    .bottom-content {
+        margin: 0 3% 20px;
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        margin: 0 0 20px 0;
+    }
+
+    footer nav {
+        width: 100%;
+        padding: 20px 15.5% 20px 9.5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
