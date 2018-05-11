@@ -285,6 +285,12 @@ header nav a{
 	width: 100%;
 }
 
+.box1{
+	background: teal;
+
+}
+
+
 .box10 {
 	display: none;
 }
@@ -295,14 +301,28 @@ header nav a{
 
 }
 
+/*.middle-content{
+	display: flex;
+	flex-wrap: wrap;
+        flex-direction: row-reverse;
+
+}*/
+
+.middle-content .boxes{
+	display: flex;
+       flex-wrap: wrap;
+        /*flex-direction: row-reverse;*/
+}
+
+.middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6,.box7, .box8, .box9{
+	width: 25%;
+}
+
+
 .bottom-content{
         display: flex;
         flex-direction: column;
 
 }
-
-
-
-
 
 }
