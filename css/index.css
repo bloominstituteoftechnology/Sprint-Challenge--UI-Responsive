@@ -71,13 +71,13 @@ p {
 
 .container {
     max-width:1000px;
-    margin: 0 auto;
+    margin: 0 10%;
 }
 
 header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 header .lambda{
@@ -85,7 +85,7 @@ header .lambda{
 }
 
 header nav{
-    width: 80%;
+    width: 70%;
     margin: 40px 0 0 3%;
     display:flex;
     flex-flow: row nowrap;
