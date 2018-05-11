@@ -195,3 +195,48 @@ html {
         background-color: lawngreen;
     }
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 768px;
+    
+        
+    }
+
+    .jumbotron {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: block;
+    }
+
+    .navbar .img {
+        margin-left: 368px;
+    }
+
+    .navbar ul .text {
+        display: inline-block;
+        margin-left: 90px;
+    }
+
+    .boxes .box.box-1 {
+        background-color: teal;
+    }
+    .boxes .box.box-3 {
+        background-color: gold;
+    }
+    .boxes .box.box-5 {
+        background-color: cadetblue;
+    }
+    .boxes .box.box-7 {
+        background-color: coral;
+    }
+    .boxes .box.box-9 {
+        background-color: crimson;
+    }
+}
+
