@@ -106,6 +106,9 @@ header nav a:hover {
     color: grey;
 }
 
+.jumbo__img {
+    width: 100%;
+}
 
 .top-content {
     display: flex;
@@ -186,7 +189,7 @@ header nav a:hover {
 footer {
     width: 100%;
     background: black;
-    margin: 9px;
+    margin: 1%;
 }
 
 footer nav {
@@ -202,3 +205,53 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Nav Bar Section*/
+    header {
+        flex-wrap: wrap;
+    }
+
+    header .header__img {
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+@media (max-width: 400px)
+    {
+        .container {
+            width: 100%;
+            margin: 0;
+        }
+
+        .middle-content .boxes .box10 {
+            display: none;
+        }
+    }
