@@ -62,13 +62,42 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 p {
     line-height: 1.4;
 }
 
 .container {
     width: 800px;
+    font-size: 1.6rem;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 45px; 
+    width: 70%;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header .logo {
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-right: 6.25%;
 }
 
 .top-content {
@@ -79,7 +108,13 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.main-content .jumbo {
+    display: block;
+    margin: 30px auto;
+}
+
 .top-content .text-container {
+    margin-top: 0px;
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
@@ -112,6 +147,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +192,123 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 85%;
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+    header .logo {
+        display: block;
+        margin-right: 0px;  
+    }
+
+    .main-content .jumbo {
+        width: 100%;
+    }
+
+    .top-content .text-container {
+        margin-top: 0px;
+    }
+
+    .middle-content .boxes .box {
+        width: 13.61%;
+    }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        display: block;
+        width: 117%;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid gray;
+    }
+
+    .main-content .jumbo {
+        width: 100%;
+        display: block;
+        margin-top: 0px;
+    }
+
+    .top-content .text-container {
+        margin: -10px 5% 0px 5%;
+        flex-flow: wrap;
+        width: auto;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 26.74%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-flow: wrap;
+    }
+
+    .bottom-content .text-container {
+        margin: 0px 5% 20px 3%;
+    }
+
+    footer nav {
+        justify-content: space-around;
+        margin: 0px 20px;     
+        width: auto;
+    }
 }
