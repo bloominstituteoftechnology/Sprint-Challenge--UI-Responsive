@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -56,6 +56,11 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -68,9 +73,36 @@ p {
 
 .container {
     width: 800px;
-    margin: 0 auto;
+    margin: 0 10%;
 }
 
+
+header {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	display: flex;
+	width: 100%;
+
+}
+
+header img {
+	width: 20%;
+}
+
+header nav {
+	display: flex;
+	width: 90%;
+	flex-flow: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+header nav a {
+	display: flex;
+	flex-flow: row;
+	text-decoration: none;
+	color: black;
+	font-size: 1.35rem;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,10 +111,18 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content img {
+	margin-bottom: 25px;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+.top-content .text-container p {
+	font-size: 1.6rem;
 }
 
 .middle-content {
@@ -122,6 +162,10 @@ p {
     padding-right: 4%;
 }
 
+.bottom-content .text-container p {
+	font-size: 1.6rem;
+}
+
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
@@ -143,4 +187,73 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+@media (max-width: 1000px) {
+
+	.container {
+		max-width: 1000px;
+	}
+
+.boxes .box.box2 {
+	background-color: forestgreen;
+}
+
+.boxes .box.box4 {
+	background-color: darkorchid;
+}
+
+.boxes .box.box6 {
+	background-color: hotpink;
+}
+
+.boxes .box.box8 {
+	background-color: indigo;
+}
+
+.boxes .box.box10 {
+	background-color: lawngreen;
+}
+
+}
+
+@media (max-width: 768px) {
+
+	.container {
+		max-width: 768px;
+	}
+
+	.boxes .box.box1 {
+		background-color: teal;
+	}
+
+	.boxes .box.box3 {
+		background-color: gold;
+	}
+
+	.boxes .box.box5 {
+		background-color: cadetblue;
+	}
+
+	.boxes .box.box7 {
+		background-color: coral;
+	}
+
+	.boxes .box.box9 {
+		background-color: crimson;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.container {
+		max-width: 400px;
+	}
+
+	.boxes .box.box10 {
+		display: none;
+	}
+
 }
