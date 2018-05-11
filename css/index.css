@@ -53,11 +53,12 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +68,36 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width:100%;
     margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    margin-top:15px;
+    justify-content: space-around;
+    display: flex;
+    align-items: baseline;
+    flex-wrap:wrap;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+header .logo {
+    justify-content: flex-end; 
+      
 }
 
 .top-content {
@@ -83,6 +112,9 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    font-size:1.6rem;
+    font-weight: 400;
+    margin-top: 20px;
 }
 
 .middle-content {
@@ -99,12 +131,106 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.6rem;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
+.middle-content .boxes .box1 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
     height: 100px;
     background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box3 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box4 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box5 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box6 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box7 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box8 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box9 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box10 {
+    width: 100px; /* did not change width of boxes to percentage b/c I want to keep their size intact*/
+    height: 100px;
+    background: lawngreen;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -120,6 +246,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,10 +264,138 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width:768px){
+
+    header {
+        flex-direction: column;
+        margin:20px auto;
+        justify-content: space-around;
+    }
+
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+
+        background: gold;
+
+    }
+    .middle-content .boxes .box5 {
+
+        background: cadetblue;
+
+    }
+    .middle-content .boxes .box7 {
+
+        background: coral;
+
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+
+    }
+}
+
+@media (max-width:400px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        height: 300px;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        text-align: center;
+        border-bottom: 1px solid gray; 
+        display: block;
+        width:100%;
+        padding: 16px 0;
+    }
+
+       header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+    header nav a:last-child {
+        border-bottom: none;
+    }
+    
+    .top-content {
+        display:flex;
+        flex-direction: column;
+    }    
+
+    .top-content .top-image {
+        display: block;
+        width:100%;
+        height:80px;
+    }
+
+    .top-content .text-container {
+        width:100%;
+        margin-left: 2%;
+    }
+
+    .middle-content {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .middle-content .boxes {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        padding: 10px 0;  
+    }
+
+    footer {
+        width: 100%;
+        background: black;
+    }
+    
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 1.4rem;
+    }
+    
+    footer nav a {
+        color: white;
+        text-decoration: none;
+    }
 }
