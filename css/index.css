@@ -75,6 +75,28 @@ p {
     margin: 0 auto;
     padding: 0 6%;
 }
+
+/* Header content */
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+nav a {
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .top-content {
