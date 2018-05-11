@@ -153,12 +153,19 @@ footer nav a {
 
     .lambda{
         display:flex;
-        flex-wrap:wrap;
+       /* flex-wrap:wrap;*/
         order:-1;
         flex-direction: row;
         align-items: flex-start;
-        margin-top:17px;
+        margin-top:15px; /*17*/
         margin-left: 103px;
+    }
+
+    .topnav a{
+        color:black;
+        text-decoration: none;
+        font-size:1.2rem;
+        margin-left:150px;
     }
 
     .photo{
@@ -168,14 +175,21 @@ footer nav a {
         margin-left:100px;
         height:150px;
         width:800px;
-        
     }
+    header{
+        border:4px solid green;
+        height:800px;
+    }
+
    body{
     border:2px solid red;
    }
     .container{
         border:3px solid blueviolet;
-        margin-top: 150px;
+        width:850px;
+        height:710px;
+        margin-top: 250px;
+        margin:auto;
     }
         .boxes{
             display:flex;
@@ -184,7 +198,7 @@ footer nav a {
     }
    .boxes .boxA{
        border:3px solid orange;
-        color:green;
+        color:yellow;
         width:80px;
         height:80px;
     }
