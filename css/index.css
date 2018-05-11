@@ -99,6 +99,14 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Jumbotron Image */
+.jumbotron-img {
+    width: 100%;
+    margin: 38px 0 24px 0;
+}
+
+/* Starting Text Content */
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
