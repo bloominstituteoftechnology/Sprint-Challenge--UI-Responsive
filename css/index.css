@@ -324,7 +324,7 @@ footer nav a {
     margin: 0;
   }
   .boxes {
-    width: 100%;
+    width: 102%;
     margin: 0;
   }
   #box1 {
@@ -341,5 +341,39 @@ footer nav a {
   }
   #box9 {
     background: crimson;
+  }
+  .bottom-content {
+    width: 100%;
+    margin: 3% 0 2.7% 2%;
+  }
+  footer {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+  header img {
+    max-width: 40%;
+    margin-left: 32%;
+    margin-top: 6%;
+  }
+  header nav {
+    flex-flow: column;
+  }
+  header nav a {
+    justify-content: center;
+    align-content: space-around;
+  }
+  .middle-content {
+    width: 100%;
+  }
+  .boxes {
+    width: 100%;
+  }
+  #box10 {
+    display: none;
   }
 }
