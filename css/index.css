@@ -75,7 +75,8 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -157,8 +158,7 @@ footer nav a {
 @media (max-width: 768px) {
 
     .container {
-        width: 768px;
-        margin: 0 auto;
+        max-width: 768px;
     }
 
 }
@@ -168,8 +168,7 @@ footer nav a {
 @media (max-width: 400px) {
 
     .container {
-        width: 400px;
-        margin: 0 auto;
+        max-width: 400px;
     }
 
 }
