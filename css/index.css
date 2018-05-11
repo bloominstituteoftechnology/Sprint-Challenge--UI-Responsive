@@ -213,7 +213,18 @@ footer nav a {
 /* Tablet Breakpoint */
 
 @media (max-width: 768px) {
-
+    .container {
+        padding: 0;
+    }
+    header {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 75px;
+    }
+    header nav {
+        justify-content: space-around;
+    }
 }
 
 /* Mobile Breakpoint */
