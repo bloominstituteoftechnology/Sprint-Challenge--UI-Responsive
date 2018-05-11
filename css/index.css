@@ -51,13 +51,17 @@ table {
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +71,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 986.4px;
     margin: 0 auto;
 }
 
@@ -137,10 +141,94 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width:1000px){
+   body{
+    border:2px solid red;
+   }
+    .container{
+        border:3px solid blueviolet;
+    }
+        .boxes{
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:row-reverse;
+    }
+   .boxes .boxA{
+       border:3px solid orange;
+        color:green;
+        width:80px;
+        height:80px;
+    }
+
+    .boxes .boxB{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+   .boxes .boxC{
+    border: 3px solid orange;
+    width:80px;
+    height:80px;
+   } 
+
+    .boxes .boxD{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+
+    .boxes .boxE{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+    .boxes .boxF{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+    .boxes .boxG{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+    .boxes .boxH{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+    .boxes .boxI{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+    .boxes .boxJ{
+        border: 3px solid orange;
+        width:80px;
+        height:80px;
+    }
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width:400px){
+
+    .container{
+        border:1px solid red;
+    }
+.box{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
 }

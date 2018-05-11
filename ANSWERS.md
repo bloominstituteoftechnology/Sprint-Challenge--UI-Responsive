@@ -1,7 +1,12 @@
 <!-- Answers to the Self Study Questions go here -->
 
 1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight?
+    .box3
 2. Describe the difference between `display: block;` and `display: inline;`.
+    'display:block;' causes elements to take up huge 'blocks' of space that generally take up a whole line or at least most of the line. 'display:inline;' takes away that functionality and causes elements to only take up as much space as the element itself needs with no added space taken up.
 3. While using flexbox, what axis are you using when you use the property: `align-items: center`?
+    'align-items: center' uses the cross-axis or vertical axis(unless the flex-direction is changed in which case the cross axis could become the horizontal axis)
 4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
+    A fixed layout does not adjust or adapt to different screen sizes, it's otherwise known to have hard-coded widths and does not work well with different viewports. An adaptive layout is a pre-selected layout that chooses which content to display based upon the viewport size, which may mean, in a smaller viewport some content is left out or not displayed as well as an overall change in the layout scheme. A fluid layout is a percentage based layout that keeps the same layout as the original design but increases or decreases the size of the content relative to the size of the viewport. A responsive layout adapts to whichever screen size is relevant without compromising the integrity of the content, no stretching or squishing is worried about because the layout changes with the needs of each viewport. A responsive layout generally includes all content but potentially changes the design of the initial layout, responding to the needs of each screen size.
 5. Why do we need to use the CSS property max-width on the outter most container in a responsive website?
+    We need to use the CSS property max-width on the outter most container because it tells the browser how to react when given a certain screen size, which may change if media queries are given to add other platforms. This first max-width is the platform that is being targeted first and what the overall approach is focused at. After the initial platform is finished all other platforms should continue with the same pattern originally drawn up for the first approach.
