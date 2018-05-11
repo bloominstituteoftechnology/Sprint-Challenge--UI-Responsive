@@ -1,5 +1,6 @@
 <!-- Answers to the Self Study Questions go here -->
 
+
 1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight?
 
 	a. Depend on where it is being called in the CSS file and how much weight/specificity is being called.
