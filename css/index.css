@@ -226,6 +226,7 @@ header{
 
 header nav {
     width: 100.31%;
+    margin-top: 3%;
 }
 
 .box1{
@@ -249,7 +250,9 @@ header nav {
 }
 
 
-
+.bottom-content{
+	margin: 0 2% 3%;
+}
 
 
 
