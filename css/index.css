@@ -227,6 +227,7 @@ footer nav a {
 @media (max-width: 415px){
 
     .container{
+        margin-left: 0;
         width:100%;
     }
 
