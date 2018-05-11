@@ -251,7 +251,17 @@ footer nav a {
             margin: 0;
         }
 
+        .middle-content .boxes {
+            flex-direction: row-reverse;
+        }
+
+        .middle-content .boxes .box {
+            width: 25%;
+        }
+
         .middle-content .boxes .box10 {
             display: none;
         }
+        
+    
     }
