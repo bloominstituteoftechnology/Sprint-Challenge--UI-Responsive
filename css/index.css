@@ -52,23 +52,55 @@ table {
 }
 
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
-p {
+p, a, .box {
+    font-size: 1.6rem;
     line-height: 1.4;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 5;
+}
+
+.jumbo {
+    padding: 20px 0;
 }
 
 .top-content {
@@ -112,6 +144,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +189,138 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    header img {
+        padding: 10px 0;
+    }
+
+    .jumbo {
+        height: auto;
+        padding: 0 0 20px;
+        width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        width: 13%;
+    }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+
+    .bottom-content {
+        margin: 20px 2% 20px;
+    }
+
+    @media (max-width: 400px) {
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        header {
+            margin: 45px auto 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        header nav {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 0;
+            margin: 10px 0 0;
+        }
+
+        header nav a {
+            width: 100%;
+            text-align: center;
+            padding: 12px 0;
+            border-top: 1px solid black;
+        }
+
+        .top-content {
+            flex-direction: column;
+        }
+
+        .top-content .text-container {
+            width: 100%;
+            padding: 0 0 20px 5%;
+        }
+
+        .middle-content .boxes {
+            flex-direction: row-reverse;
+        }
+
+        .middle-content .boxes .box {
+            width: 25.5%;
+        }
+
+        .middle-content .boxes .box10 {
+            display: none;
+        }
+
+        .bottom-content {
+            flex-direction: column;
+            margin-left: 3%;
+            width: 87%;
+            letter-spacing: -.5px;
+        }
+
+        .bottom-content .text-container {
+            padding: 10px 0;
+        }
+
+        .bottom-content .text-container.curveball {
+            width: 110%;
+        }
+
+        footer nav {
+            width: 100%;
+            justify-content: space-around;
+            padding: 20px 5%;
+        }
+
+        footer {
+            margin-bottom: 20px;
+        }
+    }
 }
