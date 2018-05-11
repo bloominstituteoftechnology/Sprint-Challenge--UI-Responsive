@@ -225,9 +225,14 @@ header{
 
 
 header nav {
-    width: 100.31%;
+    width: 100%;
     margin-top: 3%;
 }
+
+.jumbo{ 
+        width: 100%;
+}
+
 
 .box1{
         background: teal;
@@ -278,11 +283,23 @@ header nav a{
 
 .jumbo{
 	width: 100%;
+}
 
+.box10 {
+	display: none;
+}
+
+.top-content{
+	display: flex;
+	flex-direction: column;	
 
 }
 
+.bottom-content{
+        display: flex;
+        flex-direction: column;
 
+}
 
 
 
