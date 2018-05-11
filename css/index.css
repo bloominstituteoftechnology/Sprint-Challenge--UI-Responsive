@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -65,12 +65,32 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+html {
+	font-size: 62.5%
+}
 
 .container {
     width: 800px;
+		max-width: 100%;
+		font-size 1.6rem;
     margin: 0 auto;
 }
+ header {
+	 width: 100%;
 
+ }
+
+ header nav {
+	 width: 100%;
+
+ }
+header .jumbo {
+
+}
+
+header .lambda-black {
+
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +102,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -110,6 +130,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.middle-content .boxes. .box2{
+	color: forestgreen;
 }
 
 .bottom-content {
@@ -143,4 +166,146 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*Tablet*/
+@media(max-width: 768px){
+
+.container{
+	max-width: 76.8%;
+
+}
+
+header {
+
+	height: 350px;
+	width: 100%;
+
+}
+
+header nav {
+width: 100%;
+height: 70px;
+}
+
+header nav a {
+
+	padding: 40px;
+
+	margin-left: 50px;
+	padding-right: 40px;
+
+
+}
+
+header .jumbo {
+	margin:0 0 0 50px;
+	padding-right: 100px;
+}
+
+.top-content {
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: space-evenly;
+	 margin-bottom: 20px;
+	 border-bottom: 1px dashed black;
+}
+.top-content {
+	font-size: 1.6rem;
+}
+.middle-content {
+font-size: 1.6rem;
+}
+.bottom-content{
+	font-size: 1.6rem;
+}
+}
+
+@media(max-width 400px){
+
+.container {
+ max-width: 25%;
+
+}
+
+header nav {
+	width: 100%;
+}
+
+header nav a {
+ border: 1px solid black;
+ height: 300px;
+	width: 100%;
+
+	padding: 40px;
+	margin: 20px;
+	font-size: 2.0rem;
+}
+
+.top-content {
+ margin-bottom: 10px;
+}
+
+.top-content .text-container {
+	font-size: 1.6rem;
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+.middle-content {
+	font-size: 1.6rem
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.bottom-content {
+justify-content: space-evenly;
+
+}
+
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+	padding: 10%;
+    color: white;
+    text-decoration: none;
+}
 }
