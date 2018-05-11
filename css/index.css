@@ -87,9 +87,9 @@ header {
 }
 
 header nav {
-    margin-top: 45px; 
-    padding-left: 25%;
-    padding-right: 5%;
+    margin-top: 46px;
+    padding-left: 5.5%;
+    padding-right: 5.5%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -98,7 +98,7 @@ header nav {
 header nav a {
     font-size: 1.4rem;
     text-decoration: none;
-    color: #b0b0b0;
+    color: black;
 }
 
 header nav a:hover {
@@ -107,7 +107,6 @@ header nav a:hover {
 }
 
 header .logo {
-    margin-left: -100%;
     margin-top: 20px;
     padding: 0 0 5px;
 }
@@ -116,22 +115,23 @@ header .logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    padding-bottom: 9px;
+    margin-bottom: 21px;
     border-bottom: 1px dashed black;
 }
 
-.top-content .jumbotron {
-    padding-top: 35px;
+.jumbotron {
+    margin-top: 35px;
 }
 
 .top-content .text-container {
     width: 48%;
-    padding: 23px 1%;
-    padding-bottom: 20px;  
+    padding: 21px 1%;
+    padding-bottom: 10px;
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     border-bottom: 1px dashed black;
 }
 
@@ -157,23 +157,23 @@ header .logo {
     justify-content: center;
 }
 
-.middle-content .boxes .box:nth-child(2) {
+.middle-content .boxes .box2 {
     background: forestgreen;
 }
 
-.middle-content .boxes .box:nth-child(4) {
+.middle-content .boxes .box4 {
     background: darkorchid;
 }
 
-.middle-content .boxes .box:nth-child(6) {
+.middle-content .boxes .box6 {
     background: hotpink;
 }
 
-.middle-content .boxes .box:nth-child(8) {
+.middle-content .boxes .box8 {
     background: indigo;
 }
 
-.middle-content .boxes .box:last-child {
+.middle-content .boxes .box10 {
     background: lawngreen;
 }
 
@@ -210,7 +210,7 @@ footer nav a {
     text-decoration: none;
 }
 
-/* Table view*/
+/* Tablet view*/
 @media (max-width: 768px) {
 
     .container {
@@ -220,6 +220,7 @@ footer nav a {
 
     header {
         flex-wrap: wrap;
+        margin-bottom: 0px;
     }
   
     header nav {
@@ -233,50 +234,49 @@ footer nav a {
     }
 
     header .logo {
-        order: -1;
-        display: block;
         margin: 20px auto 0;
     }
 
-    .top-content .jumbotron {
+    .jumbotron {
+        margin-top: 0px;
         padding-top: 28px;
-        height: 175px;
+        width: 100%;
+        height: 144px;
+    }
+
+    .top-content {
+      padding-bottom: 0px;
+      border-bottom: 1px dashed black;
+      margin-bottom: 17px;
     }
 
     .top-content .text-container {
         width: 48%;
         padding: 23px 1%;
-        padding-bottom: 20px;  
+        padding-bottom: 20px;
     }
 
-    .middle-content .boxes .box {
-        width: 13%;
-        height: 100px;
-        background: black;
-        margin: 20px 2.5%;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .middle-content {
+      margin-bottom: 21px;
     }
 
-    .middle-content .boxes .box:first-child {
+    .middle-content .boxes .box1 {
         background: teal;
     }
 
-    .middle-content .boxes .box:nth-child(3) {
+    .middle-content .boxes .box3 {
         background: gold;
     }
 
-    .middle-content .boxes .box:nth-child(5) {
+    .middle-content .boxes .box5 {
         background: cadetblue;
     }
 
-    .middle-content .boxes .box:nth-child(7) {
+    .middle-content .boxes .box7 {
         background: coral;
     }
 
-    .middle-content .boxes .box:nth-child(9) {
+    .middle-content .boxes .box9 {
         background: crimson;
     }
 
@@ -292,41 +292,41 @@ footer nav a {
         justify-content: center;
     }
 
-    header nav {
-        width: 100%;
-        flex-direction: column;
-        margin: 0;
-        /* padding-top: 5px; */
+    header .logo {
+        padding-bottom: 13px;
+        margin-top: 30px;
     }
 
-    header nav a {
-        width: 100%;
-        display: block;
+    header nav {
+        flex-direction: column;
+        margin-top: 15px;
+      }
+      
+      header nav a {
+        margin-top: 0px;
         text-align: center;
-        padding: 10px 0;
+        padding-top: 16px;
+        padding-bottom: 0px;
         font-size: 1.4rem;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid darkgray;
+        height: 46px;
     }
 
     header nav a:first-child {
-        border-top: 1px solid gray;
+        border-top: 1px solid darkgray
     }
 
     header nav a:hover {
         background: gray;
     }
 
-    header .logo {
-        margin: 51px 0;
-    }
-
-    .top-content .jumbotron {
-        margin-top: 46px;
-        height: 110px;
+    .jumbotron {
+        padding-top: 0px;
+        height: 77px;
     }
 
     .top-content {
-        margin-top: 50px;
+        margin-top: -3px;
         flex-flow: column;
         align-items: center;
     }
@@ -334,31 +334,35 @@ footer nav a {
     .top-content .text-container {
         width: 90%;
         padding: 23px 1%;
-        padding-bottom: 0px;  
+        padding-bottom: 0px;
     }
 
     .middle-content .boxes {
         flex-direction: row-reverse;
     }
+
     .middle-content .boxes .box {
         width: 24%;
         height: 100px;
-        background: black;
         margin: 20px 2.5%;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
-    .middle-content .boxes .box:last-child {
+    .middle-content .boxes .box10 {
         display: none;
     }
 
     .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
-        height: 440px;
+        height: 311px;
     }
-    
+ 
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 1.4rem;
+    }
 }
