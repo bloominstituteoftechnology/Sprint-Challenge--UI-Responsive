@@ -224,12 +224,60 @@ footer nav a {
   
     header nav {
         width: 100%;
-        padding: 0 3.9063%;
+        padding: 0 7.2917%;
+    }
+
+    header nav a {
+        margin-top: -20px;
+        color: black;
     }
 
     header .logo {
         order: -1;
         display: block;
-        margin: 30px auto 0;
+        margin: 20px auto 0;
     }
+
+    .top-content .jumbotron {
+        padding-top: 28px;
+        height: 175px;
+}
+
+    .top-content .text-container {
+        width: 48%;
+        padding: 23px 1%;
+        padding-bottom: 20px;  
+    }
+
+    .middle-content .boxes .box {
+        width: 13%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .middle-content .boxes .box:first-child {
+        background: teal;
+    }
+
+    .middle-content .boxes .box:nth-child(3) {
+        background: gold;
+    }
+
+    .middle-content .boxes .box:nth-child(5) {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-child(7) {
+        background: coral;
+    }
+
+    .middle-content .boxes .box:nth-child(9) {
+        background: crimson;
+    }
+
 }
