@@ -88,13 +88,14 @@ header {
 
 header nav {
     margin-top: 45px; 
+    padding-left: 200px;
+    padding-right: 40px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header nav a {
-    /* margin-left: 200px; */
     text-decoration: none;
     color: #b0b0b0;
 }
