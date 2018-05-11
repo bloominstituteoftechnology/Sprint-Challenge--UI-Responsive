@@ -47,6 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -144,3 +151,96 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+/* MY CODE BELOW */
+header, .top-content {
+    border: 1px solid red;
+}
+html {
+    font-size:62.5%;
+}
+@media (max-width: 1000px) {
+    .container {
+        width: 800px;
+        font-size: 1.5rem
+    }  
+    .middle-content .boxes div:nth-child(4) {
+        background-color: darkorchid;        
+    }
+    .middle-content .boxes div:nth-child(6) {
+        background-color: hotpink;
+    }
+    .middle-content .boxes div:nth-child(8) {
+        background-color: indigo;
+    } 
+    .middle-content .boxes div:nth-child(10) {
+        background-color: lawngreen;
+    } 
+}/* end of @media 1000px */
+
+header {
+    margin: 20px 0px 35px 0px ;
+}
+nav {
+    display: flex; 
+    justify-content: space-around;   
+}
+nav a {
+    align-self: flex-end;
+    /* font-size: 1.5rem; */
+    text-decoration: none;    
+}
+a:hover {
+    color: blue;
+}
+.top-content {
+    margin: 20px 0px 0px 0px ;
+    /* font-size: 1.5rem   */
+}
+.middle-content {
+    border-top: 1px dashed black;
+    padding: 25px 0px 0px 15px;
+}
+footer {
+    margin: 50px 0px 0px 0px ;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .middle-content .boxes  div:nth-child(1) {
+        background-color: teal;   
+    }
+    .middle-content .boxes  div:nth-child(3) {
+        background-color: gold;   
+    }
+    .middle-content .boxes  div:nth-child(5) {
+        background-color: cadetblue;   
+    }
+    .middle-content .boxes  div:nth-child(7) {
+        background-color: coral;   
+    }
+    .middle-content .boxes  div:nth-child(9) {
+        background-color: crimson;   
+    }    
+}
+@media (max-width: 400px) {
+    .middle-content .boxes  div:nth-child(10){
+        display: none;   
+    }
+    .container {
+        /* width: 100%; */
+    }
+
+
+}
+
+
+
+
