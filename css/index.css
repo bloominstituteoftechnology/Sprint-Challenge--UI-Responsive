@@ -78,30 +78,34 @@ p {
 header {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	align-items: center;
-	margin: 5% auto;
+	width: 85%;
+	align-items: flex-end;
+	margin: 5% auto 0;
 }
 
 header nav {
 	display: flex;
 	justify-content: space-evenly;
-	width: 75%;
-
+	width: 86.5%;
 }
 
 header img {
 	/* May want to come back and set a width */
+	align-self: flex-end;
+	width: 17.5%;
 }
 
 header nav a {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	color: black;
 	text-decoration: none;
 }
 
 .jumbo {
-	margin: 5% auto;
+	width: 80%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	align-self: center;
 }
 
 .top-content {
@@ -111,6 +115,8 @@ header nav a {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 		font-size: 1.6rem;
+		width: 70%;
+		align-self: center;
 }
 
 .top-content .text-container {
@@ -119,10 +125,16 @@ header nav a {
     padding-bottom: 20px;
 }
 
+.top-content .text-container h2 {
+		font-size: 1.8rem;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 		font-size: 1.6rem;
+		width: 80%;
+		align-self: center;
 }
 
 .middle-content h2 {
@@ -134,6 +146,7 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+		width: 100%;
 }
 
 .middle-content .boxes .box {
@@ -172,6 +185,8 @@ header nav a {
     margin: 0 2% 20px;
     justify-content: space-around;
 		font-size: 1.6rem;
+		width: 70%;
+		align-self: center;
 }
 
 .bottom-content .text-container {
@@ -183,9 +198,10 @@ header nav a {
 }
 
 footer {
-    width: 100%;
+    width: 80%;
     background: black;
 		font-size: 1.6rem;
+		align-self: center;
 }
 
 footer nav {
@@ -205,6 +221,32 @@ footer nav a {
 
 /* Tablet Styles */
 @media (max-width: 768px) {
+	header {
+		flex-direction: column;
+	}
+
+	header img {
+		align-self: center;
+		margin-bottom: 5%;
+	}
+
+	header nav {
+		align-self: center;
+	}
+
+	.jumbo {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	.top-content {
+		width: 100%;
+	}
+
+	.middle-content {
+		width: 100%;
+	}
+
 	.middle-content .boxes .box1 {
 		background: teal;
 	}
@@ -223,6 +265,19 @@ footer nav a {
 
 	.middle-content .boxes .box.box9 {
 		background: crimson;
+	}
+
+	.bottom-content {
+		width: 100%;
+		align-self: center;
+	}
+
+	.bottom-content .text-container {
+		margin-left: 2%;
+	}
+
+	footer {
+		width: 100%;
 	}
 }
 
