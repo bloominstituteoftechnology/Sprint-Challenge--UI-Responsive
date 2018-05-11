@@ -177,3 +177,21 @@ html {
 .jumbotron {
     margin-bottom: 20px;
 }
+
+@media (max-width: 1000px) {
+    .boxes .box.box-2 {
+        background-color: forestgreen;
+    }
+    .boxes .box.box-4 {
+        background-color: darkorchid;
+    }
+    .boxes .box.box-6 {
+        background-color: hotpink;
+    }
+    .boxes .box.box-8 {
+        background-color: indigo;
+    }
+    .boxes .box.box-10 {
+        background-color: lawngreen;
+    }
+}
