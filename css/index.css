@@ -96,6 +96,8 @@ header img {
 
 header nav a {
 	font-size: 1.6rem;
+	color: black;
+	text-decoration: none;
 }
 
 .jumbo {
@@ -145,6 +147,26 @@ header nav a {
     justify-content: center;
 }
 
+.middle-content .boxes .box.box2 {
+	background: forestgreen;
+}
+
+.middle-content .boxes .box.box4 {
+	background: darkorchid;
+}
+
+.middle-content .boxes .box.box6 {
+	background: hotpink;
+}
+
+.middle-content .boxes .box.box8 {
+	background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+	background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -178,4 +200,41 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+	.middle-content .boxes .box1 {
+		background: teal;
+	}
+
+	.middle-content .boxes .box.box3 {
+		background: gold;
+	}
+
+	.middle-content .boxes .box.box5 {
+		background: cadetblue;
+	}
+
+	.middle-content .boxes .box.box7 {
+		background: coral;
+	}
+
+	.middle-content .boxes .box.box9 {
+		background: crimson;
+	}
+}
+
+
+/* Mobile Styles */
+@media (max-width: 400px) {
+	.middle-content .boxes {
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
+	}
+
+	.middle-content .boxes .box.box10 {
+		display: none;
+	}
 }
