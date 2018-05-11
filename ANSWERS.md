@@ -14,6 +14,8 @@
 
 4.  What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
 
-* Adaptive layout will have media queury breaks & 
+* Adaptive layout will have media queury breaks & fluid will be percent based & responsive will be a combination of both 
 
 5.  Why do we need to use the CSS property max-width on the outer most container in a responsive website?
+
+*To constrain the container 
