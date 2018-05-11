@@ -202,7 +202,7 @@ footer nav a {
 
   .nav {
       display: block;
-      margin-bottom: 4.5%;
+      margin: 2.5% 0 4.5% 0;
   }
 
   .nav .logo {
