@@ -112,6 +112,23 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box:nth-child(4) {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box:nth-child(6) {
+    background-color: hotpink;
+}
+.middle-content .boxes .box:nth-child(8) {
+    background-color: indigo;
+}
+.middle-content .boxes .box:nth-child(10) {
+    background-color: lawngreen;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
