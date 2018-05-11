@@ -111,14 +111,15 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
    /* padding: 0 1%;
-    padding-bottom: 20px;  */
+    padding-bottom: 2rem;  */
 
     padding: 16px 1%;
     padding-bottom: 0px;
@@ -127,8 +128,8 @@ header nav a {
 .middle-content {
     margin-bottom: 3%;
     margin-top: 5%;
-	/* margin-bottom: 20px;
-    border-bottom: 1px dashed black;*/
+    margin-bottom: 2.5%;
+    border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
@@ -146,7 +147,7 @@ header nav a {
     width: 12.5%;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2% 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -316,6 +317,7 @@ header nav a{
 .middle-content{
 	    /*border-top: 1px dashed black;*/	
 	    border-bottom: 1px dashed black;
+	    padding-bottom: 3%;
 
 }
 
