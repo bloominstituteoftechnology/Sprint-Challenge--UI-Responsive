@@ -16,4 +16,4 @@
     A responsive design uses media queries to create breakpoints that change the layout of the design when the viewport reaches a given resolution. Also uses relative units to combine fluidity with adaptiveness.
 
 5. Why do we need to use the CSS property max-width on the outter most container in a responsive website?
-    max-width will allow the container to shrink down with the viewport size, simply declaring width will maintain the container size and create a horizontal scroll bar when the container is shrunk.
+    Acts as a constraint
