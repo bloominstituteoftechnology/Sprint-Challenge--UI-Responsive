@@ -301,12 +301,10 @@ header nav a{
 
 }
 
-/*.middle-content{
-	display: flex;
-	flex-wrap: wrap;
-        flex-direction: row-reverse;
+.middle-content{
+	    border-bottom: 1px dashed black;
 
-}*/
+}
 
 .middle-content .boxes{
 	display: flex;
