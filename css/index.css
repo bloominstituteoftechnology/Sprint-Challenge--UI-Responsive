@@ -69,7 +69,6 @@ p {
 .container {
     max-width: 800px;
     margin: 0 auto;
-	border:2px solid green;
 }
 
 .top-content {
@@ -168,8 +167,89 @@ header .nav-bar{
 	justify-content:space-between;
 	align-items:flex-end
 }
-header .pic {
+header .pic img {
 	margin-top:2.3rem;
 	margin-bottom:1.6rem;
 	width:100%;
+}
+@media (max-width:768px){
+body .middle-content .boxes .box7{
+	background:teal;
+}
+body .middle-content .boxes .box8{
+	background:gold;
+}
+body .middle-content .boxes .box9{
+	background:cadetblue;
+}
+body .middle-content .boxes .box10{
+	background:coral;
+}
+body .middle-content .boxes .box11{
+	background:crimson;
+}
+header .nav-bar {
+	flex-wrap:wrap;
+}
+header .nav-bar img {
+	min-width:157px;
+	width:20.44%;
+	margin:0 39.78% 2rem;
+}
+header .nav-bar{
+	justify-content:space-around;
+}
+}
+@media (max-width:400px){
+	body .middle-content .boxes .box6{
+	display:none;
+}
+header .nav-bar{
+	flex-flow:column;
+	justify-content:center;
+	align-items:center;
+}
+header p{
+	height:2.8rem;
+	width:100%;
+	border-top:1px solid grey;
+	text-align:center;
+	padding-top:0.8rem;
+	font-size:0.9rem;
+}
+header .pic img {
+	margin-top:0.5rem;
+	margin-bottom:1.6rem;
+}
+.top-content{
+	flex-flow:column;
+}
+.middle-content .boxes{
+    flex-flow:row-reverse wrap;
+	width:100%;
+}
+.top-content .text-container {
+    width: 96%;
+	padding-bottom:5px;
+}
+.middle-content .boxes .box {
+    width: 27%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-content {
+    flex-flow:column nowrap;
+	margin-bottom:0;
+}
+.bottom-content .text-container {
+   padding-bottom:1.5rem;
+}
+.bottom-content .text-container:last-child {
+    padding-bottom:1rem;
+}
 }
