@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +67,31 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header .logo {
+    margin: 28px 5% 0 0%;
+}
+
+
+header nav {
+    margin-top: 53px; 
+    width: 69.32%;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-content {
@@ -77,6 +100,10 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.top-content .jumbo {
+    padding: 4.5% 0 3%;
 }
 
 .top-content .text-container {
@@ -137,10 +164,126 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Desktop */
+
+@media (max-width: 1000px) {
+
+    .middle-content .boxes .box:nth-child(2) {
+        background: forestgreen;
+    }
+
+    .middle-content .boxes .box:nth-child(4) {
+        background: darkorchid;
+    }
+
+    .middle-content .boxes .box:nth-child(6) {
+        background: hotpink;
+    }
+
+    .middle-content .boxes .box:nth-child(8) {
+        background: indigo;
+    }
+
+    .middle-content .boxes .box:nth-child(10) {
+        background: lawngreen;
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .logo {
+        object-fit: none;
+        display: inline-block;
+        margin: 20px 10% 0;
+    }
+
+    header nav {
+        width: 100%;
+        padding: 0px 4%;    
+
+    }
+
+    .middle-content .boxes .box:nth-child(1) {
+        background: teal;
+    }
+
+    .middle-content .boxes .box:nth-child(3) {
+        background: gold;
+    }
+
+    .middle-content .boxes .box:nth-child(5) {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-child(7) {
+        background: coral;
+    }
+
+    .middle-content .boxes .box:nth-child(9) {
+        background: crimson;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header .logo {
+        margin-bottom: 20px
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 1.125rem;
+        border-bottom: 1px solid black;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
 }
