@@ -94,14 +94,12 @@ header nav a {
 
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
 
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 11.3%;
+    display: flex;
+    order: -1;
 }
 
 /*---Top Content---*/
@@ -118,6 +116,7 @@ header .logo {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 
@@ -149,11 +148,31 @@ header .logo {
     justify-content: center;
 }
 
+/*.middle-content .boxes .box2 {
+    background: forestgreen;
+}*/
+
+/*.middle-content .boxes .box2 {
+    background: forestgreen;
+}*/
+
+/*.middle-content .boxes .box6 {
+    background: pink;
+}
+/*.middle-content .boxes .box8 {
+    background: purple;
+}*/
+/*.middle-content .boxes .box10 {
+    background: limegreen;
+}*/
+
+/*--Bottom Content---*/
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 .bottom-content .text-container {
