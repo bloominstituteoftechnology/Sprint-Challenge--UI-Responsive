@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -143,4 +143,125 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Desktop styles */
+
+@media (max-width: 1000px) {
+
+header {
+    width: 80%;
+    display: flex;
+    margin: 0 0 0 10%;
+    padding-bottom: 40px;
+}
+
+/* Fix spacing between menu items */
+
+header nav {
+    margin-top: 4%; 
+    width: 65%;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem;
+    
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    order: -1;
+    margin: 20px 9.1% 0 0;
+}
+
+.jumbotron-img {
+    padding-bottom: 20px;
+}
+
+.middle-content .boxes .box.box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+    background: lawngreen;
+}
+
+}
+
+/* Tablet styles */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 35px;
+    }
+
+    /* Fix menu items width */
+  
+    header nav {
+        width: 100%;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 3% auto 1.5%;
+    }
+
+    .jumbotron-img {
+        height: 165px;
+        width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        width: 13%;
+    }
+
+    .middle-content .boxes .box.box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box.box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box.box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box.box7 {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box.box9 {
+        background: crimson;
+    }
+
 }
