@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -66,27 +66,62 @@ p {
     line-height: 1.4;
 }
 
+/* start project css */
+
+html {
+	font-size: 62.5%;
+}
+
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+header {
+	display:flex;
+	align-items: baseline;
+	margin-top: 2.3%;
+
+}
+header img {
+
+}
+header nav {
+	padding: 0 0 0 0%;
+	display:flex;
+justify-content: space-around;
+width: 80%;
+
+}
+
+header nav a {
+text-decoration: none;
+color: black;
+justify-content: space-around;
+font-size: 1.4rem;
+
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+		margin: 5% 0 0 0;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+		margin: 3% 0 3% 0;
+
+}
+.top-content .text-container p {
+  font-size: 1.5rem;
+
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin: 2.5% 0 0 0;
     border-bottom: 1px dashed black;
 }
 
@@ -99,6 +134,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+		font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -112,23 +148,41 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box-2 {
+	background-color: forestgreen;
+}
+.middle-content .boxes .box-4 {
+	background-color: darkorchid;
+}
+.middle-content .boxes .box-6 {
+	background-color: hotpink;
+}
+.middle-content .boxes .box-8 {
+	background-color: indigo;
+}
+.middle-content .boxes .box-10 {
+	background-color: lawngreen;
+}
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 2.4% 0 0 2%;
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding-right: 8%;
+		font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+    padding-right: 6%;
 }
 
 footer {
     width: 100%;
     background: black;
+		margin-top: 2.3%;
+
 }
 
 footer nav {
@@ -136,8 +190,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 3% 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
