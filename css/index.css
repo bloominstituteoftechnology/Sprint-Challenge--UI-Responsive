@@ -209,6 +209,7 @@ footer nav a {
 .middle-content .boxes .box:nth-child(9) {
     background-color: crimson;
 }
+}
 /* Phone */
 @media (max-width: 400px) {
 
@@ -221,16 +222,13 @@ footer nav a {
         flex-wrap: wrap;
         flex-flow: column;
     }
-    .box{
-        width: 100%;
-        flex-wrap: wrap;
-    }
+    
       header {
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    header nav {
+    /*header nav {
         width: 100%;
         flex-direction: column;
         margin: 0;
@@ -244,13 +242,11 @@ footer nav a {
         padding: 20px 0;
         font-size: 2rem;
         border-bottom: 1px solid gray;
-    }
+    }*/
 
     
 
      .middle-content .boxes .box:nth-child(10) {
-    
-    
     display:none;
 }
 
