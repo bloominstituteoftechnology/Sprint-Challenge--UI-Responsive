@@ -261,3 +261,79 @@ footer nav a {
   }
 
 }
+
+@media (max-width: 400px) {
+
+    .nav {
+        margin-bottom: 0;
+    }
+
+    .nav .logo {
+        margin: 8% 0;
+    }
+
+    .nav .menu {
+        flex-direction: column;
+    }
+
+    .nav .menu p {
+        margin: 0;
+        border-top: .1rem solid #b0b0b0;
+        padding: 3% 0;
+        text-align: center;
+    }
+
+    .jumbotron {
+        border-top: .1rem solid #b0b0b0;
+        padding-top: 0.5%;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 3.5% 5.5%;
+    }
+
+    .middle-content {
+        padding-bottom: 1%;
+    }
+
+    .middle-content h2 {
+        margin: 0 2%;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+        margin: 4.5% 2.5%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        padding: 5.5% 2%;
+    }
+
+    footer nav {
+        font-size: 1.6rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer nav a {
+        padding: 0 2%;
+    }
+}
