@@ -146,7 +146,7 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .middle-content .boxes .box2 {
@@ -154,19 +154,19 @@ header .logo {
 }
 
 .middle-content .boxes .box4 {
-    background: #d9b3ff;
+    background: darkorchid;
 }
 
 .middle-content .boxes .box6 {
-    background: pink;
+    background: hotpink;
 }
 
 .middle-content .boxes .box8 {
-    background: purple;
+    background: indigo;
 }
 
 .middle-content .boxes .box10 {
-    background: limegreen;
+    background: lawngreen;
 }
 
 /*--Bottom Content---*/
@@ -204,3 +204,155 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*---MEDIA QUERIES -TABLET (768PX)*/
+@media screen and (max-width: 768px) {
+
+.container{
+    width: 100%;
+}
+
+/* Header Styles(768px) */
+
+header {
+   /* width: 20%;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav {
+    margin: 40px 0 30px 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.4rem;
+
+}
+
+header .logo {
+    display: block;
+    margin: 28px 6.51% 0 11.8%;
+    order: -1;
+
+}
+
+/*--Middle Content- Phone(768px)*/
+
+.middle-content .boxes .box {
+    background: teal;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box3 {
+    background: gold;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box7 {
+    background: coral;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+}
+
+
+/*---MEDIA QUERIES -PHONE (400PX)*/
+@media  screen and (max-width: 400px) {
+
+header {
+   /* width: 20%;*/
+    display: flex;
+    flex-wrap: wrap;
+   /* flex-direction: column;*/
+    justify-content: center;
+}
+
+header nav {
+    /*margin: 40px 0 30px 0;*/
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    border: lightgray;
+    text-align: center;
+}
+nav a {
+    padding: 15px 0 15px 0;
+    border: solid 1px lightgray ;
+}
+
+header .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 20px;
+    order: -1;
+}
+
+
+/*---Middle Content (400px)*/
+
+.middle-content .boxes .box {
+    background: teal;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box3 {
+    background: gold;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box5 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box7 {
+    background: coral;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box9 {
+    background: crimson;
+}
+
+.middle-content .boxes .box10 {
+    display: none;
+}
+
+}
+
+
