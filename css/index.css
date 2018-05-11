@@ -54,10 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -68,7 +69,9 @@ p {
 
 .container {
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 .top-content {
@@ -160,4 +163,25 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+    .middle-content .boxes .box:nth-child(1) {
+    background-color: teal;
+}
+.middle-content .boxes .box:nth-child(3) {
+    background-color: gold;
+}
+.middle-content .boxes .box:nth-child(5) {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box:nth-child(7) {
+    background-color: coral;
+}
+.middle-content .boxes .box:nth-child(9) {
+    background-color: crimson;
 }
