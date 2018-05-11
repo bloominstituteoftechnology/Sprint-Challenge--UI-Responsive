@@ -71,6 +71,25 @@ p {
     margin: 0 auto;
 }
 
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+
+.navbar ul li {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.navbar .img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -143,4 +162,18 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+@media(max-width: 1000px) {
+   
+}
+
+.jumbotron {
+    margin-bottom: 20px;
 }
