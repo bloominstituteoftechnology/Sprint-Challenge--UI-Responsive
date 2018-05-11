@@ -66,12 +66,13 @@ p {
     line-height: 1.4;
 }
 html, body{
-    
+    font-size: 62.5%;
 }
 .container {
     max-width: 1000px;
     width: 1000px;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
 header{
     display: flex; 
@@ -193,7 +194,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
