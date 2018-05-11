@@ -70,14 +70,56 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    
+
+}
+
+header {
+    width:100%;
+    display:flex;
+    margin-bottom:40px;
+    
+
+}
+
+.logo {
+    width:19.625%;
+   
+
+}
+
+header nav {
+    width: 80.3258%;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+
+}
+
+header nav a{
+    font-size:1.6rem;
+    color:gray;
+    width:6.6977%;
+    
+
+}
+
+.jumbo {
+    margin-bottom:22px;
+    width:100%;
+
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    font-size:1.6rem;
     border-bottom: 1px dashed black;
+    height:165px;
+    margin-bottom:19px;
+    width:100%;
 }
 
 .top-content .text-container {
@@ -89,17 +131,20 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    width:100%;
 }
 
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    width:100%;
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width:100%;
 }
 
 .middle-content .boxes .box {
@@ -111,12 +156,35 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:1.6rem;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background-color:forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color:darkorchild;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color:hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color:indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background-color:lawngreen;
 }
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin-bottom:40px;
     justify-content: space-around;
+    font-size:1.6rem;
+    width:100%;
 }
 
 .bottom-content .text-container {
@@ -144,4 +212,6 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    width:7.8458%;
 }
+
