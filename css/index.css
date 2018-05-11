@@ -284,6 +284,40 @@ footer nav a {
 
 /* Mobile Styles */
 @media (max-width: 400px) {
+	header {
+		width: 100%;
+	}
+	header img {
+		width: 50%;
+		align-self: center;
+	}
+
+	header nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		border-top: 1px solid;
+	}
+
+	header nav a {
+		width: 100%;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		border-bottom: 1px solid;
+		align-self: center;
+		text-align: center;
+	}
+
+	.top-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.top-content .text-container {
+		width: 95%;
+	}
+
 	.middle-content .boxes {
 		flex-direction: row-reverse;
 		flex-wrap: wrap-reverse;
@@ -291,5 +325,15 @@ footer nav a {
 
 	.middle-content .boxes .box.box10 {
 		display: none;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bottom-content .text-container {
+		margin-top: 5%;
+		width: 95%;
 	}
 }
