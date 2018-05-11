@@ -49,7 +49,13 @@ table {
 
 * {
     box-sizing: border-box;
+    border: 1px solid red;
 }
+
+html {
+    font-size: 62.5%
+}
+
 
 html, body {
     height: 100%;
@@ -57,8 +63,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -67,9 +73,36 @@ p {
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    max-width: 880px;
+    width: 100%
+    margin: auto;
+    font-size: 1.6rem;
+    margin: 20px 20px 20px 50px;
+
 }
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+header .logo {
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+
+header nav {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 3%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
 
 .top-content {
     display: flex;
@@ -77,17 +110,27 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    font-weight: bold;
+}
+
+.top-content .jumbotron {
+    display: block;
+    width: 100%;
+    margin-left: 1%;
+    margin-bottom: 3%;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    margin-left: -2%;
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    font-weight: bold;
 }
 
 .middle-content h2 {
@@ -112,10 +155,31 @@ p {
     justify-content: center;
 }
 
+ .middle-content .boxes .box.box-2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box.box-4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box.box-6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box.box-8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box.box-10 {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-weight: bold;
 }
 
 .bottom-content .text-container {
@@ -137,10 +201,47 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .top-content .jumbotron {
+        width: 100%;
+        margin: 4% 0 4% 0;
+    }
+
+
+    .middle-content .boxes .box.box-1 {
+    background-color: teal;
+}
+    .middle-content .boxes .box.box-3 {
+    background-color: gold;
+}
+    .middle-content .boxes .box.box-5 {
+    background-color: cadetblue;
+}
+    .middle-content .boxes .box.box-7 {
+    background-color: coral;
+}
+    .middle-content .boxes .box.box-9 {
+    background-color: crimson;
+}
+}
+
+
+
