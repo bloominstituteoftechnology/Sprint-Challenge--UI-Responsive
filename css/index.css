@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -66,9 +66,31 @@ p {
     line-height: 1.4;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+		font-size: 1.6rem;
+}
+
+.header-nav {
+	display: flex;
+	align-items: baseline;
+	margin: 20px 3.125% 27px 0;
+	font-size: 1.4rem;
+}
+
+.header-nav-bar {
+	width: 87.5%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header img {
+	margin-bottom: 20px;
 }
 
 .top-content {
@@ -82,7 +104,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -137,10 +159,175 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*Desktop style*/
+@media (max-width: 1000px) {
+
+	.container {
+		width: 80%;
+		font-weight: bold;
+	}
+
+	.boxes .box:nth-child(2) {
+		background: forestgreen;
+	}
+
+	.boxes .box:nth-child(4) {
+		background: darkorchid;
+	}
+
+	.boxes .box:nth-child(6) {
+		background: hotpink;
+	}
+
+	.boxes .box:nth-child(8) {
+		background: indigo;
+	}
+
+	.boxes .box:nth-child(10) {
+		background: lawngreen;
+	}
+
+	.bottom-content .text-container {
+		width: 30.25%;
+	}
+
+	.bottom-content .text-container:last-child {
+		padding-right: 1.25%;
+	}
+
+}
+
+/*Tablet style*/
+@media (max-width: 768px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.header-nav {
+		flex-direction: column;
+	}
+
+	.header-nav img {
+		align-self: center;
+		margin-right: 1.30%;
+	}
+
+	.header-nav-bar {
+		justify-content: space-between;
+		padding-left: 3.90%;
+		padding-top: 10px;
+	}
+
+	.header img:nth-child(2) {
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.boxes .box:nth-child(1) {
+		background: teal;
+	}
+
+	.boxes .box:nth-child(3) {
+		background: gold;
+	}
+
+	.boxes .box:nth-child(5) {
+		background: cadetblue;
+	}
+
+	.boxes .box:nth-child(7) {
+		background: coral;
+	}
+
+	.boxes .box:nth-child(9) {
+		background: crimson;
+	}
+}
+
+/*Phone style*/
+@media (max-width: 400px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.header-nav img {
+		margin-left: 5.5%;
+	}
+
+	.header img:nth-child(2) {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.header-nav {
+		margin-bottom: 0;
+		font-size: 1.4rem;
+		margin-right: 0;
+	}
+
+	.header-nav-bar {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-left: 0;
+	}
+
+	.header-nav-bar a {
+		width: 100%;
+		display: block;
+		text-align: center;
+		border-top: 1px solid grey;
+		padding: 15px 0;
+	}
+
+	.header-nav-bar a:last-child {
+		border-bottom: 1px solid grey;
+	}
+
+	.top-content .text-container {
+		display: block;
+		width: 100%;
+		padding: 0 6.25% 20px 6.25%;
+	}
+
+	.middle-content .boxes {
+		flex-direction: row-reverse;
+		padding: 0 2%;
+	}
+
+	.middle-content .boxes .box {
+		width: 25%;
+	}
+
+	.middle-content .boxes .box:last-child {
+		display: none;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-content .text-container {
+		width: 100%;
+		padding: 0 3.75% 25px 2.5%;
+	}
+
+	.bottom-content {
+		margin-bottom: 10px;
+	}
+
+	footer nav {
+		width: 95%;
+		justify-content: space-evenly;
+	}
 }
