@@ -150,11 +150,32 @@ footer nav a {
 }
 
 @media (max-width:1000px){
+
+    .lambda{
+        display:flex;
+        flex-wrap:wrap;
+        order:-1;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top:17px;
+        margin-left: 103px;
+    }
+
+    .photo{
+        display:flex;
+        flex-wrap:wrap;
+        margin-top:40px;
+        margin-left:100px;
+        height:150px;
+        width:800px;
+        
+    }
    body{
     border:2px solid red;
    }
     .container{
         border:3px solid blueviolet;
+        margin-top: 150px;
     }
         .boxes{
             display:flex;
