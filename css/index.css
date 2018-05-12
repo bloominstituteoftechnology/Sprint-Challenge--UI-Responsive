@@ -115,14 +115,6 @@ header nav a {
 }
 
 
-
-
-
-
-
-
-
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -248,7 +240,7 @@ footer nav {
     padding: 20px 2%;
     /* font-size: 14px; */
     font-size: 1.4rem;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 
 footer nav a {
@@ -269,38 +261,96 @@ footer nav a {
         /* border:1px solid black; */
         margin: 0px;
     }
+
     header {
         /* flex-direction:column; */
         /* align-items: center; */
         border:1px solid red;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-bottom:35px;
     }
 
     header img {
-        /* display:block; */
         border:1px solid blue;
+        margin-bottom:26px;
+        padding-left:2%;
     }
 
     header nav {
         /* flex-direction:column; */
         border:1px solid orange;
+        margin-left:2%;
+        margin-right:1%;
+    }
+
+    .top-content {
+        margin-left:0%;
+        /* border:1px solid red; */
     }
     
-}
-    
-    
-/*
 
-header {
-    display:flex;
-    width: 100%;
-   
-    font-size:1.3rem;
-    
-    justify-content: space-between;
-    align-items:flex-end;
-    margin-top:17px;
-    margin-right:4%;
-    margin-left:1%;
-    margin-bottom:40px;*/
+    .top-content .text-container {
+        width: 49%;
+        padding-left:1.9%;
+        padding-right:0%;
+        padding-bottom: 19px; 
+        padding-top: 14px;
+        /* border:1px solid orange;  */
+    }
+
+    .middle-content h2 {
+        padding: 1px 2% 0px;
+        align-items:flex-end;
+    }
+
+    .middle-content .boxes {
+        padding-top:0;
+        padding-left:0;
+        border:1px solid orange;
+    }
+
+    .middle-content .boxes .box {
+        border:1px solid red; 
+        width:13%;
+        margin-top:21px;
+        margin-bottom:20px;
+        margin-right:1.9%;
+        margin-left:4.6%;
+        }
+
+        .middle-content .boxes .box.box1 {
+            background: teal;
+            }
+
+        .middle-content .boxes .box.box3 {
+            background: gold;
+               }
+
+        .middle-content .boxes .box.box5 {
+              background: cadetblue;
+               }
+        .middle-content .boxes .box.box7 {
+            background: coral;
+                }
+        
+        .middle-content .boxes .box.box9 {
+            background: crimson;
+                }
+
+    .bottom-content {
+        margin-left:1.7%;
+    }
+
+    footer {
+        margin-left:0%;
+    }
+
+    footer nav{
+        width:62%
+    }
+
+
+}
 
 
