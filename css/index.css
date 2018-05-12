@@ -353,4 +353,80 @@ footer nav a {
 
 }
 
+/* Phone */
 
+@media (max-width: 400px) {
+
+    header {
+        margin-bottom:0px;
+    }
+
+    header .logo {
+        margin-top:9px;
+        margin-left:9px;
+    }
+
+    header nav {
+        flex-direction:column;
+        align-items: center;
+        padding:1.5px 0;
+    }
+
+    header nav a {
+        padding:15px 0 15px 2.5%;
+        /* display:block; */
+    }
+
+    .top-content {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .top-content .jumbo {
+        height:75px;
+    }
+
+    .top-content .text-container {
+        border:1px solid purple;
+        width:92%;
+        /* padding-top:24px; */
+
+    }
+    .middle-content {
+        border:1px solid red;
+        padding-bottom: 0px;
+    }
+    
+    .middle-content .boxes .box.box10 {
+        display: none;
+    }
+    .middle-content .boxes {
+       /* padding:0;
+       margin:0; */
+       padding-left: 4%;
+       border:1px solid orange;
+       justify-content:space-between;
+       padding-bottom:0px;
+    }
+
+    .middle-content .boxes .box {
+        width:28%;
+        margin-top: 12px;
+        margin-bottom:30px;
+        margin-right:1%;
+        padding-left:0px;
+        padding-right:0px;
+        margin-left:0%;
+        padding-right:0px;
+        border:1px solid red;
+    }
+    .bottom-content {
+        flex-direction:column;
+        align-items: center;
+        border:1px solid orange;
+        padding:0;
+        margin:0;
+    }
+
+
+}
