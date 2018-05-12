@@ -13,5 +13,5 @@ Align always refers to the cross axis.
 Fixed layouts have a set width and do not change with the size of the viewport changes.
 Fluid websites use percentages for widths, this makes columns relative to each other and to the browser, so the website is scalable.
 
-5. Why do we need to use the CSS property max-width on the outter most container in a responsive website?
+5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
 If max-width is used it is possible to set the margins to auto and then center elements within the container. This makes the website responsive in size to all device sizes.
