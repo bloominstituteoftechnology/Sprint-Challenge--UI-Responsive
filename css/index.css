@@ -76,17 +76,18 @@ p {
     margin: 0 auto;
 }
 
-/* header styles */
+/* default styles */
 header {
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 23px 0;
 }
 
 header nav {
-    margin-top: 40px;
-    width: 60%;
+    margin-top: 46px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -97,8 +98,16 @@ header nav a {
     color: black;
 }
 
+header nav a:hover {
+    text-decoration: underline;
+}
+
 header .logo {
-    margin: 28px 5% 0 10.34%
+    margin: 28px 14% 10px 0;
+}
+
+header .jumbotron {
+    margin-top: 22px;
 }
 
 .jumbo-content {
@@ -142,6 +151,7 @@ header .logo {
 }
 
 .middle-content .boxes .box {
+    font-size: 1.6rem;
     width: 12.5%;
     height: 100px;
     background: black;
@@ -152,23 +162,23 @@ header .logo {
     justify-content: center;
 }
 
-.middle-content .boxes .box:nth-child(2) {
+.middle-content .boxes .box2 {
     background: forestgreen;
 }
 
-.middle-content .boxes .box:nth-child(4) {
+.middle-content .boxes .box4 {
     background: darkorchid;
 }
 
-.middle-content .boxes .box:nth-child(6) {
+.middle-content .boxes .box6 {
     background: hotpink;
 }
 
-.middle-content .boxes .box:nth-child(8) {
+.middle-content .boxes .box8 {
     background: indigo;
 }
 
-.middle-content .boxes .box:nth-child(10) {
+.middle-content .boxes .box10 {
     background: lawngreen;
 }
 
@@ -212,17 +222,22 @@ footer nav a {
     }
 
     header {
-        flex-direction: column-reverse;
-        align-items: center;
+       justify-content: center;
     }
 
     header nav {
         width: 100%;
-        padding: 0 7.5%;
+        justify-content: space-around;
+        margin: 29px 0 13px 0;
     }
 
-    .jumbo-content {
-        justify-content: center;
+    header .logo {
+        margin: 20px 0 0 5%;
+    }
+
+    header .jumbotron {
+        height: 148px;
+        width: 100%;
     }
 
     .top-content {
@@ -230,26 +245,26 @@ footer nav a {
     }
 
     .middle-content {
-        margin: 0;
+        margin: 19px 0 0 0;
     }
 
-    .middle-content .boxes .box:first-child {
+    .middle-content .boxes .box1 {
         background: teal;
     }
     
-    .middle-content .boxes .box:nth-child(3) {
+    .middle-content .boxes .box3 {
         background: gold;
     }
     
-    .middle-content .boxes .box:nth-child(5) {
+    .middle-content .boxes .box5 {
         background: cadetblue;
     }
     
-    .middle-content .boxes .box:nth-child(7) {
+    .middle-content .boxes .box7 {
         background: coral;
     }
     
-    .middle-content .boxes .box:nth-child(9) {
+    .middle-content .boxes .box9 {
         background: crimson;
     }
 
@@ -261,52 +276,66 @@ footer nav a {
         width: 100%;
         margin: 0;
     }
-
-    footer nav {
-        width: 100%;
-        justify-content: space-around;
-    }
 }
 
 /* 400px styles */
 @media (max-width: 400px) {
-    .container {
-        width: 100%;
-    }
 
     header {
         justify-content: center;
+    }
+
+    header .logo {
+        margin: 30px 0 0 9%;
     }
 
     header nav {
         width: 100%;
         flex-direction: column;
         align-items: center;
-        padding: 20px 0;
+        padding: 0 0 0 0;
+        margin: 35px 0 0 0;
     }
 
     header nav a {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 10px 0;
+        padding: 14px 0;
         border-top: 1px solid grey;
     }
 
-    .jumbo-content {
-        flex-flow: column;
-        align-items: center;
+    header nav a:hover {
+        background: grey;
+        color: white;
+        text-decoration: none;
+    }
+
+    header .jumbotron {
+        height: 76px;
         margin: 0;
     }
 
-    .jumbo-content .jumbotron {
-        height: 80px;
-        width: 100%;
+    .top-content {
+        height: 415px;
+        justify-content: center;
+
     }
 
-    .top-content {
-        height: 350px;
-        justify-content: center;
+    .top-content .text-container {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 3% 0 6%;
+    }
+
+    .top-content p {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+
+    .middle-content {
+        margin: 20px 2% 0 2%;
     }
 
     .middle-content .boxes {
@@ -320,13 +349,19 @@ footer nav a {
         margin: 20px 1%;
     }
 
-    .middle-content .boxes .box:nth-child(10) {
+    .middle-content .boxes .box10 {
         display: none;
     }
 
     .bottom-content {
+        height: 342px;
         flex-wrap: wrap;
         align-content: space-between;
+        margin: 18px 3% 0 3%;
+    }
+
+    footer {
+        margin: 15px 0 0 0;
     }
 
     footer nav {
