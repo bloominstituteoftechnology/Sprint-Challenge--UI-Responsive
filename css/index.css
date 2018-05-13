@@ -107,6 +107,8 @@ nav a {
 }
 
 .jumbo {
+	width: 100%;
+	heigth: 37.9%;
 	margin: 16px 0;
 }
 .top-content .text-container {
@@ -168,8 +170,9 @@ nav a {
     display: flex;
    /*  margin: 0 2% 20px;*/
 	margin: 0 10% 10px;
-	padding: 3px 1.5%;
+	padding: 3px 1.5% 20px;
     justify-content: space-around;
+
 }
 
 .bottom-content .text-container {
@@ -178,6 +181,68 @@ nav a {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.extra-content {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 0 10% 20px;
+    border-bottom: 1px dashed black;	
+}
+
+.extra-content .more {
+	width: 100%;
+	padding: 20px 2% 15px;
+	margin-bottom: 10px;
+	background: black;
+	color: white;
+	align-self: flex-start;
+}
+.extra-content .text-container {
+	width: 48%;
+    padding: 11px 1%;
+    padding-bottom: 20px;  
+}
+
+.extra-boxes .more-boxes {
+	margin: 20px 10%;
+}
+
+.extra-boxes .more-boxes .boxes {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.extra-boxes .more-boxes .box {
+	width: 45%;
+    height: 360px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 2.4rem;
+	border: 1px solid black;
+}
+
+.extra-boxes .more-boxes .box11 {
+	background: cyan
+}
+
+.extra-boxes .more-boxes .box12 {
+	background: olive;
+}
+
+.extra-boxes .more-boxes .box13 {
+	background: darkviolet;
+}
+
+.extra-boxes .more-boxes .box14 {
+	background: yellowgreen;
 }
 
 footer {
@@ -224,6 +289,8 @@ footer nav a {
 	}
 	
 	.jumbo {
+		width: 100%;
+		height: 37.9%;
 		margin-bottom: 5px;
 	}
 	
@@ -260,6 +327,53 @@ footer nav a {
 		margin: 0 0 20px;
 	}
 	
+	
+	.extra-content {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.extra-content .more {
+		width: 100%;
+	}
+	
+	.extra-boxes .more-boxes{
+		margin: 20px 2%;
+	}
+	.extra-boxes .more-boxes .boxes {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+	}
+	
+	.extra-boxes .more-boxes .box {
+	width: 45%;
+    height: 270px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 2.4rem;
+}
+
+.extra-boxes .more-boxes .box11 {
+	background: peru;
+}
+
+.extra-boxes .more-boxes .box12 {
+	background: red;
+}
+
+.extra-boxes .more-boxes .box13 {
+	background: yellow;
+}
+
+.extra-boxes .more-boxes .box14 {
+	background: mintcream;
+	
 	footer {
 		margin: 0;
 		width: 100%;
@@ -270,24 +384,24 @@ footer nav a {
 	
 		header {
 		width: 100%;
-		height: 290px;
-		margin: 20px auto 0;
+		height: 297px;
+		margin: 30px auto 0;
 	}
 	
 	header nav {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-		margin: 20px 0 5px;
+		margin: 26px 0 5px;
 		padding: 0;
 		width: 100%;
-		height: 290px;
+		height: 295px;
 	}
 	
 	header nav a {
 		margin: 0 auto;
-		padding-top: 18px;
-		height: 16.3%;
+		padding-top: 16px;
+		height: 17%;
 		width: 100%;
 		border-top: 1px gray solid;
 		text-align: center;
@@ -302,13 +416,18 @@ footer nav a {
 	.top-content {
 		flex-direction: column;
 		justify-content: center;
+		padding-bottom: 15px;
 	}
 	
 	.top-content .text-container {
-		width: 96%;
-		margin: 0 4%;
+		width: 93.1%;
+		margin: 18px 0 3px;
+		padding: 0 .9% 0 6%;
 	}
 	
+	.middle-content {
+		margin: 0 0 18px;
+	}
 	.middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -325,11 +444,61 @@ footer nav a {
 	}
 	
 	.bottom-content {
-		width: 96%;
+		width: 96.1%;
 		flex-direction: column;
 		justify-content: center;
-		margin: 0 4% 30px;
+		margin: 16px 0 3px;
 	}
+	
+	.bottom-content .text-container {
+		padding: 0 .9% 20px 1.8%;
+	}
+	
+	.extra-content {
+		width: 96.1%;
+		flex-direction: column;
+		justify-content: center;
+		margin: 16px 3px;
+	}
+	
+	.extra-content .more {
+		width: 100%;
+	}
+	
+	.extra-content .text-container {
+		width: 94.1%;
+		padding: 0 .9% 20px 1.8%;
+		margin-left: 2%;
+	}
+	
+	.extra-boxes .more-boxes .box {
+	width: 45%;
+    height: 145px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 2.4rem;
+	border: 1px groove black;
+}
+
+.extra-boxes .more-boxes .box11 {
+	background: springgreen;
+}
+
+.extra-boxes .more-boxes .box12 {
+	background: tan;
+}
+
+.extra-boxes .more-boxes .box13 {
+	background: steelblue;
+}
+
+.extra-boxes .more-boxes .box14 {
+	background: orangered;
+}
 	
 	footer {
 		width: 100%;
