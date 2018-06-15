@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 .container {
@@ -89,7 +90,7 @@ header {
 }
 
 header nav {
-    width: 80.125%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
@@ -101,12 +102,12 @@ header nav a {
 }
 
 header .logo {
-    width: 19.875%;
+    width: 20%;
 }
 
 .jumbotron-container {
     margin-bottom: 20px;
-    padding: 0 5%;
+    padding: 0 10%;
     display: flex;
     justify-content: center;
 }
@@ -179,7 +180,7 @@ header .logo {
 }
 
 .bottom-content {
-    margin: 0 10%;
+    padding: 0 10%;
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
@@ -194,7 +195,8 @@ header .logo {
 }
 
 footer {
-    width: 100%;
+    margin: 0 10%;
+    width: 80%;
     background: black;
 }
 
