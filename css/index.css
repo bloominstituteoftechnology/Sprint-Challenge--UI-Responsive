@@ -261,7 +261,11 @@ footer nav a {
 		display: none;
 	}
 
-	.top-content, .bottom-content {
+	.top-content {
+		flex-flow: column;
+	}
+
+	.bottom-content {
 		flex-flow: column wrap;
 		width: 100%;
 	}
@@ -272,5 +276,14 @@ footer nav a {
 
 	.bottom-content .text-container {
 		margin-bottom: 25px;
+	}
+
+	footer {
+		display: flex;
+	}
+	
+	footer nav {
+		width: 100%;
+		justify-content: space-around;
 	}
 }
