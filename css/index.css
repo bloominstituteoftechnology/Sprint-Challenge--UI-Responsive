@@ -83,14 +83,19 @@ p {
 header {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+header .logo {
+    width: 33%;
 }
 
 header nav {
     margin: 38px 1% 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header nav a {
@@ -179,6 +184,29 @@ header nav a {
     padding-right: 0;
 }
 
+.stretch-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stretch-content .me {
+    max-width: 640px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.stretch-content .opinion {
+    padding: 5px;
+}
+
+.stretch-content .opinion li {
+    padding: 5px 0;    
+}
+
 footer {
     width: 100%;
     background: black;
@@ -212,11 +240,12 @@ footer nav a {
 
     header .logo {
         display: block;
-        margin: 30px auto;
+        margin: 15px auto;
+        width: 20%
     }
     
     header nav {
-        margin: 38px 1% 0;
+        margin: 38px 8% 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -508,5 +537,7 @@ footer nav a {
     footer nav a {
         color: white;
         text-decoration: none;
+        padding: 14px;
+    
     }
 }
