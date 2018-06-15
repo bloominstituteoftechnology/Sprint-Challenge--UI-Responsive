@@ -82,12 +82,12 @@ html {
 header {
     width: 100%;
     display: flex;
-    margin: 50px 0;
+    margin: 38px 0;
     justify-content: center;
 }
 
 header nav {
-    margin: 38px 1% 0;
+    margin: 38px 0 0;
     width: 100%;
     justify-content: space-around;
     display: flex;
@@ -96,7 +96,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 header nav a:hover {
@@ -108,15 +108,16 @@ header .logo {
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .jumbo{
-    width: 100%
+    width: 100%;
+    margin: 2px 0;
 }
 
 /* top content.................................................... */
@@ -152,7 +153,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box {
@@ -190,7 +191,7 @@ p{
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 2rem;
+    margin: 0 2% 20px;
     justify-content: space-around;
 }
 
