@@ -99,6 +99,7 @@ header nav a {
 
 .jumbotron {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .top-content {
@@ -193,4 +194,44 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Tablet Styles */
+
+@media( max-width: 768px ) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        max-width: 157px;
+        align-self: center;
+    }
+
+    header nav {
+        width: 100%;
+        align-content: space-around;
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+
+    .middle-content .boxes .box:nth-of-type(1) {
+        background: teal;
+    }
+
+    .middle-content .boxes .box:nth-of-type(3) {
+        background: gold;
+    }
+
+    .middle-content .boxes .box:nth-of-type(5) {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-of-type(7) {
+        background: coral;
+    }
+
+    .middle-content .boxes .box:nth-of-type(9) {
+        background: crimson;
+    }
 }
