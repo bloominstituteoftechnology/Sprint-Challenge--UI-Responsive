@@ -50,6 +50,10 @@ table {
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+    font-weight: 300;
+}
 
 html, body {
     height: 100%;
@@ -62,15 +66,64 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+
 p {
     line-height: 1.4;
 }
 
 .container {
-    width: 800px;
+    max-width: 880px;
+    width: 100%;
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+    width: 880px;
+    margin-right: 10px;
+/*    border: solid 2px red;*/
+    
+/*    justify-content: space-between;*/
+}
+
+.row img {
+/*    border: solid blue 2px;*/
+    margin-left: 5%;
+    height: 40px;
+    margin-top: 1%;
+    
+}
+.main-nav {
+/*    border: 2px solid black;*/
+/*    justify-content: space-between;*/
+/*    justify-content: flex-start;*/
+    width: 80%;
+    list-style: none;
+    margin-right: 5%;
+/*    align-items: flex-end;*/
+}
+.main-nav li {
+    display: inline-flex;
+    margin-left: 12%;
+/*    border: 2px solid green;*/
+    align-self: flex-end;
+/*    justify-content: flex-start;*/
+    margin-top: 5%;
+    font-size: 14px;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+
+.main-nav li a {
+    color: black;
+    text-decoration: none; 
+}
+
+.Jumbo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+    
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +138,9 @@ p {
     padding-bottom: 20px;  
 }
 
+.text-container p {
+    font-size: 15px;
+}
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -143,4 +199,68 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 1000px) {
+   .middle-content .boxes .box-2 {
+    background: forestgreen;
+    }
+     .middle-content .boxes .box-4 {
+    background: darkorchid;
+    }
+     .middle-content .boxes .box-6 {
+    background: hotpink;
+    }
+     .middle-content .boxes .box-8 {
+    background: indigo;
+    }
+     .middle-content .boxes .box-10 {
+    background: lawngreen;
+    }
+}
+
+@media(max-width: 768px) {
+     .middle-content .boxes .box-1 {
+    background: teal;
+    }
+     .middle-content .boxes .box-3 {
+    background: gold;
+    }
+     .middle-content .boxes .box-5 {
+    background: cadetblue;
+    }
+     .middle-content .boxes .box-7 {
+    background: coral;
+    }
+     .middle-content .boxes .box-9 {
+    background: crimson;
+    }
+    .row {
+    flex-wrap: wrap;
+
+    }
+    .main-nav {
+        justify-content: center;
+        align-items:center; 
+        margin: 0;
+        padding: 0;
+    }
+    .row img {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 400px) {
+     .middle-content .boxes {
+    flex-direction: row-reverse;
+    }
+/*
+    .middle-content .boxes .box-10 {
+        backface-visibility: hidden;
+    }
+*/
+  .container .row .main-nav {
+    flex-wrap: wrap;
+         
+    }
 }
