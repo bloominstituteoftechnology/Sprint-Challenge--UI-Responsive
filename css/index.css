@@ -28,6 +28,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+
 body {
 	line-height: 1;
 }
@@ -53,22 +55,38 @@ table {
 
 html, body {
     height: 100%;
+			font-size:62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 2.25rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+		font-size: 1rem;
 }
 
 .container {
+		max-width: 1000px;
     width: 800px;
     margin: 0 auto;
+}
+.navbar-top{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0 20px 0;
+}
+.navbar-top a{
+	font-size: 2rem;
+	color:black
+}
+.jumbo{
+	padding: 20px 0; 
 }
 
 .top-content {
@@ -77,6 +95,9 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+.text-container{
+
 }
 
 .top-content .text-container {
@@ -99,6 +120,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+		font-size: 2rem;
 }
 
 .middle-content .boxes .box {
@@ -137,7 +159,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 footer nav a {
