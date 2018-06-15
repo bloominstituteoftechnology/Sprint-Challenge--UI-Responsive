@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
-		font-size: 1rem;
+		font-size: 1.5rem;
 }
 /*page max-width: 1000px*/
 .container {
@@ -98,7 +98,6 @@ p {
 		width: 0 auto;
 		display: flex;
 		justify-content: space-around;
-		background: red;
 	}
 }
 @media(max-width:400px){
@@ -128,7 +127,7 @@ p {
 }
 
 .top-content .text-container {
-    width: 48%;
+    width: 350px;
     padding: 0 1%;
     padding-bottom: 20px;
 }
@@ -152,7 +151,7 @@ p {
 
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -179,9 +178,6 @@ p {
 }
 
 @media(max-width: 768px){
-	p{
-		font-size: 1.5rem;
-	}
 	.middle-content .boxes .box1{
 		background: teal;
 	}
@@ -197,7 +193,25 @@ p {
 	.middle-content .boxes .box9{
 		background: crimson;
 	}
+}
+@media(max-width: 400px){
+	.top-content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 0 auto;
 
+	}
+	.top-content .text-container{
+		width: 0 auto;
+	}
+	.middle-content .boxes{
+		display:flex;
+		flex-direction: row-reverse;
+	}
+	.middle-content .boxes .box10{
+		display: none;
+	}
 }
 
 /* Seperator*/
@@ -214,6 +228,17 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+@media(max-width: 400px){
+	.bottom-content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 0 auto;
+	}
+	.bottom-content .text-container{
+		padding: 10px 0;
+	}
 }
 
 footer {
@@ -233,4 +258,10 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media(max-width: 400px){
+	footer{
+		display: flex;
+		justify-content: center;
+	}
 }
