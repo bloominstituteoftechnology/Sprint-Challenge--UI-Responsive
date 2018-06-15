@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    /*font-size:62.5%;*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,10 +66,35 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/*  my stuff below to work on*/
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 95%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .top-content {
@@ -77,6 +103,7 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    border: 1px solid black;
 }
 
 .top-content .text-container {
@@ -97,20 +124,81 @@ p {
 
 .middle-content .boxes {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+ 
+ .boxes .black {
     width: 12.5%;
     height: 100px;
     background: black;
+    color: white;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+
+/*.middle-content*/ .boxes .forestgreen {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
     margin: 20px 2.5%;
     color: white;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
 }
+
+
+.boxes .darkorchid {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+.boxes .hotpink {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+.boxes .indigo {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+.boxes .lawngreen {
+    width: 12.5%;
+    height: 100px;
+    background: lawngreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+
+ 
 
 .bottom-content {
     display: flex;
@@ -144,3 +232,65 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+@media( max-width: 768px ) {
+  
+  .container {
+    background: red;
+  }
+
+  .container header{
+
+  }
+
+  .container header nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container header nav a{
+    display: flex;
+    /*margin-top: 40px;*/
+    margin-top: 0;  
+    width: 98.75%;
+    justify-content: space-between;
+    
+  }
+  
+  .container .main-content {
+   /* height: 400px;*/
+  }
+  
+  .container .text {
+    width: 30%;
+  }
+  
+  .container .img-container img {
+    width: 100%;
+    /*/*display: none;*/
+  }
+
+  .container img{
+
+    display: none;
+  }
+} 
+
+@media( max-width: 500px ) {
+  
+  .container {
+    background: lightgray;
+  }
+  
+  .container .main-content {
+    height: 600px;
+  }
+  
+  .container .text {
+    width: 60%;
+  }
+  
+  .container .img-container img {
+    width: 100%;
+  }
+}       
