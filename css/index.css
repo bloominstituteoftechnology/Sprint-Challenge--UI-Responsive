@@ -244,3 +244,10 @@ footer nav a {
 
 
 }
+
+@media ( max-width: 400px ) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+}
