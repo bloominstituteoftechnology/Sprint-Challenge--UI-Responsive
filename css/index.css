@@ -76,6 +76,30 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header nav {
+    margin: 38px 1% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.jumbotron {
+    width: 100%;
+    margin: 40px 0;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -115,6 +139,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box:nth-of-type(2) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-of-type(4) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-of-type(6) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-of-type(8) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-of-type(10) {
+    background: lawngreen;
 }
 
 .bottom-content {
