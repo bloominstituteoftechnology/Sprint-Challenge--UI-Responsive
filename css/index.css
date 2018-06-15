@@ -163,7 +163,7 @@ footer nav a {
         background: hotpink;
     }
     .container .middle-content .boxes .box:nth-child(8){
-        background: indigo:
+        background: indigo;
     }
     .container .middle-content .boxes .box:nth-child(10){
         background: lawngreen;
@@ -196,8 +196,10 @@ footer nav a {
     .container .middle-content .boxes{
         display: flex;
         flex-wrap: wrap;
-        flex-flow: row-reverse
-        
     }
+   
+
+ 
+
 }
 
