@@ -185,3 +185,20 @@ header nav a {
     color: black;
     text-decoration: none;
 }
+@media (max-width: 768px) {
+    .container .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .container .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .container .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .container .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .container .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
