@@ -2,7 +2,7 @@
 
 1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight?
 
-Wouldn't it depend on what gets defined last in the CSS?  Presumably box3 would have the most specificity if you were writing the CSS numerical order.
+Wouldn't it depend on what gets defined last in the CSS?  Presumably box3 would have the most specificity if you were writing the CSS in numerical order.
 
 2. Describe the difference between `display: block;` and `display: inline;`.
 
