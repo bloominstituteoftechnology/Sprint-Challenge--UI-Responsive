@@ -126,7 +126,7 @@ p {
 }
 
 .top-content .text-container {
-  width: 48%;
+  flex-basis: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
 }
@@ -159,10 +159,21 @@ p {
 }
 
 /* Lets color the boxes */
-.middle-content .boxes .box {
+.middle-content .boxes .box:nth-of-type(2) {
   background: forestgreen;
 }
-
+.middle-content .boxes .box:nth-of-type(4) {
+  background: darkorchid;
+}
+.middle-content .boxes .box:nth-of-type(6) {
+  background: hotpink;
+}
+.middle-content .boxes .box:nth-of-type(8) {
+  background: indigo;
+}
+.middle-content .boxes .box:nth-of-type(10) {
+  background: lawngreen;
+}
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
@@ -194,4 +205,75 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+}
+
+/* Media Queries and RWD */
+
+/* Tablet mode */
+@media(max-width: 768px) {
+  .primary-header {
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  /* Yay lets color the remaining boxes cuz why not */
+  .middle-content .boxes .box:nth-of-type(1) {
+    background: teal;
+  }
+  .middle-content .boxes .box:nth-of-type(3) {
+    background: gold;
+  }
+  .middle-content .boxes .box:nth-of-type(5) {
+    background: cadetblue;
+  }
+  .middle-content .boxes .box:nth-of-type(7) {
+    background: coral;
+  }
+  .middle-content .boxes .box:nth-of-type(9) {
+    background: crimson;
+  }
+}
+
+/* Mobile Mode */
+@media(max-width: 400px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav li {
+    padding: 15px;
+    border-top: 1px solid #888;
+  }
+  .primary-header {
+    padding-bottom: 0;
+  }
+  .jumbotron {
+    margin-top: 0;
+    height: 78px;
+  }
+  .top-content {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .top-content .text-container {
+    padding: 10px 5%;
+    padding-right: 6%;
+  }
+  .middle-content .boxes .box:nth-of-type(10) {
+    display: none;
+  }
+  .middle-content .boxes .box {
+    width: 100px;
+  }
+  .middle-content .boxes {
+    flex-direction: row-reverse;
+  }
 }
