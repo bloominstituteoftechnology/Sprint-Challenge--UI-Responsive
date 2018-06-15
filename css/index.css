@@ -259,13 +259,8 @@ footer nav a {
 }
 
 @media(max-width: 400px){
-    .container {
-        max-width: 400px;
-        margin: 0 auto;
-    }
 
     header{
-        border: 1px solid red;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -279,24 +274,55 @@ footer nav a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        margin: 0;
     }
     
     header nav a {
+        width: 100%;
         color: black;
         text-decoration: none;
-        padding-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid grey;
     }
-    
+
     header .logo {
-        border: 1px solid red;
         order: -1;
-        margin-top: 50px;
+        margin-top: 150px;
     }
     
     .jumbo{
+        border: 1px solid green;
         width: 100%;
+        margin-top: 150px;
         margin-bottom: 13px;
     }
+
+    .top-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 5% 10px;
+    }
+
+    .middle-content {
+
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box:last-child {
+        display: none;
+    }
+
     footer {
         width: 100%;
         background: black;
