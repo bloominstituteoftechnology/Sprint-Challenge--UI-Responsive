@@ -69,10 +69,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+	align-items: baseline;
 }
 
 header nav {
-  margin-top: 40px;
+  margin-top: auto;
 	width: 100%;
   justify-content: space-around;
   display: flex;
@@ -89,7 +90,7 @@ header nav a:hover {
 }
 
 header .logo {
-  margin: 28px 0 0 0;
+  margin: 2.8rem 0 0 0;
 }
 
 .container {
@@ -99,7 +100,7 @@ header .logo {
 
 .jumbotron {
   width: 100%;
-  padding: 4rem 0 3rem 0;
+  padding: 4rem 0 2rem 0;
 }
 
 .top-content {
@@ -207,6 +208,9 @@ footer nav a {
 	  justify-content: space-between;
 		flex-direction: column;
 	}
+	.logo {
+		padding: 0 0 4rem 0;
+	}
 	.middle-content .boxes .box1 {
 	  background: teal;
 	}
@@ -233,6 +237,9 @@ footer nav a {
     max-width: 400px;
     margin: 0 auto;
   }
+	.logo {
+		margin: 2rem 0;
+	}
 	.middle-content .boxes {
 	  display: flex;
 	  flex-wrap: wrap;
