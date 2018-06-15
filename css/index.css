@@ -105,7 +105,7 @@ nav {
 	justify-content: space-between;
 	align-items: baseline;
 	width: 100%;
-	height: 40px;
+	/* height: 40px; */
 	padding-top: 20px;
 
 }
@@ -123,7 +123,9 @@ nav .nav-boxes {
 .jumbotron {
 	margin: 13px 0;
 }
-
+.jumbotron img{
+	max-width: 100%;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -184,10 +186,14 @@ nav .nav-boxes {
 		background: lawngreen;
 	}
 }
+
 @media(max-width:768px){
-/* .boxes .box:nth-child(even) {
-	background-color: black;
-} */
+
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.boxes .box:nth-child(1){
 		background: teal;
@@ -204,14 +210,48 @@ nav .nav-boxes {
 	.boxes .box:nth-child(9){
 		background: crimson;
 	}
-
-	header {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 }
 
+@media(max-width: 400px){
+	 nav {
+		 display: flex;
+		 flex-direction: column;
+		 align-self: center;
+		 align-items: center;
+		 height: 100%;
+		 /* border: 5px solid red; */
+	 }
+
+	 nav a {
+		 /* border: 10px solid green; */
+		 padding: 15px;
+	 }
+
+	 .boxes .box:nth-child(10) {
+		 display: none;
+	 }
+
+	 .box {
+		 font-size: .1rem;
+		 max-height: 100px;
+		 flex-basis: 100px;
+	 }
+
+	 .boxes {
+		 flex-direction: row-reverse;
+		 flex-wrap: wrap-reverse;
+		 width: 100%;
+	 }
+
+	 .top-content, .bottom-content {
+		 flex-direction: column;
+		 /* border: 1px solid green; */
+	 }
+
+	 .text-container {
+		 /* border: 1px solid red; */
+	 }
+ }
 
 /* my new code end */
 
