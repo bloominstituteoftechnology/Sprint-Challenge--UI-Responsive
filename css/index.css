@@ -51,13 +51,21 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +75,50 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 1000px;
+     /* this might be 1000 */
+    max-width: 100%;
     margin: 0 auto;
+    /* might need 2% of padding and/or margin here */
 }
+
+/* header sytles */
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin-top: 20px; 
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: blue;;
+}
+
+header .logo {
+    margin: 10px 20% 0 0;
+}
+
+/* Jumbotron styles */
+
+.jumbo {
+    width: 100%;
+    padding: 25px 0;
+}
+
+/* content styles */
 
 .top-content {
     display: flex;
@@ -112,6 +161,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +206,105 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    
+    .container .header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .middle-content .boxes .box:nth-child(1) {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box:nth-child(3) {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box:nth-child(5) {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box:nth-child(7) {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box:nth-child(9) {
+        background: crimson;
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a {
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding: 20px 0;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+	}
+
+    .jumbo {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+    
+    .top-content .text-container {
+        width: 100%;
+        padding: 6%;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+        height: 100px;
+        margin: 20px 2.5%;
+    }
+
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+    
+    .bottom-content .text-container {
+        width: 100%;
+        padding: 4%;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
