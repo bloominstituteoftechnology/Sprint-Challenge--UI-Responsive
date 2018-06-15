@@ -89,14 +89,14 @@
         order:10;
     }
 
-
     .bottom-content {
-        display: flex;
         height: 380px;
-        flex-flow: column;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
     .bottom-content .text-container {
-        padding-right: 4%;
+        margin: 3% 3%;
+        width: 100%;
     }
     .bottom-content .text-container:last-child {
         padding-right: 0;
