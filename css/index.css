@@ -277,8 +277,7 @@ footer nav a {
         box-sizing: border-box;
     }
     .container {
-        max-width: 768px;
-        margin: 0 auto;
+        max-width: 100%;
         
     }
     
@@ -292,15 +291,16 @@ footer nav a {
 
     .navigation img{
         display: flex;
+        align-content: stretch;
     }
     
     .top-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-bottom: 1px dashed black;
+        margin-top: 2.6%;
+        margin-bottom: 2.6%;
+        border-bottom: .77% dashed black;
     }
     
     .bannerImg {
@@ -313,13 +313,13 @@ footer nav a {
     .top-content .text-container {
         width: 48%;
         padding: 0 1%;
-        padding-bottom: 20px;
-        margin-top: 20px;  
+        padding-bottom: 2.6%;
+        margin-top: 2.6%;  
     }
     
     .middle-content {
-        margin-bottom: 20px;
-        border-bottom: 1px dashed black;
+        margin-bottom: 2.6%;
+        border-bottom: .77% dashed black;
     }
     
     .middle-content h2 {
@@ -338,9 +338,9 @@ footer nav a {
     
     .middle-content .boxes .box1 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: teal;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -492,12 +492,12 @@ footer nav a {
         max-width: 100%;
         display: flex;
         justify-content: center;
-        
+        align-content: stretch;
     }
     
     .navigation {
         display: flex;
-        flex-direction: column;
+        flex-direction: column
         flex-wrap: wrap;
         align-items: flex-end;
         
