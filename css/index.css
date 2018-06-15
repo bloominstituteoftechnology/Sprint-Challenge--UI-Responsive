@@ -71,11 +71,12 @@ p {
     margin: 0 auto;
 };
 
-.container .header{
-    background-image: url(/img/jumbo.jpg);
+header{
+    background: url("./img/jumbo.jpg");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
+    width: 100%;
 }
 .top-content {
     display: flex;
@@ -171,6 +172,12 @@ footer nav a {
 }
 
 @media(max-width: 768px ) {
+    .container .middle-content .boxes .box{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+
     .container .middle-content .boxes .box:nth-child(1){
         background: teal;
     }
@@ -186,6 +193,7 @@ footer nav a {
     .container .middle-content .boxes .box:nth-child(9){
         background: crimson;
     }
+    
 }
 
 @media(max-width: 400px ){
@@ -193,9 +201,10 @@ footer nav a {
         display: none;
     }
  
-    .container .middle-content .boxes{
+    .container .middle-content .boxes .box{
         display: flex;
         flex-wrap: wrap;
+        min-width: 100px;
     }
    
 
