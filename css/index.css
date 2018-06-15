@@ -287,6 +287,10 @@ footer nav a {
         border-top: 1px solid grey;
     }
 
+    header nav a:hover {
+        background: lightgoldenrodyellow;
+    }
+
     header .logo {
         order: -1;
         margin-top: 150px;
@@ -310,17 +314,39 @@ footer nav a {
         padding: 0 5% 10px;
     }
 
-    .middle-content {
-
+    .middle-content h2 {
+        width: 100%;
+        font-size: 1.1rem;
     }
 
     .middle-content .boxes {
         display: flex;
         flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .middle-content .boxes .box {
+        width: 26%;
     }
 
     .middle-content .boxes .box:last-child {
         display: none;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .bottom-content .text-container:nth-child(3) {
+        margin-top: 15px;
     }
 
     footer {
@@ -329,16 +355,11 @@ footer nav a {
     }
     
     footer nav {
-        width: 60%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: 20px 2%;
-        font-size: 1.4rem;
-    }
-    
-    footer nav a {
-        color: white;
-        text-decoration: none;
+        font-size: 0.9rem;
     }
 }
