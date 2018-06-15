@@ -85,7 +85,6 @@ p {
 
 
 .navigation{
-    border: 1px solid black;
     display: flex;
     justify-content: baseline;
     justify-content: space-between;
@@ -98,10 +97,10 @@ p {
 
 a:link{
     text-decoration: none;
+    color: black;
 }
 
 .navigation .navst{
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -110,7 +109,6 @@ a:link{
 }
 
 .navigation .navst .navs{
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     margin: 5%;
