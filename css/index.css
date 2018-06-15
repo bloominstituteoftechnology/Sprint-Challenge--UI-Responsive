@@ -72,7 +72,6 @@ p {
 
 .container {
     max-width: 800px;
-		border: 1px solid red;
 		background-color: white;
     margin: 0 auto;
 }
@@ -204,18 +203,32 @@ footer nav a {
 }
 
 @media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header .nav-bar {
+		margin-top: 25px;
+		width: 100%;
+	}
+
 	.container .middle-content .boxes .box1 {
 		background-color: teal;
 	}
+
 	.container .middle-content .boxes .box3 {
 		background-color: gold;
 	}
+
 	.container .middle-content .boxes .box5 {
 		background-color: cadetblue;
 	}
+
 	.container .middle-content .boxes .box7 {
 		background-color: coral;
 	}
+
 	.container .middle-content .boxes .box9 {
 		background-color: crimson;
 	}
