@@ -225,3 +225,49 @@ h1, h2, h3, h4, h5 {
 footer nav a {
     font-size: 1.4rem;
 }
+
+@media(max-width: 768px) {
+    header {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 14px;
+        height: 285px;
+        background-size: 100vw;
+    }
+
+    header nav a:link, 
+    header nav a:hover, 
+    header nav a:visited, 
+    header nav a:active {
+    font-size: 1.4rem;
+    margin-top: 27px;
+    }
+
+    .middle-content .boxes .box {
+        width: 12.9%;
+    }
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+}
+
+@media(max-width: 400px) {
+
+}
