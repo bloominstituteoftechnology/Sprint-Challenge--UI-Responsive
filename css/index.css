@@ -26,12 +26,11 @@ time, mark, audio, video {
 
 
 /* HTML5 display-role reset for older browsers */
-/*
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: flex;
-    justify-content: center;
-} */
+	display: block;
+} 
 
 
 body {
@@ -40,37 +39,7 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-header {
-  
-    background: white;
-   /* border: 1px solid black;*/
-    width: 100%;
-    align-content: center;
-    margin:0rem 3rem;
-    
-    
 
-}
-
-header .logo {
-   
-    
-}
-
-header nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 6rem 3rem 6rem;
-    font-size: 14px;
-}
-
-header nav a {
-    color: black;
-    display:flex;
-    justify-content: space-around;
-}
 
 
 
@@ -111,10 +80,48 @@ p {
     line-height: 1.4;
 }
 
+/*EVERYTHING ABOVE HERE IS RESET*/
+
+
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
+
+
+header {
+  
+    background: white;
+   /* border: 1px solid black;*/
+    width: 100%;
+    align-content: center;
+    margin:0rem 3rem;
+    
+    
+
+}
+
+header .logo {
+   
+    
+}
+
+header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 6rem 3rem 6rem;
+    font-size: 14px;
+}
+
+header nav a {
+    color: black;
+    display:flex;
+    justify-content: space-around;
+}
+
 
 .top-content {
     display: flex;
@@ -237,7 +244,7 @@ footer nav a {
 
 
 
-.middle-content .boxes .box3 {
+.middle-content .box3 {
     width: 12.5%;
     height: 100px;
     background: gold;
@@ -249,7 +256,7 @@ footer nav a {
 }
 
 
-.middle-content .boxes .box5 {
+.middle-content .box5 {
     width: 12.5%;
     height: 100px;
     background: cadetblue;
