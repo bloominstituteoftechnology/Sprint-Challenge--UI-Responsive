@@ -104,6 +104,7 @@ p {
 
 .top-content .jumbotron {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .top-content .text-container {
@@ -191,4 +192,44 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width:768px) {
+    .nav {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        height: 80px;
+        justify-content: space-around;
+    }
+
+    .nav .nav-img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+}
+
+@media (max-width:400px) {
+
 }
