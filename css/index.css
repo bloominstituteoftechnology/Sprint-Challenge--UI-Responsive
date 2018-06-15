@@ -598,7 +598,6 @@ footer nav a {
 
 
     .navigation{
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -615,7 +614,6 @@ footer nav a {
     }
     
     .navigation .navst{
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -625,7 +623,6 @@ footer nav a {
     }
     
     .navigation .navst .navs{
-        border: 1px solid black;
         display: flex;
         justify-content: space-around;
         margin: 5%;
