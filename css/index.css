@@ -202,18 +202,24 @@ footer nav a {
 
     nav {
         display: flex;
-        justify-content: space-between; 
-        flex-wrap: wrap-reverse;
-        align-items: center;
+        flex-wrap: wrap;
     }
 
-    header, nav, a {
+.nav-bar img {
+    display: flex;
+    justify-content: center;
+}
+
+    .nav-bar a {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        width: 100%;
         padding: 1% 0;
         font-size: 1.2rem;
         margin-right: 2%;
     }
 }
-
 
 
 @media(max-width: 400px){
