@@ -58,6 +58,7 @@ body {
   font-size: 1.6rem;
   /* default font size is now 16px but as a function of
   root element's font size */
+
 }
 
 html, body {
@@ -176,17 +177,44 @@ p {
 }
 .bottom-content {
   display: flex;
-  margin: 0 2% 20px;
+  flex-wrap: wrap;
+  margin: 0 2%;
   justify-content: space-around;
 }
 
 .bottom-content .text-container {
+  flex-basis: 30%;
   padding-right: 4%;
+  padding-bottom: 20px;
 }
 
-.bottom-content .text-container:last-child {
-  padding-right: 0;
+.bottom-content .decorative-image {
+  height: 200px;
+  flex-basis: 100%;
+  margin-bottom: 10px;
+  background-image: url('/img/ash-edmonds-510566-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
 }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  background: black;
+  color: #f7f7f7;
+  transition: box-shadow 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 2px 3px 5px 0 rgba(0,0,0,0.5);
+}
+
+/* .bottom-content .text-container:last-child {
+  padding-right: 0;
+} */
 
 footer {
   width: 100%;
