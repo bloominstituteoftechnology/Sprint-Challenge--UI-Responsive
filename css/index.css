@@ -82,6 +82,7 @@ p {
 
 .menu{
     /*border: 1px solid green;*/
+    margin-top: 15px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -101,6 +102,13 @@ p {
     /*border: 1px solid yellow;*/
 }
 
+.jumbo{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +121,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container p{
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -140,6 +152,62 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
+}
+
+.middle-content .boxes .box2 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box4 {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box6 {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box8 {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    background: lawngreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bottom-content {
@@ -150,6 +218,10 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+}
+
+.bottom-content .text-container p {
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
