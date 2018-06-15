@@ -101,7 +101,7 @@ p {
 		flex-wrap: wrap-reverse;
 	}
 	.navbar-top a{
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	.navbar-top .head{
 		order:6;
@@ -142,32 +142,42 @@ p {
 	}
 	.navbar-top .H{
 		order:1;
+		border: 1px solid black;
+		margin: 20px 0 0 0;
+		padding: 20px 300px
+
 	}
 	.navbar-top .A{
 		order:2;
+		border: 1px solid black;
+		padding: 20px 300px
 	}
 	.navbar-top .P{
 		order:3;
+		border: 1px solid black;
+		padding: 20px 300px
 	}
 	.navbar-top .B{
 		order:4;
+		border: 1px solid black;
+		padding: 20px 300px
 	}
 	.navbar-top .C{
 		order:5;
+		border: 1px solid black;
+		padding: 20px 300px
 	}
 }
 /*seperator*/
 
 .top-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-.text-container{
 
-}
 
 .top-content .text-container {
     width: 350px;
@@ -221,6 +231,7 @@ p {
 }
 
 @media(max-width: 768px){
+
 	.middle-content .boxes .box1{
 		background: teal;
 	}
