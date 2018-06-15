@@ -83,6 +83,7 @@ p {
 .container {
     max-width: 800px;
     margin: 0 auto;
+		box-sizing: border-box;
 }
 
 header {
@@ -106,7 +107,10 @@ nav {
 	width: 100%;
 	height: 40px;
 	padding-top: 20px;
+
 }
+
+
 nav .nav-boxes {
 	border: 0px solid green;
 	display: flex;
@@ -163,21 +167,51 @@ nav .nav-boxes {
 }
 
 /* my new code start */
-.boxes .box:nth-child(2){
-	background: forestgreen;
+@media(max-width:1000px){
+	.boxes .box:nth-child(2){
+		background: forestgreen;
+	}
+	.boxes .box:nth-child(4){
+		background: darkorchid;
+	}
+	.boxes .box:nth-child(6){
+		background: hotpink;
+	}
+	.boxes .box:nth-child(8){
+		background: indigo;
+	}
+	.boxes .box:nth-child(10){
+		background: lawngreen;
+	}
 }
-.boxes .box:nth-child(4){
-	background: darkorchid;
+@media(max-width:768px){
+/* .boxes .box:nth-child(even) {
+	background-color: black;
+} */
+
+	.boxes .box:nth-child(1){
+		background: teal;
+	}
+	.boxes .box:nth-child(3){
+		background: gold;
+	}
+	.boxes .box:nth-child(5){
+		background: cadetblue;
+	}
+	.boxes .box:nth-child(7){
+		background: coral;
+	}
+	.boxes .box:nth-child(9){
+		background: crimson;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
-.boxes .box:nth-child(6){
-	background: hotpink;
-}
-.boxes .box:nth-child(8){
-	background: indigo;
-}
-.boxes .box:nth-child(10){
-	background: lawngreen;
-}
+
 
 /* my new code end */
 
