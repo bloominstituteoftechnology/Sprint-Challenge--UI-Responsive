@@ -8,5 +8,8 @@ Answer: each class would have an inherently identical specificity value of 10, s
 Answer: an element set to `display: block;` will span the entirety of the the container it is in, while an element set to `display: inline;` will take up only as much space as its content, so it will not start on a new line as it were. Of the most commonly used elements, `<img>`, `<span>`, and `<a>` are inline, while most everything else is block. 
 
 3. While using flexbox, what axis are you using when you use the property: `align-items: center`?
+
+Answer: `align-items:` pertains to the cross axis, while `justify-content` pertains to the main axis.
+
 4. What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
 5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
