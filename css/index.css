@@ -81,7 +81,7 @@ p {
 header {
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 100%;
+    /* width: 100%; */
     padding: 0 10%;
     display: flex;
     align-items: baseline;
@@ -101,16 +101,22 @@ header nav a {
 }
 
 header .logo {
-
+    width: 19.875%;
 }
 
 .jumbotron-container {
+    margin-bottom: 20px;
     padding: 0 5%;
     display: flex;
     justify-content: center;
 }
 
+.jumbotron-container .jumbotron {
+  width: 100%;
+}
+
 .top-content {
+    margin: 0 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -125,6 +131,7 @@ header .logo {
 }
 
 .middle-content {
+    margin: 0 10%;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -172,6 +179,7 @@ header .logo {
 }
 
 .bottom-content {
+    margin: 0 10%;
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
