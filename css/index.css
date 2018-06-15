@@ -195,6 +195,13 @@ p {
   background-image: url('/img/ash-edmonds-510566-unsplash.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.bottom-content .decorative-image .img-credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .btn {
