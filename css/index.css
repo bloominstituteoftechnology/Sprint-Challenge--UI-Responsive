@@ -235,11 +235,42 @@ footer nav a {
 }
 
 @media (max-width: 400px) {
+	header .nav-bar {
+		flex-wrap: wrap;
+	}
+
+	.container header .nav-bar a {
+		width: 100%;
+		padding: 5%;
+		margin-right: 0;
+		border-top:1px solid black;
+		text-align: center;
+	}
+
+	.container .jumbo-pic {
+		margin-top: 0;
+	}
 	.middle-content .boxes {
 		flex-flow: row-reverse wrap;
 	}
 
+	.middle-content .boxes .box {
+		width: 25%;
+	}
 	.middle-content .boxes .box10 {
 		display: none;
+	}
+
+	.top-content, .bottom-content {
+		flex-flow: column wrap;
+		width: 100%;
+	}
+
+	.top-content .text-container {
+		width: 100%;
+	}
+
+	.bottom-content .text-container {
+		margin-bottom: 25px;
 	}
 }
