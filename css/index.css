@@ -231,7 +231,6 @@ footer nav a {
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: center;
-        margin-top: 14px;
         height: 285px;
         background-size: 100vw;
     }
