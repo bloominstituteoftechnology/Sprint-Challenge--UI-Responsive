@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,24 +51,62 @@ table {
     box-sizing: border-box;
 }
 
+html{
+		font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+		line-height: 1.4;
+		font-size: 1.4rem;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
+		max-width: 1000;
+		padding: 10px 7% 10px 7%;
+}
+
+
+.container .header{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.header nav{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 2%;
+	font-size: 1.4rem;
+}
+
+.header nav a{
+	color: black;
+	text-decoration: none;
+}
+
+.middle-img-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.middle-img-container .middle-img{
+	width: 100%;
 }
 
 .top-content {
@@ -81,8 +119,8 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 20px 1%;
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -112,6 +150,26 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+		background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+		background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+		background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+		background: indigo;
+}
+
+.middle-content .boxes .box10 {
+		background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +195,132 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*--------Tablet Styles----------*/
+@media(max-width: 768px){
+
+	.container p {
+		line-height: 1.4;
+		font-size: 1.6rem;
+	}
+
+	.container .header{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.top-content{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.middle-content .boxes .box {
+			height: 82px;
+	}
+
+	.middle-content .boxes .box1 {
+			background: teal;
+	}
+
+	.middle-content .boxes .box3 {
+			background: gold;
+	}
+
+	.middle-content .boxes .box5 {
+			background: cadetblue;
+	}
+
+	.middle-content .boxes .box7 {
+			background: coral;
+	}
+
+	.middle-content .boxes .box9 {
+			background: crimson;
+	}
+}
+
+/*--------Mobile Styles----------*/
+@media(max-width: 400px){
+
+	.container .header{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container .header nav{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 0;
+	}
+
+	.container .header nav a{
+		color: black;
+		text-decoration: none;
+		padding: 10px 44% 10px 44%;
+		border-top: 1px solid black;
+	}
+
+
+	.middle-img-container .middle-img{
+		padding-bottom: 20px;
+		height: 100px;
+	}
+
+	.top-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.top-content .text-container{
+		padding: 10px 6% 10px 9%;
+		width: 100%
+	}
+
+	.middle-content .boxes .box10 {
+			display: none;
+	}
+
+	.middle-content .boxes {
+			display: flex;
+			flex-direction: row-reverse;
+	}
+
+	.middle-content .boxes .box {
+			height: 76px;
+			width: 25%;
+	}
+
+	.bottom-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.bottom-content .text-container{
+		padding: 10px 6% 10px 9%;
+}
+
+	footer nav{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
 }

@@ -20,4 +20,4 @@ A website with a fixed layout does not adjust when the browser window changes wh
 
 5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
 
-Without the max-width property, the webpage will stretch horizontally without limit when a user increases the width of the browser window.  This will negatively impact the design and consequently, the user experience. 
+Without the max-width property, the webpage will stretch horizontally without limit when a user increases the width of the browser window.  This will negatively impact the design and consequently, the user experience.
