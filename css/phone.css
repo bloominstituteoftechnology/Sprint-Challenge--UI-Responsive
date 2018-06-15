@@ -1,0 +1,118 @@
+@media(max-width:405px){
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .container .banner img{
+        width: 100%;
+    }
+    
+    .container .top-content {
+        display: flex;
+        flex-flow:column wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+    .container .top-content .text-container {
+        width: 100%;
+        padding: 0 5%;
+        padding-bottom: 20px;
+        margin: 3% 0 0 0;
+    }
+    .middle-content {
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .middle-content .boxes .box {
+        width: 100px;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .middle-content .boxes .box:nth-child(1) {
+        background: teal;
+        order:3;
+    }
+    .middle-content .boxes .box:nth-child(2) {
+        background: #2B8934;
+        order: 2;
+    }
+    .middle-content .boxes .box:nth-child(3) {
+        background: gold;
+        order: 1;
+    }
+    .middle-content .boxes .box:nth-child(4) {
+        background: #973CC5;
+        order:6;
+
+    }
+    .middle-content .boxes .box:nth-child(5) {
+        background: cadetblue;
+        order:5;
+    }
+    .middle-content .boxes .box:nth-child(6) {
+        background: #FC6DB2;
+        order:4;
+    }
+    .middle-content .boxes .box:nth-child(7) {
+        background: coral;
+        order:9;
+    }
+    .middle-content .boxes .box:nth-child(8) {
+        background: #490E7C;
+        order:8
+    }
+    .middle-content .boxes .box:nth-child(9) {
+        background: crimson;
+        order:7
+    }
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+        order:10;
+    }
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+    }
+    .bottom-content .text-container {
+        padding-right: 4%;
+    }
+    .bottom-content .text-container:last-child {
+        padding-right: 0;
+    }
+    footer {
+        width: 100%;
+        background: black;
+    }
+    footer nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 14px;
+    }
+    footer nav a {
+        color: white;
+        text-decoration: none;
+    }
+}
