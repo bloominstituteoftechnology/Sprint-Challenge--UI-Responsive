@@ -316,8 +316,16 @@ footer nav a {
         width: 100%;
         height: 225px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+    }
+    header nav .cta-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;  
+        height: 45px;      
+        border-top: 1px solid gray;
     }
 
     header nav a {
@@ -325,7 +333,6 @@ footer nav a {
         text-decoration: none;
         color: black;
         font-size: 1.5rem;
-        border-top: 1px solid gray;
     }
 
     .top-content {
