@@ -175,6 +175,7 @@ p {
     .bottom-content {
         display: flex;
         margin: 0 2% 2rem;
+        padding-bottom:2%;
         justify-content: space-around;
     }
 
@@ -183,8 +184,53 @@ p {
             font-size: 1.5rem;
         }
         
-
         .bottom-content .text-container:last-child {
+            padding-right: 0;
+        }
+
+    .bottom-content2 {
+        display: flex;
+        margin: 0 2% 2rem;
+        justify-content: space-around;
+    }
+
+        .bottom-content2 .text-container {
+            padding-right: 4%;
+            font-size: 1.5rem;
+            perspective: 300px;
+        }
+
+        .bottom-content2 .text-container:hover{
+            transform: rotateY(180deg);
+        }
+
+        .bottom-content2 .text-container .test-front, .test-back {
+            width: 100px;
+            height: 120px;
+        }
+
+        .bottom-content2 .text-container{
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+
+       .test-front, .test-back {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .test-front {
+            z-index: -2;
+        }
+
+        .test-back {
+            transform: rotateY(180deg);
+        }
+        
+        .bottom-content2 .text-container:last-child {
             padding-right: 0;
         }
 
