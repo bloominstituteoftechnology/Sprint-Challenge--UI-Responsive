@@ -74,8 +74,6 @@ p {
     line-height: 1.4;
 }
 
-
-
 .container {
     width: 100%;
     max-width: 800px;
@@ -83,34 +81,6 @@ p {
 }
 
 /* Header */
-
-
-
-
-
-/* header { 
-	display: flex;
-    height: 125px;
-    width: 100%;
-    justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;  
-    
-}
-
-
-
-nav li {
-	
-    padding: 20px;
-    width: 70px;	
-}
-
-a {
-    text-decoration: none;
-    color: gray;
-    width: 70px;
-} */
 
 
 nav { /*container*/
@@ -128,6 +98,7 @@ nav a {
 }
 
 
+/* Main */
 
 
 .top-content {
@@ -203,7 +174,6 @@ nav a {
 
 .text-container {
     width: 175px;
-    
 }
 
 .bottom-content .text-container {
@@ -233,4 +203,69 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width:768px){
+    .middle-content .boxes .box1 {
+        background-color: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background-color: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background-color: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background-color: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background-color: crimson;
+    }
+
+    header nav { /*container*/
+        display: flex;
+        height: 150px;
+        justify-content: space-around;
+        /* align-items: center; */
+        flex-wrap: wrap; 
+        
+        
+    }
+    
+    header a:first-child {
+    width:100%;
+    align-self: center;
+    padding: 0 304px 30px 290px;
+    margin-left: 0;
+    
+   
+    
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        
+        
+                 
+    }
+ /* nav img {
+     display: block;
+ } */
+    /* nav img {
+        align-self: flex-end;
+        order: 1;
+    } */
+
+   
+
+
+
+
+
 }
