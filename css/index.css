@@ -77,13 +77,22 @@ p {
     justify-content: space-around;
     align-items: baseline;
     color:black;
+    font-size: 16px;
     text-decoration: none;
     margin-bottom: 20px;
 
 }
+.main-logo{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.6rem;
     justify-content: space-evenly;
     padding: 2rem;
     margin-bottom: 20px;
@@ -236,6 +245,7 @@ p {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container {
