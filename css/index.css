@@ -81,6 +81,7 @@ header {
     display: flex;
     /* border: 1px solid red; */
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 header nav {
@@ -139,6 +140,26 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box:nth-of-type(2) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-of-type(4) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-of-type(6) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-of-type(8) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-of-type(10) {
+    background: lawngreen;
 }
 
 .bottom-content {
