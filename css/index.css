@@ -107,6 +107,10 @@ p {
     width: 100%;
 }
 
+.top-content .jumbotron img {
+    width: 100%;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -231,5 +235,48 @@ footer nav a {
 }
 
 @media (max-width:400px) {
+    .nav {
+        height: 250px;
+        margin-bottom: 0;
+    }
 
+    .nav .nav-item {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        border-top: 1px solid black;
+        padding: 10px 0;
+    }
+
+    .nav .nav-item-contact {
+        border-bottom: 1px solid black;
+    }
+
+    .top-content {
+        margin-top:0;
+        flex-wrap: wrap;
+    }
+
+    .top-content .text-container {
+        width: 95%;
+        padding: 0 2.5%;
+        padding-bottom: 20px;  
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .middle-content .boxes .box10 {
+        display:none;
+    }
+
+    footer nav {
+        width: 85%;
+        padding-left: 10%;
+    }
 }
