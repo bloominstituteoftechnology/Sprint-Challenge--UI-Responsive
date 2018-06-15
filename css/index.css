@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.4;
     font-size: 1.6rem;
 }
 
@@ -240,6 +240,10 @@ footer nav a {
         margin-right: 0;
     }
 
+    .middle-content .boxes .box {
+        width: 14%;
+    }
+
     .middle-content .boxes .box1 {
         background: teal;
     }
@@ -261,7 +265,7 @@ footer nav a {
     }
 
     .bottom-content {
-        margin-left: 0;
+        margin-left: 2%;
         margin-right: 0;
     }
 
@@ -284,7 +288,7 @@ footer nav a {
     }
 
     header img {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     header nav {
@@ -337,6 +341,7 @@ footer nav a {
     }
 
     footer nav {
-        width: 90%;
+        width: 100%;
+        justify-content: space-evenly;
     }
 }
