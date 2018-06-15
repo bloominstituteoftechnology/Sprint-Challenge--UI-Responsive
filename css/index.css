@@ -254,4 +254,31 @@ footer nav a {
 	.middle-content .boxes .box10 {
 	  display: none;
 	}
+	.top-content {
+	 flex-direction: column;
+	}
+	.top-content .text-container {
+	  width: 96%;
+	  padding: 0 1%;
+	  padding-bottom: 20px;
+		margin: 0 auto;
+	}
+
+	.bottom-content {
+	 flex-direction: column;
+	}
+	.bottom-content .text-container {
+	  width: 96%;
+	  padding: 0 1%;
+	  padding-bottom: 20px;
+		margin: 0 auto;
+	}
+	footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	footer nav {
+	  width: 80%;
+	}
 }
