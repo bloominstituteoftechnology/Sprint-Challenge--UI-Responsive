@@ -222,6 +222,35 @@ h1, h2, h3, h4, h5 {
     background: lawngreen;
 }
 
+.really-bottom-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-top: 1px dashed black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.really-bottom-content .image-container1, 
+.really-bottom-content .text-container,
+.really-bottom-content .image-container2 {
+    width: 30%;
+}
+
+.image-container1 {
+    background-image: url("../img/death-star.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.image-container2 {
+    background-image: url("../img/my-cat.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
 footer nav a {
     font-size: 1.4rem;
 }
@@ -264,6 +293,11 @@ footer nav a {
     
     .middle-content .boxes .box9 {
         background: crimson;
+    }
+
+    .really-bottom-content .image-container1, 
+    .really-bottom-content .image-container2 {
+        background-size: 120% 150px;
     }
 }
 
@@ -316,6 +350,23 @@ footer nav a {
     .bottom-content .text-container {
         width: 94vw;
         margin-bottom: 20px;
+    }
+
+    .really-bottom-content {
+        flex-flow: row wrap;
+    }
+
+    .really-bottom-content .image-container1,
+    .really-bottom-content .text-container,
+    .really-bottom-content .image-container2 {
+        width: 100vw;
+        height: 200px;
+        padding: 0 2.5%;
+    }
+
+    .really-bottom-content .image-container1,
+    .really-bottom-content .image-container2 {
+        background-size: 70% 160px;
     }
 
     footer nav {
