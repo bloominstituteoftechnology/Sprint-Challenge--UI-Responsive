@@ -71,6 +71,28 @@ p {
     margin: 0 auto;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 40px;
+    
+
+}
+
+.menu nav {
+    display: flex;
+
+   
+}
+
+nav a {
+    /* margin: 10%; */
+}
+
+.zoom {
+    margin-bottom: 20px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +132,22 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background: darkviolet;
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: chartreuse;
 }
 
 .bottom-content {
