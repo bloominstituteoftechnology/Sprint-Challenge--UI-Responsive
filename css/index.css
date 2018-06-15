@@ -89,6 +89,7 @@ header {
 
 header .logo {
     width: 33%;
+    min-width: 160px;
 }
 
 header nav {
@@ -148,6 +149,7 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box:nth-of-type(2) {
