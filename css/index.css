@@ -235,3 +235,52 @@ footer nav a {
         background: crimson;
     }
 }
+
+/* Mobile Styles */
+
+@media( max-width: 400px ) {
+    .middle-content .boxes .box:nth-of-type(10) {
+        display: none;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid black;
+        margin-top: 20px;
+    }
+
+    header nav a {
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 14px 0;
+    }
+
+    header {
+        /* border: 1px solid red; */
+        margin-bottom: 0;
+    }
+
+    .top-content {
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        margin: 0 2%;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        width: 100%;
+    }
+}
