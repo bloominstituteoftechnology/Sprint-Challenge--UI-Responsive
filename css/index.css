@@ -79,6 +79,14 @@ header {
 
 }
 
+header .lam {
+    order:-1;
+    display: flex;
+    flex-flow: column wrap;
+    width: 157px;
+    height: 40px
+}
+
 header nav {
     margin: 1rem 0 2rem 0;
     max-height: 40px;
@@ -92,8 +100,9 @@ header nav a {
     color: black;
     max-height: 40px;
     display: flex;'
-    flex-flow: row; wrap;
+    flex-flow: row wrap;
 }
+
 
 .jumbo {
     margin-bottom: 1rem;
@@ -129,11 +138,12 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
+    min-height: 100px;
+    min-width: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -233,7 +243,7 @@ footer nav a {
 
 @media(max-width: 768px){
     .container {
-        width:100%;
+        width: 100%;
     }
     /*resize banner for tablet view*/
     .jumbo {
@@ -298,81 +308,163 @@ footer nav a {
 
 @media(max-width: 400px){
 
+
     header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header nav {
-        width: 100%;
-        display: flex;
         flex-direction: column;
-        margin: 0;
         align-items: center;
+        justify-content: space-between;
     }
-
-    header nav a {
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 2rem;
-        border-bottom: 1px solid gray;
-    }
-
 
     header .lam {
         order: -1;
-        margin: 20px 0;
+        margin: 0px 0;
     }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        border-top: 1px solid darkgrey;
+    }
+
+    header nav a {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid gray;
+        font-size: 1.4rem;
+        margin: 0px 0 20px 0;
+        flex-wrap: nowrap;
+    }
+
+
     /*resize banner for mobile view*/
     .jumbo {
-        height: 76.6px;
+        height: 76px;
+        display: block;
+
+    }
+
+    .top-content {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+
+    .top-content .text-container {
+        display: flex;
+        flex-flow: wrap column;
+        width: 100%;
+        padding: 0 1%;
+        padding-bottom: 20px;  
+    }
+
+    .middle-content {
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .middle-content .boxes .box {
+        min-height: 100px;
+        min-width: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .boxes{
         display: flex-grid;
         justify-content: space-between;
-        background-color: red;
     }
 
-    /*#box1 {
-    background-color: black;
+    #box1 {
+    order:3;
     
     }
     #box2 {
-        background-color: forestgreen;
+    order:2;
         
     }
     #box3 {
-        background-color: black;
+    order:0;
         
     }
     #box4 {
-        background-color: darkorchid;
+    order:6;
         
     }
     #box5 {
-        background-color: black;
+    order:5;
         
     }
     #box6 {
-        background-color: hotpink;
+    order:4;
         
     }
     #box7 {
-        background-color: black;
+    order:9;
         
     }
     #box8 {
-        background-color: indigo;
+    order:8;
         
-    } */
+    } 
     #box9 {
-        background-color: orange;
+    order:7;
     }
     
     #box10 {
-        display:none;
+    display:none;
     }
+    .bottom-content {
+    display: block;
+    margin: 0 0px 20px 20px;
+    justify-content: space-around;
+    }
+
+    .bottom-content .text-container {
+        padding-right: 4%;
+        margin-bottom: 20px
+    }
+
+    .bottom-content .text-container:last-child {
+        padding-right: 0;
+    }
+    footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+ 
+    font-size: .875rem;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
 }
