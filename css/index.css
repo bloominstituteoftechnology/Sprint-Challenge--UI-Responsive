@@ -52,13 +52,20 @@ table {
 }
 
 html, body {
-    height: 100%;
+    font-size: 62.5%;
+    width: 100%;
+    max-width: 1000px;
     font-family: 'Roboto', sans-serif;
+    margin: auto;
 }
 
+/* body{
+    border: 1px solid red;
+} */
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -66,81 +73,256 @@ p {
     line-height: 1.4;
 }
 
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1% 0;
+    }
+
+    .lambda-logo{
+        margin: auto 0;
+        height: 100%;
+    }
+
+    .navbar nav{
+        width: 85%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        color:black;
+    }
+
+    .navbar nav a{
+        text-decoration: none; color : #000;
+    }
+
+
 .container {
-    width: 800px;
+    /* border: 2px solid black; */
+    width:100%;
     margin: 0 auto;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        border-bottom: 0.1rem dashed black;
+    }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
+    .jumbotron{
+        width:100%;
+        padding: 1% 0;
+    }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
+        .top-content .text-container {
+            width: 48%;
+            padding: 0 1%;
+            padding-bottom: 2rem;  
+            font-size: 1.5rem;
+        }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
+    .middle-content {
+        margin-bottom: 2rem;
+        border-bottom: 0.1rem dashed black;
+    }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+        .middle-content h2 {
+            padding: 0 2%;
+            margin-bottom: 0;
+        }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .middle-content .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
 
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
+        .middle-content .boxes .box {
+            width: 12.5%;
+            height: 10rem;
+            background: black;
+            margin: 2rem 2.5%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
 
-.bottom-content .text-container {
-    padding-right: 4%;
-}
+        .middle-content .boxes .even1{
+            background: forestgreen;
+        }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
+        .middle-content .boxes .even2{
+            background: darkorchid;
+        }
 
-footer {
-    width: 100%;
-    background: black;
-}
+        .middle-content .boxes .even3{
+            background: hotpink;
+        }
 
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
+        .middle-content .boxes .even4{
+            background: indigo;
+        }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+        .middle-content .boxes .even5{
+            background: lawngreen;
+        }
+
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 2rem;
+        justify-content: space-around;
+    }
+
+        .bottom-content .text-container {
+            padding-right: 4%;
+            font-size: 1.5rem;
+        }
+        
+
+        .bottom-content .text-container:last-child {
+            padding-right: 0;
+        }
+
+    footer {
+        width: 100%;
+        background: black;
+    }
+
+        footer nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 2%;
+            font-size: 1.4rem;
+        }
+
+        footer nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+/*Tablet view*/
+@media (max-width:768px){
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .lambda-logo{
+        width: 25%;
+        align-self: center;
+        padding-bottom: 5%;
+    }
+
+    .navbar nav{
+        width: 100%;
+        color:black;
+    }
+
+    .navbar nav a{
+        justify-content: space-evenly;
+        align-self: center;
+    }
+
+    .middle-content .boxes .odd1{
+        background: teal;
+    }
+
+    .middle-content .boxes .odd2{
+        background: gold;
+    }
+
+    .middle-content .boxes .odd3{
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .odd4{
+        background: coral;
+    }
+
+    .middle-content .boxes .odd5{
+        background: crimson;
+    }
+
+    /*mobile view*/
+@media(max-width:400px){
+        .navbar{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .lambda-logo{
+            width: 50%;
+            align-self: center;
+            padding: 5% 0;
+        }
+    
+        .navbar nav{
+            flex-direction: column;
+            width: 100%;
+            color:black;
+        }
+    
+        .navbar nav a{
+            width: 100%;
+            text-align: center;
+            border-top: 0.1rem solid black;
+            padding: 5%;
+        }
+
+        .jumbotron{
+            padding: 0;
+        }
+
+        .top-content{
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .top-content .text-container{
+                width: 80%;
+                margin: 5%;
+            }
+
+            .middle-content .boxes{
+                justify-content: space-around;
+                flex-direction: row-reverse;
+            }
+
+            .middle-content .boxes .box{
+                width: 27.8%;
+            }
+
+            .middle-content .boxes .even5{
+                display: none;
+            }
+    
+        .bottom-content{
+                flex-direction: column;
+                align-items: center;
+        }
+
+            .bottom-content .text-container{
+                width: 80%;
+                margin: 5%;
+            }
+    
+        footer nav{
+            width: 80%;
+        }
+
+        footer nav a{
+            justify-content: space-around;
+            padding: 0 4%;
+        }
 }
