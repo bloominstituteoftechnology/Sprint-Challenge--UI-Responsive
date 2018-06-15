@@ -69,25 +69,52 @@ p {
     line-height: 1.4;
 		font-size: 1rem;
 }
-
+/*page max-width: 1000px*/
 .container {
 		max-width: 1000px;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
+/*seperator*/
+
 .navbar-top{
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: baseline;
 	padding: 10px 0 20px 0;
 }
 .navbar-top a{
 	font-size: 2rem;
-	color:black
+	color:black;
+	text-decoration:none;
 }
 .jumbo{
-	padding: 20px 0; 
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
 }
+@media(max-width: 768px){
+	.navbar-top{
+		width: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		background: red;
+	}
+}
+@media(max-width:400px){
+	.navbar-top{
+		width:0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.navbar-top a{
+		display: flex;
+		padding: 20px 0;
+	}
+}
+/*seperator*/
 
 .top-content {
     display: flex;
@@ -123,6 +150,7 @@ p {
 		font-size: 2rem;
 }
 
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -133,6 +161,46 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .box2{
+	background: forestgreen;
+}
+.middle-content .boxes .box4{
+	background: darkorchid;
+}
+.middle-content .boxes .box6{
+	background: hotpink;
+}
+.middle-content .boxes .box8{
+	background: indigo;
+}
+.middle-content .boxes .box10{
+	background: lawngreen;
+}
+
+@media(max-width: 768px){
+	p{
+		font-size: 1.5rem;
+	}
+	.middle-content .boxes .box1{
+		background: teal;
+	}
+	.middle-content .boxes .box3{
+		background: gold;
+	}
+	.middle-content .boxes .box5{
+		background: cadetblue;
+	}
+	.middle-content .boxes .box7{
+		background: coral;
+	}
+	.middle-content .boxes .box9{
+		background: crimson;
+	}
+
+}
+
+/* Seperator*/
 
 .bottom-content {
     display: flex;
