@@ -82,7 +82,6 @@ p {
 header {
     margin-top: 20px;
     margin-bottom: 40px;
-    /* width: 100%; */
     padding: 0 10%;
     display: flex;
     align-items: baseline;
@@ -212,4 +211,45 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+@media( max-width: 768px ) {
+    
+    header {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+    }
+    
+    header .logo {
+       margin-bottom: 30px;
+    }
+    
+    .jumbotron-container {
+        margin-bottom: 20px;
+        padding: 0 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .jumbotron-container .jumbotron {
+      width: 100%;
+    }
+
 }
