@@ -388,6 +388,7 @@ footer nav a {
     }
 
     .bottom-content {
+        margin: 0 2% 5px;
         flex-wrap: wrap;
     }
 
@@ -396,5 +397,20 @@ footer nav a {
         margin-bottom: 20px;
     }
 
+    footer {
+        margin: 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 1.4rem;
+    }
 
 }
