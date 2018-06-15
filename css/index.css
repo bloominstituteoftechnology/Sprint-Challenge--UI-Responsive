@@ -272,7 +272,7 @@ footer nav a {
 
     .top-content .text-container {
         width: 100%;
-        margin: 2% 2%;
+        margin: 0% 2%;
         /* margin-bottom: 2%; */
     }
 
@@ -287,5 +287,19 @@ footer nav a {
 
     .middle-content .boxes .box {
         min-width: 100px;
+    }
+
+    footer nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 2%;
+        font-size: 1.4rem;
+        padding-bottom: 40px;
+    }
+
+    .bottom-content .text-container {
+        margin: 2% 0;
     }
 }
