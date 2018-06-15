@@ -26,5 +26,5 @@ Responsive is a mixture of  fluid and adaptive layout designs. This layout desig
 
 5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
 
-CSS property max-width used to improve the browser's handling of small windows. This is important when making a site usable on small devices.
+CSS property max-width used to improve the browser's handling of small windows. This is important when making a site usable on small devices..
 
