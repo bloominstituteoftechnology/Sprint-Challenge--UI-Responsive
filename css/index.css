@@ -349,9 +349,9 @@ footer nav a {
     
     .middle-content .boxes .box2 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: forestgreen;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -360,9 +360,9 @@ footer nav a {
     
     .middle-content .boxes .box3 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: gold;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -371,9 +371,9 @@ footer nav a {
     
     .middle-content .boxes .box4 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: darkorchid;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -382,9 +382,9 @@ footer nav a {
     
     .middle-content .boxes .box5 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: cadetblue;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -393,9 +393,9 @@ footer nav a {
     
     .middle-content .boxes .box6 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: hotpink;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -404,9 +404,9 @@ footer nav a {
     
     .middle-content .boxes .box7 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: coral;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -415,9 +415,9 @@ footer nav a {
     
     .middle-content .boxes .box8 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: indigo;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -426,9 +426,9 @@ footer nav a {
     
     .middle-content .boxes .box9 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: crimson;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -437,9 +437,9 @@ footer nav a {
     
     .middle-content .boxes .box10 {
         width: 12.5%;
-        height: 100px;
+        height: 13.02%;
         background: lawngreen;
-        margin: 20px 2.5%;
+        margin: 2.6% 2.5%;
         color: white;
         display: flex;
         align-items: center;
@@ -448,7 +448,7 @@ footer nav a {
     
     .bottom-content {
         display: flex;
-        margin: 0 2% 20px;
+        margin: 0 2% 2.6%;
         justify-content: space-around;
     }
     
@@ -470,8 +470,8 @@ footer nav a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 2%;
-        font-size: 14px;
+        padding: 2.6% 2%;
+        font-size: 1.82%;
     }
     
     footer nav a {
