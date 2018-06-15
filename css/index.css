@@ -60,6 +60,10 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -373,10 +377,14 @@ footer nav a {
         border-top: 1px solid gray;
     
     }
+
+    header nav a:last-child {
+        padding-bottom: 0;
+    }
     
     .jumbotron {
         width: 100%;
-        margin: 40px 0;
+        margin: 0 0 10 0;
     }
     
     .top-content {
@@ -390,7 +398,7 @@ footer nav a {
     }
     
     .top-content .text-container {
-        width: 48%;
+        width: 88%;
         padding: 0 1%;
         padding-bottom: 20px;  
     }
