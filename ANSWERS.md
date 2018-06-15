@@ -20,3 +20,4 @@
         * responsive layouts combine the best of both worlds of fluid and adaptive layouts, using media queries to respond to any viewport size and avoid having to create different layouts for each one.
 
 5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
+    * Answer: a max-width set on the outmost container for the content is an absolute necessity for fully-responsive layouts because this, in tandem with percentage-based widths, is what allows for the content to adjust to the viewport size.
