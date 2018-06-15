@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,8 +68,41 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 1000px;
+    width:100%;
     margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+header {
+	display:flex;
+	width: 100%;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    line-height: auto;
+ 
+}
+
+header .logo {
+    margin:0 0 10px;
+}
+
+header nav {
+    display:flex;
+    justify-content: space-around;
+    width:100%; 
+     /* position: bottom; */
+    margin: 23px 0 0 ;
+    }
+
+header nav a {
+	color: black;
+	margin: 0 2.27%;
+    text-decoration: none;
+	display: flex;
+   
+    /* border: solid black 1px; */
+    
 }
 
 .top-content {
@@ -79,10 +113,15 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content .top-img {
+    width: 100%;
+    margin-top: 20px;
+}
+
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 10px 1%;
+    /* padding-bottom: 20px;   */
 }
 
 .middle-content {
@@ -112,6 +151,28 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .two {
+    background: forestgreen;
+}
+
+.middle-content .boxes  .four {
+    background: darkorchid;
+}
+
+.middle-content .boxes .six{
+    background: hotpink;
+}
+
+.middle-content .boxes  .eight{
+    background: indigo;
+}
+
+.middle-content .boxes  .ten{
+    background: lawngreen;
+}
+
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +181,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    
 }
 
 .bottom-content .text-container:last-child {
@@ -143,4 +205,100 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 768px){
+header {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+header nav {
+    justify-content: space-evenly;
+    position: bottom;
+    /* order: 2; */
+
+    }
+header .logo {
+        align-self:  center;
+        position: top;
+        /* order:1; */
+    }
+
+.middle-content .boxes .one {
+    background: teal
+}
+.middle-content .boxes .three {
+    background: gold;
+}
+.middle-content .boxes .five{
+    background: cadetblue;
+}
+.middle-content .boxes .seven {
+    background: coral;
+}
+
+.middle-content .boxes .nine {
+    background: crimson;
+}
+}
+
+@media (max-width:400px){
+
+header nav {
+    flex-direction: column;
+    border-top: 1px solid lightgray;
+    margin: 0px;
+}
+header nav a{
+    border-bottom: 1px solid lightgray;    
+    justify-content: center;
+    padding:10px;
+}
+
+
+.top-content {
+    flex-direction: column;
+    
+}
+
+.top-content .top-img {
+    margin-top:0;
+}
+
+.top-content .text-container {
+    width: 100%;
+    /* padding: 0 1%; */
+    padding-bottom: 20px; 
+    margin: 10px; 
+}
+
+/* .middle-content {
+width:100% ;
+} */
+
+.middle-content .boxes {
+    flex-direction: row-reverse;
+}   
+.middle-content .boxes .ten {
+    display: none;
+}
+
+.middle-content .boxes .box {
+    width: 23%;
+}
+
+.bottom-content {
+    flex-direction: column;
+}
+
+.bottom-content .text-container {
+margin-bottom:20px;
+}
+
+footer nav{
+width:100%;
+justify-content: space-around;
+
+}
 }
