@@ -73,6 +73,7 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+
 }
 
 p {
@@ -83,49 +84,44 @@ p {
 .container {
     max-width: 800px;
     margin: 0 auto;
+		padding: 0 5px;
 		box-sizing: border-box;
+}
+
+.logo {
+	/* border: 1px solid yellow; */
 }
 
 header {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-  /* padding: 20px 0; */
-	border: 0px solid blue;
-	padding: 20px 0;
+	/* border: 1px solid blue; */
+	padding-top: 20px;
 	margin: 0px 0;
+}
 
-}
-.logo {
-	border: 0px solid yellow;
-}
-nav {
-	border: 0px solid red;
+header nav {
+	/* border: 1px solid red; */
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
 	width: 100%;
-	/* height: 40px; */
-	padding-top: 20px;
-
+	margin: 15px;
 }
 
 
-nav .nav-boxes {
-	border: 0px solid green;
+header nav a {
+	/* border-top: 1px solid black; */
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	align-content: center;
 
 }
-
-.jumbotron {
-	margin: 13px 0;
-}
-.jumbotron img{
+.jumbotron img {
 	max-width: 100%;
 }
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +131,9 @@ nav .nav-boxes {
 }
 
 .top-content .text-container {
-    width: 48%;
+		display: flex;
+		flex-wrap: wrap;
+    width: 100%;
     padding: 0 1%;
     padding-bottom: 20px;
 }
@@ -159,6 +157,7 @@ nav .nav-boxes {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
+		width: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -166,6 +165,45 @@ nav .nav-boxes {
     align-items: center;
     justify-content: center;
 		font-size: 1.75rem;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+	border: 1px solid red;
+    width: 100%;
+		display: flex;
+		justify-content: center;
+    background: black;
+}
+
+footer nav {
+	border: 1px solid green;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 1.4rem;
+}
+
+footer nav a {
+    color: white;
+
+    text-decoration: none;
+		border: 1px solid blue;
 }
 
 /* my new code start */
@@ -188,13 +226,15 @@ nav .nav-boxes {
 }
 
 @media(max-width:768px){
-
+ footer nav {
+	 width: 80%;
+ }
 	header {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 	}
-
 	.boxes .box:nth-child(1){
 		background: teal;
 	}
@@ -207,30 +247,41 @@ nav .nav-boxes {
 	.boxes .box:nth-child(7){
 		background: coral;
 	}
-	.boxes .box:nth-child(9){
+	.boxes .box:nth-child(9) {
 		background: crimson;
 	}
 }
+@media(max-width:475px){
+	.boxes .box:nth-child(10) {
+		display: none;
+	}
+}
 
-@media(max-width: 400px){
-	 nav {
+@media(max-width:400px) {
+
+	header nav {
 		 display: flex;
 		 flex-direction: column;
 		 align-self: center;
 		 align-items: center;
 		 height: 100%;
-		 /* border: 5px solid red; */
+		 background: 5px solid red;
+		 padding: 0;
+		 margin-bottom: 0;
 	 }
 
-	 nav a {
+	 header nav a {
 		 /* border: 10px solid green; */
 		 padding: 15px;
+		 border-top: 1px solid black;
 	 }
 
 	 .boxes .box:nth-child(10) {
 		 display: none;
 	 }
-
+	 .boxes .box {
+		 background-color: teal;
+	 }
 	 .box {
 		 font-size: .1rem;
 		 max-height: 100px;
@@ -250,40 +301,11 @@ nav .nav-boxes {
 
 	 .text-container {
 		 /* border: 1px solid red; */
+		 margin-bottom: 20px;
+	 }
+	 footer nav {
+		 width: 100%;
 	 }
  }
 
 /* my new code end */
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
-footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 1.4rem;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
