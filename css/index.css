@@ -250,7 +250,7 @@ footer nav a {
   }
   .nav li {
     padding: 15px;
-    border-top: 1px solid #888;
+    border-top: 1px solid #ccc;
   }
   .primary-header {
     padding-bottom: 0;
@@ -275,5 +275,17 @@ footer nav a {
   }
   .middle-content .boxes {
     flex-direction: row-reverse;
+  }
+  .bottom-content {
+    flex-direction: column;
+  }
+  .bottom-content .text-container {
+    margin-bottom: 18px;
+  }
+  footer nav {
+    width: 100%;
+    justify-content: space-around;
+    padding-right: 7%;
+    padding-left: 7%;
   }
 }
