@@ -72,20 +72,27 @@ p {
 
 .container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 10px auto 0;
+		padding: 0 10%;
 		font-size: 1.6rem;
 }
 
 .container header nav {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;;
 	align-items: flex-end;
 }
 
 .container header nav a {
 	text-decoration: none;
 	color: black;
+	display: flex;
+	justify-content: flex-start;
 }
+
+/* .container header nav a:not(:first-child) {
+	padding-left: 5%;
+} */
 
 .top-content {
     display: flex;
@@ -93,6 +100,10 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.top-content .jumbotron {
+	margin: 40px auto 20px;
 }
 
 .top-content .text-container {
