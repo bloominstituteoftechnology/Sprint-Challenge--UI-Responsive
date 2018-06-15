@@ -19,5 +19,5 @@ a fixed layout won't change when you adjust the view port. a fluid layout will s
 
 5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
 
-
+So that the width can continually change up until a certain point. If the width is just defined outright then things won't shift (I learned this the hard way today). 
 
