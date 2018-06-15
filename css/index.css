@@ -164,6 +164,7 @@ html {
 .container header .logo {
     width: 100%;
     padding-right: 2%;
+    /* height: 100%; */
 }
 .container header nav {
     display: flex;
@@ -255,4 +256,84 @@ html {
     
 }
 /* End of tablet */
+
+/* Begin mobile 400px */
+@media(max-width: 400px){
+
+    /* header begin */
+    .container header {
+        display: flex; 
+        align-content: space-between;
+        flex-direction: column;
+    }
+    .container header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-top: 30px;
+        align-content: space-between;
+    }
+    .logo {
+        padding-bottom: 25px;
+        
+    }
+    .container header nav:first-child {
+        margin-top: 10px;
+    }
+    .container header nav a {
+        /* margin-top: 20px; */
+        /* margin-bottom: 20px; */
+        border-top: 1px solid gray;
+        /* height: 100px; */
+        text-align: center;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+
+    /* header end */
+    /* top content */
+    .container .top-content .text-container {
+        width: 96%;
+    }
+    /* Middle content */
+    .container .middle-content .boxes .box10 {
+        display: none;
+    }
+    .container .middle-content .boxes {
+        display: flex;
+        flex-direction: row-reverse
+        /* flex-wrap: wrap-reverse; */
+        
+        
+    }
+    .container .middle-content .boxes .box {
+        width: 20.83%; 
+    } 
+    footer nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+
+
+    /* Bottom content */
+    .container .bottom-content  {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .container .bottom-content .text-container {
+        width: 96%;
+        margin-bottom: 10px;
+    }
+
+}
+/* End mobile */
 
