@@ -323,6 +323,34 @@ footer nav a {
         
     }
 
+    .middle-content .boxes .box1 {
+        order:9;
+    }
+    .middle-content .boxes .box2 {
+        order:8;
+    }
+    .middle-content .boxes .box3 {
+        order:7;
+    }
+    .middle-content .boxes .box4 {
+        order:6;
+    }
+    .middle-content .boxes .box5 {
+        order:5;
+    }
+    .middle-content .boxes .box6 {
+        order:4;
+    }
+    .middle-content .boxes .box7 {
+        order:3;
+    }
+    .middle-content .boxes .box8 {
+        order:2;
+    }
+    .middle-content .boxes .box9 {
+        order:1;
+    }
+
     .middle-content .boxes .box {
         width: 22%
         
