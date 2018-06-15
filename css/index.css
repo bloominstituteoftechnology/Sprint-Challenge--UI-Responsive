@@ -23,6 +23,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -57,7 +64,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +74,8 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -137,10 +145,14 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+.jumbotron img {
+    height: 145px;
+    width: 100%;
 }
