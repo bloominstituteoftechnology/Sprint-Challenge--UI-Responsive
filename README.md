@@ -21,11 +21,11 @@
 * This project has many parts invovled in it. You will start with a half built website that isn't ready for responsiveness.  You will need to complete the tasks below to successfully finish the website. For this project you have been provided design files which you must successfully match at the viewport sizes of 1000px, 768px, and 400px.  
 
 ## Complete the following tasks to set up a responsive website project
-* Correctly place a viewport meta tag in the head of your index.html file that contains these values: `content="width=device-width, initial-scale=1.0"`
-* In your CSS, Introduce `font-size:62.5%;` to the `html` element.
+* -DONE- Correctly place a viewport meta tag in the head of your index.html file that contains these values: `content="width=device-width, initial-scale=1.0"`
+* -DONE- In your CSS, Introduce `font-size:62.5%;` to the `html` element.
 * Convert all pixel font-sizes into rems and use rems for anything new you build.
-* Convert `.container` into a max-width responsive class based on it's fixed width's current size.
-* The header and jumbotron are missing from the code.  Use the image named `desktop-design.png` to create a pixel perfect replacement. Please note, the `desktop-design.png` file is 1000px wide.
+* -DONE- Convert `.container` into a max-width responsive class based on it's fixed width's current size.
+* -DONE- The header and jumbotron are missing from the code.  Use the image named `desktop-design.png` to create a pixel perfect replacement. Please note, the `desktop-design.png` file is 1000px wide.
 
 ## Complete the following tasks for desktop at a screen size of 1000px
 * Update the background colors on the following boxes:
