@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,19 +12,19 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 1.6rem;;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,13 +51,17 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	font-size:62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +71,48 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width:100%;
+		width: 800px;
     margin: 0 auto;
 }
+
+header {
+	width: 100%
+	display:flex;
+	line-height: 1.8px;
+}
+
+header nav {
+width: 100%;
+}
+
+header nav {
+	margin: 38px 1% 0;
+	width: 100%
+  display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+	color: black;
+}
+
+header .logo {
+  align-self: flex-end;
+  margin-top: 28px 0 0 9%;
+
+}
+
+/* main content */
+
+
 
 .top-content {
     display: flex;
@@ -82,7 +125,8 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+		font-size: 1.6rem;
 }
 
 .middle-content {
@@ -101,7 +145,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box{
     width: 12.5%;
     height: 100px;
     background: black;
@@ -110,6 +154,64 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+		font-size: 1.6rem;
+}
+
+.middle-content .boxes .box2 {
+	background:forestgreen;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+}
+.middle-content .boxes .box4 {
+	background: darkorchid;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+}
+.middle-content .boxes .box6 {
+	background: hotpink;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+}
+.middle-content .boxes .box8 {
+	background:  indigo;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size:1.6rem;
+}
+.middle-content .boxes .box10 {
+	background: lawngreen;
+	width: 12.5%;
+	height: 100px;
+	margin: 20px 2.5%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+
 }
 
 .bottom-content {
@@ -120,11 +222,14 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+		font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* footer */
 
 footer {
     width: 100%;
@@ -137,10 +242,35 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+ /* tablet */
+
+@media(768px) {
+
+.container {
+display: flex;
+flex-direction: column;
+}
+
+
+}
+
+/* mobile */
+
+@media(400px) {
+
+	.container {
+display: flex;
+flex-direction:row;
+	}
+
+
+
 }
