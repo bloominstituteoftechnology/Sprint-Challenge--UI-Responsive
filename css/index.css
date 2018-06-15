@@ -93,7 +93,7 @@ p {
 
 .navigation .logo{
     display: flex;
-    margin: 1% 10%;
+    margin: 1% 1%;
 }
 
 a:link{
@@ -592,13 +592,14 @@ footer nav a {
     .navigation{
         border: 1px solid black;
         display: flex;
-        justify-content: baseline;
+        flex-direction: column;
         justify-content: space-between;
     }
     
     .navigation .logo{
         display: flex;
         margin: 1% 10%;
+        padding: 5%;
     }
     
     a:link{
@@ -608,6 +609,7 @@ footer nav a {
     .navigation .navst{
         border: 1px solid black;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         width: 80%;
         margin: 1% 5%;
@@ -631,20 +633,14 @@ footer nav a {
     
     .top-content {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 20px;
+        flex-direction: column;
         border-bottom: 1px dashed black;
     }
     
     .top-content .text-container {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        padding: 0 2%;
-        padding-bottom: 20px;  
         font-size: 1.2rem;
-        margin-top: 20px;
     }
     
     
@@ -786,16 +782,13 @@ footer nav a {
         display: flex;
         margin: 0 2% 20px;
         justify-content: space-around;
+        flex-direction: column;
     }
     
     .bottom-content .text-container {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        padding: 0 2%;
-        padding-bottom: 20px;  
         font-size: 1.2rem;
-        margin-top: 20px;
     }
     
     .bottom-content .text-container:last-child {
