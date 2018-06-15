@@ -77,11 +77,15 @@ p {
 		font-size: 1.6rem;
 }
 
+/* .container header {
+	border: 1px solid purple;
+} */
+
 .container header nav {
 	display: flex;
 	justify-content: space-between;;
 	align-items: flex-end;
-	border: 1px solid black;
+	/* border: 1px solid red; */
 }
 
 .container header nav a {
@@ -89,7 +93,7 @@ p {
 	color: black;
 	display: flex;
 	justify-content: flex-start;
-	border: 1px solid red;
+	/* border: 1px solid black; */
 }
 
 /* .container header nav a:not(:first-child) {
@@ -106,7 +110,6 @@ p {
 
 .top-content .jumbotron {
 	margin: 35px auto 20px;
-	border: 1px solid yellow;
 }
 
 .top-content .text-container {
@@ -196,9 +199,11 @@ footer nav a {
 }
 
 @media(max-width: 768px) {
+
 	.container {
 		padding: 0;
 	}
+
 	header nav{
 		width: 100%;
 		flex-wrap: wrap;
@@ -240,11 +245,72 @@ footer nav a {
 }
 
 @media(max-width: 400px) {
-	.middle-content .boxes {
-		flex-direction: row-reverse;
+	.container{
+		margin: 0;
+		width: 100%;
+
+	}
+	.container header nav {
+		flex-direction: column;
 	}
 
-	.box10 {
+	.container header nav a {
+		width: 100%;
+		height: 45px;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.6rem;
+	}
+
+	.container header nav a:not(:first-child) {
+		border-top: 1px solid black;
+	}
+
+	.container header nav a:first-child {
+		/* margin-top: 35px; */
+		height: 100px;
+		margin: 0;
+	}
+
+	.container .top-content, .bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container .top-content .jumbotron {
+		margin-top: 0;
+		height: 80px;
+	}
+
+	.middle-content .boxes {
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+	}
+
+	.middle-content .boxes .box {
+		width: 25%;
+	}
+
+	.middle-content .boxes .box10 {
 		display: none;
+	}
+
+	/* .container .bottom-content .text-container {
+		width: 100%;
+	} */
+
+	.container .top-content .text-container {
+		width: 100%;
+		padding: 10px 7%;
+	}
+
+	.container .bottom-content .text-container {
+		padding: 10px 7% 10px 1%;
+	}
+
+	.container footer nav{
+		width: 100%;
+		justify-content: space-around;
 	}
 }
