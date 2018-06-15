@@ -82,7 +82,6 @@ header {
 header .lam {
     order:-1;
     display: flex;
-    flex-flow: column wrap;
     width: 157px;
     height: 40px
 }
@@ -132,12 +131,16 @@ header nav a {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    display: flex;
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 870px;
+    margin-left: 40px;
 
 }
 
@@ -145,7 +148,7 @@ header nav a {
     min-height: 100px;
     min-width: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 20px 3% 20px 3%;
     color: white;
     display: flex;
     align-items: center;
@@ -265,6 +268,33 @@ footer nav a {
         margin: 30px auto 0;
     }
 
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+        display: flex;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        max-width: 870px;
+        margin-left: 40px;
+
+    }
+
+    .middle-content .boxes .box {
+        min-height: 100px;
+        min-width: 100px;
+        background: black;
+        margin: 20px 1.5% 20px 1.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #box1 {
     background-color: teal;
     
@@ -301,7 +331,7 @@ footer nav a {
         background-color: crimson;
     }
     #box10 {
-        display:none;
+        background-color: lightgreen;
     }
 }
 /*mobile view*/
@@ -310,6 +340,7 @@ footer nav a {
 
 
     header {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -317,7 +348,7 @@ footer nav a {
 
     header .lam {
         order: -1;
-        margin: 0px 0;
+        margin: 0px 0px;
     }
 
     header nav {
@@ -325,24 +356,29 @@ footer nav a {
         flex-direction: column;
         justify-content: space-between;
         align-content: center;
+        margin-bottom: 150px;
         border-top: 1px solid darkgrey;
     }
 
     header nav a {
         display: block;
         width: 100%;
-        padding: 20px 0;
+        padding: 20px 0px 20px;
         border-bottom: 1px solid gray;
-        font-size: 1.4rem;
-        margin: 0px 0 20px 0;
+        font-size: 1rem;
+        margin: 0px 0 0 0;
         flex-wrap: nowrap;
+        text-align: center;
+        vertical-align: middle;
+
     }
 
 
     /*resize banner for mobile view*/
     .jumbo {
         height: 76px;
-        display: block;
+        display: flex;
+        flex-flow: row wrap;
 
     }
 
