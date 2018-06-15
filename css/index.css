@@ -240,8 +240,8 @@ footer nav a {
     header nav a:hover, 
     header nav a:visited, 
     header nav a:active {
-    font-size: 1.4rem;
-    margin-top: 27px;
+        font-size: 1.4rem;
+        margin-top: 27px;
     }
 
     .middle-content .boxes .box {
@@ -269,5 +269,59 @@ footer nav a {
 }
 
 @media(max-width: 400px) {
+    header {
+        height: 393px;
+        margin-top: 10px;
+    }
 
+    header nav {
+        flex-flow: row wrap;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    header nav a {
+        width: 100vw;
+        height: 17px;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        padding-top: 17px;
+    }
+
+    .header nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .top-content .text-container {
+        width: 90vw;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-flow: row-reverse wrap;
+    }
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    .bottom-content .text-container {
+        width: 94vw;
+        margin-bottom: 20px;
+    }
+
+    footer nav {
+        width: 92vw;
+        justify-content: space-evenly;
+        padding-left: 4.5%;
+    }
 }
