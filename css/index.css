@@ -81,6 +81,7 @@ p {
 	display: flex;
 	justify-content: space-between;;
 	align-items: flex-end;
+	border: 1px solid black;
 }
 
 .container header nav a {
@@ -88,6 +89,7 @@ p {
 	color: black;
 	display: flex;
 	justify-content: flex-start;
+	border: 1px solid red;
 }
 
 /* .container header nav a:not(:first-child) {
@@ -103,7 +105,8 @@ p {
 }
 
 .top-content .jumbotron {
-	margin: 40px auto 20px;
+	margin: 35px auto 20px;
+	border: 1px solid yellow;
 }
 
 .top-content .text-container {
@@ -190,4 +193,58 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px) {
+	.container {
+		padding: 0;
+	}
+	header nav{
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 1.4rem;
+	}
+
+	header nav a:first-child {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 5px auto 35px;
+	}
+
+	.top-content .jumbotron {
+		margin-top: 20px;
+	}
+
+	.middle-content .boxes .box1 {
+		background: teal;
+	}
+
+	.middle-content .boxes .box3 {
+		background: gold;
+	}
+
+	.middle-content .boxes .box5 {
+		background: cadetblue;
+	}
+
+	.middle-content .boxes .box7 {
+		background: coral;
+	}
+
+	.middle-content .boxes .box9 {
+		background: crimson;
+	}
+}
+
+@media(max-width: 400px) {
+	.middle-content .boxes {
+		flex-direction: row-reverse;
+	}
+
+	.box10 {
+		display: none;
+	}
 }
