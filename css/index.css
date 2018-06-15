@@ -272,7 +272,8 @@ footer nav a {
 
     .top-content .text-container {
         width: 100%;
-        margin: 0 2%;
+        margin: 2% 2%;
+        /* margin-bottom: 2%; */
     }
 
     .middle-content .boxes {
@@ -282,5 +283,9 @@ footer nav a {
     .bottom-content {
         flex-direction: column;
         width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        min-width: 100px;
     }
 }
