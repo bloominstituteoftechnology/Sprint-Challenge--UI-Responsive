@@ -74,7 +74,7 @@ p {
 }
 
 .container {
-    max-width: 80%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -91,7 +91,6 @@ p {
 }
 
 .navigation .logo{
-    display: flex;
     margin: 1% 1%;
 }
 
@@ -350,8 +349,7 @@ footer nav a {
     }
     
     .navigation .logo{
-        display: flex;
-        margin: 1% 10%;
+        margin: 1% 1%;
     }
     
     a:link{
@@ -604,9 +602,7 @@ footer nav a {
     }
     
     .navigation .logo{
-        display: flex;
-        margin: 1% 10%;
-        padding: 5%;
+        margin: 1% 1%;
     }
     
     a:link{
