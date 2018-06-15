@@ -71,9 +71,20 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 		font-size: 1.6rem;
+}
+
+.container header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.container header nav a {
+	text-decoration: none;
+	color: black;
 }
 
 .top-content {
