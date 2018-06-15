@@ -50,9 +50,10 @@ table {
 * {
     box-sizing: border-box;
 }
-
-html, body {
+html{
     font-size:62.5%;
+}
+html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -325,7 +326,7 @@ footer nav a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        min-width: 100px;
+        min-width: 100%;
     }
     
     .middle-content .boxes .box {
@@ -498,7 +499,7 @@ footer nav a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        min-width: 100px;
+        
     }
     
     .middle-content .boxes .box {
@@ -506,10 +507,11 @@ footer nav a {
         height: 100px;
         background: black;
         margin: 20px 2.5%;
-        color: black;
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
+        min-width: 100px;
     }
     
     .middle-content .boxes .box1 { 
@@ -621,5 +623,26 @@ footer nav a {
         align-items: center;
         justify-content: center;
     }
+    .bottom-content {
+       
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+        font-size: 1.6rem;
+        min-width: 100%;
+    }
+    
+    .bottom-content .text-container {
+        display: flex;
+        font-size: 1.6rem;
+        align-items: inherit;
+        padding: 2rem;
+        margin-bottom: 20px;
+        padding-right: 4%;
+    }
+    
+    .bottom-content .text-container:last-child {
+        padding-right: 0;
 }    
 
+}
