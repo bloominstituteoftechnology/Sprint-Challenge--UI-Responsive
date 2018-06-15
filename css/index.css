@@ -56,8 +56,12 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +71,33 @@ p {
 }
 
 .container {
-    width: 800px;
+    /* width: 800px; */
     margin: 0 auto;
+    font-size: 1.6rem;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-bottom: 40px;
+}
+
+header nav {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 80%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.jumbotron {
+    margin-bottom: 20px;
 }
 
 .top-content {
@@ -137,7 +166,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
