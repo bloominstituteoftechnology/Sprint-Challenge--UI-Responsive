@@ -352,23 +352,30 @@ footer nav a {
     header {
         display: flex;
         flex-wrap: wrap;
+        border: 1px solid red;
     }
 
     header .logo {
         display: block;
         margin: 30px auto;
+        border: 1px solid green;
     }
     
     header nav {
         margin: 38px 1% 0;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid purple;
     }
     
     header nav a {
         text-decoration: none;
         color: black;
+        margin: 20px 0;
+        border: 1px solid gray;
+        width: 100;
     
     }
     
@@ -380,7 +387,9 @@ footer nav a {
     .top-content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 20px;
         border-bottom: 1px dashed black;
     }
@@ -464,11 +473,15 @@ footer nav a {
     .bottom-content {
         display: flex;
         margin: 0 2% 20px;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     
     .bottom-content .text-container {
         padding-right: 4%;
+        padding-bottom: 4%;
     }
     
     .bottom-content .text-container:last-child {
