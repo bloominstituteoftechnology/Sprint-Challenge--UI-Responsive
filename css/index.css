@@ -74,15 +74,21 @@ p {
 .menu {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto 40px;
+    margin: 0 auto 45px;
+
 }
 
-.menu nav {
-    display: flex;  
+.menu .lambda {
+    margin:auto;
 }
 
-nav a {
-    /* margin: 10%; */
+.menu nav { 
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    font-size: 85%;
 }
 
 .zoom {
@@ -201,7 +207,7 @@ footer nav a {
     .zoom {
         display: flex;
         justify-content: center;
-        max-width: 99%;
+        max-width: 100%;
     }
 
     .middle-content .boxes .box1 {
@@ -275,4 +281,19 @@ footer nav a {
     
     }
 
+    .menu nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .menu nav a {
+        border-bottom: .5px solid gray;
+        display: flex;
+        padding: 7% 50%;
+        margin: 0;
+        font-size: 110%;
+    }
+    .menu nav .home{
+        border-top: .5px solid gray;
+    }
 }
