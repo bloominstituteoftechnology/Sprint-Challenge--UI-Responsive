@@ -292,6 +292,11 @@ footer nav a {
         padding: 20px 4% 10px 4%;
     }
 
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
     .middle-content .boxes .box {
         width: 25%;
     }
