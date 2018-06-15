@@ -201,4 +201,21 @@ header nav a {
     .container .middle-content .boxes .box9 {
         background: crimson;
     }
+    header nav {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav .first {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .container .jumbotron {
+        width: 100%;
+        padding-left: .25%;
+        padding-right: .25%;
+    }
 }
