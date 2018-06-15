@@ -144,3 +144,115 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+html {
+    font-size: 62.5%;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.container header .logo-div {
+    width: 15.7%;
+}
+.container header .logo {
+    width: 100%;
+    padding-right: 2%;
+}
+.container header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 78.3%;
+    align-items: flex-end;
+    text-align: center;
+    /* padding-right: 100px; */
+    /* border: 1px solid blue; */
+    height: 40px;
+}
+.container header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+
+.container header .jumbo-img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+.container p {
+    font-size: 1.5rem;
+}
+.container .middle-content .boxes {
+    font-size: 1.7rem;
+}
+
+.container .middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.container .middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.container .middle-content .boxes .box6 {
+    background: hotpink;
+}
+.container .middle-content .boxes .box8 {
+    background: indigo;
+}
+.container .middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+/* Tablet 768px */
+@media(max-width: 768px){
+
+
+    /* Boxes change begin */
+    .container .middle-content .boxes .box1 { 
+        background: teal;
+    }
+    .container .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .container .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .container .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .container .middle-content .boxes .box9 {
+        background: crimson;
+    }
+    /* Boxes change end */
+    /* Header  begin */
+    .container header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container header nav {
+        width: 100%;
+    }
+    .container header .img-div {
+        margin-top: 10px;
+        padding-right: 10%;
+        border: 1px solid red;
+    }
+
+    /* Header end */
+    
+}
+/* End of tablet */
+
