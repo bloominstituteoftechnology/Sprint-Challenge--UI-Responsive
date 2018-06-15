@@ -71,7 +71,7 @@ p {
     line-height: 1.4;
 }
 
-.container {
+.container .nav-container {
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
@@ -79,8 +79,8 @@ p {
 
 .row {
     display: flex;
-    width: 880px;
-    margin-right: 10px;
+    width: 100%;
+    margin-right: 1rem;
 /*    border: solid 2px red;*/
     
 /*    justify-content: space-between;*/
@@ -88,7 +88,7 @@ p {
 
 .row img {
 /*    border: solid blue 2px;*/
-    margin-left: 5%;
+    margin-left: 10%;
     height: 40px;
     margin-top: 1%;
     
@@ -97,21 +97,21 @@ p {
 /*    border: 2px solid black;*/
 /*    justify-content: space-between;*/
 /*    justify-content: flex-start;*/
-    width: 80%;
+    width: 100%;
     list-style: none;
-    margin-right: 5%;
+/*    margin-right: 5%;*/
 /*    align-items: flex-end;*/
 }
 .main-nav li {
     display: inline-flex;
-    margin-left: 12%;
+    margin-left: 10%;
 /*    border: 2px solid green;*/
     align-self: flex-end;
 /*    justify-content: flex-start;*/
     margin-top: 5%;
     font-size: 14px;
     margin-bottom: 1%;
-    font-weight: 300;
+    font-weight: heavy;
 }
 
 .main-nav li a {
@@ -120,8 +120,8 @@ p {
 }
 
 .Jumbo {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 2.0rem;
+    margin-top: 2.0rem;
 }
     
 .top-content {
@@ -245,22 +245,50 @@ footer nav a {
         margin: 0;
         padding: 0;
     }
-    .row img {
-        justify-content: center;
+    
+    .nav-container .row img {
+       margin: 3% 33% 0%;
+    
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 405px) {
+   .top-content .text-container {
+        width: 100%;
+    }
+    
      .middle-content .boxes {
-    flex-direction: row-reverse;
-    }
-/*
-    .middle-content .boxes .box-10 {
-        backface-visibility: hidden;
-    }
-*/
-  .container .row .main-nav {
-    flex-wrap: wrap;
+        flex-direction: row-reverse;
+         flex-wrap: wrap;
          
+        
+    }
+    .middle-content .boxes .box {
+        width: 28%;
+    }
+    .middle-content .boxes .box-10 {
+        visibility: hidden;
+        margin-bottom: -100%;
+    }
+  .nav-container .row .main-nav li {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      border-top: 1px solid black;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      
+         
+    }
+    .nav-container .row .main-nav li a {
+        align-self: center;
+    }
+    .bottom-content {
+        flex-wrap: wrap;
+       
+    }
+    .text-container {
+        margin: 2%;
     }
 }
