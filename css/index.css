@@ -136,6 +136,7 @@ p {
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
+		min-width: 150px;
     justify-content: space-evenly;
 }
 
@@ -270,6 +271,7 @@ footer nav a {
 	.container .header nav a{
 		color: black;
 		text-decoration: none;
+		width: 70px;
 		padding: 10px 44% 10px 44%;
 		border-top: 1px solid black;
 	}
