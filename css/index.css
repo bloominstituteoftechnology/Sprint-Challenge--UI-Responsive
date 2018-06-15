@@ -122,83 +122,88 @@ header nav a:hover {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
+.middle-content .boxes1 {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
  
- .boxes .black {
+  .black {
     width: 12.5%;
     height: 100px;
     background: black;
     color: white;
-    display: flex;
-    align-items: center;
+   /*display: flex;/
+    /*align-items: center;*/
     justify-content: center;
 }
 
 
-/*.middle-content*/ .boxes .forestgreen {
+/*.middle-content*/ .forestgreen {
     width: 12.5%;
     height: 100px;
     background: forestgreen;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
     justify-content: center;
 }
 
 
-.boxes .darkorchid {
+ .darkorchid {
     width: 12.5%;
     height: 100px;
     background: darkorchid;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
     justify-content: center;
 }
 
-.boxes .hotpink {
+.middle-content .boxes2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ .hotpink {
     width: 12.5%;
     height: 100px;
     background: hotpink;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
     justify-content: center;
 }
 
-.boxes .indigo {
+ .indigo {
     width: 12.5%;
     height: 100px;
     background: indigo;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
     justify-content: center;
 }
 
-.boxes .lawngreen {
+.lawngreen {
     width: 12.5%;
     height: 100px;
     background: lawngreen;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
     justify-content: center;
 }
 
-
- 
 
 .bottom-content {
     display: flex;
