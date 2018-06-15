@@ -177,26 +177,26 @@ footer nav a {
         flex-wrap: wrap;
         min-width: 100px;
     }
-    .container .middle-content .boxes .box:nth-child(1){
+    .container .middle-content .boxes .box1 {
         background: teal;
     }
-    .container .middle-content .boxes .box:nth-child(3){
+    .container .middle-content .boxes .box3{
         background: gold;
     }
-    .container .middle-content .boxes .box:nth-child(5){
+    .container .middle-content .boxes .box5{
         background: cadetblue;
     }
-    .container .middle-content .boxes .box:nth-child(7){
+    .container .middle-content .boxes .box7{
         background: coral;
     }
-    .container .middle-content .boxes .box:nth-child(9){
+    .container .middle-content .boxes .box9{
         background: crimson;
     }
     
 }
 
 @media(max-width: 400px ){
-    .container .middle-content .boxes .box:nth-child(10){
+    .container .middle-content .boxes .box10{
         display: none;
     }
  
