@@ -9,4 +9,5 @@
 2. Block will try to take up the maximum amount of space, i.e. the whole line, and inline will try to take up the minimum, i.e. only as much as it needs.
 3. Cross axis.
 4. A fixed layout does not change w/r/t the viewport, an adaptive layout snaps into a new layout at specified breakpoints, a fluid layout changes continuously w/r/t the viewport, and a responsive layout is fluid up to a specified breakpoint, changes conditions and is fluid up to the next breakpoint, changes conditions and is fluid, & c.
+Graphically you could say that fixed would be a straight line, adaptive a Riemann Sum, fluid an integral, and responsive a Riemann/integral hybrid, with curved lines between the breakpoints.
 5. Setting max-width on the outer-most element sets a constrictive boundary which will be inherited by all other elements.
