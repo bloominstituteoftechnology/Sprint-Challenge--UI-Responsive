@@ -153,6 +153,7 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+   
 }
 
     .navigation {
@@ -301,7 +302,33 @@ background-color: hotpink;
        
        }
 
+       .container .navigation  {
+           margin: 20px auto;
+           flex-direction: row;
+           flex-wrap: wrap;
+           display: flex;
+           justify-content: center;
+           
+       }
+
     
+ .container .navigation .logo-container .logo {
+     width: 100%;
+     height: 100%;
+ }
+ .container .navigation .logo-container {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .container .navigation .nav-container {
+     margin-top: 20px auto;
+     padding: 20px 0;
+ }
+ .jumbotron {
+    margin-top: 20px;
+}
 
 }
 
@@ -310,6 +337,17 @@ background-color: hotpink;
 @media(max-width: 400px){
     * {
     background-color: orange;
+
+}
+ .container .navigation .nav-container {
+     height: 100%;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-content: center;
 }
 
+.container .navigation {
+    height:100%;
+    
+}
 }
