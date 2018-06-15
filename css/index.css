@@ -63,7 +63,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -73,8 +73,43 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
+    border: 1px solid black;
+}
+
+header {
+    width: 100%;
+    /* margin: 0 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+header nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    font-size: 1.4rem;
+}
+
+header .logo {
+    align-self: flex-start;
+    border: 1px solid black;
+}
+
+.jumbotron {
+    width: 100%;
+    border: 1px solid black;
 }
 
 .top-content {
@@ -143,7 +178,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
