@@ -106,21 +106,27 @@ p {
 	.navbar-top .head{
 		order:6;
 
+
 	}
 	.navbar-top .H{
 		order:1;
+
 	}
 	.navbar-top .A{
 		order:2;
+
 	}
 	.navbar-top .P{
 		order:3;
+
 	}
 	.navbar-top .B{
 		order:4;
+
 	}
 	.navbar-top .C{
 		order:5;
+
 	}
 }
 
