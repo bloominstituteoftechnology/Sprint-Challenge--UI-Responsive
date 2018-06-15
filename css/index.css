@@ -133,8 +133,8 @@ p {
 }
 
 .middle-content h2 {
-    padding: 0 2%;
     margin-bottom: 0;
+		padding: 0 2%;
 }
 
 .middle-content .boxes {
@@ -269,12 +269,19 @@ footer nav a {
 	.container{
 		margin: 0;
 		width: 100%;
+	}
 
+	.container header {
+		padding-bottom: 0;
 	}
 
 	.container header nav {
 		flex-direction: column;
 		width: 100%;
+	}
+
+	.container header nav a:hover {
+		background: lightgray;
 	}
 
 	.container header nav a:not(:first-child) {
@@ -299,7 +306,8 @@ footer nav a {
 
 	.container .top-content .jumbotron {
 		margin-top: 0;
-		height: 80px;
+		margin-bottom: 12px;
+		height: 78px;
 		width: 100%;
 	}
 
