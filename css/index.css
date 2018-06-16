@@ -312,6 +312,29 @@ a:link{
     padding-right: 0;
 }
 
+.stretch-content{
+
+    margin: 1%;
+    max-width: 100%;
+ 
+}
+
+.stretch-content .img{
+    position: relative;
+}
+
+
+.stretch-content .text:hover{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 60rem;
+    transition: all 0.8s ease;
+    opacity: 1;
+}
 
 /*--------FOOTER--------*/
 /*--------FOOTER--------*/
