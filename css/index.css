@@ -80,7 +80,7 @@ p {
 .row {
     display: flex;
     width: 100%;
-    margin-right: 1rem;
+    margin-left: 7%;
 /*    border: solid 2px red;*/
     
 /*    justify-content: space-between;*/
@@ -104,7 +104,7 @@ p {
 }
 .main-nav li {
     display: inline-flex;
-    margin-left: 10%;
+    margin-left: 8%;
 /*    border: 2px solid green;*/
     align-self: flex-end;
 /*    justify-content: flex-start;*/
@@ -267,14 +267,28 @@ footer nav a {
         width: 28%;
     }
     .middle-content .boxes .box-10 {
+/*
         visibility: hidden;
         margin-bottom: -100%;
+*/
+        display: none;
     }
+    .nav-container {
+        width: 100%;
+    }
+/*
+    .nav-container .row img {
+       margin: 3% 33% 0%;
+        max-width: 100%;
+    
+    }
+*/
+    
   .nav-container .row .main-nav li {
       display: flex;
       justify-content: space-around;
       align-content: center;
-      border-top: 1px solid black;
+      border-top: 1px solid grey;
       width: 100%;
       margin-left: 0;
       margin-right: 0;
@@ -282,7 +296,7 @@ footer nav a {
          
     }
     .nav-container .row .main-nav li a {
-        align-self: center;
+        margin-top: 5%;
     }
     .bottom-content {
         flex-wrap: wrap;
