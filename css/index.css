@@ -276,6 +276,8 @@ background-color: hotpink;
 .container .boxes .box {
     font-size: 1.6rem;
     font-weight: bold;
+    width: 10rem;
+    height: 10rem;
  
 }
 
