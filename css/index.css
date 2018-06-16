@@ -82,27 +82,37 @@ p {
 
 /* Header */
 
-
-nav { /*container*/
+/*container*/
+nav { 
 	display: flex;
 	height: 50px;
 	justify-content: space-between;
 	align-items: baseline;
-	flex-wrap: wrap; 
-    padding: 30px 50px 80px 0;
+    flex-wrap: wrap; 
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
 }
 
 nav a {
-	text-decoration: none;
-    padding-right:
+    text-decoration: none;
+    color: black;
 }
 
+nav img {
+    width: 100%;
+    margin: 0 auto;
+}
 
-/* Main */
+/* Header End*/
+
 
 
 .top-content {
     display: flex;
+    padding:  20px;
+    padding-top: 0px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 40px;
@@ -115,6 +125,8 @@ nav a {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/* Middle Content*/
 
 .middle-content {
     margin-bottom: 20px;
@@ -136,6 +148,7 @@ nav a {
     display: flex;
     width: 12.5%;
     height: 100px;
+    width: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -163,8 +176,8 @@ nav a {
     background-color: lawngreen;
 }
 
-
-/*bottom*/
+/* Middle */
+/* Bottom */
 
 .bottom-content {
     display: flex;
@@ -184,6 +197,8 @@ nav a {
     padding-right: 0;
 }
 
+/* Bottom */
+/* Foot */
 
 
 footer {
@@ -203,9 +218,45 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+
 }
 
 @media(max-width:768px){
+    /* nav img {
+        
+        margin: 0 auto;
+    } */
+
+    header nav { /*container*/
+        display: flex;
+        height: 150px;
+        width: 100%;
+        justify-content: space-around;
+        /* align-items: center; */
+        flex-wrap: wrap; 
+    }
+
+    nav img {
+        min-width: 157px;
+        margin: 0 auto;
+    }
+
+    .jumbo {
+        width: 100%;
+    }
+    
+    header a:first-child {
+        padding-bottom: 30px;
+        min-width: 157px;
+        width: 10px; 
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: black;
+        justify-content: center;         
+    }
+    
     .middle-content .boxes .box1 {
         background-color: teal;
     }
@@ -225,44 +276,82 @@ footer nav a {
     .middle-content .boxes .box9 {
         background-color: crimson;
     }
+}
 
-    header nav { /*container*/
-        display: flex;
-        height: 150px;
-        justify-content: space-around;
-        /* align-items: center; */
-        flex-wrap: wrap; 
-        
+@media(max-width: 400px){
+    nav img {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
         
     }
-    
+
     header a:first-child {
-    width:100%;
-    align-self: center;
-    padding: 0 304px 30px 290px;
-    margin-left: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        border-bottom: 0px;
+        
+        }
+
+    .home {
+        border-top: 1px solid gray;
+    }
+
+    header.top {
+        
+        height: 370px;
+    }
+
+    .jumbo {
+        margin: 0;
+        width: 100%;
+    }
+
+
+
+
+
+    /*container*/   
+    header nav { 
+        display: flex;
+        /* flex-direction:row; */
+        height: 375px;
+        /* align-content: center; */
+        /* justify-content: space-around; */
+        align-items: center;
+        flex-wrap: wrap; 
+        padding: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
     
    
-    
-    }
 
     header nav a {
         text-decoration: none;
         color: black;
         justify-content: center;
+        height: 50px;
+        width: 400px;
+        border-bottom: 1px solid gray;
+        padding: 4%;
         
-        
-                 
     }
 
 
-}
+    section.top-content {
+        flex-direction: column;
+        border-bottom: 1px dashed black;
+    }
 
-
-
-
-
-@media(max-width: 400px){
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 1%;
+        padding-bottom: 20px;  
+        font-size: 1.6em;
+        
+    }
+  
 
     .middle-content .boxes .box10 {
         display: none;
@@ -270,8 +359,38 @@ footer nav a {
 
     .middle-content .boxes {
         flex-direction: row-reverse;
-
     }
-    
+
+/* Bottom */
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.bottom-content .text-container {
+    padding-right: 4%;
+    width: 100%;
+    font-size: 1.6em;
+    padding-bottom: 15px;
+    }
+
+/* Bottom */
+/* Foot */
+
+
+
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 1.4rem;
+    }
+
 
 }
