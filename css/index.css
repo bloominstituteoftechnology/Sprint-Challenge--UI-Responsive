@@ -163,6 +163,7 @@ footer nav a {
        
         height: 50px;
         margin: 30px auto;
+ 
         
         
 
@@ -173,6 +174,8 @@ footer nav a {
       
         color: black;
         font-size: 1.6rem;
+        padding-top: 3px;
+     
         
         
         
@@ -184,12 +187,14 @@ footer nav a {
         align-items: center;
         margin: 40px auto;
         width: 100%;
+        margin-top: 32px;
         
     }
 
     .jumbotron {
         width: 100%;
         height: 100%;
+  
     }
 
 
@@ -271,6 +276,8 @@ background-color: hotpink;
     word-spacing: 20px;
     justify-content: space-around;
     display: flex;
+    font-weight: bold;
+ 
 }
 
 .container .boxes .box {
@@ -281,13 +288,11 @@ background-color: hotpink;
  
 }
 
-.container .navigation .nav-container{
-    font-weight: bold;
-
+.img-container  .bottom-img{
+    width: 100%;
+    height: 200px;
+    display:flex;
 }
-
-
-
 
 
 @media(max-width: 768px){
@@ -454,59 +459,78 @@ footer nav {
     display: flex;
     width:100%;
     margin: 0 auto;
-    border-top: .5px solid black;
+    box-sizing: border-box;
     align-self: flex-end;
     height: 1.6rem;
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 10px;
     margin-top: -20px;
+    background-color: rgba(138, 28, 1, 0.95);
+    margin-bottom: -9px;
+    border: 2px solid ;
+    height: 42px;
 }
 .container .navigation .nav-container .nav-about {
  
     display: flex;
     width:100%;
     margin: 0 auto;
-    border-top: .5px solid black;
+    box-sizing: border-box;
     align-self: flex-end;
     height: 1.6rem;
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 10px;
     margin-top: 10px;
+    background-color: black;
+    margin-bottom: -9px;
+    height: 42px;
+    border: 2px solid black;
 }
 .container .navigation .nav-container .nav-products {
  
     display: flex;
     width:100%;
     margin: 0 auto;
-    border-top: .5px solid black;
+    border: 2px solid black;
     align-self: flex-end;
     height: 1.6rem;
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 10px;
     margin-top: 10px;
+    background-color: black;
+    margin-bottom: -9px;
+    height: 42px;
+ 
 }
 .container .navigation .nav-container .nav-blog {
  
     display: flex;
     width:100%;
     margin: 0 auto;
-    border-top: .5px solid black;
+    
+    border: 2px solid black;
     align-self: flex-end;
     height: 1.6rem;
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 10px;
     margin-top: 10px;
+    background-color: black;
+    margin-bottom: -9px;
+    height: 42px;
 }
+
+
 .container .navigation .nav-container .nav-content {
  
     display: flex;
     width:100%;
     margin: 0 auto;
-    border-top: .5px solid black;
+   
+    border: 2px solid black;
     align-self: flex-end;
     height: 2rem;
     justify-content: center;
@@ -514,8 +538,67 @@ footer nav {
     margin-top: 10px;
     margin-bottom: -40px;
     font-weight: bold;
+    background-color: black;
+    height: 42px;
+
 }
 .future-margin {
     margin-top: -35px;
 }
+
+.nav-container a {
+color: white;
+}
+.container .navigation .nav-container .nav-home:hover{
+    background-color: rgb(100, 22, 16);
+
+}
+.container .navigation .nav-container .nav-about:hover{
+    background-color: slategrey;
+
+}
+.container .navigation .nav-container .nav-products:hover{
+    background-color: slategrey;
+
+}
+.container .navigation .nav-container .nav-blog:hover{
+    background-color: slategrey;
+ 
+  
+
+}
+.container .navigation .nav-container .nav-content:hover{
+    background-color: slategrey;
+
+}
+
+.container .navigation .nav-container   a{
+  
+    height: 100%;
+    margin: 0 auto;
+
+}
+}
+
+@media (max-width: 370px) {
+    .middle-content .boxes .box9{
+        display: None;
+       
+       }
+}
+
+
+@media (max-width: 290px) {
+    footer nav {
+        width: 60%;
+        display: flex;
+        height: 140px;
+        flex-direction: column;
+    
+       
+       }
+       footer nav a{
+        padding-bottom: 10px;
+       
+       }
 }
