@@ -71,12 +71,14 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    border: 3px solid red;
 }
 
 
 header {
     width: 100%;
     display: flex;
+    /*border: 1px solid red !important;*/
 }
 
 header nav {
@@ -84,7 +86,9 @@ header nav {
     width: 95%;
     justify-content: space-between;
     display: flex;
+
     font-size: 1rem;
+    /*vertical-align: middle;*/
 }
 
 header nav a {
@@ -95,6 +99,11 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
     color: black;
+}
+
+.jumbotron{
+    
+    margin: 20px 0 20px 0;
 }
 
 .top-content {
@@ -127,6 +136,7 @@ header nav a:hover {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    /*justify-content: center;*/
 }
 
  
@@ -135,9 +145,10 @@ header nav a:hover {
     height: 100px;
     background: black;
     color: white;
+    margin: 20px 2.5%;
    /*display: flex;/
     /*align-items: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 
@@ -149,7 +160,7 @@ header nav a:hover {
     color: white;
     /*display: flex;*/
     /*align-items: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 
@@ -161,7 +172,7 @@ header nav a:hover {
     color: white;
     /*display: flex;*/
     /*align-items: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .middle-content .boxes2 {
@@ -169,6 +180,7 @@ header nav a:hover {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    /*justify-content: center;*/
 }
 
  .hotpink {
@@ -179,7 +191,7 @@ header nav a:hover {
     color: white;
     /*display: flex;*/
     /*align-items: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
  .indigo {
@@ -190,7 +202,7 @@ header nav a:hover {
     color: white;
     /*display: flex;*/
     /*align-items: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .lawngreen {
@@ -201,7 +213,7 @@ header nav a:hover {
     color: white;
     /*display: flex;*/
     /*align-items: center;*/
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 
@@ -219,22 +231,27 @@ header nav a:hover {
     padding-right: 0;
 }
 
-footer {
+.bottom {
     width: 100%;
     display: flex;
     background: black;
+    height: 30px;
 }
 
-footer nav {
+/*footer nav*/
+.bottom .footer {
     width: 60%;
     display: flex;
-    justify-content: space-between;
+    display: wrap;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 1rem;
+
 }
 
-footer nav a {
+  a {
     color: white;
     text-decoration: none;
 }
