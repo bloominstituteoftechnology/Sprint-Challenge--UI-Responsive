@@ -51,6 +51,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -68,20 +72,22 @@ p {
 
 .container {
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 10%;
+    margin: auto;
 }
 
 .navigation {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0 0 30px;
+    font-size: 1.4rem;
 }
+
 
 a {
     color: black;
-    text-decoration: inherit;
+    text-decoration: none;
 }
 
 .top-content {
@@ -101,6 +107,7 @@ a {
 }
 
 .top-content .text-container {
+
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;
@@ -109,6 +116,7 @@ a {
 
 .middle-content {
     margin-bottom: 20px;
+    width: 100%;
     border-bottom: 1px dashed black;
 }
 
@@ -277,24 +285,31 @@ footer nav a {
         box-sizing: border-box;
     }
     .container {
-        max-width: 768px;
-        margin: 0 auto;
-        
-    }
-    
-    .navigation {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-items: flex-end;
+        width: 100%;
         
     }
 
-    .navigation img{
-        display: flex;
-        align-content: stretch;
-    }
+     header {
+        flex-wrap: wrap;
+    } 
     
+    .logo{
+        order: -1;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .navigation {
+        width: 100%;
+        margin: 38px 3%; 
+        display: flex;
+        justify-content: space-evenly;
+        align-content: flex-end;
+        
+    }
+
+    
+
     .top-content {
         display: flex;
         flex-wrap: wrap;
@@ -334,6 +349,7 @@ footer nav a {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+
     }
     
     
@@ -491,26 +507,35 @@ footer nav a {
     }
     .container {
         max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: stretch;
     }
     
     .navigation {
-        display: flex;
+        display: flex; 
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-end;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        
         
     }
 
-    .navigation img{
-        display: flex;
+    .navigation a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        color: black;
+        border-bottom: 1px solid grey;
+
+    }
+
+    .top-content .bannerImg {
+        display: none;
     }
     
     .top-content {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-evenly;
         flex-direction: column;
         margin-top: 20px;
@@ -519,18 +544,16 @@ footer nav a {
     }
     
     .bannerImg {
-        display: flex;
-        align-content: stretch;
+        display: block;
         width: 100%;
-    
     }
     
     .top-content .text-container {
         display: flex;
-        width: 48%;
+        width: 100%;
         padding: 0 1%;
         padding-bottom: 20px;
-        margin-top: 20px;  
+        margin: 0;  
     }
     
     .middle-content {
@@ -546,9 +569,13 @@ footer nav a {
     
     
     .middle-content .boxes {
+        width: 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        height: 32px; 
+        color: white;
+
     }
     
     
@@ -564,7 +591,7 @@ footer nav a {
     }
     
     .middle-content .boxes .box2 {
-        width: 12.5%;
+        width: 52%;
         height: 100px;
         background: forestgreen;
         margin: 20px 2.5%;
@@ -656,9 +683,9 @@ footer nav a {
     }
     
     .bottom-content {
-        display: flex;
-        margin: 0 2% 20px;
-        justify-content: space-around;
+        display: block;
+        margin: 0;
+        justify-content: center;
     }
     
     .bottom-content .text-container {
@@ -675,12 +702,13 @@ footer nav a {
     }
     
     footer nav {
-        width: 60%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         padding: 20px 2%;
         font-size: 14px;
+        margin-top: 20px;
     }
     
     footer nav a {
@@ -688,4 +716,4 @@ footer nav a {
         text-decoration: none;
     }
     
-}
+} 
