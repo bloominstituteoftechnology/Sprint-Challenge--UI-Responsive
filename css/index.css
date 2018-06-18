@@ -234,6 +234,10 @@ footer nav a {
     .middle-content .boxes .box:nth-of-type(9) {
         background: crimson;
     }
+
+    .middle-content .boxes .box {
+        min-width: 100px;
+    }
 }
 
 /* Mobile Styles */
