@@ -234,8 +234,9 @@ footer nav {
   font-size: 14px;
 }
 footer nav a {
-  color: white;
   text-decoration: none;
+  color: white;
+  background-color: none;
 }
 .container {
   width: 100%;
@@ -276,6 +277,7 @@ footer nav a {
 .container header a {
   text-decoration: none;
   color: black;
+  background-color: none;
   font-size: 1rem;
 }
 .container header .jumbo-img {

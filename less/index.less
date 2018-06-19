@@ -31,6 +31,12 @@
             flex-flow: @flex-flow;
           }       
 }
+.a-tag(@text-decoration: none; @color: black; @background-color: none; ){
+    text-decoration: @text-decoration;
+    color: @color;
+    background-color: @background-color;
+}
+
 // end of mixins
 
 html, body, div, span, applet, object, iframe,
@@ -151,8 +157,7 @@ footer {
         padding: 20px 2%;
         font-size: 14px;
         a {
-            color: white;
-            text-decoration: none;
+            .a-tag(@color: white);
         }
     }   
 }
@@ -178,8 +183,7 @@ footer {
             height: 40px;
         }
         a {
-            text-decoration: none;
-            color: black;
+            .a-tag(@color:black);
             font-size: 1rem;
         }
     }
