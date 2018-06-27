@@ -54,21 +54,41 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.6rem;
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+/*Header Styles*/
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav ul {
+    margin-top: 40px;
+    height: 20px;
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+}
+
+header .logo {
+    align-self: flex-start;
+    margin: 10px;
 }
 
 .top-content {
@@ -143,4 +163,133 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* CSS */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px 40px 30px 0px;
+    font-size: 14px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.jumbo {
+    margin: 30px 0px 30px 0px;
+}
+
+.middle-content .boxes .box {
+    font-size: 14px;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background: lawngreen;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .top-nav {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .container .jumbo img {
+        width: 100%;
+    }
+
+    .top-nav a {
+        margin: 50px;
+    }
+
+    .middle-content .boxes .box:nth-child(1) {
+        background: teal;
+    }
+
+    .middle-content .boxes .box:nth-child(3) {
+        background: gold;
+    }
+
+    .middle-content .boxes .box:nth-child(5) {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box:nth-child(7) {
+        background: coral;
+    }
+
+    .middle-content .boxes .box:nth-child(9) {
+        background: crimson;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 20px;
+    }
+
+    .middle-content .boxes .box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    div .boxes {
+        display: flex;
+    }
+
+    footer nav a {
+        display: flex;
+        margin-right: 30px;
+        margin-left: 10px;
+    }
+
+    .middle-content .boxes .box:nth-child(10) {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .bottom-content{
+        flex: wrap;
+        flex-direction: row;
+    }
 }
