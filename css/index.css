@@ -242,8 +242,9 @@ footer nav a {
     .middle-content .boxes .box9 {
         background: crimson;
     }
-
 }
+
+/* PHONE VIEW */
 
 @media (max-width: 400px) {
 
