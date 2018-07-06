@@ -200,3 +200,51 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* TABLET VIEW */
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jumbotronIMG {
+        width: 100%;
+    }
+
+    .top-content {
+        margin: 1.4rem;
+    }
+
+    .middle-content {
+        margin-top: 2rem;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+}
