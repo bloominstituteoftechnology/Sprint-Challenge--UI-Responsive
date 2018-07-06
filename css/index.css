@@ -246,5 +246,78 @@ footer nav a {
 }
 
 @media (max-width: 400px) {
-    
+
+    header {
+        margin-bottom: 0;
+    }
+
+    header .logo {
+        width: 40%
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 3.2rem;
+        margin-bottom: 0.1rem;
+    }
+
+    header nav a {
+        border-top: 1px solid grey;
+        width: 100%;
+        padding: 1.4rem;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    header .jumbotronIMG {
+        width: 100%;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   .top-content .text-container {
+       width: 100%;
+   }
+
+   .middle-content .boxes .box10 {
+       display: none;
+   }
+
+   .middle-content .boxes {
+       display: flex;
+       flex-direction: row-reverse;
+   }
+
+   .middle-content .boxes .box {
+       width: 25%;
+   }
+
+   .bottom-content {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .bottom-content .text-container {
+       margin: 1rem 0;
+   }
+
+   footer {
+       display: flex;
+       justify-content: center;
+   }
+
+   footer nav {
+       width: 90%;
+       display: flex;
+       justify-content: space-between;
+   }
+
 }
