@@ -1,0 +1,19 @@
+{
+  "name": "sprint-challenge--ui-responsive",
+  "version": "1.0.0",
+  "description": "Week 01 - Spring Challenge - Resposive-UI",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarnml/Sprint-Challenge--UI-Responsive.git"
+  },
+  "author": "Cesar N. Mejia Leiva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesarnml/Sprint-Challenge--UI-Responsive/issues"
+  },
+  "homepage": "https://github.com/cesarnml/Sprint-Challenge--UI-Responsive#readme"
+}
