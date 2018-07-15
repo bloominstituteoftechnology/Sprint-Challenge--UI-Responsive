@@ -66,3 +66,5 @@ Responsive layout = Fluid + Adaptive layout. Responsive layout employs both medi
 **5. Why do we need to use the CSS property `max-width` on the outer most container in a responsive website?**
 
 The `max-width` setting on the outer most container keeps the website from spreading out beyond a set width if the user's viewport exceeds the max-width setting.
+
+[GitHub HTML Preview](https://htmlpreview.github.io/?https://github.com/cesarnml/Sprint-Challenge--UI-Responsive/blob/master/index.html)
