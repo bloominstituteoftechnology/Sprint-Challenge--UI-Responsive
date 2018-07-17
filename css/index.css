@@ -69,12 +69,48 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
+/* Container */
 .container {
     width: 100%;
     max-width:800px;
     margin: 0 auto;
 }
+
+/* Header */
+
+header {
+    width: 100%;
+    display: flex;
+    margin: 25px 0;
+}
+
+header .logo {
+    width: 200x;
+    height: 40px;
+    background: black;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+header nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    max-width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
 
 .top-content {
     display: flex;
