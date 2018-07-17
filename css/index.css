@@ -87,7 +87,7 @@ header {
 header .logo {
     width: 200x;
     height: 40px;
-    background: black;
+    background-color: black;
 }
 
 header nav {
@@ -153,6 +153,28 @@ header nav a {
     justify-content: center;
 }
 
+/* Changing box colors at screensize of 1000 */
+
+.middle-content .boxes .box2 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background-color: indigo;
+}
+
+.middle-content .boxes. box10 {
+    background-color: lawngreen;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -185,3 +207,41 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Tablet-Size */
+
+@media (max-width: 768px) {
+    header {
+    width: 100%;
+    display: flex;
+    margin: 20px 0 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+
+header nav {
+    margin-top: 30px;
+    }
+
+.middle-content .boxes .box1 {
+    background-color: teal;
+    }
+
+.middle-content .boxes .box3 {
+    background-color: gold;
+    }
+
+.middle-content .boxes .box5 {
+    background-color: cadetblue;
+    }
+
+.middle-content .boxes .box7 {
+    background-color: coral;
+    }
+
+.middle-content .boxes .box9 {
+    background-color: crimson;
+    }
+}
+
