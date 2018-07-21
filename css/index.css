@@ -168,25 +168,77 @@ header nav a{
 .boxes{
 	font-size: 1.5rem;
 }
-@media only screen and (min-width: 992px) {
-	h2{
-		font-weight: bold;
-	}
-   p{
-		 font-size: 1.5rem;
-		 font-weight: bold;
-	 }
+h2{
+	font-weight: bold;
+}
+ p{
+	 font-size: 1.5rem;
+	 font-weight: bold;
+ }
 .top-content .text-container{
-	margin-top: 40px;
-	border-right-width: 10px;
-	margin-left: 10px;
+margin-top: 40px;
+border-right-width: 10px;
+margin-left: 10px;
 }
 .middle-content{
-	margin-left: 10px;
+margin-left: 10px;
 }
 .bottom-content .text-container{
-	margin-left: 10px;
+margin-left: 10px;
 margin-top: 10px;
 
 }
+@media only screen and (max-width: 2000px) {
+
+	#box2{
+		background-color: forestgreen;
+		}
+	#box4{
+	background-color: darkorchid;
+		}
+	#box6{
+		background-color: hotpink;
+		}
+	#box8{
+		background-color: indigo;
+	}
+	#box10{
+		background-color: lawngreen;
+	}
+	}
+@media only screen and (max-width: 1020px) {
+
+	#box2{
+		background-color: forestgreen;
+		}
+	#box4{
+	background-color: darkorchid;
+		}
+	#box6{
+		background-color: hotpink;
+		}
+	#box8{
+		background-color: indigo;
+	}
+	#box10{
+		background-color: lawngreen;
+	}
+	}
+@media only screen and (max-width:768px) {
+
+#box1{
+	background-color: teal;
+	}
+#box3{
+	background-color: gold;
+}
+	#box5{
+		background-color:cadetblue
+	}
+#box7{
+	background-color:coral;
+
+}
+#box9{
+	background-color: crimson;
 }
