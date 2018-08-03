@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+html {
+    font-size: 62.5%;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,40 +57,62 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
 }
-
 .container {
-    width: 800px;
-    margin: 0 auto;
+    width: max-width;
+}
+.topnav {
+    margin-top:2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1%;
+    font-size: 1rem;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    
+}
+header {
+    margin-top:5%;
+    margin-bottom:5%;
+}
+.header {
+    width: 100%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem dashed black;
 }
 
 .middle-content h2 {
@@ -103,9 +128,9 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 4.5rem;
     background: black;
-    margin: 20px 2.5%;
+    margin: 1.4rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -114,7 +139,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 1rem;
     justify-content: space-around;
 }
 
@@ -136,11 +161,86 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 1rem 2%;
+    font-size: 1rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+    #box2 {
+        background: forestgreen;
+    }
+    #box4 {
+        background: darkorchid;
+    }
+    #box6 {
+        background: hotpink;
+    }
+    #box8 {
+        background: indigo;
+    }
+    #box10 {
+        background: lawngreen;
+    }
+}
+@media screen and (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    li {
+        border: black 1px solid;
+        width: 100%;
+        text-align: center;
+        padding: 5%;
+    }
+    footer nav {
+        width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+    font-size: 0.7rem;
+    }
+    #box1 {
+        background: teal;
+    }
+    #box3 {
+        background: gold;
+    }
+    #box5 {
+        background: cadetblue;
+    }
+    #box7 {
+        background: coral;
+    }
+    #box9 {
+        background: crimson;
+    }
+}
+@media screen and (max-width: 400px) {
+    .boxes {
+        flex-direction: row-reverse;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .middle-content .boxes .box {
+        width:4.5rem;
+    }
+    #box10 {
+        display:none;
+    }
+    .top-content, .middle-content, .bottom-content  {
+        flex-direction: column;
+    }
+    .top-content, .text-container {
+        padding: 0 1%;
+        padding-bottom: 2rem;
+    }
+    .top-content {
+        width:250%;
+    }
 }
