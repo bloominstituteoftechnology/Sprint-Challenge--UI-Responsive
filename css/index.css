@@ -51,6 +51,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -64,11 +68,44 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    margin: 15px 5%;
+}
+
+header img {
+    height: 40px;
+    margin-left: 5%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+    width: 80%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    padding: 1%;
+    font-size: 1.4rem;
+}
+
+.top-img {
+    display: block;
+    margin: 0 auto 20px;
 }
 
 .top-content {
@@ -77,6 +114,8 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin-right: 8%;
+    margin-left: 8%;
 }
 
 .top-content .text-container {
@@ -86,13 +125,12 @@ p {
 }
 
 .middle-content {
-    margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin: 0 8% 20px;
 }
 
 .middle-content h2 {
     padding: 0 2%;
-    margin-bottom: 0;
 }
 
 .middle-content .boxes {
@@ -105,16 +143,17 @@ p {
     width: 12.5%;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 20px 2.5% 20px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 10% 20px;
     justify-content: space-around;
 }
 
@@ -127,8 +166,10 @@ p {
 }
 
 footer {
-    width: 100%;
+    display: flex;
+    width: 80%;
     background: black;
+    margin-left: 10%;
 }
 
 footer nav {
@@ -143,4 +184,164 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* (small) Window view */
+@media (max-width: 1000px) {
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    
+    .middle-content .boxes .box4 {
+        background: darkorchid;
+    }
+    
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    
+    .middle-content .boxes .box10 {
+        background: lawngreen;
+    }
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header nav {
+        justify-content: space-between;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    .top-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .middle-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .middle-content .boxes .box {
+        width: 14%;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+    .bottom-content {
+        margin-left: 2%;
+        margin-right: 0;
+    }
+
+    footer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    footer nav a {
+        margin-right: 1%;
+    }
+}
+
+/* Phone view */
+@media (max-width: 400px) {
+    header {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    header img {
+        margin-bottom: 25px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        padding: 0;
+        align-items: flex-end;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid black;
+        padding: 15px 0;
+    }
+
+    .top-img {
+        height: 80px;
+    }
+    .top-content {
+        flex-wrap: wrap;
+    }
+
+    .top-content .text-container {
+        width: 98%;
+    }
+
+    .middle-content .boxes {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .middle-content .boxes .box {
+        width: 28%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+        margin-left: 2%;
+    }
+
+    .bottom-content .text-container {
+        margin-bottom: 4%;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
 }
