@@ -23,6 +23,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -57,7 +64,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,11 +74,13 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .top-content {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -137,10 +146,141 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+.jumbotron img {
+    margin-top: 30px;
+    height: 145px;
+    width: 100%;
+}
+.container .middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.container .middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.container .middle-content .boxes .box6 {
+    background: hotpink;
+}
+.container .middle-content .boxes .box8 {
+    background: indigo;
+}
+.container .middle-content .boxes .box10 {
+    background: lawngreen;
+}
+header {
+    margin-top: 30px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .container .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .container .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .container .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .container .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .container .middle-content .boxes .box9 {
+        background: crimson;
+    }
+    header nav {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header nav .first {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .container .jumbotron {
+        width: 100%;
+        padding-left: .25%;
+        padding-right: .25%;
+    }
+}
+@media (max-width:400px) {
+    .container .middle-content .boxes .box10 {
+        display: none;
+    }
+    .container .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+    .container .middle-content .boxes div {
+        width: 25%;
+        margin-left: 4.16%;
+        margin-right: 4.16%;
+    }
+    .container header {
+        margin-top: 0px;
+    }
+    .container header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .container header nav a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        width: 100%;
+    }
+    .container .jumbotron img{
+        margin-top: 0px;
+        height: 50%;
+    }
+    .container .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-right:5%;
+        border-bottom: 1px dashed black;
+    }
+    .container .top-content div {
+        width: 100%;
+    }
+    .container .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 4%;
+        padding-left: 1%;
+    }
+    .container .bottom-content div p {
+        margin-bottom: 20px;
+    }
+    .container .bottom-content div {
+        width: 100%;
+    }
+    .container footer nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
 }
