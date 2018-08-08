@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,10 +24,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	font-size: 62.5%;
+}
+
 body {
 	line-height: 1;
 }
@@ -66,56 +71,133 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
+
+/*
+
+Desktop	Display viewport CSS
+
+ */
+body {
+	max-width: 1000px;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+		font-size: 1.6rem;
+}
+
+/* Header Style */
+
+header {
+	width: 100%;
+	display: flex;
+}
+
+.container .jumbotron {
+	display: flex;
+	justify-content: center;
+	width: 100%
+	display: inline;
+	margin: 38px auto 25px;
+}
+
+.container .jumbotron .jumboimage {
+	width: 100%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 100%;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.4rem;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.container header .logo {
+	align-self: flex-start;
+}
+
+/* Top Main Content Style */
+
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
 }
 
+/* Middle Content Style */
+
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  padding: 0 2%;
+  margin-bottom: 0;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  background: black;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(2) {
+	background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+	background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+	background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+	background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+	background-color: lawngreen;
+}
+/* Bottom Content Style */
+
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
 }
 
 .bottom-content .text-container {
@@ -137,10 +219,178 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/*
+
+Tablet 	Display viewport CSS
+
+ */
+@media (max-width: 768px) {
+	.container {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+}
+
+/* Header Style */
+body .container	header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-around;
+}
+
+.container header .logo {
+	align-self: center;
+	padding: 20 0 20 0;
+	margin: 1.32%;
+}
+
+.container header nav {
+	margin-top: 20px;
+}
+
+.container header nav a {
+	text-align: center;
+}
+
+.container .jumbotron .jumboimage {
+	height: 100%;
+}
+
+/* Middle Style */
+.middle-content .boxes .box:nth-child(1) {
+	background-color: teal;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+	background-color: gold;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+	background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+	background-color: coral;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+	background-color: crimson;
+}
+
+}
+ /*
+
+ Phone 	Display viewport CSS
+
+  */
+@media (max-width: 400px) {
+	.container: {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		padding: 0 0;
+	}
+
+/* Header Style */
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container header .logo {
+		align-self: center;
+		padding: 5.19%;
+	}
+
+	body .container header nav {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container header nav a {
+		text-align: center;
+		width: 100%;
+		border-bottom: 1px black solid;
+		padding: 3.89% 3.91%;
+		font-size: 1.3rem;
+		margin: 0%;
+	}
+
+	.container header nav a:first-child {
+		border-top: 1px solid black;
+	}
+
+	.container .jumbotron {
+		margin: 0;
+	}
+
+	.container .jumbotron .jumboimage{
+		height: 100%;
+		width: 100%;
+	}
+
+/* Top Content Style */
+	.top-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-content .text-container {
+		width: 100%;
+		padding: 9px 3.89%;
+		margin-top: 10px;
+	}
+
+/* Middle Content Style */
+	.middle-content h2 {
+		padding: 0;
+	}
+
+	.middle-content .boxes {
+		display: flex;
+		flex-flow: row-reverse wrap;
+	}
+
+	.middle-content .boxes .box {
+ 		width: 26.5%;
+		margin: 23px 2.5%;
+	}
+
+	.middle-content .boxes .box:nth-child(10) {
+		display: none;
+	}
+
+	.middle-content .boxes .column1 {
+		align-self: flex-end;
+	}
+
+	.middle-content .boxes .column2 {
+		align-self: flex-end;
+	}
+	 .middle-content .boxes .column3 {
+		 align-self: flex-end;
+	 }
+
+/* Bottom Content Style */
+	 .bottom-content {
+		 display: flex;
+		 flex-direction: column;
+		 margin: 20px 2%;
+	 }
+
+
 }
