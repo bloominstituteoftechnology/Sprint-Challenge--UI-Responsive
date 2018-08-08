@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size:100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -56,19 +56,52 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size:1.6rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+header
+{
+    display:flex;
+    justify-content: space-between;
+    
+    width: 100%;
+
+}
+
+header nav
+{
+    display:flex;
+    justify-content: space-between;
+    
+    width: 100%;
+
+}
+ header nav a {
+padding: 3.18% 5.2%;
+font-size: 1.4rem;
+text-decoration: none;
+color: black
+}
+
+.jumbo{
+    width: 100%;
+    margin: 2% 0 2.2%;
 }
 
 .top-content {
@@ -112,6 +145,26 @@ p {
     justify-content: center;
 }
 
+.box {
+    font-size: 1.55rem;
+    font-weight: bold;
+}
+
+#B1 {
+    background: forestgreen;
+}
+#B3 {
+    background: darkorchid;
+}
+#B5 {
+    background: hotpink;    
+}
+#B7 {
+    background: indigo;
+}
+#B9 {
+    background: lawngreen;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,10 +190,56 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width:768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #B0 {
+        background: teal;
+    }
+    #B2 {
+        background: gold; 
+    }
+    #B4 {
+        background: cadetblue; 
+    }
+    #B6 {
+        background: coral;
+    }
+    #B8 {
+        background: crimson; 
+    }
+}
+@media(max-width:400px) {
+    header nav {
+        flex-direction: column;
+        align-content: center;
+        padding: 0 40%;
+    }
+    .middle-content .boxes .box {
+        flex-wrap:wrap;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+    .top-content p {
+        width: 100%;
+    }
+    .bottom-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #B9 {
+        display: none;
+    }
 }
