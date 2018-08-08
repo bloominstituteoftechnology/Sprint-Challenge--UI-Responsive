@@ -54,22 +54,68 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
-p {
+p, a {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    margin: 2rem 0;
+    width: 15.7rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 80%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+/* Header Image */
+
+.jumbotron {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Content */
 
 .top-content {
     display: flex;
@@ -103,7 +149,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -126,6 +172,30 @@ p {
     padding-right: 0;
 }
 
+/* Boxes */
+
+.boxes .box.box2 {
+    background: forestgreen;
+}
+
+.boxes .box.box4 {
+    background: darkorchid;
+}
+
+.boxes .box.box6 {
+    background: hotpink;
+}
+
+.boxes .box.box8 {
+    background: indigo;
+}
+
+.boxes .box.box10 {
+    background: lawngreen;
+}
+
+/* Footer */
+
 footer {
     width: 100%;
     background: black;
@@ -137,10 +207,141 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Tablet 768px*/
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 3rem 0;
+    }
+
+    .jumbotron {
+        margin: 4rem auto;
+    }
+
+    .boxes .box.box1 {
+        background: teal;
+    }
+
+    .boxes .box.box3 {
+        background: gold;
+    }
+
+    .boxes .box.box5 {
+        background: cadetblue;
+    }
+
+    .boxes .box.box7 {
+        background: coral;
+    }
+
+    .boxes .box.box9 {
+        background: crimson;
+    }
+}
+
+/* Mobile 400px*/
+
+@media (max-width: 400px) {
+
+    /* Navigation */
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        border: 0.05rem solid lightgray;
+
+        padding: 1.5rem;
+    }
+
+    .jumbotron {
+        margin: 0 auto;
+    }
+
+    nav a:first-child {
+        border-top: 0.2rem solid lightgray;
+    }
+
+    nav a:last-child {
+        border-bottom: 0;
+    }
+
+    /* Content */
+    .top-content, 
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    /* Boxes */
+
+    .middle-content .boxes .box {
+        width: 25%;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .boxes .box.box10 {
+        display: none;
+    }
+
+    .top-content .text-container, 
+    .bottom-content .text-container{
+        padding: 2rem;
+    }
+
+    /* Footer Navigation */
+
+    footer nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    footer nav a {
+        width: auto;
+        font-size: 1.5rem;
+        display: flex;
+        border: 0;
+        padding: 0;
+    }
+
+    footer nav a:first-child {
+        border-top: 0;
+    }
 }
