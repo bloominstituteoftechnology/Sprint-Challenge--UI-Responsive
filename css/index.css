@@ -50,15 +50,22 @@ table {
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -67,27 +74,57 @@ p {
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.container img {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem 0 2rem 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 2.5rem 1% 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .top-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 2rem;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     border-bottom: 1px dashed black;
+    width: 100%;
 }
 
 .middle-content h2 {
@@ -104,17 +141,38 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
+    min-width: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
 }
 
@@ -137,10 +195,107 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media ( max-width: 768px ) {
+    .container {
+        width: 100%;
+        max-width: 768px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav {
+        width: 100%;
+    }
+
+    header .logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+
+}
+
+@media ( max-width: 400px ) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+    
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+    
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
 }
