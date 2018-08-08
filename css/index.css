@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,38 +51,91 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
+a {
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+
+}
+
 p {
     line-height: 1.4;
+		font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+		padding: 0 5px;
+		box-sizing: border-box;
+}
+
+.logo {
+	/* border: 1px solid yellow; */
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	/* border: 1px solid blue; */
+	padding-top: 20px;
+	margin: 0px 0;
+}
+
+header nav {
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 15px;
+}
+
+
+header nav a {
+	/* border-top: 1px solid black; */
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-content: center;
+
+}
+.jumbotron img {
+	max-width: 100%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 21px 0;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
+		display: flex;
+		flex-wrap: wrap;
+    width: 100%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -104,12 +157,14 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
+		width: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+		font-size: 1.75rem;
 }
 
 .bottom-content {
@@ -127,20 +182,130 @@ p {
 }
 
 footer {
+	border: 1px solid red;
     width: 100%;
+		display: flex;
+		justify-content: center;
     background: black;
 }
 
 footer nav {
+	border: 1px solid green;
     width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
+
     text-decoration: none;
+		border: 1px solid blue;
 }
+
+/* my new code start */
+@media(max-width:1000px){
+	.boxes .box:nth-child(2){
+		background: forestgreen;
+	}
+	.boxes .box:nth-child(4){
+		background: darkorchid;
+	}
+	.boxes .box:nth-child(6){
+		background: hotpink;
+	}
+	.boxes .box:nth-child(8){
+		background: indigo;
+	}
+	.boxes .box:nth-child(10){
+		background: lawngreen;
+	}
+}
+
+@media(max-width:768px){
+ footer nav {
+	 width: 80%;
+ }
+	header {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	.boxes .box:nth-child(1){
+		background: teal;
+	}
+	.boxes .box:nth-child(3){
+		background: gold;
+	}
+	.boxes .box:nth-child(5){
+		background: cadetblue;
+	}
+	.boxes .box:nth-child(7){
+		background: coral;
+	}
+	.boxes .box:nth-child(9) {
+		background: crimson;
+	}
+}
+@media(max-width:475px){
+	.boxes .box:nth-child(10) {
+		display: none;
+	}
+}
+
+@media(max-width:400px) {
+
+	header nav {
+		 display: flex;
+		 flex-direction: column;
+		 align-self: center;
+		 align-items: center;
+		 height: 100%;
+		 background: 5px solid red;
+		 padding: 0;
+		 margin-bottom: 0;
+	 }
+
+	 header nav a {
+		 /* border: 10px solid green; */
+		 padding: 15px;
+		 border-top: 1px solid black;
+	 }
+
+	 .boxes .box:nth-child(10) {
+		 display: none;
+	 }
+	 .boxes .box {
+		 background-color: teal;
+	 }
+	 .box {
+		 font-size: .1rem;
+		 max-height: 100px;
+		 flex-basis: 100px;
+	 }
+
+	 .boxes {
+		 flex-direction: row-reverse;
+		 flex-wrap: wrap-reverse;
+		 width: 100%;
+	 }
+
+	 .top-content, .bottom-content {
+		 flex-direction: column;
+		 /* border: 1px solid green; */
+	 }
+
+	 .text-container {
+		 /* border: 1px solid red; */
+		 margin-bottom: 20px;
+	 }
+	 footer nav {
+		 width: 100%;
+	 }
+ }
+
+/* my new code end */
