@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,9 +67,47 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 2rem 0;
+
+}
+
+header .lam {
+    order:-1;
+    display: flex;
+    width: 157px;
+    height: 40px
+}
+
+header nav {
+    margin: 1rem 0 2rem 0;
+    max-height: 40px;
+    width: 79.4%;
+    justify-content: space-around;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    max-height: 40px;
+    display: flex;'
+    flex-flow: row wrap;
+}
+
+
+.jumbo {
+    margin-bottom: 1rem;
+    height: 191.2px;
+}
+
 
 .top-content {
     display: flex;
@@ -93,23 +131,79 @@ p {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    display: flex;
 }
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 870px;
+    margin-left: 40px;
+
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
+    min-height: 100px;
+    min-width: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 20px 3% 20px 3%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*more boxes than a ups store */
+
+#box1 {
+    background-color: black;
+    
+}
+
+#box2 {
+    background-color: forestgreen;
+    
+}
+
+#box3 {
+    background-color: black;
+    
+}
+
+#box4 {
+    background-color: darkorchid;
+    
+}
+
+#box5 {
+    background-color: black;
+    
+}
+
+#box6 {
+    background-color: hotpink;
+    
+}
+
+#box7 {
+    background-color: black;
+    
+}
+
+#box8 {
+    background-color: indigo;
+    
+}
+
+#box9 {
+    background-color: black;
+    
+}
+#box10 {
+    background-color: lawngreen;
+    
 }
 
 .bottom-content {
@@ -137,10 +231,276 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+ 
+    font-size: .875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*not2self media queries must be last */
+
+/*tablet view*/
+
+@media(max-width: 768px){
+    .container {
+        width: 100%;
+    }
+    /*resize banner for tablet view*/
+    .jumbo {
+        height: 146.88px;
+    }
+
+    header {
+    flex-wrap: wrap;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 38px 3%;
+    }
+
+    header .lam {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+        display: flex;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        max-width: 870px;
+        margin-left: 40px;
+
+    }
+
+    .middle-content .boxes .box {
+        min-height: 100px;
+        min-width: 100px;
+        background: black;
+        margin: 20px 1.5% 20px 1.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #box1 {
+    background-color: teal;
+    
+    }
+    #box2 {
+        background-color: forestgreen;
+        
+    }
+    #box3 {
+        background-color: gold;
+        
+    }
+    #box4 {
+        background-color: darkorchid;
+        
+    }
+    #box5 {
+        background-color: cadetblue;
+        
+    }
+    #box6 {
+        background-color: hotpink;
+        
+    }
+    #box7 {
+        background-color: coral;
+        
+    }
+    #box8 {
+        background-color: indigo;
+        
+    }
+    #box9 {
+        background-color: crimson;
+    }
+    #box10 {
+        background-color: lightgreen;
+    }
+}
+/*mobile view*/
+
+@media(max-width: 400px){
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .lam {
+        order: -1;
+        margin: 0px 0px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 150px;
+        border-top: 1px solid darkgrey;
+    }
+
+    header nav a {
+        display: block;
+        width: 100%;
+        padding: 20px 0px 20px;
+        border-bottom: 1px solid gray;
+        font-size: 1rem;
+        margin: 0px 0 0 0;
+        flex-wrap: nowrap;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+
+
+    /*resize banner for mobile view*/
+    .jumbo {
+        height: 76px;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    .top-content {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+
+    .top-content .text-container {
+        display: flex;
+        flex-flow: wrap column;
+        width: 100%;
+        padding: 0 1%;
+        padding-bottom: 20px;  
+    }
+
+    .middle-content {
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .middle-content .boxes .box {
+        min-height: 100px;
+        min-width: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxes{
+        display: flex-grid;
+        justify-content: space-between;
+    }
+
+    #box1 {
+    order:3;
+    
+    }
+    #box2 {
+    order:2;
+        
+    }
+    #box3 {
+    order:0;
+        
+    }
+    #box4 {
+    order:6;
+        
+    }
+    #box5 {
+    order:5;
+        
+    }
+    #box6 {
+    order:4;
+        
+    }
+    #box7 {
+    order:9;
+        
+    }
+    #box8 {
+    order:8;
+        
+    } 
+    #box9 {
+    order:7;
+    }
+    
+    #box10 {
+    display:none;
+    }
+    .bottom-content {
+    display: block;
+    margin: 0 0px 20px 20px;
+    justify-content: space-around;
+    }
+
+    .bottom-content .text-container {
+        padding-right: 4%;
+        margin-bottom: 20px
+    }
+
+    .bottom-content .text-container:last-child {
+        padding-right: 0;
+    }
+    footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+ 
+    font-size: .875rem;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
 }
