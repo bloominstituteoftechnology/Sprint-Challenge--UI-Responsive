@@ -57,14 +57,20 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+
 }
+img .lambda {width: 50px;
+         height: 20px;}
+img .jumbo {width: 1000px;
+        height: 300px;
+        justify-content: center;}
 
 .container {
     width: 800px;
@@ -111,6 +117,106 @@ p {
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes .box1 {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.middle-content .boxes .box2 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .middle-content .boxes .box3 {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+
+    .middle-content .boxes .box4 {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .middle-content .boxes .box5 {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .middle-content .boxes .box6 {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .middle-content .boxes .box7 {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .middle-content .boxes .box8 {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .middle-content .boxes .box9 {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+    .middle-content .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    background: lawngreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
 
 .bottom-content {
     display: flex;
@@ -143,4 +249,202 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+html {
+    font-size:62.5%;
+}
+
+header { 
+
+ width: 100%;
+    background: white; 
+   
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+    margin: 20px;
+}
+
+header nav a {
+        color: black;
+    text-decoration: none;
+}
+
+ 
+
+
+@media (max-width: 1000px ) {
+     .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+.container .middle-content .boxes .box2 {
++    background: forestgreen;
++}
++.container .middle-content .boxes .box4 {
++    background: darkorchid;
++}
++.container .middle-content .boxes .box6 {
++    background: hotpink;
++}
++.container .middle-content .boxes .box8 {
++    background: indigo;
++}
++.container .middle-content .boxes .box10 {
++    background: lawngreen;
++}
++header {
++    margin-top: 30px;
++}
++header nav {
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
+}
++header nav a {
+    color: black;
+    text-decoration: none;
+
+    }
+ 
+    .main-content .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+.jumbo {
+     flex-direction: column;
+        align-items: center;
+ }
+
+
+@media (max-width: 768px ) {
+     .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+.jumbo {
+     flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+ }
+    }
+ 
+    .main-content .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+   .container .middle-content .boxes .box1 {
+    background: teal;
+}
+.container .middle-content .boxes .box3 {
+    background: gold;
+}
+.container .middle-content .boxes .box5 {
+    background: cadetblue;
+}
+.container .middle-content .boxes .box7 {
+    background: coral;
+}
+.container .middle-content .boxes .box9 {
+    background: crimson;
+}
+
+}
+  
+
+
+
+@media (max-width: 400px ) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    }
+ 
+    .main-content .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .middle-content .boxes {
+        order: 1
+    }
+
+.container .middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.container .middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.container .middle-content .boxes .box6 {
+    background: hotpink;
+}
+.container .middle-content .boxes .box8 {
+    background: indigo;
+}
+
+
+.jumbo {
+     flex-direction: column;
+        align-items: center;
+ }
+
 }
