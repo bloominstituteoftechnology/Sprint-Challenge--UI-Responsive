@@ -67,8 +67,33 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 45px;
+
+}
+
+.menu .lambda {
+    margin:auto;
+}
+
+.menu nav { 
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    font-size: 85%;
+}
+
+.zoom {
+    margin-bottom: 20px;
+    max-width: 100%;
 }
 
 .top-content {
@@ -88,6 +113,7 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+
 }
 
 .middle-content h2 {
@@ -102,14 +128,31 @@ p {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background: darkviolet;
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: chartreuse;
 }
 
 .bottom-content {
@@ -143,4 +186,114 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*============*  Tablet  *=================*/
+
+@media(max-width: 768px){
+
+    /* .container {
+        margin: 0 10% 0 0;
+    } */
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu img{
+        margin: auto auto 20px;
+    }
+
+    .zoom {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box2 {
+        background: forestgreen;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box4 {
+        background: darkviolet;
+    }
+    .middle-content .boxes .box5 {
+        background: lightseagreen;
+    }
+    .middle-content .boxes .box6 {
+        background: hotpink;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box8 {
+        background: indigo;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+    .middle-content .boxes .box10 {
+        background: chartreuse;
+    }
+  
+}
+
+/* Mobile*/
+
+@media(max-width: 400px){
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+
+    .top-content{
+        flex-direction: column;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 5%;
+        padding-bottom: 20px;  
+        justify-content: center;
+    }
+    .bottom-content{
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+    width: 100%;
+    padding: 0 3%;
+    padding-bottom: 20px;  
+    justify-content: center;
+    }
+
+    footer nav {
+        width: 100%;
+    
+    }
+
+    .menu nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .menu nav a {
+        border-bottom: .5px solid gray;
+        display: flex;
+        padding: 7% 50%;
+        margin: 0;
+        font-size: 110%;
+    }
+    .menu nav .home{
+        border-top: .5px solid gray;
+    }
 }
