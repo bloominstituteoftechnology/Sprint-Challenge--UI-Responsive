@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,7 +57,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,14 +67,53 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+};
+
+.container .header {
+    display: flex;
+}
+
+
+header{
+    background: url("./img/jumbo.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-height: 40px;
+    margin: 2% 0 5% 0;
+    
+}
+
+header nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: .875rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -82,7 +121,8 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+     
 }
 
 .middle-content {
@@ -137,10 +177,84 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media(max-width: 1000px ) {
+    .container {
+        width: 100%;
+    }
+    
+    .container .middle-content .boxes .box2{
+        background: forestgreen;
+    }
+    .container .middle-content .boxes .box4{
+        background: darkorchid;
+    }
+    .container .middle-content .boxes .box6{
+        background: hotpink;
+    }
+    .container .middle-content .boxes .box8{
+        background: indigo;
+    }
+    .container .middle-content .boxes .box10{
+        background: lawngreen;
+    }
+}
+
+@media(max-width: 768px ) {
+    .container {
+        width: 100%;
+    }
+ 
+    header {
+         flex-wrap: wrap;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 38px 3%;
+    } 
+    .container .middle-content .boxes .box{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+    .container .middle-content .boxes .box1{
+        background: teal;
+    }
+    .container .middle-content .boxes .box3{
+        background: gold;
+    }
+    .container .middle-content .boxes .box5{
+        background: cadetblue;
+    }
+    .container .middle-content .boxes .box7{
+        background: coral;
+    }
+    .container .middle-content .boxes .box9{
+        background: crimson;
+    }
+}
+
+@media(max-width: 400px ){
+    .container {
+        width: 100%;}
+
+     .container .middle-content .boxes{
+        display: flex;
+        flex-flow: row-reverse;
+        flex-wrap: wrap;
+        min-width: 100px;
+    }
+    .container .middle-content .boxes .box10{
+        display: none;
+    }
+}
+ 
+
