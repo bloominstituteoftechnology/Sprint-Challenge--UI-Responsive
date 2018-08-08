@@ -51,6 +51,8 @@ table {
     box-sizing: border-box;
 }
 
+html {font-size: 62.5%}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -64,19 +66,51 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    width: 1000px;
+
     margin: 0 auto;
 }
 
-.top-content {
+header {
+    width:100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 69.3%;
+    justify-content: space-around;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+}
+
+.top-content {
+    width: 82.5%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    
 }
 
 .top-content .text-container {
@@ -86,7 +120,10 @@ p {
 }
 
 .middle-content {
+    width:82.5%;
+    margin: auto;
     margin-bottom: 20px;
+    border-top: 1px dashed black;
     border-bottom: 1px dashed black;
 }
 
@@ -112,9 +149,30 @@ p {
     justify-content: center;
 }
 
+#box2 {
+    background: forestgreen;
+}
+
+#box4 {
+    background: darkorchid;
+}
+
+#box6 {
+    background: hotpink;
+}
+
+#box8 {
+    background: indigo;
+}
+
+#box10 {
+    background: lawngreen;
+}
+
 .bottom-content {
+    width: 82.5%;
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 auto 20px;
     justify-content: space-around;
 }
 
@@ -137,7 +195,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
