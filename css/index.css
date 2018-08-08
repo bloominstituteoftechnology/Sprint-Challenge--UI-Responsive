@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 2rem;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -51,24 +51,41 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.9rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.nav-bar {
+    padding: 15px 0;
+    font-size: 1.4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
 }
 
 .top-content {
@@ -81,7 +98,7 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 2% 1%;
     padding-bottom: 20px;  
 }
 
@@ -111,6 +128,27 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +181,49 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 768px) {
+    .middle-content .boxes .box1 {
+        background: teal;
+    }
+    .middle-content .boxes .box3 {
+        background: gold;
+    }
+    .middle-content .boxes .box5 {
+        background: cadetblue;
+    }
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+    .middle-content .boxes .box9 {
+        background: crimson;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.nav-bar img {
+    display: flex;
+    justify-content: center;
+}
+
+    .nav-bar a {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        width: 100%;
+        padding: 1% 0;
+        font-size: 1.2rem;
+        margin-right: 2%;
+    }
+}
+
+
+@media(max-width: 400px){
+    .middle-content .boxes .box10 {
+        display: none;
+    }
 }
