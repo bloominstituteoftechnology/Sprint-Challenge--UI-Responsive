@@ -129,10 +129,11 @@ header .top-img {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    font-weight: bold;
 }
 
 .top-content .text-container p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -149,6 +150,8 @@ header .top-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    min-width: 50%;
+    font-size: 1.6rem;
 }
 
 .middle-content .boxes .box-box1{
@@ -160,6 +163,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box2{
@@ -171,6 +175,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box3{
@@ -182,6 +187,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box4{
@@ -193,6 +199,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box5{
@@ -204,6 +211,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box6{
@@ -215,6 +223,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box7{
@@ -226,6 +235,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box8{
@@ -237,6 +247,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box9{
@@ -248,6 +259,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .middle-content .boxes .box-box10{
@@ -259,6 +271,7 @@ header .top-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 100px;
 }
 
 .bottom-content {
@@ -269,7 +282,7 @@ header .top-img {
 
 .bottom-content .text-container {
     padding-right: 4%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -633,10 +646,6 @@ footer nav a {
 
     .bottom-content .text-container p {
         font-size: 1.6rem;
-    }
-
-    footer {
-        border: 1px solid green;
     }
 
     footer nav {
