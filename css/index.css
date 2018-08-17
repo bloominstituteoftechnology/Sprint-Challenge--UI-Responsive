@@ -63,8 +63,13 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size:62.5%;
+}
+
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -144,7 +149,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
@@ -162,9 +167,9 @@ footer nav a {
 header, .top-content {
     border: 1px solid red;
 }
-html {
+/* html {
     font-size:62.5%;
-}
+} */
 @media (max-width: 1000px) {
     .container {
         width: 800px;
