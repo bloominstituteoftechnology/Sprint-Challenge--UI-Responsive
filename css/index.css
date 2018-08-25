@@ -80,13 +80,17 @@ p {
 
 header {
     width: 100%;
-    display:flex;
+    justify-content: space-between;
+    display: flex;
     margin: 10px;
 }
 
 header nav {
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
+    display: flex;
+    /* width: calc(100% - 157px); */
+    width: 100%;
 }
 
 header nav a {
@@ -129,15 +133,18 @@ header nav a {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    min-width: 100px;
+    width: 12.5%; 
     height: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
+    font-size: 1.6rem;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
+
 
 .middle-content .boxes .box2 {
     background: forestgreen;
@@ -263,5 +270,6 @@ footer nav a {
     .middle-content .boxes .box9 {
         order: 1;
     }
+    
 
 }

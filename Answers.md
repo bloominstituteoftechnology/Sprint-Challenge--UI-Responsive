@@ -10,10 +10,10 @@ While using flexbox, what axis are you using when you use the property: align-it
 Align refers to the cross axis.
 
 What is the difference between fixed layout, adaptive layout, fluid layout, and responsive layout?
-Fixed it a layout that is basically stuck, no change when the screen size changes.
+Fixed is a layout that is basically stuck, no change when the screen size changes so you get scroll bars.
 Adaptive layout uses only media queries which indicate break-points to change the layout of the website.  When a user hits a certain media restraint like max-width the layout should change in accordance to the CSS you've written.
-Fluid layout uses only % based to change the layout of the website in accordance.
+Fluid layout uses only % based to change the layout of the website in accordance so no break points which can cause the page to look weird if the view is at different sizes.
 Responsive uses both peroperties of media qeuries and % 
 
 Why do we need to use the CSS property max-width on the outter most container in a responsive website?
-We use the CSS propety max-width on the outter most container in a responsive website because at that point the layout of your webpage is suppose to change in accordance to the screen size.
+We use the CSS propety max-width on the outter most container in a responsive website because at that point the layout of your webpage is suppose to change in accordance to the screen size.  It constrains everything inside so nothing grows pass the constraint.
