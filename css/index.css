@@ -333,6 +333,8 @@ body {
   margin-top: 250px;
   margin: auto;
 }
+
+/* new media query */
 @media (max-width: 768px) {
   
   .middle-content .boxes .boxA {
@@ -351,14 +353,59 @@ body {
 
   .middle-content .boxes .boxI{
     background-color: crimson;
-   
    }
+
+   header{
+     height: 320px;
+   }
+
+   .topnav a  {
+    position: relative;
+    top: 40px;
+    left:-100px;
+    display: flex-wrap;
 }
 
+.photo{
+  /* display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  justify-content: left;*/
+  position: relative;
+  left:-100px;
+  top:30px;
+  width: 100%;
+} 
+
+.lambda{
+  position: relative;
+  left: 200px;
+  justify-content: center;
+}
+
+body{
+  height: 950px;
+}
+.container{
+  margin-top: 10px;
+  height: 75.5%;
+}
+}
+
+
+
+
+
+
+/* new media query */
 @media (max-width: 400px) {
   .container {
-    border: 1px solid red;
+    height: 100%;
   }
+
   .box {
     display: flex;
     flex-direction: row-reverse;
