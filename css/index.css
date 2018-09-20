@@ -194,11 +194,12 @@ footer nav a {
         .boxes{
             display:flex;
             flex-wrap:wrap;
-            flex-direction:row-reverse;
+            flex-direction:row;
+            justify-content: space-evenly;
     }
    .boxes .boxA{
        border:3px solid orange;
-        color:yellow;
+        color:black;
         width:80px;
         height:80px;
     }
