@@ -202,6 +202,38 @@ p {
   justify-content: center;
 }
 
+.middle-content .boxes .boxB {
+  background-color: forestgreen;
+}
+
+
+.middle-content .boxes .boxD {
+background-color: darkorchid;
+}
+
+.middle-content .boxes .boxF {
+background-color: hotpink;
+}
+
+
+.middle-content .boxes .boxH {
+  background-color: indigo;
+ 
+ }
+
+ .middle-content .boxes .boxJ {
+  background-color: lawngreen;
+ 
+ }
+
+ .container .boxes .box {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 10rem;
+
+}
+
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
@@ -235,7 +267,7 @@ footer nav a {
   text-decoration: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .lambda {
     display: flex;
     /* flex-wrap:wrap;*/
@@ -269,82 +301,33 @@ footer nav a {
   body {
     border: 2px solid red;
   }
+
   .container {
     border: 3px solid blueviolet;
-    width: 850px;
+    max-width: 850px;
     height: 710px;
     margin-top: 250px;
     margin: auto;
   }
-  .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
 
-  .box{
-    background: red;
-    width: 80px;
-    height: 80px;
-  }
-  .boxA {
-    border: 3px solid orange;
-    color: black;
-    width: 80px;
-    height: 80px;
-  }
-
-  .boxB {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-  .boxC {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-
-  .boxD {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-
-  .boxE {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-  .boxF {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-  .boxG {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-  .boxH {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-  .boxI {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
-  .boxJ {
-    border: 3px solid orange;
-    width: 80px;
-    height: 80px;
-  }
+  .middle-content .boxes .boxA {
+    background-color: teal;
+}
+.middle-content .boxes .boxC {
+    background-color: gold;
+   }
+   .middle-content .boxes .boxE {
+    background-color: cadetblue;
+}
+   .middle-content .boxes .boxG {
+    background-color: coral;
+   
 }
 
-@media (max-width: 768px) {
+  .middle-content .boxes .boxI{
+    background-color: crimson;
+   
+   }
 }
 
 @media (max-width: 400px) {
