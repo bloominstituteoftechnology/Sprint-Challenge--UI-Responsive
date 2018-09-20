@@ -26,7 +26,7 @@
 * Convert all pixel font-sizes into rems and use rems for anything new you build.
 * Convert `.container` into a max-width responsive class based on it's fixed width's current size.
 * The header and jumbotron are missing from the code.  Use the image named `desktop-design.png` to create a pixel perfect replacement. Please note, the `desktop-design.png` file is 1000px wide.
-
+ 
 ## Complete the following tasks for desktop at a screen size of 1000px
 * Update the background colors on the following boxes:
   - box2: forestgreen
