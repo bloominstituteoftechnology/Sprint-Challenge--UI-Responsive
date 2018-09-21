@@ -395,19 +395,138 @@ body{
 }
 }
 
-
-
-
-
-
 /* new media query */
 @media (max-width: 400px) {
   .container {
     height: 100%;
   }
 
-  .box {
+  body{
+    height:950px;
+  }
+
+  .middle-content .boxes .boxA {
+    background-color: teal;
+}
+
+.middle-content .boxes .boxB {
+  background-color: forestgreen;
+}
+
+.middle-content .boxes .boxC {
+    background-color: gold;
+   }
+
+   .middle-content .boxes .boxD {
+    background-color: darkorchid;
+}
+
+   .middle-content .boxes .boxE {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .boxF {
+  background-color: hotpink;
+}
+   .middle-content .boxes .boxG {
+    background-color: coral;
+   
+}
+
+.middle-content .boxes .boxH {
+  background-color: indigo;
+}
+
+  .middle-content .boxes .boxI{
+    background-color: crimson;
+   }
+
+  .middle-content .boxes .boxJ {
+    display: none;
+  }
+
+  .middle-content .boxes {
     display: flex;
     flex-direction: row-reverse;
   }
+
+  .lambda{
+    position: relative;
+    left: 15px;
+    justify-content: center;
+  }
+  
+  .topnav a{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px;
+  }
+
+  .topnav .last{
+    display: flex;
+    position: relative;
+    left:-8px;
+    width:106.5%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-self: flex-end;
+    height: 1.0rem; /*1.6*/
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: -20px;
+    background-color: white;
+    margin-bottom: -9px;
+    border: 2px solid #E5E5E5;
+    height: 42px;
+    padding-left: 160px;
+    padding-bottom: 40px;
+    padding-top:20px;
+  }
+
+  .photo{
+    position: relative;
+    left:-105px;
+    top:10px;
+    width: 110%;
+    height:70px;
+    padding-bottom: 0px;
+  } 
+
+  .container{
+    height: 1800px;
+  }
+
+  body{
+    height:1800px;
+  }
+
+  .container .top-content .text-container .future {
+    display: flex;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20px;
+  }
+
+  h2{
+    /* display: flex;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 500px; */
+  }
+
+  header{
+    height: 390px;
+  }
+
+  footer nav a{
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
