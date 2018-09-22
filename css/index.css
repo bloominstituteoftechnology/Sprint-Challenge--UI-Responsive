@@ -263,6 +263,8 @@ background-color: hotpink;
 footer {
   width: 100%;
   background: black;
+  /* position: relative;
+  bottom:0; */
 }
 
 footer nav {
@@ -320,19 +322,19 @@ footer nav a {
 
 }
 
-header {
+/* header {
   border: 4px solid green;
-}
+} */
 
 body {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height:900px;
 }
 
 .container {
-  border: 3px solid blueviolet;
+  /* border: 3px solid blueviolet; */
   max-width: 950px;
-  height: 573px; /*height:710px*/
+   height: 573px; /*height:710px */
   margin-top: 250px;
   margin: auto;
 }
@@ -402,7 +404,7 @@ body{
 }
 .container{
   margin-top: 10px;
-  height: 75.5%;
+  height: 70.5%;
 }
 }
 
@@ -523,11 +525,11 @@ body{
   } 
 
   .container{
-    height: 1800px;
+    height: 1130px;
   }
 
   body{
-    height:1800px;
+    height:1600px;
   }
 
   .container .top-content .text-container{
@@ -545,17 +547,22 @@ body{
     position: relative;
   }
 
-  h2{
-    /* display: flex;
+  /* h2{
+     display: flex;
     display: block;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    left: 500px; */
-  }
+    left: 500px; 
+  } */
 
   header{
     height: 340px;
+  }
+
+  footer{
+    position: relative;
+    bottom:-30px;
   }
 
   footer nav {
@@ -569,7 +576,7 @@ body{
     width:100%;
     flex-wrap: wrap;
     margin: auto 20px;
-    padding-top:
+    /* padding-top: */
   }
 
   .bottom-content .text-container{
