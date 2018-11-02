@@ -219,6 +219,7 @@ header nav a {
 
 .bottom-content .text-container {
     padding-right: 6%;
+    margin-bottom:15px;
 }
 
 .bottom-content .text-container:last-child {
@@ -369,12 +370,17 @@ footer nav a {
     header nav {
         flex-direction:column;
         align-items: center;
-        padding:1.5px 0;
+        padding:0;
+        margin:0;
     }
 
     header nav a {
         padding:15px 0 15px 2.5%;
         /* display:block; */
+        border: none;
+        border-top:1px solid grey;
+        width:100%;
+        justify-content: center;
     }
 
     .top-content {
@@ -392,19 +398,22 @@ footer nav a {
         /* padding-top:24px; */
 
     }
+
     .middle-content {
         border:1px solid red;
         padding-bottom: 0px;
     }
-    
+
     .middle-content .boxes .box.box10 {
         display: none;
     }
+
     .middle-content .boxes {
        /* padding:0;
        margin:0; */
        padding-left: 4%;
        border:1px solid orange;
+       flex-direction: row-reverse;
        justify-content:space-between;
        padding-bottom:0px;
     }
@@ -428,5 +437,9 @@ footer nav a {
         margin:0;
     }
 
+    footer nav {
+        width: 100%;
+    }
 
+    
 }
