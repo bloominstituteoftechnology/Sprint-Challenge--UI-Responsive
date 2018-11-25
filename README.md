@@ -9,8 +9,7 @@
 * Fork / Clone this project into a directory on your machine.
 * `cd` into your forked local copy.
 
-## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future. Remember to record your answers in _ANSWERS.md_
-
+[x]## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future. Remember to record your answers in _ANSWERS.md_
 1. If you saw this HTML: `<div class="box box1 box2 box3"></div>` which class has the most specificity weight?
 2. Describe the difference between `display: block;` and `display: inline;`.
 3. While using flexbox, what axis are you using when you use the property: `align-items: center`?
@@ -21,33 +20,33 @@
 * This project has many parts invovled in it. You will start with a half built website that isn't ready for responsiveness.  You will need to complete the tasks below to successfully finish the website. For this project you have been provided design files which you must successfully match at the viewport sizes of 1000px, 768px, and 400px.  
 
 ## Complete the following tasks to set up a responsive website project
-* Correctly place a viewport meta tag in the head of your index.html file that contains these values: `content="width=device-width, initial-scale=1.0"`
-* In your CSS, Introduce `font-size:62.5%;` to the `html` element.
-* Convert all pixel font-sizes into rems and use rems for anything new you build.
-* Convert `.container` into a max-width responsive class based on it's fixed width's current size.
-* The header and jumbotron are missing from the code.  Use the image named `desktop-design.png` to create a pixel perfect replacement. Please note, the `desktop-design.png` file is 1000px wide.
+[x] Correctly place a viewport meta tag in the head of your index.html file that contains these values: `content="width=device-width, initial-scale=1.0"`
+[x] In your CSS, Introduce `font-size:62.5%;` to the `html` element.
+[x] Convert all pixel font-sizes into rems and use rems for anything new you build.
+[x] Convert `.container` into a max-width responsive class based on it's fixed width's current size.
+[x] The header and jumbotron are missing from the code.  Use the image named `desktop-design.png` to create a pixel perfect replacement. Please note, the `desktop-design.png` file is 1000px wide.
 
 ## Complete the following tasks for desktop at a screen size of 1000px
-* Update the background colors on the following boxes:
-  - box2: forestgreen
-  - box4: darkorchid
-  - box6: hotpink
-  - box8: indigo
-  - box10: lawngreen
+[x] Update the background colors on the following boxes:
+  - [x]box2: forestgreen
+  - [x]box4: darkorchid
+  - [x]box6: hotpink
+  - [x]box8: indigo
+  - [x]box10: lawngreen
 * Please reference the design file `desktop-design.png` and make sure your layout matches this design as close as you can.
 
 ## Complete the following tasks for tablet at a screen size of 768px
 * Update the background colors on the following boxes:
-  - box1: teal
-  - box3: gold
-  - box5: cadetblue
-  - box7: coral
-  - box9: crimson
-* Please reference the design file `tablet-design.png` and make sure your layout matches this design as close as you can.  **Make sure you look at the header**
+  - [x]box1: teal
+  - [x]box3: gold
+  - [x]box5: cadetblue
+  - [x]box7: coral
+  - [x]box9: crimson
+* Please reference the design file `tablet-desxign.png` and make sure your layout matches this design as close as you can.  **Make sure you look at the header**
 
 ## Complete the following tasks for phone at a screen size of 400px
-* Remove box 10 and reverse the order of the boxes.
-* Please reference the design file `phone-design.png` and make sure your layout matches this design as close as you can.
+[x] Remove box 10 and reverse the order of the boxes.
+[x] Please reference the design file `phone-design.png` and make sure your layout matches this design as close as you can.
 
 ## Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
 
