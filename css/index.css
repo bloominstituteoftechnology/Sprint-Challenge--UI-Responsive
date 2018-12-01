@@ -242,3 +242,16 @@ margin-top: 10px;
 #box9{
 	background-color: crimson;
 }
+}
+@media only screen and (max-width:400px) {
+
+	.boxes{
+		display: flex; 
+		flex-direction: row-reverse;
+	}
+	
+	
+	#box10{
+		display:none;
+	}
+}
