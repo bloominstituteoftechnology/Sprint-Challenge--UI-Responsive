@@ -535,7 +535,7 @@ footer nav a {
         color: black;
     };
     
-    .navigation .navlinks {
+    .navigation a {
         margin: 20px 0;
         border-bottom: 1px solid grey;
 
@@ -545,7 +545,7 @@ footer nav a {
         display: none;
     }
     
-    .top-content {
+    .top-content {  
         display: flex;
         margin-top: 20px;
         margin-bottom: 20px;
