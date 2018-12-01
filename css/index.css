@@ -533,12 +533,12 @@ footer nav a {
         margin: 20px 0;
         width: 100%;
         color: black;
-        
     };
     
-    .navlinks {
-        margin: 5px 0;
+    .navigation .navlinks {
+        margin: 20px 0;
         border-bottom: 1px solid grey;
+
     }
 
     .top-content .bannerImg {
@@ -552,10 +552,10 @@ footer nav a {
         border-bottom: 1px dashed black;
     }
     
-    .bannerImg {
+    /* .bannerImg {
         display: block;
         width: 100%;
-    }
+    } */
     
 
     /* .par {
@@ -598,8 +598,8 @@ footer nav a {
     
 
     .middle-content .boxes .box1 {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         order: 3;
     }
     
