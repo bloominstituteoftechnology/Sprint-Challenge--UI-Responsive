@@ -13,4 +13,4 @@
     adaptive is a mixture of fixed and fluid layouts
     fluid layout is fully responsive to the view of the screen and zoom the user is using.
 5. Why do we need to use the CSS property max-width on the outer most container in a responsive website?
-    To be able to create breakpoints in the code and also maintain some of the integrity of the original design. 
+    To be able to maintain some of the integrity of the original design. 

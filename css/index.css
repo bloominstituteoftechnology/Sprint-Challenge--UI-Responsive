@@ -75,7 +75,7 @@ p {
     margin: auto;
 }
 
-@media (max-width: 1000px){
+/* @media (max-width: 1000px){ */
 
 .nav-bar{
     display:flex;
@@ -295,7 +295,7 @@ footer nav a {
     text-decoration: none;
 }
 
-}
+/* } */
 
 /*tablet view */
 
@@ -634,7 +634,7 @@ footer nav a {
     .middle-content .boxes .box4 {
         width: 70px;
         height: 70px;
-        order: 4;
+        order: 6;
     }
     
     .middle-content .boxes .box5 {
