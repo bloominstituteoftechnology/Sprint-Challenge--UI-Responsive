@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -143,4 +143,162 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+html{
+	font-size:62.5%;
+}
+#logo{
+margin-right: 30px;
+}
+header nav{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	padding: 20px 2%;
+	font-size: 1.5rem;
+}
+header nav a{
+	color: black;
+	text-decoration: none;
+	margin-left: 0px;
+	margin-top: 30px;
+	margin-right: .7rem;
+}
+.boxes{
+	font-size: 1.5rem;
+}
+h2{
+	font-weight: bold;
+}
+ p{
+	 font-size: 1.5rem;
+	 font-weight: bold;
+ }
+.top-content .text-container{
+margin-top: 40px;
+border-right-width: 10px;
+margin-left: 10px;
+}
+.middle-content{
+margin-left: 10px;
+}
+.bottom-content .text-container{
+margin-left: 10px;
+margin-top: 10px;
+
+}
+@media only screen and (max-width: 2000px) {
+
+	#box2{
+		background-color: forestgreen;
+		}
+	#box4{
+	background-color: darkorchid;
+		}
+	#box6{
+		background-color: hotpink;
+		}
+	#box8{
+		background-color: indigo;
+	}
+	#box10{
+		background-color: lawngreen;
+	}
+	}
+@media only screen and (max-width: 1020px) {
+
+	#box2{
+		background-color: forestgreen;
+		}
+	#box4{
+	background-color: darkorchid;
+		}
+	#box6{
+		background-color: hotpink;
+		}
+	#box8{
+		background-color: indigo;
+	}
+	#box10{
+		background-color: lawngreen;
+	}
+	}
+@media only screen and (max-width:768px) {
+nav{
+	margin-left: 150px;
+}
+#logo{
+	margin-right: -210px;
+    margin-bottom: 100px;
+}
+
+
+
+#box1{
+	background-color: teal;
+	}
+#box3{
+	background-color: gold;
+}
+	#box5{
+		background-color:cadetblue
+	}
+#box7{
+	background-color:coral;
+
+}
+#box9{
+	background-color: crimson;
+}
+}
+@media only screen and (max-width:400px) {
+    nav{
+		flex-direction: row-reverse;
+    	}
+	.boxes{
+		display: flex; 
+		flex-direction: row-reverse;
+	}
+	
+	
+	#box10{
+		display:none;
+	}
+}
+@media only screen and (max-width: 400px) {
+	header nav a {
+		color: black;
+		text-decoration: none;
+	    margin-left: 50px;
+		line-height: 4rem;
+		border:1px solid black;
+		padding: 1rem;
+		padding-right: 10rem;
+		padding-left: 10rem;
+	}
+	#products{
+		padding-right: 80px;
+	}
+	#Blog{
+		padding-right: 110px;
+	}
+	#contacts{
+		padding-right: 88px;
+	}
+#logo{
+	margin-left: 90px;
+	margin-bottom: 0;
+}
+	header nav {
+		width: 60%;
+		/* display: flex; */
+		align-items: center;
+		padding: 20px 2%;
+		font-size: 1.5rem;
+		display: inline-block
+		}
+
+		nav{
+			margin-left: 0px;
+		}
 }
