@@ -29,20 +29,20 @@
 
 ## Complete the following tasks for desktop at a screen size of 1000px
 * Update the background colors on the following boxes:
-  - box2: forestgreen
-  - box4: darkorchid
-  - box6: hotpink
-  - box8: indigo
-  - box10: lawngreen
+    - box2: forestgreen
+    - box4: darkorchid
+    - box6: hotpink
+    - box8: indigo
+    - box10: lawngreen
 * Please reference the design file `desktop-design.png` and make sure your layout matches this design as close as you can.
 
 ## Complete the following tasks for tablet at a screen size of 768px
 * Update the background colors on the following boxes:
-  - box1: teal
-  - box3: gold
-  - box5: cadetblue
-  - box7: coral
-  - box9: crimson
+    - box1: teal
+    - box3: gold
+    - box5: cadetblue
+    - box7: coral
+    - box9: crimson
 * Please reference the design file `tablet-design.png` and make sure your layout matches this design as close as you can.  **Make sure you look at the header**
 
 ## Complete the following tasks for phone at a screen size of 400px

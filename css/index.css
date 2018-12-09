@@ -1,8 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*  http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
 */
-
+/*#region RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -143,4 +143,41 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/*#endregion RESET*/
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    text-decoration: none
+}
+
+@media (max-width: 400px) {
+    body {
+        height :1685px;
+    }
+
+    .container {
+        max-width: 100%;
+        height: 100%;
+        border: 1px solid blue;
+    }
+
+    /*header space*/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .jumbotron {
+        max-width: 100%;
+    }
 }
