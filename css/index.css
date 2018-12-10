@@ -60,13 +60,12 @@ li {
 
 /*Mobile first*/
 @media (max-width: 400px) {
-
     body {
         height: 1685px;
     }
 
     .container {
-        max-width: 100%;
+        max-width: 400px;
         height: 100%;
     }
 
@@ -173,7 +172,9 @@ li {
     }
 
     /*Mid section, boxes!*/
-    .boxes {
+    .boxes-full {display: none;}
+
+    .boxes-mobile {
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -261,6 +262,193 @@ li {
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
+    }
+
+    footer nav a {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+    body {
+        height: 1026px;
+    }   
+
+    .container {
+        max-width: 768px;
+        height: 100%;
+    }
+
+    /*Header*/
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 285px;
+    }
+
+    /*Header-logoBox*/
+    .logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    /*Header-navBar*/
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .navbar a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    /*Jumbotron image*/
+    .jumbo-box { 
+        width: 100%;
+        height: 150px;
+        margin-top: 35px;
+    }
+
+    .jumbotron {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Top section*/
+    .top-container {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        padding: 10px;
+        border-bottom: 1px dashed black;
+    }
+
+    .top-container_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 49%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .top-container_text h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .top-container_text p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    /*Mid section*/
+    .mid-container {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 320px;
+        margin-top: 20px;
+        border-bottom: 1px dashed black;
+    }
+
+    .mid-container h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    /*Mid section, boxes!*/
+    .boxes-mobile {display: none;}
+
+    .boxes-full {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 380px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .boxes_row {
+        display: flex;
+        justify-content: space-around;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /*Individual boxes*/
+    .box {
+        width: 13%;
+        height: 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+    }
+
+    #box1 {background: teal}
+    #box2 {background: #268a2f}
+    #box3 {background: gold}
+    #box4 {background: #9834c8}
+    #box5 {background: cadetblue}
+    #box6 {background: #fe6ab2}
+    #box7 {background: coral}
+    #box8 {background: #4a027e}
+    #box9 {background: crimson}
+    #box10 {background: #7ffc3e;}
+
+    /*Bottom section*/
+    .bottom-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px;
+    }
+
+
+    .bottom-container_text h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.1rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .bottom-container_text p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    /*Footer*/
+    footer {
+        display: flex;
+        justify-content: left;
+        height: 50px;
+        background: black;
+        border: 1px solid black;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 58.6%;
     }
 
     footer nav a {
