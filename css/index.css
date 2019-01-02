@@ -86,6 +86,7 @@ nav {
     justify-content: space-between;
 }
 
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -117,12 +118,12 @@ nav {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     
     margin: 20px 2.5%;
     color: white;
-    display: flex;
+    
     align-items: center;
     justify-content: center;
 }
@@ -161,31 +162,28 @@ footer nav a {
     text-decoration: none;
 }
 
-@media (max-width:1000px) {
-.container{
-    max-width: 1000px;
-    width:100%;
-    }
-    .box{
-        background: black;
-    }
-    .box2 {
-        background-color:forestgreen;
-    }
-    .box4 {
-        background: darkorchid;
-    }
-    .box6 {
-        background: hotpink;
-    }
-    .box8 {
-        background: indigo;
-    }
-    .box10 {
-        background: lawngreen;
-    }
+/* @media (max-width:1000px) {
+    
+   
+} */
+.box{
+    background: black;
 }
-
+.box2 {
+    background-color:forestgreen;
+}
+.box4 {
+    background: darkorchid;
+}
+.box6 {
+    background: hotpink;
+}
+.box8 {
+    background: indigo;
+}
+.box10 {
+    background: lawngreen;
+}
 
 @media (max-width:768px){
     .container{
@@ -198,24 +196,67 @@ footer nav a {
    .box1 {
        background: teal;
    }
+   .box2 {
+       background:green;
+   }
    .box3 {
        background: gold;
+   }
+   .box4{
+       background:purple;
    }
    .box5 {
        background: cadetblue;
    }
+   .box6 {
+       background: pink;
+   }
    .box7 {
        background: coral;
+   }
+   .box8 {
+       background:darkorchid;
    }
    .box9 {
        background: crimson;
    }
+   .box10 {
+       background:lightgreen;
+   }
 }
 
 @media (max-width: 400px){
+
     .container {
-        max-width: 768px;
-        width: 100%;
+        max-width:400px;
     }
+   .boxes {
+       flex-direction: row-reverse;
+   }
+
+   .box10 {
+       display:none;
+   }
+   .box2 {
+       background:green;
+   }
+   .box6 {
+       background:pink;
+   }
+   .box4{
+       background:purple;
+   }
+
+   .box8{
+       background:darkorchid;
+   }
+
+   header {
+       flex-direction: column;
+   }
+   nav {
+       
+       flex-direction: column;
+   }
 
 }
