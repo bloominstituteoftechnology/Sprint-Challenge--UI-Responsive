@@ -1,5 +1,5 @@
 1. If you saw this HTML: <div class="box box1 box2 box3"></div> which class has the most specificity weight?
-the class "box3" has the most specificity weight (4).
+the class "box3" has the most specificity weight (as its furthest to the right).
 
 2. Describe the difference between display: block; and display: inline;.
 Block level elements like <div> as welll as text blocks like <p> and <h1>

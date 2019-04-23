@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -51,10 +51,16 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
 }
+    
 
 h1, h2, h3, h4, h5 {
     font-size: 1.8rem;
@@ -64,38 +70,55 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 /*Nav code here*/
-header {
-    margin-top: 25px;
-    margin-bottom:25px;
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.headNav{
-display: flex;
+header {
+    width:100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+header nav{
+/* display: flex;
 justify-content:space-between;
 align-items:flex-end;
 flex-direction:row;
-margin-bottom: 25px;
+margin-bottom: 25px; */
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items:flex-end;
 }
 
 header nav a {
-    text-decoration: none;
+    /* text-decoration: none;
     color: black;
     padding: 25px;
     padding-top: 60px;
     margin-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 0px; */
+    font-size: 1.4rem;
+    text-decoration: none;
+    color:black;
 
 }
 
 
-
-.container {
-    width: 43%; /*800px*/
-    margin: 0 auto;
+.jumbo {
+    max-width:100%;
+    height:auto;
+    margin: 20px 0;
 }
+
 
 .top-content {
     display: flex;
@@ -156,14 +179,14 @@ footer {
     width: 100%;
     background: black;
 }
-
+/* changed footer nav padding and font size back to px as rems makes it huge */
 footer nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2%;
-    font-size: 4rem;
+    padding: 20px 2%;
+    font-size: 14px;
 }
 
 footer nav a {
@@ -172,7 +195,7 @@ footer nav a {
 }
 
 
-/*Starting with smallest screen size MOBILE*/
+/*Starting with smallest screen size MOBILE 400 PX*/
 @media (max-width: 25rem){
 .container {
         width: 25rem;
@@ -230,6 +253,7 @@ footer nav a {
         align-items: center;
     }
 
+/* 768 PX */
 @media (max-width: 48rem){
 
 .container {
@@ -288,7 +312,7 @@ footer nav a {
         align-items: center;
     }
 
-    .boxes .box .box1{
+    .middle-content .boxes .box.box1 {
     color: teal;
         }
     .boxes .box .Box3{
@@ -303,7 +327,8 @@ footer nav a {
     .boxes .box .Box9{
     color: crimson;
     }
-
+}
+/*1000px;*/
 @media (max-width: 62.5rem){
 .container {
         width: 62.5rem;
@@ -360,18 +385,19 @@ footer nav a {
         flex-flow: column;
         align-items: center;
     }
-    .boxes .box .Box2{
+   .middle-content .boxes .box.box2 {
     color: forestgreen;
     }
-.boxes .box .Box4{
+    .middle-content .boxes .box.box4 {
     color: darkorchid;
     }
-.boxes .box .Box6{
+    .middle-content.boxes .box.box6 {
     color: hotpink;
     }   
-.boxes .box .Box8{
+    .middle-content .boxes .box.box8 {
     color: indigo;
-}
-.boxes .box .Box10{
+    }
+    .middle-content .boxes .box.box10 {
     color: lawngreen;
-} 
+    } 
+}
