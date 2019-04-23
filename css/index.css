@@ -66,6 +66,32 @@ p {
     line-height: 1.4;
 }
 
+/*Nav code here*/
+header {
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+
+.headNav{
+display: flex;
+justify-content:space-between;
+align-items:flex-end;
+flex-direction:row;
+margin-bottom: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    padding-top: 60px;
+    margin-top: 30px;
+    padding-bottom: 0px;
+
+}
+
+
+
 .container {
     width: 43%; /*800px*/
     margin: 0 auto;
@@ -262,7 +288,7 @@ footer nav a {
         align-items: center;
     }
 
-    .boxes .box-Box1{
+    .boxes .box .box1{
     color: teal;
         }
     .boxes .box .Box3{
