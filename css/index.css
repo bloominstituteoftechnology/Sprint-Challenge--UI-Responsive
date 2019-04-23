@@ -88,11 +88,6 @@ header {
 }
 
 header nav{
-/* display: flex;
-justify-content:space-between;
-align-items:flex-end;
-flex-direction:row;
-margin-bottom: 25px; */
 width: 100%;
 display: flex;
 justify-content: space-around;
@@ -100,12 +95,6 @@ align-items:flex-end;
 }
 
 header nav a {
-    /* text-decoration: none;
-    color: black;
-    padding: 25px;
-    padding-top: 60px;
-    margin-top: 30px;
-    padding-bottom: 0px; */
     font-size: 1.4rem;
     text-decoration: none;
     color:black;
@@ -214,116 +203,25 @@ footer nav a {
     text-decoration: none;
 }
 
-
-/*Starting with smallest screen size MOBILE 400 PX*/
-@media (max-width: 25rem){
-.container {
-        width: 25rem;
-        /*400px;*/
-    }
-
-    .top-content {
-        flex-wrap: wrap;
-        
-    }
-
-    .top-content .text-container {
-    width: 48%;
-    padding: 1.6rem 1%;
-    padding-bottom: 20px; 
-    }
-
-    .middle-content {
-        width: 100%;
-        display: block;
-        
-        text-align: center;
-        padding: 20 px 5%;
-        /* 20 px 0 */
-
-        font-size: 20px;
-        border-bottom: 1px solid gray;
-    }
-
-    .middle-content h2 {
-        padding: 0 2%;
-        margin-bottom: 0;
-    }
-
-    .middle-content .boxes .box {
-        width: 12.5%;
-        height: 100px;
-        background: black;
-        margin: 20px 2.5%;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .bottom-content {
-        margin: 20px 5%;
-
-        /* 20 px 0 */
-    }
-
-    .bottom-content .text-container {
-        margin-top: 4rem;
-        flex-flow: column;
-        align-items: center;
-    }
-
 /* 768 PX */
-@media (max-width: 48rem){
+@media (max-width: 768px) {
 
-.container {
-        width: 48rem;
-        /*678px;*/
-    }
-
-    .top-content {
-        flex-wrap: wrap;
-        
-    }
-
-    .top-content .text-container {
-    width: 48%;
-    padding: 2.6rem 1%;
-    padding-bottom: 20px; 
-    }
-
-    .middle-content {
+    header {
         width: 100%;
-        display: block;
+        display:flex;
         
-        text-align: center;
-        padding: 20 px 5%;
-        /* 20 px 0 */
-
-        font-size: 20px;
-        border-bottom: 1px solid gray;
     }
 
-    .middle-content h2 {
-        padding: 0 2%;
-        margin-bottom: 0;
+    .jumbo {
+        margin: 0 0 20px;
+
     }
 
-    .middle-content .boxes .box {
-        width: 12.5%;
-        height: 100px;
-        background: black;
-        margin: 20px 2.5%;
-        color: white;
+    header nav {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .bottom-content {
-        margin: 20px 5%;
-
-        /* 20 px 0 */
     }
 
     .bottom-content .text-container {
@@ -332,19 +230,81 @@ footer nav a {
         align-items: center;
     }
 
-    .middle-content .boxes .box.box1 {
-    color: teal;
-        }
-    .boxes .box .Box3{
-    color: gold;
+    .middle-content .boxes .box1 {
+        background: teal;
     }
-    .boxes .box .Box5{
-    color: cadetblue;
+
+    .middle-content .boxes .box3 {
+        background: gold;
     }
-    .boxes .box .Box7{
-    color: coral;
+
+    .middle-content .boxes .box5 {
+        background: cadetblue;
     }
-    .boxes .box .Box9{
-    color: crimson;
+
+    .middle-content .boxes .box7 {
+        background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+        background: crimson;
     }
 }
+
+/*Starting with smallest screen size MOBILE 400 PX*/
+@media (max-width: 400px){
+header {
+        margin: 30px 0 0;
+        /*400px;*/
+    }
+
+    .jumbo {
+        margin: 0 0 20px;
+        
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav a {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: black;
+        background:white;
+        display:block;
+        width:100%;
+        text-align: center;
+        padding:15px;
+        border-bottom: 1px solid darkgray;
+    }
+
+    header nav a:hover {
+        background: lightgray;
+    }
+
+    .top-content .text-container {
+        width: 90%;
+    }
+    
+
+    .middle-content .boxes {
+        flex-direction: row-reverse;
+    }
+
+    .middle-content .boxes .box10 {
+        display: none;
+    }
+    
+
+    .bottom-content .text-container {
+        margin-top: 4rem;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+
