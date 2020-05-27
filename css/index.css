@@ -144,10 +144,10 @@ header nav a {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
-    margin: 20px 2.5%;
+    margin: 20px;
     color: white;
     display: flex;
     align-items: center;
